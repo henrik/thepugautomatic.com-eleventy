@@ -18,13 +18,11 @@ A project scaffold for quickly starting a site build with:
 ### Prerequisites
 
 - [Node and NPM](https://nodejs.org/)
-- [Netlify CLI](https://www.npmjs.com/package/netlify-cli)
 
 
 ### Running locally
 
 ```bash
-
 # install Netlify CLI globally
 npm install netlify-cli -g
 
@@ -37,6 +35,8 @@ netlify dev
 
 You may need to `touch src/site/css/tailwind.css` for the CSS to generate the first time.
 
+Don't edit the `src/site/css/styles.css` file manually. It's generated from `tailwind.css` (and then copied into `dist` when generating the site).
+
 
 ### Previewing the production build
 
@@ -47,14 +47,3 @@ When building for production, an extra build step will strip out all CSS classes
 # run the production build
 npm run build
 ```
-
-
-### Styling with TailwindCSS
-
-This site uses TailwindCSS to offer utility CSS classes and provide a rapid means to styling the site. This means that most styling can be done without writing any additional CSS. Instead, utility classes can be added directly to the HTML. This may not be to everyone's tastes, but it can provide some very rapid development and also offer surprising levels of familiarity for those used to working in this way (since the conventions and classes are not _per site_.)
-
-While running/developing locally, the `npm run start` command will recompile the site as files are saved and this includes the CSS pipeline from Tailwind.
-
-#### Global CSS utilities
-
-A small number of bespoke CSS rules are provided for efficiency of repeated or global classes. These reside in `src/site/_includes/css/tailwind.css`
