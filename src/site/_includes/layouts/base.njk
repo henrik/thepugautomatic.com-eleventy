@@ -12,8 +12,15 @@
     <div class="content leading-relaxed">
       {{ content | safe }}
     </div>
-    <footer>
-      <p>Powered by <a href="https://github.com/philhawksworth/eleventail">ElevenTail</a>.
+    <footer class="text-center text-gray-500 text-sm">
+      <p>
+        Unless otherwise noted, code is <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a> and graphics (excluding the blog art) is <a href="http://creativecommons.org/licenses/by/3.0/">CC BY License</a>.
+      </p>
+      <p>
+        Content and design &copy; Henrik Nyh.
+        Pug art by <a href="https://johannaost.com">Johanna Öst</a>.
+        Powered by <a href="https://11ty.dev">Eleventy</a>/<a href="https://github.com/philhawksworth/eleventail">ElevenTail</a>.
+      </p>
     </footer>
     {% set js %}
       {% include "js/core.js" %}
