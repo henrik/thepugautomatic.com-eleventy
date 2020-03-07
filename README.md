@@ -17,6 +17,7 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [ ] Disqus
 - [ ] Atom feed
 - [ ] Sticky years on start page
+- [ ] Maybe: Prev/next post
 - [ ] Visual polish
 
 ## Writing a post
