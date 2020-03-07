@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Naming as a fork in the road"
-date: 2017-04-29 08:15 BST
 comments: true
 categories:
   - Naming things

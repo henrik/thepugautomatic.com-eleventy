@@ -4,8 +4,6 @@ title: Batch-open URLs from clipboard
 categories:
 - Ruby
 - OS X
-date: 2006-07-16 11:41
-layout: post
 comments: true
 ---
 I often find myself wanting to batch-open several URLs from somewhere, typically an IM message log.
