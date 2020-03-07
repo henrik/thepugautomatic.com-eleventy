@@ -1,6 +1,5 @@
 ---
 title: Blog posts use a layout of their own
-date: 2019-12-31
 ---
 
 All files in the blog folder get the same meta data for things like their template language, tags thy should share and the layout they should use.

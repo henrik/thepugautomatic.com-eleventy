@@ -1,26 +1,17 @@
 # The Pug Automatic
 
-My blog.
+My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https://netlify.com).
 
-Powered by Eleventy and ElevenTail:
-
-## ElevenTail
-
-A project scaffold for quickly starting a site build with:
-
-- [Eleventy](https://11ty.dev) for templates and site generation
-- [Tailwindcss](https://tailwindcss.com) for a utility first CSS workflow
-- [PurgeCSS](https://www.purgecss.com/) for optimizing CSS output
-- [UglifyJS](https://www.npmjs.com/package/uglify-js) for a simple JS build pipeline
-- [Netlify CLI](https://www.npmjs.com/package/netlify-cli) for Netlify dev pipeline and local replication of prod environment
-
-
-### Prerequisites
-
-- [Node and NPM](https://nodejs.org/)
+- Based on the project scaffold [ElevenTail](https://github.com/philhawksworth/eleventail).
+- Utility-first CSS via [Tailwindcss](https://tailwindcss.com).
+- [PurgeCSS](https://www.purgecss.com/) for optimizing CSS output.
+- [UglifyJS](https://www.npmjs.com/package/uglify-js) for a simple (?) JS build pipeline.
+- [Netlify CLI](https://www.npmjs.com/package/netlify-cli) for dev.
 
 
 ### Running locally
+
+You need [Node and NPM](https://nodejs.org/).
 
 ```bash
 # install Netlify CLI globally
