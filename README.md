@@ -19,6 +19,22 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [ ] Sticky years on start page
 - [ ] Visual polish
 
+## Writing a post
+
+See <https://www.11ty.dev/docs/plugins/syntaxhighlight/> for docs about the syntax highlighter. It can highlight lines and mark added/removed lines:
+
+    ```ruby/1-2
+    def i_am_highlighted
+      me_too
+    end  # not me
+    ```
+
+    ```ruby/1/2
+    def i_am_added
+      i_am_removed
+    end  # I was always here
+    ```
+
 ## Running locally
 
 You need [Node and NPM](https://nodejs.org/).
