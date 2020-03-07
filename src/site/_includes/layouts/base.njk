@@ -8,8 +8,12 @@
     <link href="/images/favicon.ico" rel="icon">
     {% include "social.njk" %}
   </head>
-  <body class="container mx-auto mb-12 lg:max-w-4xl text-gray-700">
-    {% include "header.njk" %}
+  <body class="container mx-auto py-8 mb-12 lg:max-w-4xl text-gray-700">
+    <header class="text-center">
+      <p><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" alt=""></p>
+      <h1><a href="/" class="border-0 font-bold text-yellow-600 text-2xl">The Pug Automatic</a></h1>
+    </header>
+
     <div class="content leading-relaxed">
       {{ content | safe }}
     </div>
