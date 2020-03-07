@@ -8,8 +8,18 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [UglifyJS](https://www.npmjs.com/package/uglify-js) for a simple (?) JS build pipeline.
 - [Netlify CLI](https://www.npmjs.com/package/netlify-cli) for dev.
 
+## TODO
 
-### Running locally
+- [ ] Basic fixes of all posts (rename to .md, remove layout and time from front matter)
+- [ ] Go through all posts and fix remaining issues
+- [ ] Remove posts I don't want to keep
+- [ ] Tag support
+- [ ] Disqus
+- [ ] Atom feed
+- [ ] Sticky years on start page
+- [ ] Visual polish
+
+## Running locally
 
 You need [Node and NPM](https://nodejs.org/).
 
@@ -31,7 +41,7 @@ Don't edit the `src/site/css/styles.css` file manually. It's generated from `tai
 The `posts.11tydata.json` file relies on <https://www.11ty.dev/docs/data-template-dir/> to magically assign the right template to posts.
 
 
-### Previewing the production build
+## Previewing the production build
 
 When building for production, an extra build step will strip out all CSS classes not used in the site. This step is not performed during the automatic rebuilds which take place during dev.
 
