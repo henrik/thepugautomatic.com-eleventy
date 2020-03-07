@@ -1,7 +1,6 @@
 ---
-wordpress_id: 5
 title: Batch-open URLs from clipboard
-categories:
+tags:
 - Ruby
 - OS X
 comments: true

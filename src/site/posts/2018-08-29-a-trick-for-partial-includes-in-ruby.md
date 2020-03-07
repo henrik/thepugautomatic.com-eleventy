@@ -1,7 +1,7 @@
 ---
 title: A trick for partial includes in Ruby
 comments: true
-categories:
+tags:
   - Ruby
 ---
 
