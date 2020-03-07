@@ -1,12 +1,12 @@
 {
-  "name": "ElevenTail",
-  "version": "0.1.0",
-  "description": "A project scaffold for quick-starting a site with Eleventy and TailwindCSS",
-  "author": "Phil Hawksworth",
-  "license": "MIT",
+  "name": "The Pug Automatic on ElevenTail",
+  "version": "1.0.0",
+  "description": "A blog.",
+  "author": "Henrik Nyh",
+  "license": "Content and visual design: copyrighted; Code: MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/eleventail"
+    "url": "https://github.com/henrik/thepugautomatic.com-eleventy"
   },
   "scripts": {
     "build": "npm-run-all build:css build:html",
