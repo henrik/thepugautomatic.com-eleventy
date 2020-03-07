@@ -2,6 +2,7 @@
 layout: default
 templateEngineOverride: njk, md
 permalink: "/{{ page.date | slugDate }}/{{ page.fileSlug }}/index.html"
+tags: "post"
 ---
 <section>
   <time value="{{ item.date }}" class="text-gray-600">{{ page.date | readableDate }}</time>
