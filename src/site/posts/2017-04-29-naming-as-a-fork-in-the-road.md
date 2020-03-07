@@ -1,7 +1,7 @@
 ---
 title: "Naming as a fork in the road"
 comments: true
-categories:
+tags:
   - Naming things
 ---
 

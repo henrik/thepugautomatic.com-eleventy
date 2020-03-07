@@ -1,10 +1,16 @@
 const { DateTime }    = require('luxon');
 const util            = require('util');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const slug            = require('@11ty/eleventy/src/Filters/Slug');
 
 module.exports = function(eleventyConfig) {
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
+
+  // Make it possible to set the "post" tag in the "post.njk" layout while still assigning further tags in the individual post.
+  // https://www.11ty.dev/docs/data-deep-merge/
+  // https://github.com/11ty/eleventy/issues/401
+  eleventyConfig.setDataDeepMerge(true);
 
   // https://www.11ty.dev/docs/plugins/syntaxhighlight/
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -29,6 +35,14 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
     }).toFormat('y/MM');
+  });
+
+  eleventyConfig.addFilter('tagList', list => {
+    // "post" is a magic tag used to determine which pages are blog posts.
+    const properTags = list.filter(x => x != "post");
+    if (!properTags) return;
+
+    return "Tagged " + properTags.map(tag => `<a href="/tag/${slug(tag)}">${tag}</a>`).join(", ") + ".";
   });
 
   // Grab excerpts and sections from a file
