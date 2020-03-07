@@ -4,8 +4,8 @@ pageClass: posts
 templateEngineOverride: njk, md
 ---
 <section>
-  <time value="{{ item.date }}" class="text-gray-600">{{ date | readableDate }}</time>
-  <h1 class="heading">{{ title }}</h1>
+  <time value="{{ item.date }}" class="text-gray-600">{{ page.date | readableDate }}</time>
+  <h1 class="heading">{{ title }}</h1 >
   <div class="mb-4 text-lg font-medium">
     {{ content | section | safe }}
   </div>

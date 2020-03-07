@@ -24,6 +24,11 @@ module.exports = function(eleventyConfig) {
       zone: 'utc'
     }).toFormat('y-MM-dd');
   });
+  eleventyConfig.addFilter('slugDate', dateObj => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat('y/MM');
+  });
 
   // Grab excerpts and sections from a file
   eleventyConfig.addFilter("section", require("./src/utils/section.js") );

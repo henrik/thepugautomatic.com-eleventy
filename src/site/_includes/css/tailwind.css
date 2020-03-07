@@ -2,6 +2,10 @@
 @tailwind  base;
 /* purgecss end ignore */
 
+body {
+  border: 2px solid red;
+}
+
 /*
   Content sections conventions
 */
