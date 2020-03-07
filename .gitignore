@@ -4,11 +4,3 @@
 # build artefacts
 /dist
 /src/site/css
-
-# secrets
-.env
-
-# macOS related files
-.DS_Store
-.AppleDouble
-.LSOverride
