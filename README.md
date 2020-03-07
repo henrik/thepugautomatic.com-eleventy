@@ -28,7 +28,7 @@ You may need to `touch src/site/css/tailwind.css` for the CSS to generate the fi
 
 Don't edit the `src/site/css/styles.css` file manually. It's generated from `tailwind.css` (and then copied into `dist` when generating the site).
 
-The `blog.11tydata.json` file relies on <https://www.11ty.dev/docs/data-template-dir/> to magically assign the right template to posts.
+The `posts.11tydata.json` file relies on <https://www.11ty.dev/docs/data-template-dir/> to magically assign the right template to posts.
 
 
 ### Previewing the production build
