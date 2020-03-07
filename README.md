@@ -13,9 +13,10 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [ ] Basic fixes of all posts (rename to .md, remove layout and time from front matter)
 - [ ] Go through all posts and fix remaining issues
 - [ ] Remove posts I don't want to keep
-- [ ] Tag support
+- [x] Tag support
 - [ ] Disqus
 - [ ] Atom feed
+- [ ] Site search
 - [ ] Sticky years on start page
 - [ ] Maybe: Prev/next post
 - [ ] Visual polish

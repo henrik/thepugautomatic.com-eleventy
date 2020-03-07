@@ -5,8 +5,8 @@ layout: default
 
 <section>
   <ul>
-  {%- for item in collections.post | reverse -%}
-  {% include 'components/post-teaser.njk' %}
+  {%- for post in collections.post | reverse -%}
+  {% include 'components/post-listing.njk' %}
   {%- endfor -%}
   </ul>
 </section>

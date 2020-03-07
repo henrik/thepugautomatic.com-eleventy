@@ -183,12 +183,12 @@ h1.heading {
 */
 a {
   @apply border-b-2;
-  @apply border-teal-400;
+  @apply border-yellow-500;
 }
 a:hover,
 a:focus {
  @apply border-b-2;
- @apply border-teal-200;
+ @apply border-yellow-300;
 }
 a.naked-link:link,
 a.naked-link:visited {
