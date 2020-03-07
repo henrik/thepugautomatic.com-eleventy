@@ -12,6 +12,9 @@
     <div class="content leading-relaxed">
       {{ content | safe }}
     </div>
+    <footer>
+      <p>Powered by <a href="https://github.com/philhawksworth/eleventail">ElevenTail</a>.
+    </footer>
     {% set js %}
       {% include "js/core.js" %}
       {% include "js/hello.js" %}
@@ -19,6 +22,3 @@
     <script>{{ js | jsmin | safe }}</script>
   </body>
 </html>
-
-
-
