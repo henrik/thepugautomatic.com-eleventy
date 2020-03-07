@@ -14,7 +14,3 @@
   targetPort = 8181
   NODE_ENV = "development"
   # functionsPort = 34567
-
-[[redirects]]
-  from = "/post/*"
-  to = "/blog/:splat"
