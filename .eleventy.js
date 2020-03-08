@@ -47,8 +47,8 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('tagList', list => {
-    // "post" is a magic tag used to determine which pages are blog posts.
-    const properTags = list.filter(x => x != "post");
+    // "posts" is a magic tag used to determine which pages are blog posts.
+    const properTags = list.filter(x => x != "posts");
     if (!properTags) return;
 
     return "Tagged " + properTags.map(tag => `<a href="/tag/${slug(tag)}">${tag}</a>`).join(", ") + ".";
