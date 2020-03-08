@@ -11,7 +11,7 @@ I use Firefox 3 with the <a href="http://takebacktheweb.org/">GrApple Yummy (blu
 
 It has a clean OS X look, but I'm happy to trade in some of that cleanness for favicons on the tabs.
 
-<img src="https://henrik.nyh.se/uploads/grapple-favicons.png" alt="[Screenshot]" class="bordered" />
+<img src="/uploads/grapple-favicons.png" alt="[Screenshot]" class="bordered" />
 
 <!--more-->
 

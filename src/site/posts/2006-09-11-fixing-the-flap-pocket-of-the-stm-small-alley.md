@@ -17,7 +17,7 @@ Easily solved.
 
 I got about 20 centimeters of black, self-adhesive (on the back&hellip;) hook-and-loop fasteners (i.e. Velcro) and stuck these horizontally across the vertical middle of the pocket. I put the loops toward the bag body and the hooks toward the outside &ndash; my rationale was that as I'm more likely to leave the bag body-side down, gravity and momentum will pull stuff against the softer side rather than the rougher one. I doubt that it matters much.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/smallalleyhack.jpg" alt="[Inside the pocket]" class="bordered" /></p>
+<p class="center"><img src="/uploads/smallalleyhack.jpg" alt="[Inside the pocket]" class="bordered" /></p>
 
 The obvious idea is that you can close off the pocket across the middle, so that stuff you put at the bottom can't travel further up than to the middle. Works a charm for me.
 

@@ -13,7 +13,7 @@ Flickr have since changed their image naming scheme so that the URLs of full-siz
 
 I've now rewritten it into a pretty big bookmarklet (4 912 bytes when URL encoded &ndash; does this make it a regular bookmark? A supermarklet?) that uses the Flickr <a href="http://bob.pythonmac.org/archives/2005/12/05/remote-json-jsonp/">JSONP</a> <a href="http://www.flickr.com/services/api/">API</a> to look up the names of full-size images.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/bookmarklet-fbat.png" alt="" /></p>
+<p class="center"><img src="/uploads/bookmarklet-fbat.png" alt="" /></p>
 
 Output can be provided as linked HTML images, linked HTML images within a LiveJournal LJ-cut, or forum <a href="http://en.wikipedia.org/wiki/BBCode">BBCode</a>. Unlike that of the old bookmarklet, the output is presented in a pretty overlay that can be discarded for further browsing.
 

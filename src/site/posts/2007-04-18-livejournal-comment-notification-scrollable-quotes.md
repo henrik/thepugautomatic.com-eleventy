@@ -11,7 +11,7 @@ comments: true
 In <a href="/2006/08/fixed-size-scrollable-quotes-in-livejournal-comment-notification-mails">a previous post</a>, I mentioned how to add scrollbars to quotes in LiveJournal comment notifications, in SquirrelMail or Thunderbird.
 
 <p class="center">
-<img src="https://henrik.nyh.se/uploads/USsmlj.png" alt="" class="bordered" />
+<img src="/uploads/USsmlj.png" alt="" class="bordered" />
 </p>
 
 I've now deprecated the userscript in favor of a <a href="http://userstyles.org/stylish/">Stylish userstyle</a>: <a href="http://userstyles.org/style/show/2232">LiveJournal comment notification scrollable quotes</a>.

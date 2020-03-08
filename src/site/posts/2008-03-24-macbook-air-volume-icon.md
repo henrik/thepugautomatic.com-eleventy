@@ -8,7 +8,7 @@ comments: true
 ---
 I finally got a nice volume icon working for my Air:
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/air-icon.png" alt="[Air icon]" class="bordered" /></p>
+<p class="center"><img src="/uploads/air-icon.png" alt="[Air icon]" class="bordered" /></p>
 
 Since this was slightly convoluted, I thought I'd do a quick write-up.
 
@@ -20,6 +20,6 @@ Assigning icons can be tricky in OS X, as I described in <a href="/2007/08/os-x-
 
 I was then able to copy-and-paste the icon as the icon of the <code>icns</code> file itself, but for some reason I was still unable to make it the icon of my system volume.
 
-<a href="https://henrik.nyh.se/uploads/air.icns.zip">Here</a> is the icon file with itself as its icon, to save you some work. The download is an archive since the icon wouldn't stick otherwise.
+<a href="/uploads/air.icns.zip">Here</a> is the icon file with itself as its icon, to save you some work. The download is an archive since the icon wouldn't stick otherwise.
 
 I ended up having to use <a href="http://www.panic.com/candybar/">CandyBar</a> (which has a free trial). In CandyBar, I just dragged the fixed icon file to the volume.

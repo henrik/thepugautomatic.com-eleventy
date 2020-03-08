@@ -11,7 +11,7 @@ comments: true
 ---
 I'm not a big fan of password confirmation in signup forms. Usually you see something like this:
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/password_confirmation-old.png" alt="[Signup form with password field and password confirmation field]" class="bordered" style="padding:5px" /></p>
+<p class="center"><img src="/uploads/password_confirmation-old.png" alt="[Signup form with password field and password confirmation field]" class="bordered" style="padding:5px" /></p>
 
 For one thing, the more items in a registration form, the more you're turned off from signing up. Reducing the form above by 25% would do a lot.
 
@@ -29,13 +29,13 @@ For a site I'm developing, I came up with something I like better. In short: ech
 
 So instead of the four-field behemoth above, the user is seduced by something like
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/password_confirmation-clear.png" alt="[Signup form with clear text password field]" class="bordered" style="padding:5px" /></p>
+<p class="center"><img src="/uploads/password_confirmation-clear.png" alt="[Signup form with clear text password field]" class="bordered" style="padding:5px" /></p>
 
 The link informs that the password will be echoed in clear text and also offers a way to toggle this behavior. I think the link text, "Don't show what I type", pulls that off very succinctly. It was a key point for me to not replace the annoying confirmation field with an equally annoying half-page essay, while still making it reasonably clear what's going on lest you type your password in clear text in front of Stranger Danger.
 
 The toggle brings you
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/password_confirmation-hidden.png" alt="[Signup form with password field and password confirmation field]" class="bordered" style="padding:5px" /></p>
+<p class="center"><img src="/uploads/password_confirmation-hidden.png" alt="[Signup form with password field and password confirmation field]" class="bordered" style="padding:5px" /></p>
 
 The form changes on-the-fly without reloading the page, using JavaScript. By the principle of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>, users without JavaScript simply see the form with password confirmation and no toggle link. One could let non-JavaScript users fall back on a regular link to a new page with a different form, but that would effectively reset the form if it had any input already, so I'd suggest against.
 

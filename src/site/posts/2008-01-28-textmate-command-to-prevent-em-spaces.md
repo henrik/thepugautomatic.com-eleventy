@@ -10,4 +10,4 @@ Pressing <code>⌥+space</code> instead of just <code>space</code> is an easy mi
 
 In Cocoa text fields, <code>⌥+space</code> inserts a typographical em space, which e.g. Ruby's parser does not treat as a regular space. Painful debugging ensues. Even after being bitten by this several times, it still gets me now and then.
 
-I finally got around to fixing it: the <a href="https://henrik.nyh.se/uploads/Prevent Em Space.tmCommand">Prevent Em Space</a> TextMate command slips into the Source bundle and simply outputs a regular space if you press <code>⌥+space</code>.
+I finally got around to fixing it: the <a href="/uploads/Prevent Em Space.tmCommand">Prevent Em Space</a> TextMate command slips into the Source bundle and simply outputs a regular space if you press <code>⌥+space</code>.

@@ -94,7 +94,7 @@ What happens is quite simply that the AppleScript is passed the name of the snip
 
 The benefits of this solution to the keystroke one is that it works even if you're slow on releasing the key equivalent after creating a new file, and that you won't have a snippet in your bundle for all to see that is just for setting up the template. It's tucked away inside the support folder, safe and warm.
 
-Install the <a href="https://henrik.nyh.se/uploads/Snipplate.tmbundle.zip">Snipplate bundle</a> and create a new file from its template, for a demonstration.
+Install the <a href="/uploads/Snipplate.tmbundle.zip">Snipplate bundle</a> and create a new file from its template, for a demonstration.
 
 <div class="updated">
   <h5>Update 2007-03-02</h5>

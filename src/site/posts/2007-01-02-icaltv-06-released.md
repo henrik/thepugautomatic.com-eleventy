@@ -8,7 +8,7 @@ comments: true
 ---
 Minor updates to iCalTV.
 
-<a href="https://henrik.nyh.se/uploads/iCalTV.zip">Download version 0.6 (244 KB).</a>
+<a href="/uploads/iCalTV.zip">Download version 0.6 (244 KB).</a>
 
 The download URLs have changed, so this is a necessary update. Just replace the old <code>iCalTV.app</code> with this one.
 

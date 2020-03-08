@@ -1,0 +1,20 @@
+--- iCalEvents.js.old	2006-07-27 20:27:58.000000000 +0200
++++ iCalEvents.js	2006-07-27 20:39:07.000000000 +0200
+@@ -262,7 +262,7 @@
+ 					     currentDayEnd_getTime > startDate_getTime))
+ 					displayTime = true;
+ 				else
+-					displayTime = false;
++					continue;
+ 
+ 				if (currentDayStart_getTime >= endDate_getTime) {
+ 					// TODO: optimization here using firstEventConsidered.
+@@ -311,7 +311,7 @@
+ 				
+ 					paperHTML += ">";
+ 					if (summary)
+-						paperHTML += summary;
++						paperHTML += summary.replace(/\n.+/, "");
+ 					paperHTML += "</td></tr>";
+ 					
+ 				} else {

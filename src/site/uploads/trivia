@@ -1,0 +1,170 @@
+#!/usr/bin/env ruby
+#
+# IMDB Trivia & Goofs Growler
+# By Henrik Nyh <http://henrik.nyh.se> 2008-01-27.
+# Free to modify and redistribute with credit.
+#
+# USAGE
+#
+# Run this command like
+#   trivia http://www.imdb.com/title/tt0056937/
+# before starting to watch a movie. Any IMDB URL containing a "tt..." type id is fine.
+#
+# If IMDB has any trivia and goofs listed for this movie, they will appear in pop-ups
+# at even intervals for the duration of the movie. Does not work with Front Row. :(
+#
+# If you need to pause the movie, press Ctrl+C once in the Terminal running the command. 
+# Press the Return key to resume.
+# Press Ctrl+C twice to quit the program. It quits itself when done.
+#
+# Run like
+#   DEBUG=true trivia http://www.imdb.com/title/tt0056937/
+# to show things at short intervals instead of spread out over the duration of the movie.
+#
+#
+# PREREQUISITES/INSTALLATION
+#
+# OS X Leopard has the prerequisite Ruby with all necessary libraries.
+#
+# You need to install Growl and growlnotify: http://growl.info/
+#
+# Configure (in the Growl preference pane) Growl to have a 10 second duration.
+# I recommend the "Music Video" style at the "Huge" size.
+# You can configure this style for the "IMDBTrivia" app only, once Growl's learned
+# about that app -- i.e. once you've used this command or done this in a Terminal:
+#   growlnotify -n IMDBTrivia -m w00t
+#
+# To be able to run the command with just "trivia", this file needs to be executable
+# (chmod +x trivia) and put inside a directory listed in your PATH environment variable.
+
+start_padding = 3  # minutes -- give the user some time to get started
+end_padding   = 10 # minutes -- complete before credits
+MAX_LENGTH    = 30 # words   -- if longer, split across multiple pop-ups
+DURATION      = 10 # seconds -- The Growl duration setting
+
+require "open-uri"
+require "enumerator"  # for enum_slice
+require "rubygems"
+require "hpricot"
+
+
+# Handle Ctrl+C quitting
+
+handler = lambda {
+  trap(:SIGINT) { exit }
+  
+  puts
+  puts "Paused. Press the Return key to resume or type Ctrl+C again to quit."
+  
+  STDIN.readline  # since _gets_ will pick the argument off ARGV
+  
+  trap(:SIGINT, handler)
+}
+trap(:SIGINT, handler)
+
+
+class Numeric
+  def minutes() self * 60 end
+end
+
+
+def bail(message)
+  puts message
+  exit
+end
+
+# Used to pluralize
+def s_for(count)
+ "s" unless count == 1
+end
+
+
+def parse_items(url, header)
+  Hpricot(open(url)).
+    search('ul.trivia li').map {|li| [header, li.inner_text.strip] }
+end
+
+def parse_runtime(url)
+  Hpricot(open(url)).
+    search("h5").find {|h5| h5.inner_text == "Runtime:" }.parent.inner_text[/\d+/].to_i
+rescue
+  90  # default to 90 minutes
+end
+
+def growl(title, message)
+  parts = message.split.enum_slice(MAX_LENGTH).to_a.map {|message| message.join(' ') }
+  parts.each_with_index do |part, index|
+    part_number = index + 1
+    last = part_number == parts.length
+    part_title = title
+    if parts.length > 1
+      part_title += " (part %s of %s)" % [part_number, parts.length]
+      part = [("... " if part_number > 1), part, (" ... (cont'd)" unless last)].join
+    end
+    system("growlnotify", "-m", part, "-t", part_title, "-a", "Front Row.app", "-n", "IMDBTrivia")
+    sleep DURATION unless last  # This throws off the time count, but it's probably not a big deal
+  end
+end
+
+
+return unless $0 == __FILE__  # When run directly (and not included), do this:
+
+puts "IMDB Trivia & Goofs Growler"
+puts "By Henrik Nyh <http://henrik.nyh.se>"
+puts
+
+begin
+  id = ARGV.first[/tt\d+/]
+rescue
+  bail "Please specify a valid IMDB URL, e.g.: http://www.imdb.com/title/tt0088323/"
+end
+
+puts "Retrieving data..."
+puts
+
+trivia = parse_items("http://www.imdb.com/title/#{id}/trivia", "Trivia")
+goofs  = parse_items("http://www.imdb.com/title/#{id}/goofs", "Goof")
+
+items = (trivia + goofs).sort_by { rand }
+bail("No trivia or goofs available! Sorry.") if items.empty?
+
+runtime = parse_runtime("http://www.imdb.com/title/#{id}/")
+showtime = runtime - start_padding - end_padding - DURATION/60.0*items.length
+if showtime < 1
+  showtime = runtime
+  start_padding = end_padding = 0
+end
+
+inside_padding = showtime/items.length.to_f
+
+if ENV['DEBUG'] == "true"
+  start_padding = 0
+  inside_padding = 0.1
+end
+
+popuptime = (DURATION/60.0 + inside_padding) * items.length - inside_padding
+
+puts "Showing %s piece%s of trivia/goofs at %.2f minute intervals over %.2f minute%s. Starting in %s minute%s; ending %s minute%s before the movie ends." % [
+  items.length,  s_for(items.length),
+  inside_padding,
+  popuptime,      s_for(popuptime),
+  start_padding, s_for(start_padding),
+  end_padding,   s_for(end_padding)
+]
+puts
+puts "Ware spoilers!"
+puts
+
+sleep start_padding.minutes
+
+puts "Starting."
+
+items.each_with_index do |item, index|
+  growl(*item)
+  print "."
+  # can't just compare item == items.last, since there could be duplicates
+  sleep inside_padding.minutes unless (index + 1 == items.length)
+end
+
+puts
+puts "Done. Exiting."

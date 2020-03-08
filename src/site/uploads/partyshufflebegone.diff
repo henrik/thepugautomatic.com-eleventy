@@ -1,0 +1,16 @@
+632,633c632,633
+< "163.059" = "The playlist “^1” does not contain any songs playable by Party Shuffle. Are you sure you want to choose this playlist?";
+< "163.060" = "Party Shuffle automatically chooses upcoming songs from your Music Library or Playlists. You may add to, delete or reorder the upcoming songs at any time.";
+---
+> "163.059" = "The playlist “^1” does not contain any songs playable by Mixlist. Are you sure you want to choose this playlist?";
+> "163.060" = "Mixlist automatically chooses upcoming songs from your Music Library or Playlists. You may add to, delete or reorder the upcoming songs at any time.";
+2229c2229
+< "9000.026" = "Party Shuffle";
+---
+> "9000.026" = "Mixlist";
+2972,2973c2972,2973
+< "kTrackContextualMenuItem10" = "Play Next in Party Shuffle";
+< "kTrackContextualMenuItem11" = "Add to Party Shuffle";
+---
+> "kTrackContextualMenuItem10" = "Play Next in Mixlist";
+> "kTrackContextualMenuItem11" = "Add to Mixlist";

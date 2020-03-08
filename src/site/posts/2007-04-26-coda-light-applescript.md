@@ -15,7 +15,7 @@ The idea of a macro to open up the right files in your text editor, the right se
 
 <!--more-->
 
-<a href="https://henrik.nyh.se/uploads/Coda%20Light.app">Download</a> the script.
+<a href="/uploads/Coda%20Light.app">Download</a> the script.
 
 Open it in <code>Script Editor.app</code> and edit the configuration values, then just run it (by e.g. double-clicking) at your pleasure.
 

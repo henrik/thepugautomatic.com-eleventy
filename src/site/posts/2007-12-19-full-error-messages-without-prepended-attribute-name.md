@@ -10,7 +10,7 @@ In your Rails validations, you can add errors to <code>base</code> or to a speci
 
 Sometimes this isn't what I want. Here's a quick hack to not prepend the attribute name if the error message starts with an upper case character.
 
-Just stick this in <code><a href="https://henrik.nyh.se/uploads/less_full_error_messages.rb">lib/less_full_error_messages.rb</a></code>, and <code>require</code> that file from <code>environment.rb</code>:
+Just stick this in <code><a href="/uploads/less_full_error_messages.rb">lib/less_full_error_messages.rb</a></code>, and <code>require</code> that file from <code>environment.rb</code>:
 
 ``` ruby
 class ActiveRecord::Errors

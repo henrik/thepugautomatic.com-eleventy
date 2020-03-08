@@ -10,7 +10,7 @@ Triggered by <a href="http://www.cabel.name/2006/08/multiplayer-game-of-year.htm
 
 The other day, though, when attempting to sync the data post-run, iTunes complained about not being able to validate my data. The data was not uploaded and would not re-sync on reconnecting the Nano. It happened again the day after, losing me a total of eight kilometers.
 
-<img src="https://henrik.nyh.se/uploads/nikeerror.png" alt="[Your workout data could not be sent to nikeplus.com because the data could not be validated by the server.]" />
+<img src="/uploads/nikeerror.png" alt="[Your workout data could not be sent to nikeplus.com because the data could not be validated by the server.]" />
 
 <a href="http://forums.nike.com/thread.jspa?threadID=807">Seems</a> this was a widespread issue.
 

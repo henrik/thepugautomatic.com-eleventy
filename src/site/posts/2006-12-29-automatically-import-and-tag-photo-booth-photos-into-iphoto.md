@@ -16,7 +16,7 @@ I created a <a href="http://www.apple.com/applescript/folderactions/">folder act
 
 The script assumes that you have created a "Photo Booth" tag in the iPhoto settings, and a smart album named "Photo Booth" that displays the photos with that tag.
 
-Script (<a href="https://henrik.nyh.se/uploads/add%20-%20import%20into%20iPhoto%20and%20tag%20with%20%22Photo%20Booth%22.scpt">download</a>, recommended location <code>/Library/Scripts/Folder Action Scripts/</code>):
+Script (<a href="/uploads/add%20-%20import%20into%20iPhoto%20and%20tag%20with%20%22Photo%20Booth%22.scpt">download</a>, recommended location <code>/Library/Scripts/Folder Action Scripts/</code>):
 
 ``` applescript
 on adding folder items to this_folder after receiving added_items

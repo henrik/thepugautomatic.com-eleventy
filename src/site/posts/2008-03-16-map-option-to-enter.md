@@ -15,9 +15,9 @@ I looked into other solutions but had the same experience as <a href="http://pad
 
 <!--more-->
 
-Put the <a href="https://henrik.nyh.se/uploads/opt2enter">opt2enter</a> binary in <code>/usr/local/bin</code>.
+Put the <a href="/uploads/opt2enter">opt2enter</a> binary in <code>/usr/local/bin</code>.
 
-To make sure the binary is always running in the background, put <a href="https://henrik.nyh.se/uploads/name.henriknyh.opt2enter.plist">name.henriknyh.opt2enter.plist</a> in <code>/Library/LaunchDaemons</code> and run this command in a Terminal:
+To make sure the binary is always running in the background, put <a href="/uploads/name.henriknyh.opt2enter.plist">name.henriknyh.opt2enter.plist</a> in <code>/Library/LaunchDaemons</code> and run this command in a Terminal:
 
 ``` bash
 sudo launchctl load -w /Library/LaunchDaemons/name.henriknyh.opt2enter.plist

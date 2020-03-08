@@ -20,7 +20,7 @@ The module displays the Last.fm favicon to the right of the header, similar to t
 
 Watch it in action (at the time of writing, at least) at <a href="https://henrik.nyh.se/about/">my "About" page</a>.
 
-This goes into a file like <code>wp-content/themes/k2/modules/lastfm.php</code> (<a href="https://henrik.nyh.se/uploads/lastfm.phps">download</a>):
+This goes into a file like <code>wp-content/themes/k2/modules/lastfm.php</code> (<a href="/uploads/lastfm.phps">download</a>):
 
 ``` php
 <?php

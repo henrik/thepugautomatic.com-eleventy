@@ -25,7 +25,7 @@ attr_accessible :age, :location, :location_id, :sex
 
 Some attributes that are very rarely supposed to be accessible (like <code>*_count</code> and <code>created_at</code> – see code for the full list) are not included. It's <strong>very important</strong> to note, though, that the task is only meant to save typing, not to make security decisions. Some few obvious attributes are left out, but you should read through the generated list of attributes very carefully and remove those that should not be available to mass assignment.
 
-To get this, just put <a href="https://henrik.nyh.se/uploads/accessify.rake">accessify.rake</a> in <code>lib/tasks</code>.
+To get this, just put <a href="/uploads/accessify.rake">accessify.rake</a> in <code>lib/tasks</code>.
 
 The code:
 

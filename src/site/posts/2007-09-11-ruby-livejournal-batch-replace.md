@@ -8,7 +8,7 @@ comments: true
 ---
 I got a request for a script like my <a href="/2007/04/ruby-livejournal-batch-private">Ruby script to make LiveJournal entries private in batch</a>, but to replace a string in all entries (e.g. if you've changed the URL of your web site).
 
-I usually do not do commission work for free, but I dislike the idea of someone having to spend ages on something I could do in a few minutes, and I had those minutes to spare. So voilà, <a href="https://henrik.nyh.se/uploads/lj_batch_replace.rb">lj_batch_replace.rb</a>:
+I usually do not do commission work for free, but I dislike the idea of someone having to spend ages on something I could do in a few minutes, and I had those minutes to spare. So voilà, <a href="/uploads/lj_batch_replace.rb">lj_batch_replace.rb</a>:
 
 <!--more-->
 

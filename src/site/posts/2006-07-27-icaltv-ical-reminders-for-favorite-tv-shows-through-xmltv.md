@@ -8,7 +8,7 @@ comments: true
 ---
 The last couple of days, I've been working on a set of Ruby scripts to download <a href="http://www.xmltv.org/">XMLTV format</a> (or some derivative) schedules from <a href="http://tv.swedb.se/">tv.swedb.se</a>, process them against rulesets, and export the intersection as reminders in an iCalendar (.ics) file that you can subscribe to with iCal.
 
-<p style="text-align:center"><img src="https://henrik.nyh.se/uploads/icaltv.png" alt="iCalTV reminder" style="border:1px solid #CCC" /></p>
+<p style="text-align:center"><img src="/uploads/icaltv.png" alt="iCalTV reminder" style="border:1px solid #CCC" /></p>
 
 <!--more-->
 

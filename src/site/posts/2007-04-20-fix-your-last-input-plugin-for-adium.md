@@ -24,12 +24,12 @@ There is a very cool plug-in for the <a href="http://colloquy.info">Colloquy</a>
 I wanted a plugin like this for the <a href="http://www.adiumx.com/">Adium</a> IM client as well, so I made one.
 
 <p class="center">
-<img src="https://henrik.nyh.se/uploads/fixyourlastinput.png" alt="" />
+<img src="/uploads/fixyourlastinput.png" alt="" />
 </p>
 
 <!--more-->
 
-Download plugin: <a href="https://henrik.nyh.se/uploads/FixYourLastInput.AdiumPlugin.zip">Fix Your Last Input</a> (<a href="http://svn.nyh.se/cocoa/FixYourLastInputPlugin/">SVN source</a>).
+Download plugin: <a href="/uploads/FixYourLastInput.AdiumPlugin.zip">Fix Your Last Input</a> (<a href="http://svn.nyh.se/cocoa/FixYourLastInputPlugin/">SVN source</a>).
 
 To install the plugin: download, unzip and drag it to the Adium icon in the Dock. You will be prompted to install it and asked to restart Adium.
 

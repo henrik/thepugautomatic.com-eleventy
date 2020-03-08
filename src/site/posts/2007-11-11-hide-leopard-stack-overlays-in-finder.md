@@ -8,7 +8,7 @@ comments: true
 ---
 A tumblelog named XD had <a href="http://t.ecksdee.org/post/19001860">a post on adding nice half-icon overlays to Leopard stacks</a> (the below image is from that post).
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/xd-stacks.jpg" class="bordered" alt="[Screenshot]" /></p>
+<p class="center"><img src="/uploads/xd-stacks.jpg" class="bordered" alt="[Screenshot]" /></p>
 
 The log does not allow comments, so I'm blogging some minor improvements to this technique:
 
@@ -44,7 +44,7 @@ Now, this is a bit too kludgy even for me, but I couldn't resist. I made a folde
 
 I didn't particularly mind seeing the overlay icon my <code>Downloads</code> folder, but the " Icon" file next to the folders in my home directory was quite annoying.
 
-The folder action is here: <a href="https://henrik.nyh.se/uploads/Peekaboo%20Stack%20Overlay.scpt">Peekaboo Stack Overlay.scpt</a>
+The folder action is here: <a href="/uploads/Peekaboo%20Stack%20Overlay.scpt">Peekaboo Stack Overlay.scpt</a>
 
 See <a href="/2007/10/lift-the-leopard-download-quarantine">this post</a> for how to apply it.
 

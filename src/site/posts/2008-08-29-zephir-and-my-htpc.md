@@ -99,7 +99,7 @@ When I <a href="/2008/04/eyetv-onoff-keyboard-button">made an EyeTV on/off butto
 
 So when mapping the tv functions to the keyboard, I decided to use the function keys.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/apple-wireless-keyboard-function-keys.jpg" class="bordered" alt="[Photo]" title="Photo stolen from AppleInsider!" /></p>
+<p class="center"><img src="/uploads/apple-wireless-keyboard-function-keys.jpg" class="bordered" alt="[Photo]" title="Photo stolen from AppleInsider!" /></p>
 
 The Apple Wireless Keyboard has symbols on most function keys, providing functionality like changing display brightness and controlling iTunes. If you hold the <code>Fn</code> key while pressing them, you get actual F1, F2 etc.
 

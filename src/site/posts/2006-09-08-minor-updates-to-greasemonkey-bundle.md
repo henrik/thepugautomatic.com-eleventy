@@ -11,9 +11,9 @@ comments: true
 ---
 Updated the Greasemonkey bundle, originally <a href="/2006/08/improved-greasemonkey-bundle-for-textmate/">blogged here</a>.
 
-<a href="https://henrik.nyh.se/uploads/Greasemonkey.tmbundle.zip">Download</a> (44 kB).
+<a href="/uploads/Greasemonkey.tmbundle.zip">Download</a> (44 kB).
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/gmbundle2.png" alt="[Screenshot]" class="bordered" /></p>
+<p class="center"><img src="/uploads/gmbundle2.png" alt="[Screenshot]" class="bordered" /></p>
 
 <!--more-->
 

@@ -24,7 +24,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$  proxy.php?url=http://malesca.tumblr.com/$1
 ```
 
-and this is <a href="https://henrik.nyh.se/uploads/proxy.phps"><code>proxy.php</code></a>:
+and this is <a href="/uploads/proxy.phps"><code>proxy.php</code></a>:
 
 ``` php
 <?php

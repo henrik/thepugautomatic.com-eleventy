@@ -42,7 +42,7 @@ just before
 Now, if you include staple functions with your scripts (see the bundle help for more info on this; see <a href="http://wiki.greasespot.net/Code_Snippets">the GM wiki</a> for useful functions), just add such a comment above them. This enables changing the highlighting of the comment and/or the entire section of bundle code. This is how userscripts are highlighted for me:
 
 <p class="center">
-<img src="https://henrik.nyh.se/uploads/tm-gmbundle-highlighting.png" alt="" />
+<img src="/uploads/tm-gmbundle-highlighting.png" alt="" />
 </p>
 
-I use the Blackboard theme with some modifications. You can <a href="https://henrik.nyh.se/uploads/Blackboard HN.tmTheme">download it here</a>.
+I use the Blackboard theme with some modifications. You can <a href="/uploads/Blackboard HN.tmTheme">download it here</a>.

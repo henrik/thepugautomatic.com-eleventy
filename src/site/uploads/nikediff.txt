@@ -1,0 +1,83 @@
+--- /Users/henrik/Library/Widgets/MyChallenges.wdgt/oldnikepluschallenges.js	2007-01-03 18:55:18.000000000 +0100
++++ /Users/henrik/Library/Widgets/MyChallenges.wdgt/nikepluschallenges.js	2007-01-03 19:16:34.000000000 +0100
+@@ -518,11 +518,13 @@
+ 	var divLeft = progressSectionWidth + 20;
+ 	var progressTextStyle = "color:#666666;left:"+divLeft+"px;text-align:left";
+ 	
++	var distanceInKM = round(progress) + " km";
++	
+ 	if(isWinner==true){
+ 		var progressInformationResult =
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayStartWinner\"></div>"+
+ 		"<div id=\"progressBarStatusText\" style=\"color:#FFFFFF;width:"+progressBarWidth+"px\">WINNER!</div>"+
+-		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+getMilesFromKM(progress,2)+" mi</div>"+
++		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+distanceInKM+"</div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlaySectionsWinner\" style=\"width:"+progressSectionWidth+"\"></div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayEndWinner\" style=\"left:"+progressEnd+"px\"></div>";
+ 		return progressInformationResult;
+@@ -530,7 +532,7 @@
+ 	else if(isCurrentUser==true){
+ 		var progressInformationResult =
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayStartUser\"></div>"+
+-		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+getMilesFromKM(progress,2)+" mi</div>"+
++		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+distanceInKM+"</div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlaySectionsUser\" style=\"width:"+progressSectionWidth+"\"></div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayEndUser\" style=\"left:"+progressEnd+"px\"></div>";
+ 		return progressInformationResult;
+@@ -538,7 +540,7 @@
+ 	else{			
+ 	 	var progressInformationResult =
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayStart\"></div>"+
+-		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+getMilesFromKM(progress,2)+" mi</div>"+
++		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+distanceInKM+"</div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlaySections\" style=\"width:"+progressSectionWidth+"\"></div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayEnd\" style=\"left:"+progressEnd+"px\"></div>";
+ 		return progressInformationResult;
+@@ -564,11 +566,13 @@
+ 		progressTextStyle = "color:#666666;left:"+divLeft+"px;text-align:left";
+ 	}
+ 	
++	var distanceInKM = round(progress) + " km";
++	
+ 	if(isWinner==true){
+ 		var progressInformationResult =
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayStartWinner\"></div>"+
+ 		"<div id=\"progressBarStatusText\" style=\"color:#FFFFFF\">WINNER!</div>"+
+-		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+getMilesFromKM(progress,2)+" mi</div>"+
++		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+distanceInKm+"</div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlaySectionsWinner\" style=\"width:"+progressSectionWidth+"\"></div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayEndWinner\"></div>";
+ 		return progressInformationResult;
+@@ -576,7 +580,7 @@
+ 	else if(isCurrentUser==true){
+ 		var progressInformationResult =
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayStartUser\"></div>"+
+-		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+getMilesFromKM(progress,2)+" mi</div>"+
++		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+distanceInKm+"</div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlaySectionsUser\" style=\"width:"+progressSectionWidth+"\"></div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayWhiteDelimiter\" style=\"left:"+progressWhiteLineLeft+"px\"></div>";
+ 		return progressInformationResult;
+@@ -584,7 +588,7 @@
+ 	else{			
+ 	 	var progressInformationResult =
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayStart\"></div>"+
+-		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+getMilesFromKM(progress,2)+" mi</div>"+
++		"<div class=\"progressBar\" id=\"progressBarProgressDistanceText\" style=\""+progressTextStyle+"\">"+distanceInKm+"</div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlaySections\" style=\"width:"+progressSectionWidth+"\"></div>"+
+ 		"<div class=\"progressBar\" id=\"progressBarOverlayWhiteDelimiter\" style=\"left:"+progressWhiteLineLeft+"px\"></div>";
+ 		return progressInformationResult;
+@@ -634,6 +638,14 @@
+ 		return km;
+ 	}
+ }
++
++function round(number,X) {
++// rounds number to X decimal places, defaults to 2
++// http://www.irt.org/script/7.htm
++    X = (!X ? 2 : X);
++    return Math.round(number*Math.pow(10,X))/Math.pow(10,X);
++}
++
+ /**
+  * since it seems that the xml list is mostly almost reverse sorted,
+  * i reverse order the list and use bubblesort (small list almost sorted)

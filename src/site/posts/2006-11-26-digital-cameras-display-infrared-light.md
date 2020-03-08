@@ -9,7 +9,7 @@ I have no idea how well-known this is, but (all?) digital cameras/webcams displa
 
 <!--more-->
 
-<img src="https://henrik.nyh.se/uploads/ircam.jpg" alt="" class="bordered" />
+<img src="/uploads/ircam.jpg" alt="" class="bordered" />
 
 I used this when my MacBook remote stopped working (battery ran out), to confirm it did not output anything and that the problem was not on the receiving end.
 

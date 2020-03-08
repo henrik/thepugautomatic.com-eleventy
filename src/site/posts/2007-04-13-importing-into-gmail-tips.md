@@ -13,7 +13,7 @@ I'm currently importing mail from my old mailbox into Gmail using the Gmail <a h
 
 <h4>Adding a mail account with the same address</h4>
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/gmail-import.png" alt="" class="bordered" /></p>
+<p class="center"><img src="/uploads/gmail-import.png" alt="" class="bordered" /></p>
 
 You can't add a mail account with the same address as your Gmail address. The obvious workaround is to specify the added mail account as <code>me.other@example.com</code> rather than <code>me@example.com</code>. Since you also specify server, log-in name and password, the specified e-mail address shouldn't really matter.
 

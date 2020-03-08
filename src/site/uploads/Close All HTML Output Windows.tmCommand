@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>5A9D4FC6-6CBE-11D9-A21B-000D93589AF6</string>
+	<key>command</key>
+	<string># By Henrik Nyh &lt;http://henrik.nyh.se"&gt; 2007-06-26
+# Free to modify and redistribute with credit.
+
+osascript &lt;&lt;APPLESCRIPT
+set closedCount to 0
+tell application "System Events"
+  
+  if not UI elements enabled then
+    try
+      tell application "TextMate" to set answer to button returned of (display dialog "This command relies on the GUI scripting architecture of Mac OS X which is currently disabled." &amp; return &amp; return &amp; "You can activate it by selecting the checkbox \"Enable access for assistive devices\" in the Universal Access preference pane." buttons {"OK"} default button 1 with icon 1)
+    on error number -128
+      -- User cancelled
+    end try
+    return
+  end if
+  
+  tell process "TextMate"
+    repeat with i from (count windows) to 1 by -1 -- iterate backwards so indices don't shift on close
+      try
+        tell the first UI element of the first scroll area of window i
+          if role is "AxWebArea" then
+            tell application "TextMate" to close window i
+            set closedCount to closedCount + 1
+          end if
+        end tell
+      end try
+    end repeat
+  end tell
+
+end tell
+
+-- FIXME: This count is sometimes the expected value + 1 -- why?
+if closedCount is 0
+  return "No HTML output windows to close."
+else if closedCount is 1
+  return "Closed 1 HTML output window."
+else 
+  return "Closed "&amp;closedCount&amp;" HTML output windows."
+end if
+APPLESCRIPT</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Close All HTML Output Windows</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>E56BCE3A-98D4-4BA0-9441-083CCCAD03D8</string>
+</dict>
+</plist>

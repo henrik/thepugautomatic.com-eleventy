@@ -14,7 +14,7 @@ I updated the previous posts with the slightly improved icons. I also figured I 
 
 <!--more-->
 
-Photoshop file: <a href="https://henrik.nyh.se/uploads/leopard-toolbar-button.psd">leopard-toolbar-button.psd</a>.
+Photoshop file: <a href="/uploads/leopard-toolbar-button.psd">leopard-toolbar-button.psd</a>.
 
 Note that the text layer has an outer glow layer effect, to approximate the etched look. (I'm sure someone can improve upon this. Please do share.)
 
@@ -22,7 +22,7 @@ Edit that file, then Save For Web as PNG-24 with transparency.
 
 Open <code>/Developer/Applications/Utilities/Icon Composer.app</code>. Icon Composer comes with the Developer Tools on your Leopard disk. Install if you didn't already. The entire set of Developer Tools amounts to several gigabytes, but hopefully you can pick-and-choose if you don't want the rest.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/icon-composer-toolbar.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="/uploads/icon-composer-toolbar.png" alt="[Screenshot]" /></p>
 
 Drag your icon to the "32" (32 * 32 pixels) field. Select "Use for this size only" when prompted.
 

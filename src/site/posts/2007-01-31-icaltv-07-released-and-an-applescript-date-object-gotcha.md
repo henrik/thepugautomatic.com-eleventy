@@ -8,7 +8,7 @@ comments: true
 ---
 Squashed a bug in iCalTV and bumped the version number to 0.7.
 
-<a href="https://henrik.nyh.se/uploads/iCalTV0.7.zip">Download version 0.7 (276 KB).</a>
+<a href="/uploads/iCalTV0.7.zip">Download version 0.7 (276 KB).</a>
 
 The bug was an interesting example of the fact that computers do what you say, not what you mean.
 

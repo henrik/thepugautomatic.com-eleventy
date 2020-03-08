@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>4F45FDC0-62CA-4786-9134-8BC7C1F5606F</string>
+	<key>command</key>
+	<string>echo -n " "</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>~ </string>
+	<key>name</key>
+	<string>Prevent Em Space</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source</string>
+	<key>uuid</key>
+	<string>C4B083D7-D146-4DDC-8A84-BC69E49F4FF2</string>
+</dict>
+</plist>

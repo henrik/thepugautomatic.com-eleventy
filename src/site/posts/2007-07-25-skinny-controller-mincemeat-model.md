@@ -146,6 +146,6 @@ To make things more manageable still, TextMate can be made to highlight these bl
 ```
 and <a href="http://macromates.com/textmate/manual/themes">theme</a> <code>source.ruby meta.code-cat</code> to taste. Et voilà:
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/ar-categories_tm.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="/uploads/ar-categories_tm.png" alt="[Screenshot]" /></p>
 
 Adapting the grammar for other kinds of blocks should be pretty straightforward.

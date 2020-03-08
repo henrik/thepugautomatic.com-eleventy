@@ -6,7 +6,7 @@ tags:
 - Ruby on Rails
 comments: true
 ---
-<p class="center"><img src="https://henrik.nyh.se/uploads/flash-mail.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="/uploads/flash-mail.png" alt="[Screenshot]" /></p>
 
 In Ruby on Rails web apps, you can use <a href="http://am.rubyonrails.com/">ActionMailer</a> to send mail (and process incoming mail). This is useful for e.g. account confirmation and password recovery.
 
@@ -31,7 +31,7 @@ setting in <code>config/environments/development.rb</code> as mentioned above. I
 require "flash_mail"
 ```
 
-Add <a href="https://henrik.nyh.se/uploads/flash_mail.rb"><code>flash_mail.rb</code></a> to the <code>lib</code> directory:
+Add <a href="/uploads/flash_mail.rb"><code>flash_mail.rb</code></a> to the <code>lib</code> directory:
 
 ``` ruby
 # By Henrik Nyh <https://henrik.nyh.se> 2007-06-29

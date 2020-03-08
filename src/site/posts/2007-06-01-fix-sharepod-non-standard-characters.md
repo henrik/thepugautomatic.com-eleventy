@@ -21,7 +21,7 @@ I think "non-standard characters" is a rather inaccurate turn of phrase. Anyway,
 
 <!--more-->
 
-<a href="https://henrik.nyh.se/uploads/sharepod_fixer.rb">Download the script</a> and use it like <code>ruby sharepod_fixer.rb SharePod_iTunes_Import.xml</code>. It will create a file <code>SharePod_iTunes_Import_fixed.xml</code> that should work fine for those "non-standard characters".
+<a href="/uploads/sharepod_fixer.rb">Download the script</a> and use it like <code>ruby sharepod_fixer.rb SharePod_iTunes_Import.xml</code>. It will create a file <code>SharePod_iTunes_Import_fixed.xml</code> that should work fine for those "non-standard characters".
 
 I should mention I ran this script under OS X and then moved the output file to the Windows computer. Running the script should work as well under Windows, but I haven't actually tried it.
 

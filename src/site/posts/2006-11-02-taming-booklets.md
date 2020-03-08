@@ -11,4 +11,4 @@ Today, waiting for a bus, reading a bunch of papers stapled together in one corn
 
 I didn't have a hand to spare (no gloves), and so I came up with a quick and lovely hack: simply keep the papers together with a pen, using the clip. Worked a charm!
 
-<img src="https://henrik.nyh.se/uploads/bookletpen.jpg" alt="" class="centered bordered" />
+<img src="/uploads/bookletpen.jpg" alt="" class="centered bordered" />

@@ -12,7 +12,7 @@ This is useful if acts_as_solr powers a filtering interface: all entries should 
 
 <!--more-->
 
-Stick <code><a href="https://henrik.nyh.se/uploads/empty_query_finds_all.rb">empty_query_finds_all.rb</a></code> in <code>/lib</code> and <code>require "empty_query_finds_all"</code> in <code>config/environment.rb</code>.
+Stick <code><a href="/uploads/empty_query_finds_all.rb">empty_query_finds_all.rb</a></code> in <code>/lib</code> and <code>require "empty_query_finds_all"</code> in <code>config/environment.rb</code>.
 
 The code is simply this:
 

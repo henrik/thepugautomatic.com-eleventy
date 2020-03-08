@@ -9,7 +9,7 @@ comments: true
 ---
 I wrote another Greasemonkey script for Helgon.net: <a href="http://userscripts.org/scripts/show/5919">Helgon.net new visitor awareness</a>.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/gmhelgonvisitorawareness.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="/uploads/gmhelgonvisitorawareness.png" alt="[Screenshot]" /></p>
 
 <!--more-->
 

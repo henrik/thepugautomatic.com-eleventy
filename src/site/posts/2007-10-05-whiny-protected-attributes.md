@@ -19,7 +19,7 @@ This can sometimes cause confusion in development, when you accidentally protect
 
 Hence this small piece of code.
 
-Stick <a href="https://henrik.nyh.se/uploads/whiny_protected_attributes.rb">whiny_protected_attributes.rb</a>  (<a href="http://pastie.textmate.org/104522">highlighted on Pastie</a>) in the <code>lib</code> directory and then
+Stick <a href="/uploads/whiny_protected_attributes.rb">whiny_protected_attributes.rb</a>  (<a href="http://pastie.textmate.org/104522">highlighted on Pastie</a>) in the <code>lib</code> directory and then
 
 ``` ruby
 require 'whiny_protected_attributes'

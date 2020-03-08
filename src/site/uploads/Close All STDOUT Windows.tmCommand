@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>5A9D4FC6-6CBE-11D9-A21B-000D93589AF6</string>
+	<key>command</key>
+	<string># By Henrik Nyh &lt;http://henrik.nyh.se"&gt; 2007-06-26
+# Free to modify and redistribute with credit.
+
+# E.g. diff output windows
+
+osascript &lt;&lt;APPLESCRIPT
+set closedCount to 0
+tell application "TextMate"
+  repeat with i from (count windows) to 1 by -1 -- iterate backwards so indices don't shift on close
+    set w to window i
+    if (offset of "textmate stdin" in (name of w as string)) is 1 then
+      close w
+      set closedCount to closedCount + 1
+    end if
+  end repeat
+end tell
+
+if closedCount is 0
+  return "No STDOUT windows to close."
+else if closedCount is 1
+  return "Closed 1 STDOUT window."
+else 
+  return "Closed "&amp;closedCount&amp;" STDOUT windows."
+end if
+APPLESCRIPT</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Close All STDOUT Windows</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>8939546F-DB0D-4DBB-BC77-79E0865CB10F</string>
+</dict>
+</plist>

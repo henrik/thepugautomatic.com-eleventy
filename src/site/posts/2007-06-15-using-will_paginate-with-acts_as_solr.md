@@ -14,7 +14,7 @@ The solution is to add a <code>find_all_by_solr</code> method that wraps <a href
 
 <!--more-->
 
-Stick <a href="https://henrik.nyh.se/uploads/solr_pagination.rb">solr_pagination.rb</a> in <code>lib</code> in your Rails project.
+Stick <a href="/uploads/solr_pagination.rb">solr_pagination.rb</a> in <code>lib</code> in your Rails project.
 
 ``` ruby
 # By Henrik Nyh <https://henrik.nyh.se> 2007-06-18.

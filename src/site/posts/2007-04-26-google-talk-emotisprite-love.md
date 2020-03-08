@@ -9,7 +9,7 @@ I love the emoticons in the Gmail web-based IM client. (Are they in the GTalk de
 
 I'm usually not a fan of graphical emoticons, but these are done right.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/google_emoticons.gif" class="bordered" alt="" /></p>
+<p class="center"><img src="/uploads/google_emoticons.gif" class="bordered" alt="" /></p>
 
 They first appear exactly as typed and then rotate upright, which looks cool and is, I imagine, very helpful to any user that doesn't know about the smiley convention.
 

@@ -41,7 +41,7 @@ After joining the output together into a string, two regular expression substitu
 
 <h4>The code</h4>
 
-The code (<a href="https://henrik.nyh.se/uploads/numbers.rb">download</a>):
+The code (<a href="/uploads/numbers.rb">download</a>):
 
 ``` ruby
 #! /usr/bin/env ruby

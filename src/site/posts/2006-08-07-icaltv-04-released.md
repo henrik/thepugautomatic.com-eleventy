@@ -6,7 +6,7 @@ tags:
 - OS X
 comments: true
 ---
-<img src="https://henrik.nyh.se/uploads/iCalTV.png" alt="[iCalTV icon]" class="left" />
+<img src="/uploads/iCalTV.png" alt="[iCalTV icon]" class="left" />
 
 I made the installation process a whole lot easier, made retrieving schedules and re-generating the iCal feed wholly automatic, and squashed some bugs. There is also a pretty icon.
 

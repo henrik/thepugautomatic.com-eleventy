@@ -12,7 +12,7 @@ I've long been wanting a decent wishlist site, and at one point I realized I cou
 
 I call it <a href="http://del.ishli.st">del.ishli.st</a>.
 
-<p class="center"><a href="http://del.ishli.st/malesca"><img src="https://henrik.nyh.se/uploads/delishlist.png" class="bordered"></a></p>
+<p class="center"><a href="http://del.ishli.st/malesca"><img src="/uploads/delishlist.png" class="bordered"></a></p>
 
 <!--more-->
 

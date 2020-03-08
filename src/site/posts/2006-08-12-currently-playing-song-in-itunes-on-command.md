@@ -6,7 +6,7 @@ tags:
 - AppleScript
 comments: true
 ---
-<img src="https://henrik.nyh.se/uploads/currentlyplaying.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
+<img src="/uploads/currentlyplaying.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
 
 Though <a href="http://www.macupdate.com/info.php/id/11273">iScrobbler</a> provides me with <a href="http://www.growl.info">Growl</a> notifications of track details whenever iTunes starts playing a song, I wanted a way to get those details at any time, on my command.
 
@@ -20,7 +20,7 @@ I ended up writing an AppleScript that collects song details from iTunes, includ
 
 I choose to trigger the script with Quicksilver, similar to in <a href="/2006/07/batch-open-urls-from-clipboard/">a previous post</a>.
 
-The script (<a href="https://henrik.nyh.se/uploads/Currently%20playing.scpt">download</a>):
+The script (<a href="/uploads/Currently%20playing.scpt">download</a>):
 
 ``` applescript
 -- The Album art code is from http://www.macosxhints.com/article.php?story=20060406080910401

@@ -20,12 +20,12 @@ After quite some googling and a few dead ends, I think <a href="http://www.haupp
 
 One should simply change the channel settings into "Preset mode", rather than "Channel mode". You'll find this option under <code>Menu &gt; Configure &gt; Channels</code>.
 
-<img src="https://henrik.nyh.se/uploads/wintv2000-preset_mode.png" alt="[WinTV2000 screenshot]" />
+<img src="/uploads/wintv2000-preset_mode.png" alt="[WinTV2000 screenshot]" />
 
 This enables the "Reorder" button in the <code>Menu &gt; Suite Manager</code> window.
 
-<img src="https://henrik.nyh.se/uploads/wintv2000-reorder.png" alt="['Reorder' button screenshot]" />
+<img src="/uploads/wintv2000-reorder.png" alt="['Reorder' button screenshot]" />
 
 Clicking that will replace it with arrows that can be used to move the channels around.
 
-<img src="https://henrik.nyh.se/uploads/wintv2000-reordered.png" alt="[Arrow buttons screenshot]" />
+<img src="/uploads/wintv2000-reordered.png" alt="[Arrow buttons screenshot]" />

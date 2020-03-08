@@ -1,0 +1,11 @@
+--- wp-includes/template-functions-post-old.php	2006-07-16 09:44:50.000000000 +0200
++++ wp-includes/template-functions-post.php	2006-10-25 20:46:47.000000000 +0200
+@@ -87,7 +87,7 @@
+ 	$output .= $teaser;
+ 	if ( count($content) > 1 ) {
+ 		if ( $more )
+-			$output .= '<a id="more-'.$id.'"></a>'.$content[1];
++			$output .= '<div id="more-'.$id.'"></div>'.$content[1];
+ 		else
+ 			$output .= ' <a href="'. get_permalink() . "#more-$id\">$more_link_text</a>";
+ 	}

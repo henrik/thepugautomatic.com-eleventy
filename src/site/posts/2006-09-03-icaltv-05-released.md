@@ -6,7 +6,7 @@ tags:
 - OS X
 comments: true
 ---
-<img src="https://henrik.nyh.se/uploads/icaltv0.5growl.png" alt="[Screenshot]" class="right" />
+<img src="/uploads/icaltv0.5growl.png" alt="[Screenshot]" class="right" />
 
 Finally, iCalTV 0.5 is finished. A lot of code has been rewritten, and some great stuff added.
 

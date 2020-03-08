@@ -30,7 +30,7 @@ as described in <a href="http://desp.night.pl/terminal.html">desp's guide</a>. Y
 
 Unchecking the "Set LANG environment variable on startup" checkbox in the Terminal settings, under the "Advanced" tab, fixes it though. I've tested this in both bash and zsh.
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/leopard-terminal-langcheck.png" class="bordered" alt="" /></p>
+<p class="center"><img src="/uploads/leopard-terminal-langcheck.png" class="bordered" alt="" /></p>
 
 When the box is checked, the <code>locale</code> command returns (among other things)
 

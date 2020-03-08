@@ -32,7 +32,7 @@ end
 ```
 {% endraw %}
 
-This is the extension itself (<a href="https://henrik.nyh.se/uploads/hpricot_text_transform.rb">download</a>), including some tests:
+This is the extension itself (<a href="/uploads/hpricot_text_transform.rb">download</a>), including some tests:
 
 ``` ruby
 # By Henrik Nyh <https://henrik.nyh.se> 2007-03-28.

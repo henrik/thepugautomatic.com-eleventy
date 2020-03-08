@@ -22,7 +22,7 @@ So I made something similar for incoming URLs (in messages).
 
 I wrote an AppleScript (wrapping a Ruby script, wrapping a detached shell, wrapping AppleScript :&gt;) that is triggered whenever I receive a message from my girlfriend. In the user info dialog for her meta-contact (ICQ, Jabber and MSN all in one), under the "Events" tab, I added this script to be run on "Message received".
 
-<p class="center"><img src="https://henrik.nyh.se/uploads/adium-incoming_urls_info.png" alt="" /></p>
+<p class="center"><img src="/uploads/adium-incoming_urls_info.png" alt="" /></p>
 
 So the script is triggered on every incoming message. For each contact specified within the script (i.e. the contact on ICQ, Jabber and MSN), it finds the message log for today, if there is one.
 
@@ -36,7 +36,7 @@ In the script, you can define the contacts you want to monitor. I've only specif
 
 Note that <code>open "http://www.theurl.com"</code> is run in the shell. There is a theoretical possibility of someone injecting commands as parts of URLs, to get your shell to execute them. Quotes are escaped, though, and only would-be URLs processed, so there should be little or no risk if you trust the friend in question.
 
-The script (<a href="https://henrik.nyh.se/uploads/Adium%20-%20open%20incoming%20URLs.scpt">download</a>):
+The script (<a href="/uploads/Adium%20-%20open%20incoming%20URLs.scpt">download</a>):
 
 ``` applescript
 tell app "Adium"
