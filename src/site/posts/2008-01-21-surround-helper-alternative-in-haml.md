@@ -36,4 +36,7 @@ sprintf("(%s)", "foo")
 ```
 and will simply return
 
+
     (foo)
+
+.

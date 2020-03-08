@@ -43,7 +43,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	background: #1d1f21;
 }
 
@@ -212,6 +212,17 @@ a.naked-link:visited {
   @apply border;
   @apply border-gray-500;
   @apply p-1;
+}
+
+pre code {
+  @apply text-sm;
+}
+
+pre:not([class*="language-"]) {
+  padding: 1em;
+  margin: 1.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
 }
 
 /* purgecss start ignore */
