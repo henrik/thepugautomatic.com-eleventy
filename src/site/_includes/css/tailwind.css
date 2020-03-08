@@ -42,8 +42,7 @@ pre[class*="language-"] {
 	border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
-pre {
+:not(pre) > code[class*="language-"] {
 	background: #1d1f21;
 }
 
@@ -237,6 +236,9 @@ pre:not([class*="language-"]) {
   margin: 1.5em 0;
   overflow: auto;
   border-radius: 0.3em;
+
+  background: #1d1f21;
+  color: #fff;
 }
 
 /* purgecss start ignore */
