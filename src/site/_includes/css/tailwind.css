@@ -37,7 +37,7 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
+	margin: 1.5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 }
@@ -169,7 +169,6 @@ p+p {
 h1.heading {
   @apply text-3xl;
   @apply text-gray-900;
-  @apply mb-4;
   @apply font-semibold;
 }
 @screen md {
@@ -208,38 +207,11 @@ a.naked-link:visited {
   @apply pl-2;
 }
 
-code {
+:not(pre) > code {
   @apply rounded;
-}
-
-/*
-  Navigation links
-*/
-.nav-tab {
-  @apply inline-block;
-  @apply text-white;
-  @apply font-semibold;
-  @apply px-4;
-  @apply py-2;
-  @apply border-b-0;
-  @apply rounded;
-}
-.nav-tab:hover {
-  @apply bg-white;
-  @apply text-teal-500;
-  @apply border-b-0;
-}
-
-
-.filter-bw-800 {
-  filter: grayscale(0.8);
-}
-
-.mb--2 {
-  margin-bottom: -0.5rem;
-}
-.mb--4 {
-  margin-bottom: -1rem;
+  @apply border;
+  @apply border-gray-500;
+  @apply p-1;
 }
 
 /* purgecss start ignore */

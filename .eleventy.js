@@ -45,9 +45,6 @@ module.exports = function(eleventyConfig) {
     return "Tagged " + properTags.map(tag => `<a href="/tag/${slug(tag)}">${tag}</a>`).join(", ") + ".";
   });
 
-  // Grab excerpts and sections from a file
-  eleventyConfig.addFilter("section", require("./src/utils/section.js") );
-
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
 
