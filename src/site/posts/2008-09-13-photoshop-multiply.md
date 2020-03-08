@@ -27,7 +27,7 @@ Put some scanned or drawn-digital line art in the top layer and set blend mode m
 
 Then paint on a layer under it. The colors will show right through the white parts of the drawing, but the lines will never be painted over.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/multiply-pug.png" alt="[Example]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/multiply-pug.png" alt="[Example]" /></p>
 
 Note that this only prevents you from painting <em>on top</em> of the lines; nothing prevents you from painting <em>outside</em> them. In the example image above, I used the "Quick Selection" tool (with the "Contiguous" option checked) on the "Pug" layer to select everything outside the lines. I can then change to the "Color" layer and press "Delete" to remove the excess color.
 
@@ -45,7 +45,7 @@ I used the polygonal lasso tool to outline (select) the areas to color, then I j
 
 Once you have colors in your lower layer, you can use <code>Image &gt; Adjustments &gt; Hue/Saturation…</code> to change the color around.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/multiply-cabinets.png" alt="[Example]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/multiply-cabinets.png" alt="[Example]" /></p>
 
 What's nice about this, as opposed to just painting on top of the photo, is that the colors aren't flat. It will show through lighter in lighter areas of the image, and darker in shaded areas.
 

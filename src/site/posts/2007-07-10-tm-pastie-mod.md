@@ -11,7 +11,7 @@ The "Paste Line/Selection Online" (a.k.a. "<a href="http://pastie.caboo.se/">Pas
 
 The command opens a very full-featured dialog:
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/tm_pastie-standard.png" alt="[The standard dialog]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/tm_pastie-standard.png" alt="[The standard dialog]" /></p>
 
 You can have the pastie URL sent to <a href="http://colloquy.info/">Colloquy</a> (IRC) or <a href="http://adiumx.com/">Adium</a> (IM). I never use this. I just want it to go into my clipboard. From there, I can paste it into an IRC or IM message. Selecting the right conversation in the dialog is more work, and only the URL is sent: you have to set things up before or quickly explain yourself.
 
@@ -25,7 +25,7 @@ Oh, and the only thing I really want to choose is the privacy level: if the past
 
 I made a new front-end for the command that does what I want and nothing more:
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/tm_pastie-mod.png" alt="[Modified dialog]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/tm_pastie-mod.png" alt="[Modified dialog]" /></p>
 
 You just press <code>&#x21A9;</code> to paste it as private, hit the space bar to paste it as public, or <code>&#x238B;</code> to cancel. The URL is copied to clipboard.
 
@@ -33,9 +33,9 @@ The rationale for having "Private" be the default button is that it's the less "
 
 Oh, and the command <a href="http://growl.info/">Growl</a>s when done:
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/tm_pastie-growl.png" alt="[Growl dialog]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/tm_pastie-growl.png" alt="[Growl dialog]" /></p>
 
-<a href="http://henrik.nyh.se/uploads/pastie_mod.tmCommand">Get it here</a>. Note that it replaces the default Pastie command (same guid).
+<a href="https://henrik.nyh.se/uploads/pastie_mod.tmCommand">Get it here</a>. Note that it replaces the default Pastie command (same guid).
 
 You need <a href="http://growl.info/">Growl</a> with <a href="http://growl.info/documentation/growlnotify.php">growlnotify</a>.
 
@@ -45,7 +45,7 @@ You can easily configure the script to not Growl or copy to clipboard, and to <e
 
 <div class="updated">
 <h5>Update 2007-07-11</h5>
-I realized I'd prefer it to pastie <em>document</em> or selection, not <em>line</em> or selection. If you agree, get <a href="http://henrik.nyh.se/uploads/pastie_mod2.tmCommand">this version of the command</a> instead. So if no text is selected, it will pastie the entire document contents instead of the current line.
+I realized I'd prefer it to pastie <em>document</em> or selection, not <em>line</em> or selection. If you agree, get <a href="https://henrik.nyh.se/uploads/pastie_mod2.tmCommand">this version of the command</a> instead. So if no text is selected, it will pastie the entire document contents instead of the current line.
 
 I also updated both the old and the new versions of the command to ensure they finish copying to clipboard before growling; before this update, it would actually growl just before copying.
 </div>

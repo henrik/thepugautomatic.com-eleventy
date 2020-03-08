@@ -37,5 +37,5 @@ This will obviously not work if full size images are not available.
 
 <div class="updated">
 <h5>Update 2007-03-10</h5>
-<p>The above no longer works, but try <a href="http://henrik.nyh.se/2007/03/improved-bookmark-to-batch-link-flickr-images/">this updated code</a>.</p>
+<p>The above no longer works, but try <a href="https://henrik.nyh.se/2007/03/improved-bookmark-to-batch-link-flickr-images/">this updated code</a>.</p>
 </div>

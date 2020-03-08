@@ -41,12 +41,12 @@ After joining the output together into a string, two regular expression substitu
 
 <h4>The code</h4>
 
-The code (<a href="http://henrik.nyh.se/uploads/numbers.rb">download</a>):
+The code (<a href="https://henrik.nyh.se/uploads/numbers.rb">download</a>):
 
 ``` ruby
 #! /usr/bin/env ruby
 
-# Henrik Nyh <http://henrik.nyh.se> 2006-09-27
+# Henrik Nyh <https://henrik.nyh.se> 2006-09-27
 # Free to modify and redistribute non-commercially with due credit.
 
 # Turns integer strings into Swedish words. Handles units up to and including "centiljard", per <http://sv.wikipedia.org/wiki/R%C3%A4kneord#Lista_.C3.B6ver_r.C3.A4kneord>.

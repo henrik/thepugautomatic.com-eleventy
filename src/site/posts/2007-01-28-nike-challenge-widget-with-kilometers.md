@@ -8,7 +8,7 @@ comments: true
 ---
 The <a href="http://www.apple.com/downloads/dashboard/status/nikechallengewidget.html">Nike+ Challenge widget</a> only displays miles, even if your preference is kilometers. I modified the widget to display kilometers instead. My version only displays kilometers, never miles.
 
-<a href="http://henrik.nyh.se/uploads/MyChallenges.wdgt.zip">Download here</a>.
+<a href="https://henrik.nyh.se/uploads/MyChallenges.wdgt.zip">Download here</a>.
 
 <div class="updated">
 <h5>Updated 2007-05-04</h5>

@@ -13,7 +13,7 @@ I hacked together a quick and dirty (hence no proper XML traversal) Ruby script 
 
 <!--more-->
 
-Code (<a href="http://henrik.nyh.se/uploads/adiumlog2txt.rb">download</a>):
+Code (<a href="https://henrik.nyh.se/uploads/adiumlog2txt.rb">download</a>):
 
 ``` ruby
 require "CGI"

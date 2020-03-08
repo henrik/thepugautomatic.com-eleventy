@@ -13,7 +13,7 @@ I sometimes forgot what the calculations were exactly, since I'd just learned th
 
 Sometime not too long ago I suddenly had an insight on the subject; I haven't forgotten them since. The insight is this:
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/circle-maths.png" alt="[Illustration]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/circle-maths.png" alt="[Illustration]" /></p>
 
 <!--more-->
 

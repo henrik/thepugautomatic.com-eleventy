@@ -16,9 +16,9 @@ When you create a new IRC server connection, Colloquy will automatically put you
 
 The big privacy issue is that this happens "below the fold" &ndash; you don't see that your name is there unless you expand the detailed settings.
 
-<p style="text-align:center"><img src="http://henrik.nyh.se/uploads/colloquyprivacy1.png" alt="[Colloquy screenshot]" /></p>
+<p style="text-align:center"><img src="https://henrik.nyh.se/uploads/colloquyprivacy1.png" alt="[Colloquy screenshot]" /></p>
 
-<p style="text-align:center"><img src="http://henrik.nyh.se/uploads/colloquyprivacy2.png" alt="[Colloquy screenshot]" /></p>
+<p style="text-align:center"><img src="https://henrik.nyh.se/uploads/colloquyprivacy2.png" alt="[Colloquy screenshot]" /></p>
 
 Many people want some level of anonymity on IRC. IRC clients should either not divulge personal information such as the real name by default, or make it very clear that they are doing this, so that you can change or remove it.
 

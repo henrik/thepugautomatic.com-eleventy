@@ -12,7 +12,7 @@ An <a href="http://en.wikipedia.org/wiki/Bouncer_(networking)">IRC bouncer</a> i
 
 This offers various benefits and possibilities; the major one for me is that I appear constantly connected and will see a scrollback of missed messages when I reconnect my client. This means no more connecting in the middle of something and not having context. With iPhone IRC clients, it's especially useful, since third-party iPhone applications don't maintain their connection when you switch away from them. I can also share a single apparent IRC connection between my home computer, my work computer and my phone.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/znc-1.png" class="bordered" alt="[Screenshot" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/znc-1.png" class="bordered" alt="[Screenshot" /></p>
 
 I wanted a bouncer that I could run off my OS X home server. I looked at a few, but they were all severely underdocumented and/or didn't work as expected. I eventually found one I liked, on the <a href="http://twitter.com/colloquyapp/statuses/1132976532">advice of @colloquyapp on Twitter</a>: <a href="http://en.znc.in/">ZNC</a>.
 

@@ -35,7 +35,7 @@ Command(s):
 # will probably only cause problems if you indent with
 # mixed tabs and spaces.
 #
-# By Henrik Nyh <http://henrik.nyh.se>.
+# By Henrik Nyh <https://henrik.nyh.se>.
 # Free to modify, though please credit me.
 
 lines = STDIN.readlines()

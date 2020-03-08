@@ -16,7 +16,7 @@ Ideally, Bloglines would solve this themselves. I reported the problem months ag
 
 I'm running WordPress 2.0. I've no idea if the problem or this solution apply to other versions. I did notice <a href="http://www.livejournal.com/">LiveJournal</a> feeds get the same treatment, though…
 
-The file to change is <code>wp-includes/template-functions-post.php</code>, around row 90. Unidiff (<a href="http://henrik.nyh.se/uploads/bloglineswordpress.diff">download</a>):
+The file to change is <code>wp-includes/template-functions-post.php</code>, around row 90. Unidiff (<a href="https://henrik.nyh.se/uploads/bloglineswordpress.diff">download</a>):
 
 ``` diff
 --- wp-includes/template-functions-post-old.php	2006-07-16 09:44:50.000000000 +0200

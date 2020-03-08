@@ -34,11 +34,11 @@ So If the iPhoto keywords available are "Henrik, Johan, Johanna, Linnea, Linnea 
 
 The script doesn't handle non-ASCII well, because text encoding was too much pain in this case, and because I don't need it myself.
 
-Download <a href="http://henrik.nyh.se/uploads/iPhoto%20tag.scpt">iPhoto tag.scpt</a>. Code:
+Download <a href="https://henrik.nyh.se/uploads/iPhoto%20tag.scpt">iPhoto tag.scpt</a>. Code:
 
 ``` applescript
 -- iPhoto quick keyword tagging
--- by Henrik Nyh <http://henrik.nyh.se> 2006-08-14
+-- by Henrik Nyh <https://henrik.nyh.se> 2006-08-14
 -- Free to modify, but please credit.
 --
 -- KNOWN ISSUES:

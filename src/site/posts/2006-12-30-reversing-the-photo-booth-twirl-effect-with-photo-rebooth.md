@@ -17,11 +17,11 @@ Having toyed a little with Quartz Composer before, and knowing the Photo Booth e
 
 Alas, I was not able to reverse any other effect very successfully. Possibly the twirl is the only (almost) lossless and easily reversible effect. Please let me know if you manage to reverse any of the others.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/Photo%20Rebooth.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/Photo%20Rebooth.png" alt="" /></p>
 
-Since I have been wanting to try Cocoa programming for some time, I wrapped my untwirler composition in an application &ndash; Photo Rebooth (<a href="http://henrik.nyh.se/uploads/Photo%20Rebooth.zip">download</a>, <a href="http://henrik.nyh.se/uploads/Photo%20Rebooth%20source.zip">source</a>).
+Since I have been wanting to try Cocoa programming for some time, I wrapped my untwirler composition in an application &ndash; Photo Rebooth (<a href="https://henrik.nyh.se/uploads/Photo%20Rebooth.zip">download</a>, <a href="https://henrik.nyh.se/uploads/Photo%20Rebooth%20source.zip">source</a>).
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/photo_rebooth.jpg" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/photo_rebooth.jpg" alt="" /></p>
 
 Drag a twirled JPG to the application in the Finder or in the dock, or to the image display area, or open it through the menu or the prominent button. The untwirled image will be displayed. There is currently no way to export the untwirled image (other than by screenshot).
 

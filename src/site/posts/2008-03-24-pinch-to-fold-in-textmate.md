@@ -7,7 +7,7 @@ tags:
 - MacBook Air
 comments: true
 ---
-I <a href="http://henrik.nyh.se/tumble/post/28815535">tumbled</a> this a good week ago, but I suppose I should blog it here as well, with the larger readership and comment functionality.
+I <a href="https://henrik.nyh.se/tumble/post/28815535">tumbled</a> this a good week ago, but I suppose I should blog it here as well, with the larger readership and comment functionality.
 
 With a multi-touch Mac (MacBook Air or newer MacBook Pro), you can use <a href="http://wcrawford.org/2008/02/28/everytime-i-think-about-you-i-touch-my-cell/">MultiClutch</a> to configure your own multi-touch callbacks.
 

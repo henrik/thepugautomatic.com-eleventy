@@ -8,7 +8,7 @@ comments: true
 ---
 Squashed a bug in iCalTV and bumped the version number to 0.7.
 
-<a href="http://henrik.nyh.se/uploads/iCalTV0.7.zip">Download version 0.7 (276 KB).</a>
+<a href="https://henrik.nyh.se/uploads/iCalTV0.7.zip">Download version 0.7 (276 KB).</a>
 
 The bug was an interesting example of the fact that computers do what you say, not what you mean.
 
@@ -47,7 +47,7 @@ set day of myDate to 1
 
 <h4>Dates gone bad</h4>
 
-I noticed that the <a href="http://henrik.nyh.se/2006/07/adapting-the-ical-events-widget-for-icaltv/">iCal Events Widget</a> wasn't displaying any reminders for the next couple of days, even though I knew there should be a few. Tracing through my code, I eventually found that the reminders <em>were</em> being set, but they were off by one. Month. My February 1 reminders were scheduled for March 1.
+I noticed that the <a href="https://henrik.nyh.se/2006/07/adapting-the-ical-events-widget-for-icaltv/">iCal Events Widget</a> wasn't displaying any reminders for the next couple of days, even though I knew there should be a few. Tracing through my code, I eventually found that the reminders <em>were</em> being set, but they were off by one. Month. My February 1 reminders were scheduled for March 1.
 
 I played around in Script Editor. Setting the date properties like that would indeed create a March date. I ruled out zero-indexing (month <code>0</code> corresponding to January, <code>1</code> to February and so on) by testing. Setting the month to <code>1</code> would create a January date.
 

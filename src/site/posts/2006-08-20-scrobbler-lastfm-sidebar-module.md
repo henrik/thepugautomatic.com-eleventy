@@ -18,9 +18,9 @@ Though there's nothing non-obvious about the code, it still might save someone e
 
 The module displays the Last.fm favicon to the right of the header, similar to the RSS icon in some other modules. It achieves this by leveraging the <code>feedlink</code> CSS class. If you're anal about semantic HTML, you might want to rework this.
 
-Watch it in action (at the time of writing, at least) at <a href="http://henrik.nyh.se/about/">my "About" page</a>.
+Watch it in action (at the time of writing, at least) at <a href="https://henrik.nyh.se/about/">my "About" page</a>.
 
-This goes into a file like <code>wp-content/themes/k2/modules/lastfm.php</code> (<a href="http://henrik.nyh.se/uploads/lastfm.phps">download</a>):
+This goes into a file like <code>wp-content/themes/k2/modules/lastfm.php</code> (<a href="https://henrik.nyh.se/uploads/lastfm.phps">download</a>):
 
 ``` php
 <?php

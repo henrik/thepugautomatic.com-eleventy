@@ -7,7 +7,7 @@ tags:
 - iPhoto
 comments: true
 ---
-<p class="center"><img src="http://henrik.nyh.se/uploads/iphoto-libraries.png" alt="" class="bordered" /></a></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/iphoto-libraries.png" alt="" class="bordered" /></a></p>
 
 <a href="http://johannaost.com">My girlfriend</a> is now on OS X.
 

@@ -6,7 +6,7 @@ comments: true
 
 ![Screenshot](/images/content/vimux-spork.png)
 
-My development environment these days is [Vim](http://henrik.nyh.se/2011/01/textmate-to-vim-with-training-wheels) inside [tmux](http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/).
+My development environment these days is [Vim](https://henrik.nyh.se/2011/01/textmate-to-vim-with-training-wheels) inside [tmux](http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/).
 
 Among other benefits (which I may write about later), this lets me split my terminal so I can run tests right next to my editor.
 

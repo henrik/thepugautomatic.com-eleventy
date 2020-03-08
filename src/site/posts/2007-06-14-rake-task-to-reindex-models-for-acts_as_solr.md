@@ -17,7 +17,7 @@ Better still would be to have this wrapped in a Rake task, so you can easily (re
 
 <!--more-->
 
-This is <a href="http://henrik.nyh.se/uploads/solr_additions.rake">solr_additions.rake</a>. Stick it in lib/tasks inside your Rails project.
+This is <a href="https://henrik.nyh.se/uploads/solr_additions.rake">solr_additions.rake</a>. Stick it in lib/tasks inside your Rails project.
 
 ``` ruby
 namespace :solr do

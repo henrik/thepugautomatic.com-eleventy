@@ -14,9 +14,9 @@ comments: true
 
 It's just ten characters to write in a terminal, but I still wanted a "cap deploy" command in TextMate, so I don't have to switch between apps. I was a bit surprised to find no one had made and shared such a command already, but I wrote one myself.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/capmate-deploy.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/capmate-deploy.png" alt="" /></p>
 
-The command can be downloaded as <a href="http://henrik.nyh.se/uploads/cap%20deploy.tmCommand">cap deploy.tmCommand</a>. Right-click and save, then double-click the downloaded file. It should slip into the Rails bundle.
+The command can be downloaded as <a href="https://henrik.nyh.se/uploads/cap%20deploy.tmCommand">cap deploy.tmCommand</a>. Right-click and save, then double-click the downloaded file. It should slip into the Rails bundle.
 
 After having written this command, I think I understand why no one had before. Assuming you want incremental output as the deployment progresses, things get a bit tricky.
 
@@ -25,7 +25,7 @@ After having written this command, I think I understand why no one had before. A
 The code (with save: nothing, input: none, output: show as HTML, no scope selector) is
 
 ``` bash
-# By Henrik Nyh <http://henrik.nyh.se/> 2007-06-08
+# By Henrik Nyh <https://henrik.nyh.se/> 2007-06-08
 # Free to modify and redistribute with credit.
 #
 # If you get errors, make sure to set your PATH in ~/.bash_profile per

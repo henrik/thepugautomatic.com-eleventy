@@ -7,13 +7,13 @@ tags:
 - Bookmarklets
 comments: true
 ---
-A couple of months ago, I wrote <a href="http://henrik.nyh.se/2006/09/bookmarklet-to-blog-all-images-from-a-flickr-page/">a bookmarklet to blog all images from a Flickr page</a>. The idea is that you can go to pretty much any Flickr page &ndash; perhaps the images you uploaded today &ndash; and get the code to post all of them in a blog or forum without having to manually copy that information from each image in turn.
+A couple of months ago, I wrote <a href="https://henrik.nyh.se/2006/09/bookmarklet-to-blog-all-images-from-a-flickr-page/">a bookmarklet to blog all images from a Flickr page</a>. The idea is that you can go to pretty much any Flickr page &ndash; perhaps the images you uploaded today &ndash; and get the code to post all of them in a blog or forum without having to manually copy that information from each image in turn.
 
 Flickr have since changed their image naming scheme so that the URLs of full-size images are not predictable (in any obvious way) from any property of smaller images.
 
 I've now rewritten it into a pretty big bookmarklet (4 912 bytes when URL encoded &ndash; does this make it a regular bookmark? A supermarklet?) that uses the Flickr <a href="http://bob.pythonmac.org/archives/2005/12/05/remote-json-jsonp/">JSONP</a> <a href="http://www.flickr.com/services/api/">API</a> to look up the names of full-size images.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/bookmarklet-fbat.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/bookmarklet-fbat.png" alt="" /></p>
 
 Output can be provided as linked HTML images, linked HTML images within a LiveJournal LJ-cut, or forum <a href="http://en.wikipedia.org/wiki/BBCode">BBCode</a>. Unlike that of the old bookmarklet, the output is presented in a pretty overlay that can be discarded for further browsing.
 

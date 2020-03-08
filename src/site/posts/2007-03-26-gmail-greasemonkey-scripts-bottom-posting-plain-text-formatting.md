@@ -25,6 +25,6 @@ Thunderbird and some other clients support some <a href="http://kb.mozillazine.o
 
 With <a href="http://userscripts.org/scripts/show/8178">Gmail plain text formatting</a>, Gmail does this too:
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/gm-gmail-formatascii.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/gm-gmail-formatascii.png" alt="[Screenshot]" /></p>
 
 Userscripting Gmail is difficult, what with it being <a href="http://www.ok-cancel.com/comic/105.html">AJAXED TO THE MAX</a>, but it's a lot of fun for the same reason.

@@ -6,21 +6,21 @@ tags:
 - AppleScript
 comments: true
 ---
-<img src="http://henrik.nyh.se/uploads/currentlyplaying.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
+<img src="https://henrik.nyh.se/uploads/currentlyplaying.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
 
 Though <a href="http://www.macupdate.com/info.php/id/11273">iScrobbler</a> provides me with <a href="http://www.growl.info">Growl</a> notifications of track details whenever iTunes starts playing a song, I wanted a way to get those details at any time, on my command.
 
 <!--more-->
 
-<p class="updated"><a href="http://henrik.nyh.se/2006/08/re-currently-playing-song-in-itunes-on-command/">There is an updated version of this script.</a></p>
+<p class="updated"><a href="https://henrik.nyh.se/2006/08/re-currently-playing-song-in-itunes-on-command/">There is an updated version of this script.</a></p>
 
 I don't want to have to switch focus to iTunes just to find out what the current song is, if I forgot to take note of the details as the song started playing.
 
 I ended up writing an AppleScript that collects song details from iTunes, including any album art, and then passes those details to a Growl notification.
 
-I choose to trigger the script with Quicksilver, similar to in <a href="http://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">a previous post</a>.
+I choose to trigger the script with Quicksilver, similar to in <a href="https://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">a previous post</a>.
 
-The script (<a href="http://henrik.nyh.se/uploads/Currently%20playing.scpt">download</a>):
+The script (<a href="https://henrik.nyh.se/uploads/Currently%20playing.scpt">download</a>):
 
 ``` applescript
 -- The Album art code is from http://www.macosxhints.com/article.php?story=20060406080910401

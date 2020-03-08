@@ -6,7 +6,7 @@ tags:
 - jQuery
 comments: true
 ---
-I previously made a <a href="http://henrik.nyh.se/2008/01/rails-truncate-html-helper">truncate helper for Rails</a> that handles HTML gracefully: doesn't split inside HTML entities, doesn't orphan end-tags and so on.
+I previously made a <a href="https://henrik.nyh.se/2008/01/rails-truncate-html-helper">truncate helper for Rails</a> that handles HTML gracefully: doesn't split inside HTML entities, doesn't orphan end-tags and so on.
 
 Truncating like this on the server-side is great in contexts where you don't want to show the full text as well, such as in an index of items.
 
@@ -18,6 +18,6 @@ I found myself wanting such a piece of JavaScript, but I couldn't find one that 
 
 So I rolled my own truncator, inspired by my Rails helper. It's a <a href="http://jquery.com/">jQuery</a> plugin.
 
-I'm a bit short on time, so I'll just hook you up with <a href="http://henrik.nyh.se/examples/truncator">the jQuery HTML Truncator example page</a>. That page includes <a href="http://henrik.nyh.se/examples/truncator/jquery.truncator.js">the plugin itself</a>.
+I'm a bit short on time, so I'll just hook you up with <a href="https://henrik.nyh.se/examples/truncator">the jQuery HTML Truncator example page</a>. That page includes <a href="https://henrik.nyh.se/examples/truncator/jquery.truncator.js">the plugin itself</a>.
 
 Enjoy, and please report bugs/improvements. Some parts could definitely do with prettying up.

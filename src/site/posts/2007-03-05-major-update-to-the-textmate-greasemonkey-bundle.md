@@ -10,20 +10,20 @@ comments: true
 ---
 I've made quite a few additions/changes to the Greasemonkey bundle for <a href="http://macromates.com/">TextMate</a>.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/gmbundle-2.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/gmbundle-2.png" alt="" /></p>
 
 The most exciting addition is probably the ability to upload scripts straight into <a href="http://userscripts.org/">Userscripts.org</a>.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/gmbundle-2b.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/gmbundle-2b.png" alt="" /></p>
 
 <!--more-->
 
-Download: <a href="http://henrik.nyh.se/uploads/Greasemonkey.tmbundle.zip">Greasemonkey.tmbundle.zip</a> (96 KB)
+Download: <a href="https://henrik.nyh.se/uploads/Greasemonkey.tmbundle.zip">Greasemonkey.tmbundle.zip</a> (96 KB)
 
 <div class="updated">
 <h5>Update 2007-03-20</h5>
 
-<p><a href="http://henrik.nyh.se/2007/03/textmate-greasemonkey-bundle-in-official-repository/">This bundle is now in the official repository</a>.</p>
+<p><a href="https://henrik.nyh.se/2007/03/textmate-greasemonkey-bundle-in-official-repository/">This bundle is now in the official repository</a>.</p>
 
 </div>
 
@@ -197,6 +197,6 @@ I'll paste the bundle documentation (available through <code>Help</code> in the 
 
 <p>The <a href='#documentation_for_word_selection'>Documentation for Word / Selection</a> command is originally by <a href="http://subtlegradient.com/">Thomas Aylott</a>, I think.</p>
 
-<p>Improved by and currently maintained by <a href="http://henrik.nyh.se/">Henrik Nyh</a> who added a bit of everything. </p>
+<p>Improved by and currently maintained by <a href="https://henrik.nyh.se/">Henrik Nyh</a> who added a bit of everything. </p>
 
 <p>Any part of the bundle is free to modify and redistribute with due credit unless otherwise noted.</p>

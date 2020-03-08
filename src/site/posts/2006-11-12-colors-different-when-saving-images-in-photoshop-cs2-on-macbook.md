@@ -17,7 +17,7 @@ I finally got this solved yesterday, though color profilers and calibrators may 
 
 <h5>Before</h5>
 
-<img src="http://henrik.nyh.se/uploads/pscolor-before.png" alt="[Screenshot]" class="bordered center" />
+<img src="https://henrik.nyh.se/uploads/pscolor-before.png" alt="[Screenshot]" class="bordered center" />
 
 Left to right: image on Google Images in Firefox, image being edited, "Save to web" dialog.
 
@@ -25,7 +25,7 @@ It's quite apparent that the colors of the image being edited do not match the o
 
 <h5>After</h5>
 
-<img src="http://henrik.nyh.se/uploads/pscolor-after.png" alt="[Screenshot]" class="bordered center" />
+<img src="https://henrik.nyh.se/uploads/pscolor-after.png" alt="[Screenshot]" class="bordered center" />
 
 Left to right: image on Google Images in Firefox, image being edited, "Save to web" dialog.
 
@@ -39,11 +39,11 @@ Having found this partial solution, I was better equipped to google it. <a href=
 
 In <code>Edit &gt; Color Settings&hellip;</code>, i changed the value for "RGB" under "Working Spaces" to "Monitor RGB - Color LCD". The value for "LCD" under "Color Management Policies" was automatically set to "Off".
 
-<img src="http://henrik.nyh.se/uploads/pscolor-settings.png" alt="[Screenshot]" class="bordered center" />
+<img src="https://henrik.nyh.se/uploads/pscolor-settings.png" alt="[Screenshot]" class="bordered center" />
 
 And that seems to be it. When opening an image with another color profile, I am prompted whether I want to discard that color profile. If I do, or convert to the current color space, things look just the way they will when exporting the image.
 
-<img src="http://henrik.nyh.se/uploads/pscolor-dialog.png" alt="[Screenshot]" class="bordered center" />
+<img src="https://henrik.nyh.se/uploads/pscolor-dialog.png" alt="[Screenshot]" class="bordered center" />
 
 Under "Color Management Policies", there are checkboxes to get rid of the prompts, discarding the embedded profile silently.
 
@@ -56,7 +56,7 @@ Again, I don't know much about color profiles and such. If there is a better way
 
   <p>In the Photoshop CS3 beta, you also need to toggle off "Convert to sRGB" in the "Save for Web &amp; Devices" dialog.</p>
 
-  <p class="center"><img src="http://henrik.nyh.se/uploads/ps3-savergb.png" alt="[Dialog screenshot]" class="bordered" /></p>
+  <p class="center"><img src="https://henrik.nyh.se/uploads/ps3-savergb.png" alt="[Dialog screenshot]" class="bordered" /></p>
 </div>
 
 <div class="updated">
@@ -67,7 +67,7 @@ Again, I don't know much about color profiles and such. If there is a better way
 
 <p>A solution that seems better is to <em>convert</em> to the current color profile: that way, both pictures will keep the vibrant colors, rather than both be desaturated:</p>
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/photoshop-colors-revisited.png" alt="[Dialog screenshot]" class="bordered" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/photoshop-colors-revisited.png" alt="[Dialog screenshot]" class="bordered" /></p>
 
 <p>I was unable to change the color management policy (to "convert") until I clicked "More Options" and then changed the RGB working space to "Color LCD" (rather than "Monitor RGB – Color LCD"). This is on a MacBook Air; on an iMac, I set it to "iMac" (rather than "Monitor RGB – iMac").</p>
 </div>

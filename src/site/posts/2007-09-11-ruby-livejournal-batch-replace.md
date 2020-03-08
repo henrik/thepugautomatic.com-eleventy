@@ -6,9 +6,9 @@ tags:
 - LiveJournal
 comments: true
 ---
-I got a request for a script like my <a href="http://henrik.nyh.se/2007/04/ruby-livejournal-batch-private">Ruby script to make LiveJournal entries private in batch</a>, but to replace a string in all entries (e.g. if you've changed the URL of your web site).
+I got a request for a script like my <a href="https://henrik.nyh.se/2007/04/ruby-livejournal-batch-private">Ruby script to make LiveJournal entries private in batch</a>, but to replace a string in all entries (e.g. if you've changed the URL of your web site).
 
-I usually do not do commission work for free, but I dislike the idea of someone having to spend ages on something I could do in a few minutes, and I had those minutes to spare. So voilà, <a href="http://henrik.nyh.se/uploads/lj_batch_replace.rb">lj_batch_replace.rb</a>:
+I usually do not do commission work for free, but I dislike the idea of someone having to spend ages on something I could do in a few minutes, and I had those minutes to spare. So voilà, <a href="https://henrik.nyh.se/uploads/lj_batch_replace.rb">lj_batch_replace.rb</a>:
 
 <!--more-->
 
@@ -34,7 +34,7 @@ require 'livejournal/login'
 require 'livejournal/entry'
 
 # So the livejournal gem doesn't choke:
-# http://henrik.nyh.se/2007/04/ruby-livejournal-batch-private#comments
+# https://henrik.nyh.se/2007/04/ruby-livejournal-batch-private#comments
 LiveJournal::Entry::KNOWN_EXTRA_PROPS << "used_rte"
 
 puts "Logging in..."
@@ -59,4 +59,4 @@ end
 puts "All done."
 ```
 
-As with <a href="http://henrik.nyh.se/2007/04/ruby-livejournal-batch-private">the batch private script</a>, you need to install a Ruby interpreter, install RubyGems, install the LiveJournal gem (e.g. <code>sudo gem install livejournal</code>), configure the values at the top of the script and then run it (e.g. <code>ruby lj_batch_replace.rb</code>).
+As with <a href="https://henrik.nyh.se/2007/04/ruby-livejournal-batch-private">the batch private script</a>, you need to install a Ruby interpreter, install RubyGems, install the LiveJournal gem (e.g. <code>sudo gem install livejournal</code>), configure the values at the top of the script and then run it (e.g. <code>ruby lj_batch_replace.rb</code>).

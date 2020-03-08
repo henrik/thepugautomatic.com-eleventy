@@ -5,7 +5,7 @@ tags:
 - PHP
 comments: true
 ---
-I couldn't find a <a href="http://www.sinfest.net">Sinfest</a> RSS feed with images inline in each post, so I made one: <a href="http://henrik.nyh.se/scrapers/sinfest.rss">Sinfest RSS feed with images</a>.
+I couldn't find a <a href="http://www.sinfest.net">Sinfest</a> RSS feed with images inline in each post, so I made one: <a href="https://henrik.nyh.se/scrapers/sinfest.rss">Sinfest RSS feed with images</a>.
 
 <!--more-->
 

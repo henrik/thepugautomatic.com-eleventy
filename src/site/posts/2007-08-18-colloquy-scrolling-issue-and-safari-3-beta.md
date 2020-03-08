@@ -7,7 +7,7 @@ tags:
 - Safari
 comments: true
 ---
-<p class="center"><img src="http://henrik.nyh.se/uploads/colloquy-safari3_issue.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/colloquy-safari3_issue.png" alt="" /></p>
 
 <a href="http://colloquy.info/">Colloquy</a> has an annoying issue if the Safari 3 beta is installed: if you scroll back in the message history to catch up on something, as soon as a new message arrives you'll end up at the very top of the history.
 

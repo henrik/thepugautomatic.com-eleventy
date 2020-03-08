@@ -6,9 +6,9 @@ tags:
 - AppleScript
 comments: true
 ---
-<img src="http://henrik.nyh.se/uploads/currentlyplaying2.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
+<img src="https://henrik.nyh.se/uploads/currentlyplaying2.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
 
-The previously blogged <a href="http://henrik.nyh.se/2006/08/currently-playing-song-in-itunes-on-command/">Currently playing song in iTunes on command</a> script has been updated.
+The previously blogged <a href="https://henrik.nyh.se/2006/08/currently-playing-song-in-itunes-on-command/">Currently playing song in iTunes on command</a> script has been updated.
 
 It turned out <a href="http://hcs.harvard.edu/~jrus/">Jacob Rus</a> had made a similar script before mine, that did without saving cover art as a temporary file. I modified my code accordingly. It seems this also solved the strange problem that the script worked fine when run directly but sometimes not when run through Quicksilver.
 
@@ -16,7 +16,7 @@ It turned out <a href="http://hcs.harvard.edu/~jrus/">Jacob Rus</a> had made a s
 
 Jacob's script, along with others by him to e.g. quickly change rating or skip-and-display, are <a href="http://hcs.harvard.edu/~jrus/quicksilver/iTunes%20Controller.zip">available here</a>.
 
-<p>The script (<a href="http://henrik.nyh.se/uploads/Currently%20playing2.scpt">download</a>):</p>
+<p>The script (<a href="https://henrik.nyh.se/uploads/Currently%20playing2.scpt">download</a>):</p>
 
 ``` applescript
 set theTitle to "Currently playing"

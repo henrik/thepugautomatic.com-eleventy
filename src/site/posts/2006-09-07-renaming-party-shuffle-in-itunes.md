@@ -17,7 +17,7 @@ This is simply a matter of replacing occurrences of "Party Shuffle" with somethi
 
 This assumes you're using the English locale for iTunes/OS X.
 
-Here's the <code>diff</code> (<a href="http://henrik.nyh.se/uploads/partyshufflebegone.diff">download</a>):
+Here's the <code>diff</code> (<a href="https://henrik.nyh.se/uploads/partyshufflebegone.diff">download</a>):
 
 ``` diff
 632,633c632,633

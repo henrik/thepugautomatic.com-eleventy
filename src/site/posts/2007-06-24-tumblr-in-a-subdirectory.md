@@ -5,7 +5,7 @@ tags:
 - PHP
 comments: true
 ---
-I now have <a href="http://henrik.nyh.se/tumble/">a tumblelog</a>, powered by <a href="http://www.tumblr.com/">Tumblr</a>.
+I now have <a href="https://henrik.nyh.se/tumble/">a tumblelog</a>, powered by <a href="http://www.tumblr.com/">Tumblr</a>.
 
 Tumblr seems quite awesome – simple and powerful, just the way I like it. They even offer <a href="http://www.tumblr.com/faqs#custom_domains">Tumblr on your own (sub)domain</a> if you can configure your DNS A records.
 
@@ -13,7 +13,7 @@ I didn't want to use a subdomain, though. My site is on a subdomain already, and
 
 <!--more-->
 
-Over at <a href="http://henrik.nyh.se/tumble">http://henrik.nyh.se/tumble</a>, this is my <code>.htaccess</code>:
+Over at <a href="https://henrik.nyh.se/tumble">https://henrik.nyh.se/tumble</a>, this is my <code>.htaccess</code>:
 
 ``` apacheconf .htaccess
 RewriteEngine On
@@ -23,7 +23,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$  proxy.php?url=http://malesca.tumblr.com/$1
 ```
 
-and this is <a href="http://henrik.nyh.se/uploads/proxy.phps"><code>proxy.php</code></a>:
+and this is <a href="https://henrik.nyh.se/uploads/proxy.phps"><code>proxy.php</code></a>:
 
 ``` php
 <?php
@@ -58,7 +58,7 @@ echo $html;
 ?>
 ```
 
-This piece of code just mirrors the content as well as the content-type of anything on <a href="http://malesca.tumblr.com">http://malesca.tumblr.com</a> to <a href="http://henrik.nyh.se/tumble">http://henrik.nyh.se/tumble</a>. Fixes links in the RSS feed as well. Pretty neat.
+This piece of code just mirrors the content as well as the content-type of anything on <a href="http://malesca.tumblr.com">http://malesca.tumblr.com</a> to <a href="https://henrik.nyh.se/tumble">https://henrik.nyh.se/tumble</a>. Fixes links in the RSS feed as well. Pretty neat.
 
 You obviously need a PHP with <a href="http://php.net/curl">libcurl</a>.
 

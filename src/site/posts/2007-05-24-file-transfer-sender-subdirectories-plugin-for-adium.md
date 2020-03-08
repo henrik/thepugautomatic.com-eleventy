@@ -15,7 +15,7 @@ I've asked about this feature on <a href="irc://irc.freenode.net/adium">#adium@F
 
 <!--more-->
 
-Download the plugin: <a href="http://henrik.nyh.se/uploads/FileTransferSenderSubdirectoriesPlugin.AdiumPlugin.zip">File Transfer Sender Subdirectories</a> (<a href="http://svn.nyh.se/cocoa/FileTransferSenderSubdirectoriesPlugin/">SVN source</A>).
+Download the plugin: <a href="https://henrik.nyh.se/uploads/FileTransferSenderSubdirectoriesPlugin.AdiumPlugin.zip">File Transfer Sender Subdirectories</a> (<a href="http://svn.nyh.se/cocoa/FileTransferSenderSubdirectoriesPlugin/">SVN source</A>).
 
 To install, double-click the unzipped plugin or drag it to the Adium dock icon.
 

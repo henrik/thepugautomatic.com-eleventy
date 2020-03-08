@@ -9,11 +9,11 @@ tags:
 - Firefox
 comments: true
 ---
-Updated the Greasemonkey bundle, originally <a href="http://henrik.nyh.se/2006/08/improved-greasemonkey-bundle-for-textmate/">blogged here</a>.
+Updated the Greasemonkey bundle, originally <a href="https://henrik.nyh.se/2006/08/improved-greasemonkey-bundle-for-textmate/">blogged here</a>.
 
-<a href="http://henrik.nyh.se/uploads/Greasemonkey.tmbundle.zip">Download</a> (44 kB).
+<a href="https://henrik.nyh.se/uploads/Greasemonkey.tmbundle.zip">Download</a> (44 kB).
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/gmbundle2.png" alt="[Screenshot]" class="bordered" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/gmbundle2.png" alt="[Screenshot]" class="bordered" /></p>
 
 <!--more-->
 
@@ -39,5 +39,5 @@ Like the previous "Open Installed Script" command, but in descending order of ti
 
 <div class="updated">
 <h5>Update 2006-03-05</h5>
-<p><a href="http://henrik.nyh.se/2007/03/major-update-to-the-textmate-greasemonkey-bundle/">Updated</a>.</p>
+<p><a href="https://henrik.nyh.se/2007/03/major-update-to-the-textmate-greasemonkey-bundle/">Updated</a>.</p>
 </div>

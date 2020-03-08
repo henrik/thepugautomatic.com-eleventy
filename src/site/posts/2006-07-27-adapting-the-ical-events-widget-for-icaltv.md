@@ -7,9 +7,9 @@ tags:
 - Dashboard widgets
 comments: true
 ---
-<img src="http://henrik.nyh.se/uploads/icalevents.png" alt="iCal Events widget" class="right" style="float:right;padding:0 0 0.1em 0.5em;" />
+<img src="https://henrik.nyh.se/uploads/icalevents.png" alt="iCal Events widget" class="right" style="float:right;padding:0 0 0.1em 0.5em;" />
 
-I realized it'd be nice to have a widget that displays the upcoming favorite TV shows entered into iCal by <a href="http://henrik.nyh.se/2006/07/icaltv-ical-reminders-for-favorite-tv-shows-through-xmltv/">iCalTV</a>.
+I realized it'd be nice to have a widget that displays the upcoming favorite TV shows entered into iCal by <a href="https://henrik.nyh.se/2006/07/icaltv-ical-reminders-for-favorite-tv-shows-through-xmltv/">iCalTV</a>.
 
 The easiest solution was to use the <a href="http://www.benkazez.com/icalevents.php">iCal Events widget</a>, setting it to only display events from the "TV" calendar.
 
@@ -46,7 +46,7 @@ The changes follow as a unidiff (<code>man diff</code>, <code>man patch</code>):
  				} else {
 ```
 
-<a href="http://henrik.nyh.se/uploads/icalevents.diff">Download</a>.
+<a href="https://henrik.nyh.se/uploads/icalevents.diff">Download</a>.
 
 Apply it with e.g.
 

@@ -7,7 +7,7 @@ tags:
 - AppleScript
 comments: true
 ---
-I wrote a TextMate command to close all HTML output windows: <a href="http://henrik.nyh.se/uploads/Close%20All%20HTML%20Output%20Windows.tmCommand">Close All HTML Output Windows.tmCommand</a>. This is very useful, at least to me, when developing some TextMate commands – one can end up with tons of such windows.
+I wrote a TextMate command to close all HTML output windows: <a href="https://henrik.nyh.se/uploads/Close%20All%20HTML%20Output%20Windows.tmCommand">Close All HTML Output Windows.tmCommand</a>. This is very useful, at least to me, when developing some TextMate commands – one can end up with tons of such windows.
 
 <!--more-->
 

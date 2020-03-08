@@ -13,6 +13,6 @@ This inspired me to poke around on <a href="http://www.youtube.com">YouTube</a>.
 
 So I wrote a Greasemonkey script that flips thumbnails between all three images at very short intervals, essentially animating them: <a href="http://userscripts.org/scripts/show/7504">YouTube thumbnail animator</a>.
 
-<p class="center"><img src="http://henrik.nyh.se/filer/youtubethumbanim.gif" alt="" class="bordered" /></p>
+<p class="center"><img src="https://henrik.nyh.se/filer/youtubethumbanim.gif" alt="" class="bordered" /></p>
 
 Now, this isn't really the scannable sequential imagery of the Signal vs. Noise post, but it's still cool and rather useful. Perhaps a bit CPU-greedy.

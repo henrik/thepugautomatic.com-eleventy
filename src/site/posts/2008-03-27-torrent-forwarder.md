@@ -28,7 +28,7 @@ It also runs <a href="http://clutchbt.com/">Clutch</a>, a web interface to Trans
 
 <h3>On the notebook</h3>
 
-I wrote a Folder Action script that is attached to my <code>Downloads</code> folder. <a href="http://pastie.textmate.org/pastes/171463/download">Download the script</a> (<a href="http://pastie.textmate.org/171463">source</a>) and <a href="http://henrik.nyh.se/2007/10/lift-the-leopard-download-quarantine">attach it</a>. I've put the script in <code>~/Library/Scripts/Folder Action Scripts/Torrent Forwarder.scpt</code>.
+I wrote a Folder Action script that is attached to my <code>Downloads</code> folder. <a href="http://pastie.textmate.org/pastes/171463/download">Download the script</a> (<a href="http://pastie.textmate.org/171463">source</a>) and <a href="https://henrik.nyh.se/2007/10/lift-the-leopard-download-quarantine">attach it</a>. I've put the script in <code>~/Library/Scripts/Folder Action Scripts/Torrent Forwarder.scpt</code>.
 
 You will need to modify the script for your setup. The script will by default scp to <code>hyper:Public/Torrent drop</code>. I can use <code>hyper</code> because <code>~/.ssh/config</code> contains
 

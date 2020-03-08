@@ -9,7 +9,7 @@ tags:
 - Firefox
 comments: true
 ---
-The <a href="http://henrik.nyh.se/2007/03/major-update-to-the-textmate-greasemonkey-bundle/">Greasemonkey bundle</a> for <a href="http://macromates.com/">TextMate</a> has now been committed to the official bundle repository.
+The <a href="https://henrik.nyh.se/2007/03/major-update-to-the-textmate-greasemonkey-bundle/">Greasemonkey bundle</a> for <a href="http://macromates.com/">TextMate</a> has now been committed to the official bundle repository.
 
 <!--more-->
 

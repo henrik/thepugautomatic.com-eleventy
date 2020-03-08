@@ -14,7 +14,7 @@ They do not offer a RSS feed of account activity, though. I really wanted this: 
 
 I suggested to the bank that they add it, but they didn't want to, so I made it myself.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/atomica.png" class="bordered" alt="[Screenshot]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/atomica.png" class="bordered" alt="[Screenshot]" /></p>
 
 <!--more-->
 

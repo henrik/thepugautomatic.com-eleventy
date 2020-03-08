@@ -27,5 +27,5 @@ Obviously this has some risk of overgenerating, but I have never received any ot
 
 <div class="updated">
 <h5>Update 2007-04-18</h5>
-<a href="http://henrik.nyh.se/2007/04/livejournal-comment-notification-scrollable-quotes">This CSS has been improved upon.</a>
+<a href="https://henrik.nyh.se/2007/04/livejournal-comment-notification-scrollable-quotes">This CSS has been improved upon.</a>
 </div>

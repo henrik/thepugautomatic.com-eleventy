@@ -41,10 +41,10 @@ prefs.clear!
 
 String and symbol keys are interchangeable, so you could use <code>Preferences["foo_bundle"]["name"]</code> if you prefer, or even mix and match.
 
-<a href="http://henrik.nyh.se/uploads/textmate_preferences.rb">Download with unit tests and all</a>, or see below for the meaty bits:
+<a href="https://henrik.nyh.se/uploads/textmate_preferences.rb">Download with unit tests and all</a>, or see below for the meaty bits:
 
 ``` ruby
-# By Henrik Nyh <http://henrik.nyh.se> 2007-06-27
+# By Henrik Nyh <https://henrik.nyh.se> 2007-06-27
 # Free to modify and redistribute with credit.
 
 class Preferences

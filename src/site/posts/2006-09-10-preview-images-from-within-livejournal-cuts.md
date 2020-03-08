@@ -12,7 +12,7 @@ comments: true
 
 On LiveJournal, it is common to put long posts or large/plentiful/not-worksafe images behind a "LJ-cut", which means that the cut contents are not displayed in lists of posts, but only when you open the dedicated page for that post.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/ljcutpreview.png" alt="Screenshot" class="bordered" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/ljcutpreview.png" alt="Screenshot" class="bordered" /></p>
 
 Some people want pretty much everything inside cuts; others want some content outside the cut to know whether they want to see more or not. My girlfriend is in the latter camp, and so I made a Greasemonkey script for cut image previews.
 

@@ -12,11 +12,11 @@ comments: true
 ---
 I extended <a href="http://adamv.com/dev/textmate/greasemonkey">Adam V's TextMate Greasemonkey bundle 1.0</a> with some useful commands, modified the snippets and template slightly and also added <code>unsafeWindow</code>, <code>GM_setValue()</code> and friends to the language grammar.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/greasemonkeybundle.png" alt="[Screenshot]" style="border:1px solid #000;" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/greasemonkeybundle.png" alt="[Screenshot]" style="border:1px solid #000;" /></p>
 
 <!--more-->
 
-<a href="http://henrik.nyh.se/filer/Greasemonkey.tmbundle.zip">Download</a> (16 KB).
+<a href="https://henrik.nyh.se/filer/Greasemonkey.tmbundle.zip">Download</a> (16 KB).
 
 The grammar and the snippets are mainly by Adam.
 
@@ -97,4 +97,4 @@ Submit (as new or an update) the current script to <a href="http://userscripts.o
 
 Updating metadata on <code>&#x2318;S</code> along with saving a script.
 
-<p class="updated"><a href="http://henrik.nyh.se/2006/09/minor-updates-to-greasemonkey-bundle/">Some updates have been made.</a></p>
+<p class="updated"><a href="https://henrik.nyh.se/2006/09/minor-updates-to-greasemonkey-bundle/">Some updates have been made.</a></p>

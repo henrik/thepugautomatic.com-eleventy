@@ -7,7 +7,7 @@ tags:
 - TextMate
 comments: true
 ---
-<a href="http://henrik.nyh.se/uploads/grep-in-project.png"><img src="http://henrik.nyh.se/uploads/grep-in-project_mini.png" alt="[Grep in Project result listing]" /></a>
+<a href="https://henrik.nyh.se/uploads/grep-in-project.png"><img src="https://henrik.nyh.se/uploads/grep-in-project_mini.png" alt="[Grep in Project result listing]" /></a>
 
 (Click the image for a larger screenshot.)
 
@@ -19,7 +19,7 @@ What it lacks in project search, TextMate makes up for in extensibility, though,
 
 <!--more-->
 
-Download here: <a href="http://henrik.nyh.se/uploads/Grep%20in%20Project.tmCommand">Grep in Project.tmCommand</a>
+Download here: <a href="https://henrik.nyh.se/uploads/Grep%20in%20Project.tmCommand">Grep in Project.tmCommand</a>
 
 The command is by default bound to <code>&#x21E7;&#x2318;F</code>, essentially replacing the built-in "Find in Project". You can still access it through the menus or by hitting the keyboard shortcut in a HTML output window, such as the "Grep in Project" window – or just change the shortcut, if it bothers you.
 

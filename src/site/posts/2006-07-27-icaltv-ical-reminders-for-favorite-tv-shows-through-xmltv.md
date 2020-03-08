@@ -8,13 +8,13 @@ comments: true
 ---
 The last couple of days, I've been working on a set of Ruby scripts to download <a href="http://www.xmltv.org/">XMLTV format</a> (or some derivative) schedules from <a href="http://tv.swedb.se/">tv.swedb.se</a>, process them against rulesets, and export the intersection as reminders in an iCalendar (.ics) file that you can subscribe to with iCal.
 
-<p style="text-align:center"><img src="http://henrik.nyh.se/uploads/icaltv.png" alt="iCalTV reminder" style="border:1px solid #CCC" /></p>
+<p style="text-align:center"><img src="https://henrik.nyh.se/uploads/icaltv.png" alt="iCalTV reminder" style="border:1px solid #CCC" /></p>
 
 <!--more-->
 
-An archive of the scripts including documentation/installation instructions is available as <a href="http://henrik.nyh.se/filer/iCalTV.zip">iCalTV.zip</a>.
+An archive of the scripts including documentation/installation instructions is available as <a href="https://henrik.nyh.se/filer/iCalTV.zip">iCalTV.zip</a>.
 
-The documentation/installation instructions, in Swedish only for now, are available by themselves as <a href="http://henrik.nyh.se/filer/iCalTV.html">iCalTV.html</a>.
+The documentation/installation instructions, in Swedish only for now, are available by themselves as <a href="https://henrik.nyh.se/filer/iCalTV.html">iCalTV.html</a>.
 
 Though that documentation is in Swedish only, the code and its comments are in English, so if anyone wants to adapt this for another country, it shouldn't be too hard to follow. I will add English documentation if it turns out anyone wants it.
 
@@ -42,4 +42,4 @@ When <code>icaltv.rb</code> is run, it compares the schedules downloaded for you
 
 All that remains is to toggle on Personal Web Sharing, and then subscribe to the file through your web server, in iCal, keeping in mind not to leave "Remove alarms" checked.
 
-<p class="updated"><a href="http://henrik.nyh.se/2006/08/icaltv-04-released/">iCalTV 0.4 has been released &ndash; the above post is outdated.</a></p>
+<p class="updated"><a href="https://henrik.nyh.se/2006/08/icaltv-04-released/">iCalTV 0.4 has been released &ndash; the above post is outdated.</a></p>

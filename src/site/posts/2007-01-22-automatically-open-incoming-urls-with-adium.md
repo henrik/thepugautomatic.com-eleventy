@@ -12,7 +12,7 @@ My girlfriend sends me quite a lot of links over IM. Opening each link manually 
 
 My first attempt at automating away the pain was the <a href="http://userscripts.org/scripts/show/3279">Batch URL input</a> userscript, where you could disguise several URLs as one, and have Firefox explode them into individual tabs. This required an effort on the behalf of the sender, though, and that they would collect all URLs before sending them.
 
-I then made a script to <a href="http://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">batch-open URLs from the clipboard</a>. You simply copy some of the message history and invoke the script through e.g. <a href="http://quicksilver.blacktree.com/">Quicksilver</a>. A lot better, but still not quite there.
+I then made a script to <a href="https://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">batch-open URLs from the clipboard</a>. You simply copy some of the message history and invoke the script through e.g. <a href="http://quicksilver.blacktree.com/">Quicksilver</a>. A lot better, but still not quite there.
 
 I like how my <abbr title="Instant Messaging">IM</abbr> client, Adium, can be configured to open "safe" (e.g. images) incoming files automatically. If I receive an image, I'm very likely to want to open it. I suppose you might be of another opinion if you often receive <a href="http://en.wikipedia.org/wiki/Not_safe_for_work">non-worksafe</a> images in public places.
 
@@ -22,7 +22,7 @@ So I made something similar for incoming URLs (in messages).
 
 I wrote an AppleScript (wrapping a Ruby script, wrapping a detached shell, wrapping AppleScript :&gt;) that is triggered whenever I receive a message from my girlfriend. In the user info dialog for her meta-contact (ICQ, Jabber and MSN all in one), under the "Events" tab, I added this script to be run on "Message received".
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/adium-incoming_urls_info.png" alt="" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/adium-incoming_urls_info.png" alt="" /></p>
 
 So the script is triggered on every incoming message. For each contact specified within the script (i.e. the contact on ICQ, Jabber and MSN), it finds the message log for today, if there is one.
 
@@ -36,7 +36,7 @@ In the script, you can define the contacts you want to monitor. I've only specif
 
 Note that <code>open "http://www.theurl.com"</code> is run in the shell. There is a theoretical possibility of someone injecting commands as parts of URLs, to get your shell to execute them. Quotes are escaped, though, and only would-be URLs processed, so there should be little or no risk if you trust the friend in question.
 
-The script (<a href="http://henrik.nyh.se/uploads/Adium%20-%20open%20incoming%20URLs.scpt">download</a>):
+The script (<a href="https://henrik.nyh.se/uploads/Adium%20-%20open%20incoming%20URLs.scpt">download</a>):
 
 ``` applescript
 tell app "Adium"

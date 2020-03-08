@@ -16,6 +16,6 @@ Use <code>Insert &gt; Section Break</code> where you want the footer to start ch
 
 With the section break in place, put the caret somewhere inside the new section (after the table of contents) and open the Inspector. In the Layout pane (second from left), choose "Section".
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/pages-numbering.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/pages-numbering.png" alt="[Screenshot]" /></p>
 
 Now, if you uncheck the "Use previous headers & footers" box, the footers for the two sections are independent. So just uncheck it, make sure "Start at:" is set to 1, and then remove the footers from the first section if you don't want them.

@@ -12,9 +12,9 @@ Naturally I didn't do anything of the sort and also stopped watching the movie t
 
 My girlfriend finished the movie and went to bed before I was done, so this isn't thoroughly tested – please point out any issues. ;)
 
-I give you: the <a href="http://henrik.nyh.se/uploads/trivia">IMDB Trivia &amp; Goofs Growler</a> (<a href="http://pastie.textmate.org/144152">highlighted</a>).
+I give you: the <a href="https://henrik.nyh.se/uploads/trivia">IMDB Trivia &amp; Goofs Growler</a> (<a href="http://pastie.textmate.org/144152">highlighted</a>).
 
-<a href="http://henrik.nyh.se/uploads/imdbtrivia.png"><img src="http://henrik.nyh.se/uploads/imdbtrivia-thumb.png" alt="[Screenshot]" /></a>
+<a href="https://henrik.nyh.se/uploads/imdbtrivia.png"><img src="https://henrik.nyh.se/uploads/imdbtrivia-thumb.png" alt="[Screenshot]" /></a>
 
 I'll make this quick since I need to hit the hay. Download that file and read the comment block at the top.
 

@@ -10,7 +10,7 @@ comments: true
 ---
 Our <a href="http://en.wikipedia.org/wiki/Htpc"><abbr title="Home Theater PC">HTPC</abbr></a> setup mainly consists of a Mac Mini running <a href="http://elgato.com/">EyeTV</a> and a 40" tv (Fujitsu-Siemens Myrica VQ40-3SU) for a display.
 
-As <a href="http://henrik.nyh.se/2008/04/eyetv-onoff-keyboard-button">previously blogged</a>, I've gotten rid of the EyeTV remote, using only the Apple Wireless Keyboard.
+As <a href="https://henrik.nyh.se/2008/04/eyetv-onoff-keyboard-button">previously blogged</a>, I've gotten rid of the EyeTV remote, using only the Apple Wireless Keyboard.
 
 We still had the remote for the tv (display) though. But yesterday, I got the <a href="http://www.thezephir.com/ZephIR/Home.html">ZephIR IR blaster</a> I had ordered, and now we're down to just the keyboard.
 
@@ -95,11 +95,11 @@ So "Power" is just a simple script, like the volume ones. I also made a simple "
 
 To make these scripts actually useful, I needed to map them to our keyboard. So I had five functions to map: power on/off, toggle HDMI/YUV, next input, volume down, volume up.
 
-When I <a href="http://henrik.nyh.se/2008/04/eyetv-onoff-keyboard-button">made an EyeTV on/off button</a>, I mapped that to the <code>°</code> key, left of the <code>1</code> key on a Swedish keyboard. But that was more or less the only key I didn't use.
+When I <a href="https://henrik.nyh.se/2008/04/eyetv-onoff-keyboard-button">made an EyeTV on/off button</a>, I mapped that to the <code>°</code> key, left of the <code>1</code> key on a Swedish keyboard. But that was more or less the only key I didn't use.
 
 So when mapping the tv functions to the keyboard, I decided to use the function keys.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/apple-wireless-keyboard-function-keys.jpg" class="bordered" alt="[Photo]" title="Photo stolen from AppleInsider!" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/apple-wireless-keyboard-function-keys.jpg" class="bordered" alt="[Photo]" title="Photo stolen from AppleInsider!" /></p>
 
 The Apple Wireless Keyboard has symbols on most function keys, providing functionality like changing display brightness and controlling iTunes. If you hold the <code>Fn</code> key while pressing them, you get actual F1, F2 etc.
 

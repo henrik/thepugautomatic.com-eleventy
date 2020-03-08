@@ -6,7 +6,7 @@ tags:
   - Cocoa
 comments: true
 ---
-I'm currently playing with Objective-C/Cocoa, writing an improved (and <abbr title="Graphical User Interface">GUI</abbr>'d up) version of <a href="http://henrik.nyh.se/?s=iCalTV">iCalTV</a>.
+I'm currently playing with Objective-C/Cocoa, writing an improved (and <abbr title="Graphical User Interface">GUI</abbr>'d up) version of <a href="https://henrik.nyh.se/?s=iCalTV">iCalTV</a>.
 
 I'm learning a great deal. Core Data, the modelling/persistence framework, is interesting and daunting.
 
@@ -47,7 +47,7 @@ Identifiers are assumed to be strings. The error variable will be populated with
 
 I did not add support for passing a predicate to limit the entities you want, since I will always want to compare to the full set of channels, but it could be easily done, and I may do so later, if the need arises.
 
-The code (<a href="http://henrik.nyh.se/uploads/NSManagedObjectContext_UpdateEntity.h">download</a>, don't forget to <code>#import</code> the file):
+The code (<a href="https://henrik.nyh.se/uploads/NSManagedObjectContext_UpdateEntity.h">download</a>, don't forget to <code>#import</code> the file):
 
 ``` objectivec
 @interface NSManagedObjectContext (UpdateEntity)

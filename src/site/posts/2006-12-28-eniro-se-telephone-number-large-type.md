@@ -11,7 +11,7 @@ A brilliant, somewhat hidden feature in the OS X Address Book is that you can cl
 
 I wrote a new userscript, <a href="http://userscripts.org/scripts/show/6897">Eniro.se telephone number large type</a>, to bring this feature to the online Swedish telephone directory <a href="http://www.eniro.se">Eniro.se</a>.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/gm-phone_large_type.png" class="bordered" alt="[Screenshot: Eniro.se large type]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/gm-phone_large_type.png" class="bordered" alt="[Screenshot: Eniro.se large type]" /></p>
 
 <!--more-->
 

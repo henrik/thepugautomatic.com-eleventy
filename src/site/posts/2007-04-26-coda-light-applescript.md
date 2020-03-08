@@ -15,7 +15,7 @@ The idea of a macro to open up the right files in your text editor, the right se
 
 <!--more-->
 
-<a href="http://henrik.nyh.se/uploads/Coda%20Light.app">Download</a> the script.
+<a href="https://henrik.nyh.se/uploads/Coda%20Light.app">Download</a> the script.
 
 Open it in <code>Script Editor.app</code> and edit the configuration values, then just run it (by e.g. double-clicking) at your pleasure.
 
@@ -31,7 +31,7 @@ The script will
 
 ``` applescript
 -- Coda Light
--- By Henrik Nyh <http://henrik.nyh.se>, 2007-04-26
+-- By Henrik Nyh <https://henrik.nyh.se>, 2007-04-26
 --
 -- An AppleScript to start working on a web development project by
 --  * opening the project in TextMate,

@@ -12,7 +12,7 @@ Though Rails has <code>save!</code> and <code>create!</code> methods that raise 
 
 Adding this has been <a href="http://groups.google.com/group/rubyonrails-core/browse_thread/thread/9b79f15be8cea7ab/b09890407fe2583e">discussed</a>, and there is <a href="http://dev.rubyonrails.org/ticket/5974">a slumbering ticket</a>.
 
-This is my take. <code>require 'raising_finders'</code> in <code>environment.rb</code> and put this in <a href="http://henrik.nyh.se/uploads/raising_finders.rb"><code>lib/raising_finders.rb</code></a>:
+This is my take. <code>require 'raising_finders'</code> in <code>environment.rb</code> and put this in <a href="https://henrik.nyh.se/uploads/raising_finders.rb"><code>lib/raising_finders.rb</code></a>:
 
 ``` ruby
 # Enables methods like find!(:all, …), find_by_username!(…) that

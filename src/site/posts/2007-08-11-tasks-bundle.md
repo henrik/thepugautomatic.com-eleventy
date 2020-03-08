@@ -23,11 +23,11 @@ I'm a big fan of piggybacking on formats like this: taking something people are 
 
 However, I edit my text files in <a href="http://macromates.com/">TextMate</a>. Using something else for to-do list text files complicates things. So I made a TextMate bundle for it:
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/textmate_tasks-bundle.png" alt="[Screenshot]" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/textmate_tasks-bundle.png" alt="[Screenshot]" /></p>
 
 <!--more-->
 
-Download it here, unarchive, then double-click to install: <a href="http://henrik.nyh.se/uploads/Tasks.tmbundle.zip">Tasks.tmbundle.zip</a>
+Download it here, unarchive, then double-click to install: <a href="https://henrik.nyh.se/uploads/Tasks.tmbundle.zip">Tasks.tmbundle.zip</a>
 
 It's named "Tasks" rather than "To-do" since a "TODO" bundle ships with TextMate (it finds "TODO" and "FIXME" comments in code).
 

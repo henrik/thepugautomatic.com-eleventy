@@ -10,9 +10,9 @@ I wanted to change the colors of the very pretty OS X RSS Visualizer screen save
 
 I found a broken download link to a modified version <a href="http://www.macosxhints.com/article.php?story=20050425173919124">over at macosxhints.com</a>. By further googling and some guesswork, I figured out how to change the colors myself.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/black-rss-visualizer.jpg" alt="[Screenshot: Black RSS Visualizer]" class="bordered" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/black-rss-visualizer.jpg" alt="[Screenshot: Black RSS Visualizer]" class="bordered" /></p>
 
-<a href="http://henrik.nyh.se/uploads/Black%20RSS%20Visualizer.qtz">Download</a> my modified version with a black/dark gray background, dark red headers and white body text. Read on for how to define other colors.
+<a href="https://henrik.nyh.se/uploads/Black%20RSS%20Visualizer.qtz">Download</a> my modified version with a black/dark gray background, dark red headers and white body text. Read on for how to define other colors.
 
 Put the <code>qtz</code> file in <code>~/Library/Screen Savers</code> (available only to your user) or <code>/System/Library/Screen Savers</code> (available to all users). It seems the screen saver prefpane needs to be closed and re-opened to notice changes to these directories.
 
@@ -30,7 +30,7 @@ One can double-click boxes with pink headers to drill down further, decomposing 
 
 To change the background color, drill down into <code>Background &gt; Macro Patch &gt; Render in Image</code> and change the Input Parameters of the two "RGB Color" boxes in the top right. Their outputs are hooked to relevant color inputs. The parameters are sliders to change the amount of red, green, blue and opacity.
 
-<p class="center"><img src="http://henrik.nyh.se/uploads/black-rss-bgcolors.png" alt="[Screenshot: Setting background colors]" class="bordered" /></p>
+<p class="center"><img src="https://henrik.nyh.se/uploads/black-rss-bgcolors.png" alt="[Screenshot: Setting background colors]" class="bordered" /></p>
 
 You should see the colors in the Viewer window change as you alter the parameters.
 

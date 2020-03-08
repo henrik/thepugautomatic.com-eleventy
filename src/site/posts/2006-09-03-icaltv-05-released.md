@@ -6,11 +6,11 @@ tags:
 - OS X
 comments: true
 ---
-<img src="http://henrik.nyh.se/uploads/icaltv0.5growl.png" alt="[Screenshot]" class="right" />
+<img src="https://henrik.nyh.se/uploads/icaltv0.5growl.png" alt="[Screenshot]" class="right" />
 
 Finally, iCalTV 0.5 is finished. A lot of code has been rewritten, and some great stuff added.
 
-Download <a href="http://henrik.nyh.se/filer/iCalTV0.5.zip">the application and README</a> (274 kB), or view <a href="http://henrik.nyh.se/filer/iCalTV.html">the README online</a> (49 kB due to an inline image).
+Download <a href="https://henrik.nyh.se/filer/iCalTV0.5.zip">the application and README</a> (274 kB), or view <a href="https://henrik.nyh.se/filer/iCalTV.html">the README online</a> (49 kB due to an inline image).
 
 <!--more-->
 
@@ -24,5 +24,5 @@ For most of my favorite shows, I now hear e.g. "Morden i Midsomer on SVT1 in fiv
   <h5>Update 2007-01-02</h5>
 
   <p>
-<a href="http://henrik.nyh.se/2007/01/icaltv-06-released/">iCalTV 0.6 has been released – the above post is outdated.</a></p>
+<a href="https://henrik.nyh.se/2007/01/icaltv-06-released/">iCalTV 0.6 has been released – the above post is outdated.</a></p>
 </div>

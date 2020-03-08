@@ -18,7 +18,7 @@ The point of this particular userstyle is to make it obvious who commented on wh
 Before applying the style, a commenter's name appears closer to the body of the previous comment than to its own comment text, causing confusion. After, whitespace is adjusted (according to Gestalt laws of proximity) and a colon inserted (suggesting that the name is associated with whatever follows):
 
 <h5>Before:</h5>
-<img src="http://henrik.nyh.se/uploads/css-feber-before.png" alt="[Before]" />
+<img src="https://henrik.nyh.se/uploads/css-feber-before.png" alt="[Before]" />
 
 <h5>After:</h5>
-<img src="http://henrik.nyh.se/uploads/css-feber-after.png" alt="[After]" />
+<img src="https://henrik.nyh.se/uploads/css-feber-after.png" alt="[After]" />

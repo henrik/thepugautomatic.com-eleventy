@@ -21,7 +21,7 @@ The interface is part libxml/part REXML/part whatever I figured was nicer than w
 Usage examples are comments in the code.
 
 ``` ruby
-# LEXML by Henrik Nyh <http://henrik.nyh.se> 2006-07-24
+# LEXML by Henrik Nyh <https://henrik.nyh.se> 2006-07-24
 # Free to modify, but please credit.
 #
 # Very simple wrapper that uses the fast libxml

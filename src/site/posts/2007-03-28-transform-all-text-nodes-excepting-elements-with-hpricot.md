@@ -8,7 +8,7 @@ comments: true
 ---
 Christoffer Sawicki wrote a useful <a href="http://code.whytheluckystiff.net/hpricot/">Hpricot</a> extension, <a href="http://termos.vemod.net/hpricot-goodies">Hpricot Text GSub</a>, to <code>gsub!</code> in HTML text nodes only.
 
-Though I love an overextended regexp as much as the next guy, I realized that I should use an actual HTML parser for things like <a href="http://henrik.nyh.se/2007/03/ruby-wordwrap-method/">wordwrapping in text nodes outside of <code>pre</code> elements</a>.
+Though I love an overextended regexp as much as the next guy, I realized that I should use an actual HTML parser for things like <a href="https://henrik.nyh.se/2007/03/ruby-wordwrap-method/">wordwrapping in text nodes outside of <code>pre</code> elements</a>.
 
 So I wrote my own extension, <code>HpricotTextTransform</code>, based on Christoffer's code. It works much the same way, but rather than being limited to <code>gsub!</code> ((Which you could arguably do anything with, though:
 
@@ -32,10 +32,10 @@ end
 ```
 {% endraw %}
 
-This is the extension itself (<a href="http://henrik.nyh.se/uploads/hpricot_text_transform.rb">download</a>), including some tests:
+This is the extension itself (<a href="https://henrik.nyh.se/uploads/hpricot_text_transform.rb">download</a>), including some tests:
 
 ``` ruby
-# By Henrik Nyh <http://henrik.nyh.se> 2007-03-28.
+# By Henrik Nyh <https://henrik.nyh.se> 2007-03-28.
 # Based on http://vemod.net/code/hpricot_goodies/hpricot_text_gsub.rb.
 # Licensed under the same terms as Ruby.
 

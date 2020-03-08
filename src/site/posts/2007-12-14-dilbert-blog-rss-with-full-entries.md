@@ -9,7 +9,7 @@ comments: true
 ---
 <a href="http://dilbertblog.typepad.com/">The Dilbert Blog</a> can be entertaining. However, <a href="http://dilbertblog.typepad.com/the_dilbert_blog/rss.xml">the RSS feed</a> was recently changed from containing the full entries to containing only a snippet, to increase ad revenue (by having people click through to the site).
 
-I like full entries in my feed reader, so I made a feed that has them: <a href="http://henrik.nyh.se/scrapers/dilbert.rss">dilbert.rss</a>
+I like full entries in my feed reader, so I made a feed that has them: <a href="https://henrik.nyh.se/scrapers/dilbert.rss">dilbert.rss</a>
 
 That's all you need to know if all you wanted was the feed. Read on for technical details.
 

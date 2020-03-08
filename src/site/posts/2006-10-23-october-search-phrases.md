@@ -5,11 +5,11 @@ tags:
 - Interesting
 comments: true
 ---
-I checked the October stats for this subdomain, in particular the incoming hits from search engine result listings. I'm equally amused by the weird queries (many owing to my <a href="http://henrik.nyh.se/porr">random authentic porno flick title tool</a>; others to my <a href="http://henrik.nyh.se/t2b">Batmanized Swedish parliament transcriptions</a>) and pleased that people have found their way here researching problems I've actually solved, implying I might have saved someone some time and pains.
+I checked the October stats for this subdomain, in particular the incoming hits from search engine result listings. I'm equally amused by the weird queries (many owing to my <a href="https://henrik.nyh.se/porr">random authentic porno flick title tool</a>; others to my <a href="https://henrik.nyh.se/t2b">Batmanized Swedish parliament transcriptions</a>) and pleased that people have found their way here researching problems I've actually solved, implying I might have saved someone some time and pains.
 
 <!--more-->
 
-The top three search phrases are <strong>porr</strong> (Swedish for "porn") with 150 searches amounting to 14.8% of all incoming searches; <strong>sniglar</strong> (Swedish for "snails", due to my <a href="http://henrik.nyh.se/sniglar/">1000 snails</a>) at 46 searches or 4.5%; and <strong>vokaler</strong> ("vowels", due to <a href="http://henrik.nyh.se/fonologi/">something I wrote for a phonology exam</a>) at 39 searches or 3.8%.
+The top three search phrases are <strong>porr</strong> (Swedish for "porn") with 150 searches amounting to 14.8% of all incoming searches; <strong>sniglar</strong> (Swedish for "snails", due to my <a href="https://henrik.nyh.se/sniglar/">1000 snails</a>) at 46 searches or 4.5%; and <strong>vokaler</strong> ("vowels", due to <a href="https://henrik.nyh.se/fonologi/">something I wrote for a phonology exam</a>) at 39 searches or 3.8%.
 
 Further down the list, there are examples of queries that hopefully found their answers on this site, e.g. <strong>applescript timestamp</strong>, <strong>get to post converter</strong>, <strong>split bbcode</strong> and <strong>writing hfs with windows</strong>.
 
