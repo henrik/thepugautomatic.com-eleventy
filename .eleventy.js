@@ -46,6 +46,8 @@ module.exports = function(eleventyConfig) {
     }).toFormat('y/MM');
   });
 
+  eleventyConfig.addFilter("limit", (array, count) => array.slice(0, count));
+
   eleventyConfig.addFilter('tagList', list => {
     // "posts" is a magic tag used to determine which pages are blog posts.
     const properTags = list.filter(x => x != "posts");
