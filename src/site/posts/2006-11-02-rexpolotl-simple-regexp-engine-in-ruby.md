@@ -1,6 +1,6 @@
 ---
 wordpress_id: 76
-title: "Rexpolotl \xE2\x80\x94 simple regexp engine in Ruby "
+title: "Rexpolotl – simple regexp engine in Ruby"
 tags:
 - Ruby
 - Regexps
