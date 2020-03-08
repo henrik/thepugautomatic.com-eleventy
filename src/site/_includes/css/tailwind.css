@@ -15,7 +15,6 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #c5c8c6;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
 	direction: ltr;
 	text-align: left;
@@ -34,20 +33,9 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: 1.5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-
-:not(pre) > code[class*="language-"] {
-	background: #1d1f21;
-}
-
 /* Inline code */
 :not(pre) > code[class*="language-"] {
+	background: #1d1f21;
 	padding: .1em;
 	border-radius: .3em;
 }
@@ -224,14 +212,16 @@ a.naked-link:visited {
   @apply rounded;
   @apply border;
   @apply border-gray-500;
-  @apply p-1;
+  @apply text-sm;
+  padding: 0.1rem 0.25rem;
+  margin: 0 0.1rem;
 }
 
 pre code {
   @apply text-sm;
 }
 
-pre:not([class*="language-"]) {
+pre {
   padding: 1em;
   margin: 1.5em 0;
   overflow: auto;
