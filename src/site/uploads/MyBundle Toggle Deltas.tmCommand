@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>3B5CEE66-CF36-472D-B9AB-6725C2D758F7</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+require "#{ENV['TM_SUPPORT_PATH']}/lib/escape"
+
+BUNDLE = "MyBundle"
+
+GROWLNOTIFY = "/usr/local/bin/growlnotify"
+TM_SUPPORT_DIR = "#{ENV['HOME']}/Library/Application Support/TextMate"
+DIRTY = "#{TM_SUPPORT_DIR}/Bundles/#{BUNDLE}.tmbundle/"
+PRISTINE = "#{TM_SUPPORT_DIR}/Pristine Copy/Bundles/#{BUNDLE}.tmbundle/"
+LIMBO = "#{TM_SUPPORT_DIR}/#{BUNDLE}.tmbundle/"
+
+def writing_deltas?
+	not `find #{e_sh DIRTY} -regex ".*\.tmDelta$"`.empty?
+end
+def reload_bundles!
+	`osascript -e 'tell app "TextMate" to reload bundles'`
+end
+def mv(from, to)
+	`mv #{e_sh from} #{e_sh to}` if File.exist?(from)
+end
+
+reload_bundles!  # Reload before moving, so any pending changes are (I hope) written to the right place
+mv(DIRTY, LIMBO); mv(PRISTINE, DIRTY); mv(LIMBO, PRISTINE)
+reload_bundles!
+
+title = "#{BUNDLE}: #{writing_deltas? ? "Deltas" : "Distribution"}"
+message = if writing_deltas? 
+  "Changes become deltas and are only available locally."
+else
+  "Changes are written directly to the distributed bundle; local changes are unavailable."
+end
+
+`#{e_sh GROWLNOTIFY} -s --icon="tmbundle" -t #{e_sh title} -m #{e_sh message}`
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>MyBundle Toggle Deltas</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>B8AA04A4-D16D-4B25-B486-9141C109C2EE</string>
+</dict>
+</plist>

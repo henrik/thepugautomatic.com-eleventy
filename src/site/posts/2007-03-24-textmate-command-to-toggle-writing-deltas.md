@@ -28,9 +28,9 @@ To be able to easily switch between writing changes as deltas and writing change
 
 <h4>The command</h4>
 
-Download: <a href="https://henrik.nyh.se/filer/MyBundle%20Toggle%20Deltas.tmCommand">MyBundle Toggle Deltas.tmCommand</a>.
+Download: <a href="/uploads/MyBundle%20Toggle%20Deltas.tmCommand">MyBundle Toggle Deltas.tmCommand</a>.
 
-<img src="https://henrik.nyh.se/filer/gm_toggle_deltas-growl.png" alt="" class="right" />
+<img src="/uploads/gm_toggle_deltas-growl.png" alt="" class="right" />
 
 The command assumes you keep the bundle in <code>~/Library/Application Support/<wbr />TextMate/<wbr />Bundles</code>. When run, the command switches the deltas and the complete bundle between that directory and <code>Pristine Copy/Bundles</code>. When the deltas are in the non-pristine directory, any changes you make become deltas, and local changes (e.g. my global keyboard shortcuts) are available to use and modify. When the deltas are in the pristine directory, they are ignored. Changes are written directly to the bundle, and your personal, local changes are not available.
 

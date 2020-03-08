@@ -16,7 +16,7 @@ I extended <a href="http://adamv.com/dev/textmate/greasemonkey">Adam V's TextMat
 
 <!--more-->
 
-<a href="https://henrik.nyh.se/filer/Greasemonkey.tmbundle.zip">Download</a> (16 KB).
+<a href="/uploads/Greasemonkey.tmbundle.zip">Download</a> (16 KB).
 
 The grammar and the snippets are mainly by Adam.
 
