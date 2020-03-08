@@ -17,4 +17,4 @@ I love how the winky icon actually winks, ever so subtly.
 
 It's nice, by the way, that they're not implemented as animated GIFs but as background image sprites. This is the winky icon:
 
-<p class="center"><img src="http://mail.google.com/mail/im/emotisprites/wink.png" alt="[Image]" class="bordered" style="padding:2px;" /></p>
+<p class="center"><img src="/uploads/emotisprite_wink.png" alt="[Image]" class="bordered" style="padding:2px;" /></p>
