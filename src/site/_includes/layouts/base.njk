@@ -19,8 +19,14 @@
   <body class="container mx-auto py-10 lg:max-w-2xl text-gray-800">
     <header class="text-center">
       <a href="/" class="border-0">
-        <p><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" alt=""></p>
-        <h1 class="font-bold text-yellow-600 text-2xl">The Pug Automatic</h1>
+        {% if page.url == "/" %}
+          <p><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" alt=""></p>
+          <h1 class="font-bold text-yellow-600 text-2xl">The Pug Automatic</h1>
+          <p class="mb-12 text-gray-700">A blog by <a href="https://twitter.com/henrik">@henrik</a> about <a href="/tag/ruby">Ruby</a>, <a href="/tag/elixir">Elixir</a> and other things.</p>
+        {% else %}
+          <p><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" style="max-width: 100px" alt=""></p>
+          <h1 class="font-bold text-yellow-600 text-lg">The Pug Automatic</h1>
+        {% endif %}
       </a>
     </header>
 
