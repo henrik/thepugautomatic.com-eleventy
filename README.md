@@ -14,15 +14,15 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [ ] Go through all posts and fix remaining issues
 - [ ] Remove posts I don't want to keep
 - [x] Tag support
-- [ ] Disqus
+- [x] Disqus
 - [ ] Support filenames in code examples (custom shorttag?)
-- [ ] Styling: Subheaders
+- [x] Styling: Subheaders
 - [ ] Atom feed
 - [ ] Site search
 - [ ] Sticky years on start page
 - [ ] Maybe: Prev/next post
 - [ ] Visual polish
-- [ ] Copy images from old blog
+- [x] Copy images from old blog
 
 ## Writing a post
 

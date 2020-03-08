@@ -18,4 +18,20 @@ tags: "post"
   <div>
     {{ content | safe }}
  </div>
+
+ {% if comments != false %}
+ <div id="disqus_thread" aria-live="polite"></div>
+ <script type="text/javascript">
+   var disqus_shortname = "pug";
+   var disqus_developer = "0";
+   var disqus_url = 'https://thepugautomatic.com{{ page.url }}';
+   var disqus_identifier = disqus_url;
+   (function () {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = "https://" + disqus_shortname + ".disqus.com/embed.js";
+     (document.getElementsByTagName("head")[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   }());
+ </script>
+  {% endif %}
+
 </section>
