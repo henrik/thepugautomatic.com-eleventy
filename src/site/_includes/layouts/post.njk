@@ -5,14 +5,14 @@ permalink: "/{{ page.date | slugDate }}/{{ page.fileSlug }}/index.html"
 tags: "post"
 ---
 <section>
-  <hgroup class="mb-5">
+  <hgroup class="mb-8">
     <h1 class="heading">{{ title }}</h1>
     <p class="text-gray-600">
       Written {{ page.date | readableDate }}.
       {{ tags | tagList | safe }}
     </p>
   </hgroup>
-  <div class="mb-4 text-lg font-medium">
+  <div>
     {{ content | safe }}
  </div>
 </section>
