@@ -27,7 +27,7 @@ Modify it with the right library name, then save it in Script Editor as an appli
 
 Clicking the app will switch to that library (if not already the active library). Dragging files or folders to the app will switch to that library and then import those files and folders into it. Since OS X is clever about drag-and-drop, you can even drag photos straight from Photo Booth.
 
-<h4>Bonus feature</h4>
+## Bonus feature
 
 The <a href="http://softbend.free.fr/mimifoto/index.html">mimiFoto</a> app can create iPhoto icons with your custom photo, as seen at the top of this post.
 

@@ -21,7 +21,7 @@ Numbers recurse if necessary, so whereas the highest named number is "centiljard
 
 The use of whitespace (between parts except within hundreds and tens) is obviously debatable.
 
-<h4>The algorithm</h4>
+## The algorithm
 
 The input is turned into a reverse array of digits, so <code>"123"</code> becomes <code>[3,2,1]</code>.
 
@@ -39,7 +39,7 @@ For the largest implemented named power of ten, "centiljarder", the range is fro
 
 After joining the output together into a string, two regular expression substitutions are applied, to fix gender and number agreement issues.
 
-<h4>The code</h4>
+## The code
 
 The code (<a href="/uploads/numbers.rb">download</a>):
 

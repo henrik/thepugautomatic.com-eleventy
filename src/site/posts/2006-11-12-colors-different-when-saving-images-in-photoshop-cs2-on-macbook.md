@@ -31,7 +31,7 @@ Left to right: image on Google Images in Firefox, image being edited, "Save to w
 
 Colors now match.
 
-<h4>The solution</h4>
+## The solution
 
 Asking about this issue on IRC, <code>View &gt; Proof Setup&hellip;</code> was mentioned. Setting this to "Monitor RGB" will display the image as it'll look when exported. However, this is not a very persistent setting. Whenever you re-open the image, or another image, you'll have to make the setting again, or <code>View &gt; Proof Colors</code>.
 

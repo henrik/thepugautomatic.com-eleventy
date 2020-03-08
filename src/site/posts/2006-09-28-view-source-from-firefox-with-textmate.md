@@ -11,7 +11,7 @@ I figured I should briefly write up how to configure Firefox to view a page's HT
 
 <!--more-->
 
-<h4>Instructions</h4>
+## Instructions
 
 Install the <a href="https://addons.mozilla.org/firefox/394/">ViewSourceWith extension</a>.
 

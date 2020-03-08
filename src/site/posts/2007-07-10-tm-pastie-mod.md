@@ -21,7 +21,7 @@ Furthermore, sometimes pasting will take several seconds. I've found myself past
 
 Oh, and the only thing I really want to choose is the privacy level: if the paste should be public for everyone to see, or private. In the standard dialog, the privacy setting is a checkbox that requires using the mouse or tabbing extensively.
 
-<h4>Bah!</h4>
+## Bah!
 
 I made a new front-end for the command that does what I want and nothing more:
 

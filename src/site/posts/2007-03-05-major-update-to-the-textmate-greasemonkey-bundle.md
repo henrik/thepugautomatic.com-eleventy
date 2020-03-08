@@ -35,7 +35,7 @@ Around 2:00 in the movie, I forget to update the script metadata (write to the <
 
 I'll paste the bundle documentation (available through <code>Help</code> in the bundle menu) below, for your pleasure:
 
-<h4>Template (&#x21E7;&#x2303;&#x2325;&#x2318;G)</h4>
+## Template (&#x21E7;&#x2303;&#x2325;&#x2318;G)
 <p>Select <code>File &gt; New From Template &gt; Greasemonkey &gt; Userscript</code> to create a new script from template. The template outputs this:</p>
 
 ``` js
@@ -61,7 +61,7 @@ I'll paste the bundle documentation (available through <code>Help</code> in the 
 
 
 
-<h4>Snippets</h4>
+## Snippets
 <h5>Included URL and Excluded URL (i&#x21E5; and e&#x21E5;)</h5>
 <p>Within the header block, the snippets <code>i</code> and <code>e</code> add <code>@include</code> and <code>@exclude</code> directives with <code>http://</code> as a preselected value. The next tab stop puts the caret after <code>http://</code>.</p>
 
@@ -98,7 +98,7 @@ I'll paste the bundle documentation (available through <code>Help</code> in the 
 
 
 
-<h4>Commands</h4>
+## Commands
 <h5>Open Installed Script&hellip; (&#x2303;&#x2325;&#x2318;G)</h5>
 <p>Displays a dialog listing every installed userscript, with the choice of alphabetical or chronological (most recently installed first) ordering. Select a script and confirm to open it.</p>
 
@@ -192,7 +192,7 @@ I'll paste the bundle documentation (available through <code>Help</code> in the 
 
 
 
-<h4>Credits</h4>
+## Credits
 <p><a href="http://adamv.com/dev/textmate/greasemonkey">Originally</a> by Adam Vandenberg, who wrote most of the grammar and a few snippets.</p>
 
 <p>The <a href='#documentation_for_word_selection'>Documentation for Word / Selection</a> command is originally by <a href="http://subtlegradient.com/">Thomas Aylott</a>, I think.</p>

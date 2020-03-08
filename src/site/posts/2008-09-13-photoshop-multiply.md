@@ -9,7 +9,7 @@ In Photoshop, the "Multiply" blending option is very handy. I use it to color li
 
 <!--more-->
 
-<h4>Setting "Blend mode: Multiply"</h4>
+## Setting "Blend mode: Multiply"
 
 To use it, right-click on a layer, select "Blending Options…" and then set "Blend Mode: Multiply". Or use the <code>Layer &gt; Layer Style &gt; Blending Options…</code> regular menu item.
 
@@ -19,7 +19,7 @@ Multiplying two layers basically means, to my understanding, that the top layer 
 
 So I use it for two things:
 
-<h4>Coloring line art</h4>
+## Coloring line art
 
 Actually it's my girlfriend (<a href="http://johannaost.com/main">an artist</a>) that uses it, but I usually set it up for her.
 
@@ -31,7 +31,7 @@ Then paint on a layer under it. The colors will show right through the white par
 
 Note that this only prevents you from painting <em>on top</em> of the lines; nothing prevents you from painting <em>outside</em> them. In the example image above, I used the "Quick Selection" tool (with the "Contiguous" option checked) on the "Pug" layer to select everything outside the lines. I can then change to the "Color" layer and press "Delete" to remove the excess color.
 
-<h4>Colors in the home</h4>
+## Colors in the home
 
 If my girlfriend and I are not sure what color we want for e.g. a rug or our kitchen cabinets or walls, multiply is also useful.
 

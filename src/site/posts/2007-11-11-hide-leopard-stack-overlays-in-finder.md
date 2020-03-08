@@ -12,7 +12,7 @@ A tumblelog named XD had <a href="http://t.ecksdee.org/post/19001860">a post on 
 
 The log does not allow comments, so I'm blogging some minor improvements to this technique:
 
-<h4>Handle any sorting</h4>
+## Handle any sorting
 
 I want my <code>Downloads</code> stack to be sorted by date added, not date modified as in that post. Just change the <code>m</code> to an <code>a</code>:
 
@@ -21,7 +21,7 @@ touch -at 202001010101.01 " Icon"
 ```
 Note that I've named the icon " Icon" with an initial space. This is so that I can use the same naming scheme with stacks that I sort by name (in my case, my home folder). The reason for using a consistent naming scheme is revealed below.
 
-<h4>Hide the overlay icon in Finder</h4>
+## Hide the overlay icon in Finder
 
 A necessary evil to the overlay trick is that you need to keep an icon file sorted at the top of the stack. To my knowledge, you can't hide it from the expanded stack – well, you can (by renaming it to something starting with a <code>.</code>, like <code>.Icon</code>) but then it's not overlayed…
 
@@ -50,7 +50,7 @@ See <a href="/2007/10/lift-the-leopard-download-quarantine">this post</a> for ho
 
 This folder action explains why I used the " Icons" (with an initial space) name in the <code>Downloads</code> stack as well – the same folder action, with a hard-coded icon name, can be used for multiple stacks.
 
-<h4>The code</h4>
+## The code
 
 ``` applescript
 (*

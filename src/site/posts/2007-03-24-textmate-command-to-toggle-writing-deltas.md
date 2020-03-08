@@ -16,7 +16,7 @@ But what if you <em>are</em> the bundle author?
 
 <!--more-->
 
-<h4>Developing bundles</h4>
+## Developing bundles
 
 If you distribute the bundle as a web download, you can just drag-and-drop it from the Bundle Editor to the desktop, zip it up and share. The bundle you share will include any local changes.
 
@@ -26,7 +26,7 @@ But sometimes you <em>do</em> want deltas. For my <a href="/2007/03/textmate-gre
 
 To be able to easily switch between writing changes as deltas and writing changes to the bundle proper would be quite useful. So I wrote a TextMate command for this.
 
-<h4>The command</h4>
+## The command
 
 Download: <a href="/uploads/MyBundle%20Toggle%20Deltas.tmCommand">MyBundle Toggle Deltas.tmCommand</a>.
 

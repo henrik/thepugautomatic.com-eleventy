@@ -13,7 +13,7 @@ As if that wasn't enough, <a href="quicksilver.blacktree.com/">Quicksilver</a> c
 
 <!--more-->
 
-<h4>Set up the SSH connection</h4>
+## Set up the SSH connection
 
 <p class="center"><img src="/uploads/colored-terminals_connect.png" alt="" /></p>
 
@@ -21,13 +21,13 @@ Hit <code>File &gt; Connect to Server… (&#x21E7;&#x2318;K)</code>. Select "Sec
 
 Hit the "Connect" button and a SSH connection should be established. If you don't want to be prompted for the password when connecting, you can <a href="http://wiki.dreamhost.com/SSH#Passwordless_Login">set up RSA keys</a>.
 
-<h4>Customize colors</h4>
+## Customize colors
 
 <p class="center"><img src="/uploads/colored-terminals_color" alt="" /></p>
 
 Select <code>Terminal &gt; Window Settings…</code>. In the "Color" panel, customize to your heart's content. You can change font and cursor style in the "Display" panel.
 
-<h4>Save</h4>
+## Save
 
 <p class="center"><img src="/uploads/colored-terminals_save.png" alt="" /></p>
 
@@ -35,7 +35,7 @@ When you're satisfied, do <code>File &gt; Save (&#x2318;S)</code>. Specify some 
 
 You're now free to remove the connection from "Connect to Server" if you feel like it; the SSH settings are saved with the window.
 
-<h4>Open</h4>
+## Open
 
 To re-establish the saved connection, with the customized colors, just <code>File &gt; Open…  (&#x2318;O)</code>. When the "Open" dialog appears, start typing the name to select the file and hit <code>&#x21A9;</code> to open it.
 

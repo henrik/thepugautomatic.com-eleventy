@@ -17,7 +17,7 @@ My solution was to code up an improved EyeTV on/off button for the keyboard.
 
 <!--more-->
 
-<h4>Functionality</h4>
+## Functionality
 
 The script I wrote does this when run:
 
@@ -29,7 +29,7 @@ If there was no tv window open, or EyeTV itself was not running, a live tv windo
 
 Any iTunes playback is paused.
 
-<h4>Installation</h4>
+## Installation
 
 <a href="http://pastie.textmate.org/pastes/183413/download">Download the script</a> (<a href="http://pastie.textmate.org/pastes/183413">source</a>) as <code>~/Library/Scripts/EyeTV Toggle.scpt</code>, creating the <code>Scripts</code> directory if necessary.
 

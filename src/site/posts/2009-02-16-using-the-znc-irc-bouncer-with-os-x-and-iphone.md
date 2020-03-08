@@ -20,7 +20,7 @@ I wanted a bouncer that I could run off my OS X home server. I looked at a few, 
 
 I like about ZNC that it works well with very little fuss, and that it's fairly well documented.
 
-<h4>Installation</h4>
+## Installation
 
 I compiled from source according to the <a href="http://en.znc.in/wiki/Installation#Source_Tarball">wiki instructions</a>. You need the <a href="http://developer.apple.com/technology/xcode.html">OS X developer tools</a> or equivalent for this.
 
@@ -35,7 +35,7 @@ Ensure <code>/usr/local/bin</code> is in your <code>PATH</code>. There's no need
 
 With those settings, it compiled without a hitch for me.
 
-<h4>Configuration</h4>
+## Configuration
 
 Run <code>znc --makeconf</code> from the command line to interactively create a configuration file. Later, you can modify it by hand (it'll be somewhere like <code>~/.znc/configs/znc.conf</code>), or even from IRC (<code>/msg *status help</code>).
 
@@ -49,7 +49,7 @@ As for user modules, I went with: <code>chansaver</code>, so ZNC remembers what 
 
 If you add channels for ZNC to join automatically, don't forget the initial "#"; it's required.
 
-<h4>Launching</h4>
+## Launching
 
 It's very easy to make sure ZNC keeps running, e.g. if you reboot your server or ZNC crashes (it hasn't for me, so far). The wiki <a href="http://en.znc.in/wiki/FAQ#How_can_I_restart_ZNC_automatically_.28in_case_of_a_machine_reboot.2C_crash.2C_etc..29.3F">describes</a> that you can just set up a cron job; if ZNC is already running with a given config, starting it again will have no effect.
 
@@ -65,7 +65,7 @@ launchctl load name.henriknyh.znc.plist
 
 This will also start ZNC at that time if it isn't already running.
 
-<h4>Connecting</h4>
+## Connecting
 
 When you're all done, connect your IRC client to the bouncer on the hostname and port you configured, e.g. "myhomeserver.com:7777". When you connect to the bouncer, the configured username and password should be put in the server password field (yes, <em>server</em> password field) separated by a colon, like: <code>myusername:mypassword</code>.
 

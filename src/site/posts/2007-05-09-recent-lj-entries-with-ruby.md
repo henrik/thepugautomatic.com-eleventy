@@ -18,7 +18,7 @@ I ended up retrieving most of the data from a RSS feed, and then parsing the thi
 
 The page is Ruby CGI running on Dreamhost.
 
-<h4>The LiveJournal class</h4>
+## The LiveJournal class
 
 This class is sadly under-featured for its name, but it does show recent entries.
 
@@ -97,7 +97,7 @@ Different LiveJournal styles have different markup, so you'll likely have to cha
 
 Also note that since it pulls the cut body text and the comment count from your LiveJournal front page, it can only provide that info for those entries that are displayed there. If you want more, you'd have to make it handle pagination.
 
-<h4>Displaying the data</h4>
+## Displaying the data
 
 I use Rails date helpers to show relative days. I suppose requiring ActionController and ActionView is overkill, but hey:
 

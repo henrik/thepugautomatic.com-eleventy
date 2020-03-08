@@ -57,7 +57,7 @@ end
 ```
 so I suppose whether it can be described as more self-documenting than comments is debatable.
 
-<h4>:foo.code do</h4>
+## :foo.code do
 
 Anyway, I do this instead:
 
@@ -93,7 +93,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-<h4>category :foo do</h4>
+## category :foo do
 
 If abusing symbols bothers you, try something like
 
@@ -123,7 +123,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-<h4>Highlighting</h4>
+## Highlighting
 
 To make things more manageable still, TextMate can be made to highlight these blocks. Merge this rule into the Ruby grammar (with thanks to Ciarán Walsh):
 

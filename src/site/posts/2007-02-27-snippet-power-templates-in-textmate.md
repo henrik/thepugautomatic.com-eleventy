@@ -22,7 +22,7 @@ However, there are a couple of ways to include a snippet that expands <em>automa
 
 <!--more-->
 
-<h4>The shell script</h4>
+## The shell script
 
 The placeholder replacement is possible because each template is in effect a shell script preprocessor in addition to the template files. This shell script can actually be used to add snippet powers to templates.
 
@@ -38,7 +38,7 @@ if [[ ! -f "$TM_NEW_FILE" ]]; then
 fi
 ```
 
-<h4>Sending keystrokes</h4>
+## Sending keystrokes
 
 If a template includes a snippet tab trigger keyword, e.g. <code>template</code>, automatically moving the caret to after that keyword and sending a &#x21E5; keystroke will expand it.
 
@@ -63,7 +63,7 @@ The snippet will not be expanded if you're pressing other keys as the tab keystr
 
 Solving this without generating keystrokes would seem preferable. And it can be done, by using a perhaps little-known TextMate AppleScript command.
 
-<h4>Insert as snippet</h4>
+## Insert as snippet
 
 In the AppleScript dictionary for TextMate, there is a command <code>insert Unicode text [as snippet boolean]</code> that will insert a piece of text into the active document, interpreting it as a snippet. This is quite useful.
 

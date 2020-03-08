@@ -33,7 +33,7 @@ It's named "Tasks" rather than "To-do" since a "TODO" bundle ships with TextMate
 
 This is a pretty simple bundle. I don't need any special handling of priorities or due-dates. Feel free to modify it to fit your preferred markup and way of working.
 
-<h4>File format</h4>
+## File format
 
 The Tasks grammar and commands by default apply to files with the <code>.todo</code>, <code>.todolist</code> and <code>.tasks</code> extensions.
 
@@ -43,15 +43,15 @@ Pending (uncompleted) tasks start with a hyphen ("-"). Completed tasks start wit
 
 Headers and tasks can be indented for grouping/hierarchy, as seen in the screenshot above.
 
-<h4>Commands</h4>
+## Commands
 
-<h5>New Task</h5>
+### New Task
 
 Press <code>&#x2305;</code> to insert a new task.
 
 The command has some smarts: if the caret is on the same line as a task but before the hyphen/checkmark, the new task is inserted above; if the caret is after a task, the task is inserted below. If the caret is inside the task, the line breaks, splitting the task in two. If the caret is on a blank line, a new task is inserted there without adding line breaks.
 
-<h5>Toggle Completed</h5>
+### Toggle Completed
 
 Press <code>&#x2325;&#x2305;</code> to toggle completion for a task or set of tasks.
 
@@ -59,7 +59,7 @@ If no text is selected, the task on the current line is toggled: if it's pending
 
 If text is selected, every task in the selection is toggled in batch: if any of the tasks are pending, all are marked as completed; if all are completed, they're marked as pending.
 
-<h5>Other commands</h5>
+### Other commands
 
 In addition to these specific commands, you can obviously use general TextMate features like undo, Duplicate Line (<code>&#x2303;&#x21E7;D</code>), Current Date (<code>isoD&#x21E5;</code>), move lines up (<code>&#x2303;&#x2318;&#x2191;</code>) and down (<code>&#x2303;&#x2318;&#x2193;</code>)…
 

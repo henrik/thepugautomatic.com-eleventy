@@ -43,7 +43,7 @@ Oh, and being based on Hpricot, which has a robust parser, it handles crap HTML 
 
 <!--more-->
 
-<h4>Installation</h4>
+## Installation
 
 Get it <a href="http://pastie.textmate.org/pastes/145402/download">here</a> (<a href="http://pastie.textmate.org/145402">highlighted source</a>).
 
@@ -59,7 +59,7 @@ helper TextHelper
 ```
 in your <code>ApplicationController</code>.
 
-<h4>Previous work</h4>
+## Previous work
 
 I was inspired by Mike Burns' <a href="http://mikeburnscoder.wordpress.com/2006/11/11/truncating-html-in-ruby/">Truncating HTML in Ruby</a> and Joakim Andersson's response <a href="http://joakimandersson.se/archives/2007/03/01/rails-tidy-rexml/">Rails + tidy + REXML</a>. Joakim uses <a href="http://tidy.sourceforge.net/">tidy</a> to keep REXML from choking on malformed HTML. I <a href="http://joakimandersson.se/archives/2007/03/01/rails-tidy-rexml/#comment-29821">suggested</a> cleaning the HTML with Hpricot, and then figured it'd be fun to write my own helper using just Hpricot, not REXML.
 

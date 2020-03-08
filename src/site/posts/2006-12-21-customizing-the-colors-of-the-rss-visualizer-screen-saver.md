@@ -22,7 +22,7 @@ To modify the screen saver, you need to have Quartz Composer installed. It shoul
 
 Now, since I didn't want to learn all about Quartz Composer at this time, my solution is in a spirit of just-make-it-work, aiming for no more than a very shallow understanding of things. I fully expect there to be better and simpler solutions. Please let me know of them.
 
-<h4>In Quartz Composer</h4>
+## In Quartz Composer
 
 Open the screen saver in Quartz Composer.
 

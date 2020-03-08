@@ -20,7 +20,7 @@ This is what I did.
 
 <!--more-->
 
-<h4>Mounting</h4>
+## Mounting
 
 I put the ZephIR on the back of the tv with the included suction cup.
 
@@ -30,7 +30,7 @@ I put the ZephIR on the back of the tv with the included suction cup.
 
 The IR seems strong enough that it will bounce its way to the IR eye even without line-of-sight. Having it behind the tv means you don't see it at all from the front, which was a goal.
 
-<h4>AppleScripts</h4>
+## AppleScripts
 
 The functions I use on the tv remote are: power on/off, volume up/down (the Wii currently uses the tv speakers, though the computer has external ones) and changing input between computer (HDMI) and Wii (component/YUV).
 
@@ -91,7 +91,7 @@ On that subject, does anyone know if there are tvs that act like computer displa
 
 So "Power" is just a simple script, like the volume ones. I also made a simple "Next input" script so I don't have to find the tv remote if somehow the actual input and the stored value get out of sync.
 
-<h4>Mapping to keyboard</h4>
+## Mapping to keyboard
 
 To make these scripts actually useful, I needed to map them to our keyboard. So I had five functions to map: power on/off, toggle HDMI/YUV, next input, volume down, volume up.
 
@@ -111,7 +111,7 @@ So now, pressing <code>Fn</code> and the big sun turns on/off the tv display, an
 
 With the free <a href="http://www.abyssoft.com/software/teleport/">Teleport</a> software, I can even mouse right over to the HTPC and then hit those function keys from my own keyboard.
 
-<h4>Making the software presentable</h4>
+## Making the software presentable
 
 While I love what the ZephIR lets me do, it's not the prettiest of apps. The icon looks particularly out of place in OS X.
 

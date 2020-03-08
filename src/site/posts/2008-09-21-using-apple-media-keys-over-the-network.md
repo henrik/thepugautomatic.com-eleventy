@@ -18,7 +18,7 @@ I also used ControlMaster SSH settings to speed up the network action.
 
 <!--more-->
 
-<h4>The scripts</h4>
+## The scripts
 
 These are shell scripts that have been made executable (<code>chmod +x filename.sh</code>). I keep them in <code>~/Library/Scripts/HyperControl</code>. They use <code>ssh</code> to run AppleScript on the remote computer.
 
@@ -76,7 +76,7 @@ ssh hyper "osascript -e 'set volume output volume (output volume of (get volume 
 
 Note that changing the volume this way does not give any feedback other than, of course, the volume changing. You will not see a volume indicator on the screen, and you will not hear the volume example sounds.
 
-<h4>Binding them</h4>
+## Binding them
 
 To bind these scripts to keyboard keys, I use <a href="http://www.blacktree.com/">Quicksilver</a>. I'm sure you could use something else like <a href="http://www.red-sweater.com/fastscripts/">FastScripts Lite</a> if you prefer.
 
@@ -90,7 +90,7 @@ And now for the mapping proper. Go to the Triggers tab and add the scripts as Ho
 
 You can even set Quicksilver to repeatedly run the script, e.g. every 0.5 seconds, if the key is kept down.
 
-<h4>ControlMaster for faster SSH</h4>
+## ControlMaster for faster SSH
 
 Now you should be able to run the scripts by using <code>Fn</code> plus the media keys.
 

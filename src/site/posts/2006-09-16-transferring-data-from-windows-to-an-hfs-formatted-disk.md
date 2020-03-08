@@ -15,7 +15,7 @@ All that remained was a simple matter of transferring the data from Windows to m
 
 <!--more-->
 
-<h4>MacDrive</h4>
+## MacDrive
 
 OS X can read but not write NTFS. Both OS X and Windows can read and write FAT32, but it limits file sizes to a maximum of 4 GB. OS X prefers HFS+, but Windows cannot read or write that without e.g. <a href="http://www.mediafour.com/products/macdrive6/">MacDrive</a>.
 
@@ -25,13 +25,13 @@ I tried again, after <a href="http://assist.mediafour.com/index.php?_a=knowledge
 
 At this point, I considered FAT32, but it seemed silly to use an ancient file system just for one transfer from Windows, and more importantly because backup archives could go way above 4 GB.
 
-<h4>SMB</h4>
+## SMB
 
 Instead, I <a href="http://www.networkworld.com/columnists/2006/050106internet.html">set up a FireWire network</a> between the Windows computer and my MacBook, connected the HDD to the MacBook through USB, shared the folder in question on the network and mounted it in OS X.
 
 Then I tried to drag-and-drop files from the mounted folder to the HDD. This turned the Finder very sluggish, when it did not stall completely. When I finally got the transfer started, the estimated time until completion was something like 27 days for my 40 MBs of test data.
 
-<h4>FTP to the rescue</h4>
+## FTP to the rescue
 
 I activated the OS X FTP server (in the Sharing prefpane), connected from a Windows FTP client (I like <a href="http://filezilla.sourceforge.net/">FileZilla</a>) using the Mac's IP address and my OS X account name and password, and proceeded to transfer the files to <code>/Volumes/Axolotl</code> &ndash; the name of the HDD.
 

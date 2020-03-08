@@ -14,7 +14,7 @@ The bug was an interesting example of the fact that computers do what you say, n
 
 <!--more-->
 
-<h4>Creating date objects with AppleScript</h4>
+## Creating date objects with AppleScript
 
 iCalTV inserts events into iCal by generating and running an AppleScript. In the script, each event is constructed and then inserted into the proper calendar. Each event has a start date and an end date, where "date" includes time of day.
 
@@ -45,13 +45,13 @@ set month of myDate to 2
 set day of myDate to 1
 ```
 
-<h4>Dates gone bad</h4>
+## Dates gone bad
 
 I noticed that the <a href="/2006/07/adapting-the-ical-events-widget-for-icaltv/">iCal Events Widget</a> wasn't displaying any reminders for the next couple of days, even though I knew there should be a few. Tracing through my code, I eventually found that the reminders <em>were</em> being set, but they were off by one. Month. My February 1 reminders were scheduled for March 1.
 
 I played around in Script Editor. Setting the date properties like that would indeed create a March date. I ruled out zero-indexing (month <code>0</code> corresponding to January, <code>1</code> to February and so on) by testing. Setting the month to <code>1</code> would create a January date.
 
-<h4>The solution</h4>
+## The solution
 
 Eventually the cause of the bug became clear, and it was this. The date object was constructed as 21:00 today, January 31. The year was set to <code>2007</code>, which in this case did not in fact change anything. The month was set to <code>2</code>. This is where my intuition and programming logic diverged. Since there is no 31st of February, the modified date object was March 3. Changing the day of the month to <code>1</code> then turns it into March 1.
 

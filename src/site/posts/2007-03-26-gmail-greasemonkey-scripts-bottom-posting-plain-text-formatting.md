@@ -13,13 +13,13 @@ I currently use <a href="http://www.mozilla.com/thunderbird/">Thunderbird</a>, w
 
 <!--more-->
 
-<h4>Bottom posting in replies</h4>
+## Bottom posting in replies
 
 I find <a href="http://mailformat.dan.info/quoting/bottom-posting.html">bottom posting</a> sensible. Gmail abstracts away <a href="http://en.wikipedia.org/wiki/Posting_styles">posting styles</a> when you're reading mail, by collapsing quotes inside mails and displaying preceding mails above the one you're reading. This is great, but what's not so great is that replying in Gmail caters to top posting, with no option to have the caret inserted after the quote. Though you barely notice the difference as a Gmail user, it's a courtesy to people with other mail clients.
 
 The <a href="http://userscripts.org/scripts/show/8041">Gmail bottom posting in replies</a> userscript puts the caret <em>after</em> the quoted text when replying, shuffling whitespace as appropriate.
 
-<h4>Plain text formatting</h4>
+## Plain text formatting
 
 Thunderbird and some other clients support some <a href="http://kb.mozillazine.org/Thunderbird_:_FAQs_:_Viewing_Headers#Enhanced_plain_text_features">enhanced plain text features</a>, like visually bold-facing, italicizing and underlining text between two asterisks, slashes and underscores, respectively, in plain text mails.
 

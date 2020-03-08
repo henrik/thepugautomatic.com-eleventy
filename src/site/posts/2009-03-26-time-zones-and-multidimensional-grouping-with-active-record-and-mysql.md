@@ -8,7 +8,7 @@ comments: true
 ---
 I've been writing a lot of statistics queries in Active Record/MySQL lately and noticed some possibly non-obvious things.
 
-<h4>Time zones</h4>
+## Time zones
 
 Our database is configured to use UTC time. In Rails 2.1, we use <code>config.active_record.default_timezone = :utc</code>. In 2.3, I believe it's <code>config.time_zone = 'UTC'</code>, and set that way by default.
 
@@ -49,7 +49,7 @@ Warnings about time zones that couldn't be loaded are fine as long as they're no
 
 You can convert time zones without those tables, but then you need to specify the UTC offset manually, and since it changes with daylight saving, I wouldn't recommend it.
 
-<h4>Multidimensional grouping</h4>
+## Multidimensional grouping
 
 Another thing I noticed was that Active Record calculation queries (using e.g. <code>.count</code>) don't seem to support grouping by multiple columns at once. It's easy to do with <code>.all</code> and <code>#map</code>, though:
 

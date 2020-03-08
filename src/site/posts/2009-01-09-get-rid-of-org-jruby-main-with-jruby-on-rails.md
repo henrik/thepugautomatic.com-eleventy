@@ -19,7 +19,7 @@ I couldn't find anything on Google, strangely, but IRC was more helpful (thanks,
 
 The <code>jruby</code> app takes a <code>--headless</code> option, explained as "do not launch a GUI window, no matter what".
 
-<h4><code>jake/rake</code></h4>
+## <code>jake/rake</code>
 
 I run the test suite with <code>jake spec</code>, where <code>jake</code> is an alias:
 
@@ -35,7 +35,7 @@ alias jake='jruby --headless -S rake'
 
 Obviously, be careful with this if you expect to ever run non-headless stuff through <code>jake</code>.
 
-<h4><code>script/server</code>, <code>script/console</code> etc</h4>
+## <code>script/server</code>, <code>script/console</code> etc
 
 Change
 

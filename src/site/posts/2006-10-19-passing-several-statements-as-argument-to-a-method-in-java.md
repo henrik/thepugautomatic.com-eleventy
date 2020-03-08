@@ -17,7 +17,7 @@ The solution is based on code from chapter 8 of <a href="http://www.mindview.net
 
 If I'm doing something horribly wrong or needlessly complicated (for Java :p), please let me know.
 
-<h4>The solution</h4>
+## The solution
 
 The idea is to create an interface (something like a very abstract base class, with no data) that has one method; then make the method that should take the "block" accept objects implementing that interface, and trigger the method defined in the interface wherever the "block" should run.
 

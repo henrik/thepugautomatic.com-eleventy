@@ -26,7 +26,7 @@ I did these things, but my plugin would not build. I needed to include two more 
 
 <!--more-->
 
-<h4>AIUtilities/AITigerCompatibility.h</h4>
+## AIUtilities/AITigerCompatibility.h
 
 My plugin was originally configured to compile for OS X 10.4 Tiger. This is a good idea, since Adium 1.3 itself is still compatible with Tiger.
 
@@ -59,7 +59,7 @@ To fix that, I had to include another header in my plugin's main <code>.h</code>
 #import <AIUtilities/AITigerCompatibility.h>
 ```
 
-<h4>Adium/AISharedAdium.h</h4>
+## Adium/AISharedAdium.h
 
 When that was done, or if I built for OS X 10.5 Leopard only, I instead got a couple of
 

@@ -27,7 +27,7 @@ The script will
  <li>open a related SSH session in Terminal.</li>
 </ul>
 
-<h4>The code</h4>
+## The code
 
 ``` applescript
 -- Coda Light

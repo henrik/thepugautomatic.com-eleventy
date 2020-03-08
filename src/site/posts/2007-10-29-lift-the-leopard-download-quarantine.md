@@ -26,7 +26,7 @@ And that should be it.
 
 Note that, quite obviously, the folder action only applies to that folder. If you download a file to a directory without this folder action attached, Leopard is free to nag again.
 
-<h4>The code</h4>
+## The code
 
 Basically, the script just runs
 

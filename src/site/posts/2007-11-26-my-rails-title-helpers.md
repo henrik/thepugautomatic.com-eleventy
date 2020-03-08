@@ -8,7 +8,7 @@ comments: true
 ---
 I figured I should blog the title helpers I made of late.
 
-<h4>Usage</h4>
+## Usage
 
 First, example usage. In an erb view:
 
@@ -35,7 +35,7 @@ Things look even nicer in <a href="http://haml.hamptoncatlin.com/">Haml</a>:
 
 <!--more-->
 
-<h4>Displaying the title</h4>
+## Displaying the title
 
 I like to define an <code>ApplicationLayoutHelper</code> for helpers that will only be used in that layout (you'll need to declare <code>helper :all</code> or <code>helper ApplicationLayoutHelper</code> in your <code>ApplicationController</code>). If you want to, though, you can just stick this helper method in <code>ApplicationHelper</code>:
 
@@ -55,7 +55,7 @@ Now, just use this helper where you want to display the title – typically in y
 <title><%= title %></title>
 ```
 
-<h4>Setting the title</h4>
+## Setting the title
 
 I like to be able to set the title from controller as well as from its views. Thus, the setters are defined in <code>ApplicationController</code>:
 

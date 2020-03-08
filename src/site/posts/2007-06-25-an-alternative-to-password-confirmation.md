@@ -23,7 +23,7 @@ The point of password confirmation as I understand it is this: you may be signin
 
 One problem is that while this will catch a one-off slip of the fingers, it won't stop you from making consistent typos. So if you have butter fingers and press "s" instead of "a" twice over, tough luck. My main annoyance with password confirmation, though, is simply that – for me, and I should think most people – the more common usage case by far is signing up in private, not with people peering over my shoulder.
 
-<h4>An alternative solution</h4>
+## An alternative solution
 
 For a site I'm developing, I came up with something I like better. In short: echo the password back to the user in a single input field with no confirmation, but make sure to inform that this happens, and offer a non-echoing, confirming form as well. I'm sure I'm not the first person to think of this, but I can't recall ever seeing this on a site.
 
@@ -39,7 +39,7 @@ The toggle brings you
 
 The form changes on-the-fly without reloading the page, using JavaScript. By the principle of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>, users without JavaScript simply see the form with password confirmation and no toggle link. One could let non-JavaScript users fall back on a regular link to a new page with a different form, but that would effectively reset the form if it had any input already, so I'd suggest against.
 
-<h4>Ruby on Rails/JavaScript code</h4>
+## Ruby on Rails/JavaScript code
 
 Below is the significant part of the <code>users/new.rhtml</code> Ruby on Rails view I use for the site I'm developing. I added this as a proof-of-concept and haven't yet taken the time to ensure valid XHTML and do much tidywork. Still, please do suggest any improvements.
 

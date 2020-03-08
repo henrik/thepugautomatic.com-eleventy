@@ -13,7 +13,7 @@ Ran into some gotchas when installing from <a href="http://www.macports.org/">Ma
 
 <!--more-->
 
-<h4>Running MySQL 5</h4>
+## Running MySQL 5
 
 I installed MySQL 5 with
 
@@ -38,7 +38,7 @@ which I believe creates the required default databases, then start MySQL with
 sudo /opt/local/etc/LaunchDaemons/org.macports.mysql5/mysql5.wrapper start
 ```
 
-<h4>Staging ncurses</h4>
+## Staging ncurses
 
 I tried to install some ports (<code>git-core</code>, <code>readline</code>) that have <code>ncurses</code> as a dependency.
 

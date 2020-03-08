@@ -12,7 +12,7 @@ In both cases, I'm using the <a href="http://www.prototypejs.org/">Prototype Jav
 
 <!--more-->
 
-<h4>Fit images in liquid columns</h4>
+## Fit images in liquid columns
 
 Richard Rutter has done <a href="http://clagnut.com/blog/268/">some interesting experiments</a> on displaying images in liquid (variable-width) columns. One interesting technique he mentions for fitting images in such columns is to set the CSS <code>width</code> of the image to <code>100%</code> (to grow and shrink with the column) and the <code>max-width</code> to the actual width of the image in pixels (to never grow it beyond its original size).
 
@@ -48,7 +48,7 @@ Event.onDOMReady(function() {
 
 The <code>$$</code> function finds the images using a CSS selector. You'd likely need to change that selector here and in the CSS above.
 
-<h4>Different font, different font size</h4>
+## Different font, different font size
 
 The headers on the site are in <span style="font-family:Helvetica Neue Light">Helvetica Neue Light</span> (which I think comes with OS X). If a visitor does not have that font, the fallback is plain <span style="font-family:Helvetica, Arial">Helvetica or Arial</span>.
 

@@ -22,7 +22,7 @@ Today, I updated the script, making it a lot easier to use.
 
 With <a href="http://www.userscripts.org/scripts/show/1595">the new script</a>, you can add an autologin by simply filling out the log-in form, making sure the focus (typically the caret) is in the form, and selecting <code>Tools &gt; User Script Commands &gt; Create autologin from form</code>. Previously, you had to poke through the page source and compose the autologin URL yourself.
 
-<h4>Behind the code</h4>
+## Behind the code
 
 Detecting the focused form with JavaScript was pretty interesting.
 
