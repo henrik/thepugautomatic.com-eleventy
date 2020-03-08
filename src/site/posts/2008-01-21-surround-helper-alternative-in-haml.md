@@ -7,7 +7,7 @@ tags:
 - Haml
 comments: true
 ---
-I've previously blogged <a href="https://henrik.nyh.se/2007/11/comma-after-link-in-haml">a simple alternative</a> to the Haml <code><a href="http://haml.hamptoncatlin.com/docs/rdoc/classes/Haml/Helpers.html#M000013">succeed</a></code> helper.
+I've previously blogged <a href="/2007/11/comma-after-link-in-haml">a simple alternative</a> to the Haml <code><a href="http://haml.hamptoncatlin.com/docs/rdoc/classes/Haml/Helpers.html#M000013">succeed</a></code> helper.
 
 Today I wanted to put a link in parentheses. There is a <code><a href="http://haml.hamptoncatlin.com/docs/rdoc/classes/Haml/Helpers.html#M000011">surround</a></code> helper, but that syntax isn't pretty.
 

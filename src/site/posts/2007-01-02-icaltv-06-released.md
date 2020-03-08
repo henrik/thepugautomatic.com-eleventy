@@ -21,5 +21,5 @@ I also took the opportunity to fix a small bug. Previous versions stored some te
   <p>Had left a debug line in 0.6 that caused the scheduled clean-up to produce output, which in turn causes a mail to be sent to the user in the terminal. Now fixed.</p>
 
 <h5>Update 2007-01-31</h5>
-<p><a href="https://henrik.nyh.se/2007/01/icaltv-07-released-and-an-applescript-date-object-gotcha/">Version 0.7 has been released.</a></p>
+<p><a href="/2007/01/icaltv-07-released-and-an-applescript-date-object-gotcha/">Version 0.7 has been released.</a></p>
 </div>

@@ -7,7 +7,7 @@ tags:
 - TextMate
 comments: true
 ---
-I committed some changes to the <a href="https://henrik.nyh.se/2007/03/textmate-greasemonkey-bundle-in-official-repository/">Greasemonkey bundle</a> that scope non-standard header directives differently. I added a section to the bundle's help file with this information:
+I committed some changes to the <a href="/2007/03/textmate-greasemonkey-bundle-in-official-repository/">Greasemonkey bundle</a> that scope non-standard header directives differently. I added a section to the bundle's help file with this information:
 
 <blockquote>
 <h5>Grammar/Highlighting Tips</h5>

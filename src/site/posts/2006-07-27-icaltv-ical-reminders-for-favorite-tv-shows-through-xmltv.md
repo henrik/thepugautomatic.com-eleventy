@@ -42,4 +42,4 @@ When <code>icaltv.rb</code> is run, it compares the schedules downloaded for you
 
 All that remains is to toggle on Personal Web Sharing, and then subscribe to the file through your web server, in iCal, keeping in mind not to leave "Remove alarms" checked.
 
-<p class="updated"><a href="https://henrik.nyh.se/2006/08/icaltv-04-released/">iCalTV 0.4 has been released &ndash; the above post is outdated.</a></p>
+<p class="updated"><a href="/2006/08/icaltv-04-released/">iCalTV 0.4 has been released &ndash; the above post is outdated.</a></p>

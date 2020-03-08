@@ -23,7 +23,7 @@ Download: <a href="https://henrik.nyh.se/uploads/Greasemonkey.tmbundle.zip">Grea
 <div class="updated">
 <h5>Update 2007-03-20</h5>
 
-<p><a href="https://henrik.nyh.se/2007/03/textmate-greasemonkey-bundle-in-official-repository/">This bundle is now in the official repository</a>.</p>
+<p><a href="/2007/03/textmate-greasemonkey-bundle-in-official-repository/">This bundle is now in the official repository</a>.</p>
 
 </div>
 

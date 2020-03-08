@@ -16,7 +16,7 @@ Since this was slightly convoluted, I thought I'd do a quick write-up.
 
 The icon itself is <code>/System/Library/CoreServices/CoreTypes.bundle/ Contents/Resources/com.apple.macbookair.icns</code> (discovered <a href="http://macthemes2.net/forum/viewtopic.php?pid=225040">here</a>).
 
-Assigning icons can be tricky in OS X, as I described in <a href="https://henrik.nyh.se/2007/08/os-x-icons">an earlier post</a>. I had no luck with <a href="http://www.icons.cx/goodies/">icns2icon</a> this time, even when I tried very liberal permissions, so I went with the kludge described in that post (sticking the icon in an app bundle) instead.
+Assigning icons can be tricky in OS X, as I described in <a href="/2007/08/os-x-icons">an earlier post</a>. I had no luck with <a href="http://www.icons.cx/goodies/">icns2icon</a> this time, even when I tried very liberal permissions, so I went with the kludge described in that post (sticking the icon in an app bundle) instead.
 
 I was then able to copy-and-paste the icon as the icon of the <code>icns</code> file itself, but for some reason I was still unable to make it the icon of my system volume.
 

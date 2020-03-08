@@ -24,5 +24,5 @@ For most of my favorite shows, I now hear e.g. "Morden i Midsomer on SVT1 in fiv
   <h5>Update 2007-01-02</h5>
 
   <p>
-<a href="https://henrik.nyh.se/2007/01/icaltv-06-released/">iCalTV 0.6 has been released – the above post is outdated.</a></p>
+<a href="/2007/01/icaltv-06-released/">iCalTV 0.6 has been released – the above post is outdated.</a></p>
 </div>

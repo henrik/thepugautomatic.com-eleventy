@@ -10,7 +10,7 @@ comments: true
 ---
 <p class="center"><img src="https://henrik.nyh.se/uploads/finder-leopard-tm.png" class="bordered" alt="[Screenshot]" /></p>
 
-By <a href="https://henrik.nyh.se/2007/10/open-terminal-here-and-glob-select-in-leopard-finder#comment-57404">request</a>, I did an "Open In TextMate" Finder toolbar icon for Leopard.
+By <a href="/2007/10/open-terminal-here-and-glob-select-in-leopard-finder#comment-57404">request</a>, I did an "Open In TextMate" Finder toolbar icon for Leopard.
 
 I also took the opportunity to write a new script, based on <a href="http://snippets.dzone.com/posts/show/1037">Simon Dorfman's</a>. Clicking the toolbar icon now opens the selected file or files if there is a selection; otherwise it opens the current directory. You can also drag-and-drop files to the icon to open those.
 
@@ -22,7 +22,7 @@ I put my icon inside the bundle, so it should appear with no extra effort. I als
 
 Download <a href="https://henrik.nyh.se/uploads/OpenInTextMate.zip">OpenInTextMate.zip</a>, extract the file somewhere (I keep it in <code>/Applications/Scripts</code>), then drag it onto the Finder toolbar. You'll need to wiggle it a bit for the toolbar to catch on.
 
-If you like your toolbar all grayscale, feel free to use <a href="https://henrik.nyh.se/uploads/openintextmate-droplet.icns"><img src="https://henrik.nyh.se/uploads/openintextmate-droplet.png" alt="[tm]" /></a> (save the linked icon file, <em>not</em> the displayed PNG image)  instead, and copy it into the script as <a href="https://henrik.nyh.se/2007/10/open-terminal-here-and-glob-select-in-leopard-finder">described here</a>.
+If you like your toolbar all grayscale, feel free to use <a href="https://henrik.nyh.se/uploads/openintextmate-droplet.icns"><img src="https://henrik.nyh.se/uploads/openintextmate-droplet.png" alt="[tm]" /></a> (save the linked icon file, <em>not</em> the displayed PNG image)  instead, and copy it into the script as <a href="/2007/10/open-terminal-here-and-glob-select-in-leopard-finder">described here</a>.
 
 The code:
 

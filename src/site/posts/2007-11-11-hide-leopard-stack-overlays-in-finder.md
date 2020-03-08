@@ -46,7 +46,7 @@ I didn't particularly mind seeing the overlay icon my <code>Downloads</code> fol
 
 The folder action is here: <a href="https://henrik.nyh.se/uploads/Peekaboo%20Stack%20Overlay.scpt">Peekaboo Stack Overlay.scpt</a>
 
-See <a href="https://henrik.nyh.se/2007/10/lift-the-leopard-download-quarantine">this post</a> for how to apply it.
+See <a href="/2007/10/lift-the-leopard-download-quarantine">this post</a> for how to apply it.
 
 This folder action explains why I used the " Icons" (with an initial space) name in the <code>Downloads</code> stack as well – the same folder action, with a hard-coded icon name, can be used for multiple stacks.
 
@@ -54,7 +54,7 @@ This folder action explains why I used the " Icons" (with an initial space) name
 
 ``` applescript
 (*
-"Peekaboo Stack Overlay" by Henrik Nyh <https://henrik.nyh.se/2007/11/hide-leopard-stack-overlays-in-finder>
+"Peekaboo Stack Overlay" by Henrik Nyh </2007/11/hide-leopard-stack-overlays-in-finder>
 This Folder Action handler is triggered whenever items are added to or removed from the attached folder (and indirectly when they're renamed).
 When that happens, it will juggle visible bits and temp files to make the stack reload while the icon is non-hidden, and then hides it again. The end result is that you can keep the icon file hidden in the Finder but still see it overlayed on the stack (and in the expanded stack, alas).
 This script assumes an icon named " Icon" (with the space, so it sorts first in alphabetical stacks).

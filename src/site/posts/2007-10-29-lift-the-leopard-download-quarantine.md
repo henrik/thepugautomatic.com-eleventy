@@ -39,7 +39,7 @@ The code:
 
 ``` applescript
 (*
-"Unquarantine" by Henrik Nyh <https://henrik.nyh.se/2007/10/lift-the-leopard-download-quarantine>
+"Unquarantine" by Henrik Nyh </2007/10/lift-the-leopard-download-quarantine>
 This Folder Action handler is triggered whenever items are added to the attached folder.
 It gets rid of Leopard's annoying "this application was downloaded from the Internet" warnings by stripping the "quarantine" property.
 *)

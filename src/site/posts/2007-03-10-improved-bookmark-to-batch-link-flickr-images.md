@@ -7,7 +7,7 @@ tags:
 - Bookmarklets
 comments: true
 ---
-A couple of months ago, I wrote <a href="https://henrik.nyh.se/2006/09/bookmarklet-to-blog-all-images-from-a-flickr-page/">a bookmarklet to blog all images from a Flickr page</a>. The idea is that you can go to pretty much any Flickr page &ndash; perhaps the images you uploaded today &ndash; and get the code to post all of them in a blog or forum without having to manually copy that information from each image in turn.
+A couple of months ago, I wrote <a href="/2006/09/bookmarklet-to-blog-all-images-from-a-flickr-page/">a bookmarklet to blog all images from a Flickr page</a>. The idea is that you can go to pretty much any Flickr page &ndash; perhaps the images you uploaded today &ndash; and get the code to post all of them in a blog or forum without having to manually copy that information from each image in turn.
 
 Flickr have since changed their image naming scheme so that the URLs of full-size images are not predictable (in any obvious way) from any property of smaller images.
 

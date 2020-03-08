@@ -8,7 +8,7 @@ tags:
 - Gmail
 comments: true
 ---
-In <a href="https://henrik.nyh.se/2006/08/fixed-size-scrollable-quotes-in-livejournal-comment-notification-mails">a previous post</a>, I mentioned how to add scrollbars to quotes in LiveJournal comment notifications, in SquirrelMail or Thunderbird.
+In <a href="/2006/08/fixed-size-scrollable-quotes-in-livejournal-comment-notification-mails">a previous post</a>, I mentioned how to add scrollbars to quotes in LiveJournal comment notifications, in SquirrelMail or Thunderbird.
 
 <p class="center">
 <img src="https://henrik.nyh.se/uploads/USsmlj.png" alt="" class="bordered" />
@@ -20,7 +20,7 @@ The userstyle works in SquirrelMail, Gmail and any other e-mail client that pres
 
 <!--more-->
 
-It's basically the same CSS as in the Thunderbird solution in <a href="https://henrik.nyh.se/2006/08/fixed-size-scrollable-quotes-in-livejournal-comment-notification-mails">the earlier post</a>, but made less likely to overgenerate. Feel free to update your Thunderbird with this CSS:
+It's basically the same CSS as in the Thunderbird solution in <a href="/2006/08/fixed-size-scrollable-quotes-in-livejournal-comment-notification-mails">the earlier post</a>, but made less likely to overgenerate. Feel free to update your Thunderbird with this CSS:
 
 ``` css
 table + blockquote[style="border-left: 2px solid rgb(0, 0, 64); margin-left: 0px; margin-right: 0px; padding-left: 15px; padding-right: 0px;"] {

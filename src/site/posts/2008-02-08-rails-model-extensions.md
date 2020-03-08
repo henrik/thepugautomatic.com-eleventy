@@ -6,7 +6,7 @@ tags:
 - Ruby on Rails
 comments: true
 ---
-My last stab at <a href="https://henrik.nyh.se/2007/07/skinny-controller-mincemeat-model">mincemeat models</a> wasn't very pretty – wrapping different method sets in blocks and folding them.
+My last stab at <a href="/2007/07/skinny-controller-mincemeat-model">mincemeat models</a> wasn't very pretty – wrapping different method sets in blocks and folding them.
 
 This is what I've been doing lately instead, to keep fat Rails models manageable.
 

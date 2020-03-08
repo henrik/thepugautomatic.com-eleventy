@@ -12,13 +12,13 @@ Though <a href="http://www.macupdate.com/info.php/id/11273">iScrobbler</a> provi
 
 <!--more-->
 
-<p class="updated"><a href="https://henrik.nyh.se/2006/08/re-currently-playing-song-in-itunes-on-command/">There is an updated version of this script.</a></p>
+<p class="updated"><a href="/2006/08/re-currently-playing-song-in-itunes-on-command/">There is an updated version of this script.</a></p>
 
 I don't want to have to switch focus to iTunes just to find out what the current song is, if I forgot to take note of the details as the song started playing.
 
 I ended up writing an AppleScript that collects song details from iTunes, including any album art, and then passes those details to a Growl notification.
 
-I choose to trigger the script with Quicksilver, similar to in <a href="https://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">a previous post</a>.
+I choose to trigger the script with Quicksilver, similar to in <a href="/2006/07/batch-open-urls-from-clipboard/">a previous post</a>.
 
 The script (<a href="https://henrik.nyh.se/uploads/Currently%20playing.scpt">download</a>):
 

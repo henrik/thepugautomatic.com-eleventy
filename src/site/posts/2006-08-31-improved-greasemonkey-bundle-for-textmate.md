@@ -97,4 +97,4 @@ Submit (as new or an update) the current script to <a href="http://userscripts.o
 
 Updating metadata on <code>&#x2318;S</code> along with saving a script.
 
-<p class="updated"><a href="https://henrik.nyh.se/2006/09/minor-updates-to-greasemonkey-bundle/">Some updates have been made.</a></p>
+<p class="updated"><a href="/2006/09/minor-updates-to-greasemonkey-bundle/">Some updates have been made.</a></p>

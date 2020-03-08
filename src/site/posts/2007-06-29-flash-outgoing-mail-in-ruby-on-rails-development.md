@@ -35,7 +35,7 @@ Add <a href="https://henrik.nyh.se/uploads/flash_mail.rb"><code>flash_mail.rb</c
 
 ``` ruby
 # By Henrik Nyh <https://henrik.nyh.se> 2007-06-29
-# https://henrik.nyh.se/2007/06/flash-outgoing-mail-in-ruby-on-rails-development
+# /2007/06/flash-outgoing-mail-in-ruby-on-rails-development
 # Free to modify and redistribute with due credit.
 
 module FlashMail

@@ -8,7 +8,7 @@ comments: true
 ---
 <img src="https://henrik.nyh.se/uploads/currentlyplaying2.png" alt="[Screenshot]" style="float:right;padding:0 0 0.2em 0.8em;" />
 
-The previously blogged <a href="https://henrik.nyh.se/2006/08/currently-playing-song-in-itunes-on-command/">Currently playing song in iTunes on command</a> script has been updated.
+The previously blogged <a href="/2006/08/currently-playing-song-in-itunes-on-command/">Currently playing song in iTunes on command</a> script has been updated.
 
 It turned out <a href="http://hcs.harvard.edu/~jrus/">Jacob Rus</a> had made a similar script before mine, that did without saving cover art as a temporary file. I modified my code accordingly. It seems this also solved the strange problem that the script worked fine when run directly but sometimes not when run through Quicksilver.
 

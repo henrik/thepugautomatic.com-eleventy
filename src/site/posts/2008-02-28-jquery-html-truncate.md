@@ -6,7 +6,7 @@ tags:
 - jQuery
 comments: true
 ---
-I previously made a <a href="https://henrik.nyh.se/2008/01/rails-truncate-html-helper">truncate helper for Rails</a> that handles HTML gracefully: doesn't split inside HTML entities, doesn't orphan end-tags and so on.
+I previously made a <a href="/2008/01/rails-truncate-html-helper">truncate helper for Rails</a> that handles HTML gracefully: doesn't split inside HTML entities, doesn't orphan end-tags and so on.
 
 Truncating like this on the server-side is great in contexts where you don't want to show the full text as well, such as in an index of items.
 

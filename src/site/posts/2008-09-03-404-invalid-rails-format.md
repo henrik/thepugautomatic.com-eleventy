@@ -55,7 +55,7 @@ end
 
 The <code>log_exception(e)</code> line should obviously be changed or removed if you don't use <a href="http://github.com/henrik/exception_logger/">Exception Logger</a>, or don't want the errors logged.
 
-<code>render_404</code> was described in <a href="https://henrik.nyh.se/2008/07/rails-404">an earlier blog post</a>. If you prefer an empty error 406, a simple
+<code>render_404</code> was described in <a href="/2008/07/rails-404">an earlier blog post</a>. If you prefer an empty error 406, a simple
 
 ``` ruby
 head(:not_acceptable)

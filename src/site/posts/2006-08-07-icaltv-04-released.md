@@ -14,4 +14,4 @@ Now distributed as an .app (run it for installation/configuration; also contains
 
 The included README file is <a href="https://henrik.nyh.se/filer/README.html">available here</a> (44 kB due to an inline image).
 
-<p class="updated"><a href="https://henrik.nyh.se/2006/09/icaltv-05-released/">iCalTV 0.5 has been released &ndash; the above post is outdated.</a></p>
+<p class="updated"><a href="/2006/09/icaltv-05-released/">iCalTV 0.5 has been released &ndash; the above post is outdated.</a></p>

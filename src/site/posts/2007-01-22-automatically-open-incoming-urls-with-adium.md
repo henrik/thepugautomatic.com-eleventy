@@ -12,7 +12,7 @@ My girlfriend sends me quite a lot of links over IM. Opening each link manually 
 
 My first attempt at automating away the pain was the <a href="http://userscripts.org/scripts/show/3279">Batch URL input</a> userscript, where you could disguise several URLs as one, and have Firefox explode them into individual tabs. This required an effort on the behalf of the sender, though, and that they would collect all URLs before sending them.
 
-I then made a script to <a href="https://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">batch-open URLs from the clipboard</a>. You simply copy some of the message history and invoke the script through e.g. <a href="http://quicksilver.blacktree.com/">Quicksilver</a>. A lot better, but still not quite there.
+I then made a script to <a href="/2006/07/batch-open-urls-from-clipboard/">batch-open URLs from the clipboard</a>. You simply copy some of the message history and invoke the script through e.g. <a href="http://quicksilver.blacktree.com/">Quicksilver</a>. A lot better, but still not quite there.
 
 I like how my <abbr title="Instant Messaging">IM</abbr> client, Adium, can be configured to open "safe" (e.g. images) incoming files automatically. If I receive an image, I'm very likely to want to open it. I suppose you might be of another opinion if you often receive <a href="http://en.wikipedia.org/wiki/Not_safe_for_work">non-worksafe</a> images in public places.
 

@@ -6,7 +6,7 @@ tags:
 - Ruby on Rails
 comments: true
 ---
-I've blogged previously about <a href="https://henrik.nyh.se/2008/02/rails-model-extensions">Rails model extensions</a>: how to use modules to break up complex models, or to share code between models.
+I've blogged previously about <a href="/2008/02/rails-model-extensions">Rails model extensions</a>: how to use modules to break up complex models, or to share code between models.
 
 So far I've been using the standard Ruby <code>include</code> to include the modules in the models, and the <code>self.included</code> hook to add class-level code.
 

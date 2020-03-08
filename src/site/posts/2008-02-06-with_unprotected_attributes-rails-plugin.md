@@ -5,7 +5,7 @@ tags:
 - Ruby
 comments: true
 ---
-I generalized <a href="https://henrik.nyh.se/2007/10/bypassing-attr_accessible-and-attr_protected-for-test-factories">bypassing <code>attr_accessible</code> and <code>attr_protected</code> for test factories</a>.
+I generalized <a href="/2007/10/bypassing-attr_accessible-and-attr_protected-for-test-factories">bypassing <code>attr_accessible</code> and <code>attr_protected</code> for test factories</a>.
 
 The new version is a plugin and can be used outside tests as well. It supports unprotected versions of <code>create</code>, <code>create!</code> and <code>new</code>. ActiveRecord::Base gets a <code>with_unprotected_attributes</code> class method. Pass it a block and anything inside will be done with unprotected attributes.
 

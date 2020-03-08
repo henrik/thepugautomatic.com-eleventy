@@ -6,7 +6,7 @@ tags:
 - Ruby on Rails
 comments: true
 ---
-In your Rails validations, you can add errors to <code>base</code> or to a specific attribute. When you add errors to an attribute, the full error messages (used e.g. by <code><a href="http://api.rubyonrails.org/classes/ActionView/Helpers/ActiveRecordHelper.html#M001005">error_messages_for</a></code>) are prepended by the (<a href="https://henrik.nyh.se/2007/12/change-displayed-column-name-in-rails-validation-messages">humanized</a>) attribute name.
+In your Rails validations, you can add errors to <code>base</code> or to a specific attribute. When you add errors to an attribute, the full error messages (used e.g. by <code><a href="http://api.rubyonrails.org/classes/ActionView/Helpers/ActiveRecordHelper.html#M001005">error_messages_for</a></code>) are prepended by the (<a href="/2007/12/change-displayed-column-name-in-rails-validation-messages">humanized</a>) attribute name.
 
 Sometimes this isn't what I want. Here's a quick hack to not prepend the attribute name if the error message starts with an upper case character.
 

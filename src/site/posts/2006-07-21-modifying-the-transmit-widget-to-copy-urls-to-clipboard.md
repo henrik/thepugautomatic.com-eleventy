@@ -42,7 +42,7 @@ You could just hook the code into <code>uploadFinished()</code> instead, if you'
 
 <h3>Turning the URLs into tags</h3>
 
-This could, of course, be combined with commands to transform the clipboarded URLs into link or image tags in HTML, BBCode, Markdown or whatever. The command might be triggered with <a href="http://quicksilver.blacktree.com/">Quicksilver</a> similarly to <a href="https://henrik.nyh.se/2006/07/batch-open-urls-from-clipboard/">Batch-open URLs from clipboard</a>.
+This could, of course, be combined with commands to transform the clipboarded URLs into link or image tags in HTML, BBCode, Markdown or whatever. The command might be triggered with <a href="http://quicksilver.blacktree.com/">Quicksilver</a> similarly to <a href="/2006/07/batch-open-urls-from-clipboard/">Batch-open URLs from clipboard</a>.
 
 A Ruby script for making BBCode links out of raw URLs follows, with only minor and (hopefully) obvious changes necessary to instead copy to another format.
 

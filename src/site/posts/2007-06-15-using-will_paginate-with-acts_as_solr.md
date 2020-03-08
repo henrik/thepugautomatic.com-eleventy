@@ -6,7 +6,7 @@ tags:
 - Ruby on Rails
 comments: true
 ---
-<a href="https://henrik.nyh.se/2007/06/rake-task-to-reindex-models-for-acts_as_solr">Still</a> playing with Solr/acts_as_solr.
+<a href="/2007/06/rake-task-to-reindex-models-for-acts_as_solr">Still</a> playing with Solr/acts_as_solr.
 
 The site I'm working on uses <a href="http://errtheblog.com/post/4791">will_paginate</a> for pagination. It turned out to be pretty easy to get that working with results from acts_as_solr.
 

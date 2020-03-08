@@ -22,7 +22,7 @@ If you distribute the bundle as a web download, you can just drag-and-drop it fr
 
 If you version control a bundle you're developing, though, you probably don't want deltas, but to have any changes made in the Bundle Editor written directly to the bundle itself. This is achieved by keeping the bundle in <code>~/Library/Application Support/<wbr />TextMate/<wbr />Bundles</code> (which is, incidentally, where bundles go when you do "New Bundle" in the Bundle Editor). No deltas are created; all changes are written directly to the bundle.
 
-But sometimes you <em>do</em> want deltas. For my <a href="https://henrik.nyh.se/2007/03/textmate-greasemonkey-bundle-in-official-repository/">Greasemonkey bundle</a>, I want TextMate-global keyboard shortcuts for some stuff (creating a new userscript from template, opening an installed userscript), but bundles should not be <em>distributed</em> with TextMate-global keyboard shortcuts unless it's necessary (e.g. the Subversion bundle).
+But sometimes you <em>do</em> want deltas. For my <a href="/2007/03/textmate-greasemonkey-bundle-in-official-repository/">Greasemonkey bundle</a>, I want TextMate-global keyboard shortcuts for some stuff (creating a new userscript from template, opening an installed userscript), but bundles should not be <em>distributed</em> with TextMate-global keyboard shortcuts unless it's necessary (e.g. the Subversion bundle).
 
 To be able to easily switch between writing changes as deltas and writing changes to the bundle proper would be quite useful. So I wrote a TextMate command for this.
 
