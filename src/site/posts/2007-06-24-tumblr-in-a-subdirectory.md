@@ -15,7 +15,7 @@ I didn't want to use a subdomain, though. My site is on a subdomain already, and
 
 Over at <a href="http://henrik.nyh.se/tumble">http://henrik.nyh.se/tumble</a>, this is my <code>.htaccess</code>:
 
-``` apache .htaccess
+``` apacheconf .htaccess
 RewriteEngine On
 RewriteBase /tumble
 

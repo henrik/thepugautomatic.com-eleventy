@@ -27,7 +27,7 @@ Or make your own:
 * Search the action list for "Run AppleScript", double-click that option.
 * Change the script to this (hat tip to [Rob Peck](http://www.robpeck.com/2010/05/scripting-iterm-with-applescript/)):
 
-``` applescript linenos:false
+``` applescript
 on run {input, parameters}
 	set myPath to POSIX path of input
 	set cmd to "vim " & quote & myPath & quote

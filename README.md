@@ -37,6 +37,10 @@ See <https://www.11ty.dev/docs/plugins/syntaxhighlight/> for docs about the synt
     end  # I was always here
     ```
 
+These are the supported languages: <https://prismjs.com/#supported-languages>
+
+If you get errors like "Error: expected end of comment, got end of file", try wrapping the code block in `{% raw %}` and `{% endraw %}` to prevent Nunjucks from trying to parse the code.
+
 ## Running locally
 
 You need [Node and NPM](https://nodejs.org/).

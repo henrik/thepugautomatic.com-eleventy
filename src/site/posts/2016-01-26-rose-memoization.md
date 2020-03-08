@@ -9,7 +9,7 @@ tags:
 
 In Ruby, this is often implemented something like this:
 
-``` ruby linenos:false
+``` ruby
 def my_expensive_method
   @my_expensive_method ||= one + two * three
 end
@@ -17,7 +17,7 @@ end
 
 or
 
-``` ruby linenos:false
+``` ruby
 def my_expensive_method
   @my_expensive_method ||= begin
     one

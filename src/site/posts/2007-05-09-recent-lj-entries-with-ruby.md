@@ -117,7 +117,7 @@ No need for a password since the code only deals with public entries.
 
 Finally, this is the erb/eruby to actually show the entries:
 
-``` rhtml
+``` erb
 <h2>Recent LiveJournal entries</h2>
 
 <%

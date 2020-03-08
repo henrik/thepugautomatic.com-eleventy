@@ -70,7 +70,7 @@ print File.read(CACHE_FILE)
 
 If you don't like <code>.cgi</code> in your URLs (I don't), put this in a <code>.htaccess</code> file in the same directory:
 
-``` apache .htaccess
+``` apacheconf .htaccess
 RewriteEngine On
 RewriteRule ^(dilbert)\.rss$    $1.cgi [L]
 ```

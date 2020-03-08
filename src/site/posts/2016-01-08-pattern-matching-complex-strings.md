@@ -7,7 +7,7 @@ tags:
 
 We can pattern-match Elixir strings like any other binaries, with `<>` for concatenation and `<<…>>` to specify bit patterns:
 
-``` elixir linenos:false
+``` elixir
 defmodule Example do
   def run_command("say:" <> <<digit::bytes-size(1)>> <> ":" <> thing) do
     count = String.to_integer(digit)
@@ -28,14 +28,14 @@ So for more complex patterns, things get tricky. What if there is more than one 
 
 If we try to violate this fixed-width rule, Elixir will tell us off:
 
-```elixir linenos:false
+```elixir
 "say:" <> number <> ":" <> thing = "say:123:hi"
 # ** (CompileError) a binary field without size is only allowed at the end of a binary pattern
 ```
 
 If there is a limited range of lengths, adding more patterns could be fine:
 
-``` elixir linenos:false
+``` elixir
 def run_command("say:" <> <<number::bytes-size(1)>> <> ":" <> thing), do: #…
 def run_command("say:" <> <<number::bytes-size(2)>> <> ":" <> thing), do: #…
 ```
@@ -44,7 +44,7 @@ But if the number can be any length, this won't work.
 
 We could give up on function-argument pattern matching and stick some logic inside a single function:
 
-``` elixir linenos:false
+``` elixir
 def run_command("say:" <> stuff) do
   case String.split(stuff, ":") do
     [number, thing] -> # …
@@ -57,7 +57,7 @@ This is a workable solution, but it's not quite the beautiful Elixir we know.
 
 We can do better. What if we slice and dice the string, and *then* dispatch to function-argument pattern matching?
 
-``` elixir linenos:false
+``` elixir
 def run_command(command) do
   do_run_command String.split(command, ":")
 end
@@ -71,7 +71,7 @@ defp do_run_command(["say", thing]), do: thing
 
 That's more like it. And we can keep dispatching to other functions, to unlock more pattern-matching power:
 
-``` elixir linenos:false
+``` elixir
 defp do_run_command(["say", number, thing]) do
   count = String.to_integer(number)
   say(thing, count)
@@ -83,7 +83,7 @@ defp say(thing, _count) do: say(thing, 99) <> " etc"
 
 It doesn't have to be lists, either. We can get regular expression matches as dictionaries, for example:
 
-``` elixir linenos:false
+``` elixir
 def run_command(command) do
   regex = ~r/say:(?<number>\d+):(?<thing>.+)/
   captures = Regex.named_captures(regex, command)

@@ -22,7 +22,7 @@ when it's dirty – an asterisk is added.
 
 Code for bash, goes into <code>~/.bashrc</code>:
 
-{% gist 31631 %}
+<script src="https://gist.github.com/henrik/31631.js"></script>
 
 I have nearly no experience in shell scripting, so please let me know how this can be improved. For one thing, I expect it could be made more efficient by just running <code>git status</code> once and getting both branch and dirtiness from that.
 

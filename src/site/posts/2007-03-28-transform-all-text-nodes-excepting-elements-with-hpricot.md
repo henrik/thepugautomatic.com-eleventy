@@ -2,8 +2,8 @@
 wordpress_id: 121
 title: Transform all text nodes (excepting elements) with Hpricot
 tags:
-- Ruby
-- Hpricot
+  - Ruby
+  - Hpricot
 comments: true
 ---
 Christoffer Sawicki wrote a useful <a href="http://code.whytheluckystiff.net/hpricot/">Hpricot</a> extension, <a href="http://termos.vemod.net/hpricot-goodies">Hpricot Text GSub</a>, to <code>gsub!</code> in HTML text nodes only.
@@ -21,6 +21,7 @@ gsub!(/.*/m) { anything($&) }
 
 This is the wordwrap method using <code>HpricotTextTransform</code>:
 
+{% raw %}
 ``` ruby
 def wordwrap(text, width=70, string="<wbr />")
   return nil unless text
@@ -29,6 +30,7 @@ def wordwrap(text, width=70, string="<wbr />")
   end.to_s
 end
 ```
+{% endraw %}
 
 This is the extension itself (<a href="http://henrik.nyh.se/uploads/hpricot_text_transform.rb">download</a>), including some tests:
 

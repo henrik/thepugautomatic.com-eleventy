@@ -8,14 +8,14 @@ tags:
 
 In Ruby, these are equivalent:
 
-``` ruby linenos:false
+``` ruby
 [ 1, 2, 3 ].map { |number| number.to_s }
 [ 1, 2, 3 ].map(&:to_s)
 ```
 
 At work today, we discussed having something similar for hash access. I came up with this:
 
-``` ruby linenos:false
+``` ruby
 [ { name: "A" }, { name: "B" } ].map(&[:name])  # => [ "A", "B" ]
 ```
 
@@ -23,7 +23,7 @@ I'm very happy with that syntax; it's quite clear what it does.
 
 The implementation is minimal:
 
-``` ruby linenos:false
+``` ruby
 class Array
   def to_proc
     ->(h) { length == 1 ? h[first] : h.values_at(*self) }
@@ -33,7 +33,7 @@ end
 
 It could be even smaller if it didn't support multiple keys, but it does – and not just symbols, either:
 
-``` ruby linenos:false
+``` ruby
 [ { name: "A", "age" => 41 }, { name: "B", "age" => 42 } ].map(&[:name, "age"])
 # => [ [ "A", 41 ], [ "B", 42 ] ]
 ```

@@ -11,7 +11,7 @@ This typically applies to [policy objects](http://blog.codeclimate.com/blog/2012
 
 Today, for example, [Tomas](http://twitter.com/tskogberg) and I came across a method like
 
-``` ruby linenos:false
+``` ruby
 def changeable?
   auction.buyer && !auction.withdrawn? && the_only_auction_on_its_invoices?
 end
@@ -21,7 +21,7 @@ Our task called for adding a fourth condition.
 
 Instead of piling onto this long expression, we first refactored it to use multiple returns:
 
-``` ruby linenos:false
+``` ruby
 def changeable?
   return false unless auction.buyer
   return false if auction.withdrawn?

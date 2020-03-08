@@ -7,7 +7,7 @@ comments: true
 ---
 Say you have a two-column layout, where the layout looks something like:
 
-``` rhtml
+``` erb
 <div id="left-column">
   <%= yield %>
 </div>
@@ -22,7 +22,7 @@ In a template using this layout, you might have a form where some parts are in t
 
 <!--more-->
 
-``` rhtml
+``` erb
 <%# This goes in the left column: %>
 <% form_for(@user) do |form| %>
   <%= form.text_field :name %>
@@ -41,7 +41,7 @@ How are you to get the radio buttons inside the form? You can't just extend the 
 
 This is what I would do. First, allow content to be injected into the layout before and after both columns:
 
-``` rhtml
+``` erb
 <%= yield :before_content %>
 <div id="left-column">
   <%= yield %>
@@ -54,7 +54,7 @@ This is what I would do. First, allow content to be injected into the layout bef
 
 Then in the template we need to insert the start form tag before and the end form tag after:
 
-``` rhtml
+``` erb
 <% content_for(:before_content) do %>
   <%= form_tag(@post) %>
 <% end %>
@@ -70,7 +70,7 @@ Now to the form fields. We're not using <code>form_for</code> anymore, and even 
 
 <code>fields_for</code> is basically like <code>form_for</code> but without the form start and end tags. It's most commonly used to mix multiple models in the same form. We can use it like this:
 
-``` rhtml
+``` erb
 <% content_for(:before_content) do %>
   <%= form_tag(@post) %>
 <% end %>

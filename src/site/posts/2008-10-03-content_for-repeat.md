@@ -20,7 +20,7 @@ It's commonly used to pass content such as a title or sidebar box from a templat
 
 Hence:
 
-``` rhtml
+``` erb
 <% content_for :controls do %>
   <ul>
     <li>Do this</li>

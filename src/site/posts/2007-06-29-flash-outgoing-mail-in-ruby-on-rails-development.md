@@ -85,7 +85,7 @@ The <code>ActionMailer</code> <code>deliver!</code> method is wrapped to make th
 
 That's pretty much it. Restart the server to have it pick up on the added extension. Make your views output <code>flash[:mail]</code> if it exists, and style to taste. I do
 
-``` rhtml
+``` erb
 <% f = flash.to_hash  # A real hash is easier to manipulate without deprecation nags, and should be safe enough %>
 <% if f[:mail] %>
   <div id="mail_flash">

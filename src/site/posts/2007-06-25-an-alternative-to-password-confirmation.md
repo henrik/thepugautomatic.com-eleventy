@@ -47,7 +47,7 @@ Since most of this is JavaScript (using <a href="http://www.prototypejs.org/">Pr
 
 <code>apply_behaviour</code> is a method provided by <a href="http://www.ujs4rails.com/">the Unobtrusive Javascript for Ruby on Rails plugin</a>. In this case, it basically amounts to sticking the JavaScript in an external file and running it when the <code>id="password_label"</code> node is available in the DOM. <code>this</code> in the code refers to that node.
 
-``` rhtml
+``` erb
 <%= error_messages_for :user %>
 
 <% form_for :user, :url => users_path, :html => {:id => 'registration_form'} do |f| -%>

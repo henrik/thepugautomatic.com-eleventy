@@ -7,7 +7,7 @@ tags:
 
 I wrote a test something like this:
 
-```ruby linenos:false
+```ruby
 describe Page, "#normalize" do
   it "strips spaces in every column" do
     page = Page.new

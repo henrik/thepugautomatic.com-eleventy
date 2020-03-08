@@ -4,7 +4,7 @@ title: PHP in nginx on OS X
 tags:
 - OS X
 - PHP
-- nginx
+- Nginx
 comments: true
 ---
 I recently got myself a Mac Mini to use as HTPC and server for all things serveable.

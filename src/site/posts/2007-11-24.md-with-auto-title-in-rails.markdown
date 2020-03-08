@@ -63,7 +63,7 @@ Writing <code>set_title</code> took some digging around inside Rails. There migh
 
 Markdown on Rails actually allows you to use erb in your templates, so if one doesn't mind mixing things up and repeating oneself, one could get rid of <code>set_title</code> and do e.g.
 
-``` rhtml
+``` erb
 <% self.title = "Privacy Policy" -%>
 # Privacy Policy
 ⋮

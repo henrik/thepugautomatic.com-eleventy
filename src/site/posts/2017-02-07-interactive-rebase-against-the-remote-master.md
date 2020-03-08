@@ -7,19 +7,19 @@ tags:
 
 Here's a Git command I've started to use a lot:
 
-``` bash linenos:false
+``` bash
 git rebase -i origin/master
 ```
 
 In fact, I use it often enough that I made a shell alias:
 
-``` bash linenos:false
+``` bash
 alias grb='git rebase -i origin/master'
 ```
 
 What does it do? It lists all the commits I made locally but didn't push to the remote `master` branch yet.
 
-``` bash linenos:false
+``` bash
 pick 3b052b2 New blog post: Interactive rebase against the remote master
 pick 2b05fe3 Work work
 pick d37dda8 More work
@@ -52,7 +52,7 @@ Say I made a commit for feature A, then one for feature B. Then I realise I want
 
 I just make those changes as a third commit with a temporary commit message.
 
-``` bash linenos:false
+``` bash
 abc123 Implement feature A
 def456 Implement feature B
 789cba Temp
@@ -60,7 +60,7 @@ def456 Implement feature B
 
 Then I open the interactive rebase with my `grb` alias. I move that temporary commit below "feature A" and say to "fixup" the commit – to meld it into the preceding commit, discarding the temporary commit message.
 
-``` bash linenos:false
+``` bash
 pick abc123 Implement feature A
 f 789cba Temp
 pick def456 Implement feature B
@@ -68,7 +68,7 @@ pick def456 Implement feature B
 
 When I save and close this window (a quick [`ZZ`](http://vimdoc.sourceforge.net/htmldoc/editing.html#ZZ) in Vim), it's all done.
 
-``` bash linenos:false
+``` bash
 123bca Implement feature A
 465efd Implement feature B
 ```

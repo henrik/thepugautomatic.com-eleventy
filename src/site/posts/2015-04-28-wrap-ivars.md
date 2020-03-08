@@ -7,14 +7,14 @@ tags:
 
 If your layout template shows a breadcrumb but you want to hide it on some pages, this is a reasonable way to do it:
 
-``` ruby my_controller.rb linenos:false
+``` ruby my_controller.rb
 def show
   @hide_breadcrumbs = true
   # …
 end
 ```
 
-``` erb layout.html.erb linenos:false
+``` erb layout.html.erb
 <% unless @hide_breadcrumbs %>
   <nav class="breadcrumbs">…</nav>
 <% end %>
@@ -22,7 +22,7 @@ end
 
 Of late I've started wrapping these instance variables in thin methods:
 
-``` ruby application_controller.rb linenos:false
+``` ruby application_controller.rb
 def hide_breadcrumbs
   @hide_breadcrumbs = true
 end
@@ -33,14 +33,14 @@ def show_breadcrumbs?
 end
 ```
 
-``` ruby my_controller.rb linenos:false
+``` ruby my_controller.rb
 def show
   hide_breadcrumbs
   # …
 end
 ```
 
-``` erb layout.html.erb linenos:false
+``` erb layout.html.erb
 <% if show_breadcrumbs? %>
   <nav class="breadcrumbs">…</nav>
 <% end %>

@@ -12,17 +12,17 @@ I figured I should blog the title helpers I made of late.
 
 First, example usage. In an erb view:
 
-``` rhtml
+``` erb
 <% self.title = "Foo" -%>
 ```
 gives a title like "Foo – My Site".
 
-``` rhtml
+``` erb
 <% self.full_title = "Foo" -%>
 ```
 gives the title "Foo".
 
-``` rhtml
+``` erb
 <% self.full_title = "Welcome to %s!" -%>
 ```
 gives the title "Welcome to My Site!".
@@ -51,7 +51,7 @@ Note that we apply <code>h()</code> in this helper, so don't apply it to the tit
 
 Now, just use this helper where you want to display the title – typically in your application layout:
 
-``` rhtml
+``` erb
 <title><%= title %></title>
 ```
 

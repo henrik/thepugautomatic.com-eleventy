@@ -19,7 +19,7 @@ First add a comment to `FooClient` saying this information can be found in the R
 
 If you make sure the docs are in their own dedicated file, they're easier to "link" to, because you can then use commands like [Vim's `gf`](http://vim.wikia.com/wiki/Open_file_under_cursor). You could put the docs in `developer_documentation/foo.md`, for example, and then have a comment like:
 
-``` ruby foo_client.rb linenos:false
+``` ruby foo_client.rb
 # Foo docs and setting up new integrations: developer_documentation/foo.md
 
 class FooClient

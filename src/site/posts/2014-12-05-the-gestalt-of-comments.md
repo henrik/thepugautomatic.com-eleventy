@@ -78,13 +78,13 @@ bar(2)
 
 There's also horizontal proximity. Instead of
 
-``` ruby linenos:false
+``` ruby
 foo # Info about foo.
 ```
 
 I prefer
 
-``` ruby linenos:false
+``` ruby
 foo  # Info about foo.
 ```
 

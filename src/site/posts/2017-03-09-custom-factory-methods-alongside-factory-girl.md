@@ -14,7 +14,7 @@ That complexity doesn't really belong in the tests themselves, but it's also dif
 
 Then make a plain Ruby method alongside your factory definitions:
 
-``` ruby item_factory.rb linenos:false
+``` ruby item_factory.rb
 FactoryGirl.define do
   factory :item do
     title "Default title"

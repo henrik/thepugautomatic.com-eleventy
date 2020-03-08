@@ -11,7 +11,7 @@ I've been struck by the emergent elegance of [Elixir's scoping rules](http://eli
 
 In my native Ruby, `import`/`extend` is a scattershot affair. You can do it within an individual method, but it applies to the entire module:
 
-``` ruby linenos:false
+``` ruby
 module MyModule
   def say_hello(sender)
     puts "Hello from #{sender}."
@@ -44,7 +44,7 @@ And it's from this simple fact that the elegance emerges.
 
 A few days ago, I saw [this code example](https://github.com/SenecaSystems/gutenex#usage):
 
-``` elixir linenos:false
+``` elixir
 Gutenex.begin_text
 |> Gutenex.set_font("Helvetica", 48)
 |> Gutenex.text_position(40, 180)
@@ -55,7 +55,7 @@ Gutenex.begin_text
 
 It would be nice to get rid of the noise of that repetition. `import` will do it, within our current scope only, without spilling into other code:
 
-``` elixir linenos:false
+``` elixir
 def render_gutenex do
   import Gutenex
 
@@ -77,7 +77,7 @@ end
 
 This reminds me of [the notorious JavaScript `with` statement](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/with). We could very easily implement a `with`-alike in Elixir:
 
-``` elixir linenos:false
+``` elixir
 defmodule With do
   defmacro with(module, do: block) do
     quote do
@@ -109,7 +109,7 @@ In the macro, we create and then immediately call an anonymous function, to limi
 
 We could also limit the scope with a dummy conditional, but this comes with a higher WTF factor:
 
-``` elixir linenos:false
+``` elixir
 if true do
   import unquote(module)
   unquote(block)
@@ -127,7 +127,7 @@ When I started out learning Elixir, I found myself wanting to understand how thi
 
 Let's say we want to support this:
 
-``` elixir linenos:false
+``` elixir
 create table(:users) do
   add :name, :string
 end
@@ -152,7 +152,7 @@ The [Pipespect](https://github.com/alco/pipespect) library replaces the regular 
 
 [Its implementation](https://github.com/alco/pipespect/blob/25b38113e254e0a13485d239f4575257aa830a97/lib/pipespect.ex) is all about `import`s, so the scoping rules are the same ones that we discussed above:
 
-``` elixir linenos:false
+``` elixir
 if some_condition do
   use Pipespect
   "This will be inspected." |> String.reverse

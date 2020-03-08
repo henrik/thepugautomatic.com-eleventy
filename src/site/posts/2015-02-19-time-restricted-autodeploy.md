@@ -29,7 +29,7 @@ We realized that we could turn on autodeploy *and* reduce the risk of after-hour
 
 When tests pass, we trigger another CI job to deploy staging. That job runs this bash script:
 
-``` bash script/ci/build/deploy_staging.sh linenos:false
+``` bash script/ci/build/deploy_staging.sh
 # …deploy staging…
 
 allow_autodeploy=`TZ=CET ruby script/ci/support/is_autodeploy_allowed.rb`

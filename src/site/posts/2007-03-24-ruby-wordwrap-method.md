@@ -2,8 +2,8 @@
 wordpress_id: 119
 title: Ruby wordwrap method
 tags:
-- Ruby
-- Ruby on Rails
+  - Ruby
+  - Ruby on Rails
 comments: true
 ---
 I wrote a Ruby method (for use as a Rails helper) to wordwrap text. It does not wrap within <code>&lt;pre&gt;&lt;/pre&gt;</code>, as those elements are styled with
@@ -14,10 +14,9 @@ overflow-x:auto;
 ```
 to get scrollbars if their content is overlong. Also, it does not wrap inside HTML tags, since long <code>src</code> or <code>href</code> attributes shouldn't be broken up.
 
-<!--more-->
-
 Perhaps there is a better solution, but I kind of like this:
 
+{% raw %}
 ``` ruby
 class String
   # Replace the second of three capture groups with the given block.
@@ -38,6 +37,7 @@ test = "Lorem ipsum dolor sit amet, <pre>consectetur</pre> adipisicing elit, sed
 
 puts wordwrap(test, 5)
 ```
+{% endraw %}
 
 which outputs
 

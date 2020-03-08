@@ -19,7 +19,7 @@ This is not [a "write your first macro" tutorial](http://elixir-lang.org/getting
 
 Consider this example:
 
-``` elixir example.ex linenos:false
+``` elixir example.ex
 defmodule MyMacro do
   defmacro example({value, _, _}) do
     IO.puts "You'll see me at compile-time: #{inspect value}"
@@ -61,14 +61,16 @@ So why don't we see the "You'll see me at run-time" message at compile-time?
 
 [`quote`](http://elixir-lang.org/docs/stable/elixir/Kernel.SpecialForms.html#quote/2) will turn Elixir code into an abstract syntax tree (AST), without executing that code:
 
+{% raw %}
     iex(1)> quote do: IO.puts("Hello")
     {{:., [], [{:__aliases__, [alias: false], [:IO]}, :puts]}, [], ["Hello"]}
+{% endraw %}
 
 So the return value of the macro is an AST much like `{…, [], ["Hello"]}`. The code inside the block is never executed at compile time.
 
 The compiler will then effectively replace `example(hello)` with the code represented by this return value, as though we had written
 
-``` elixir linenos:false
+``` elixir
 def run do
   IO.puts "Someone called the run function."
   IO.puts "You'll see me at run-time: #{inspect :hello}"
@@ -88,7 +90,7 @@ These ASTs are sometimes called "quoted expressions" in Elixir, because you can 
 
 But `quote` is just one of those implementation details. It's just a convenience. You can write a macro without it. Elixir doesn't care how you build the AST:
 
-``` elixir linenos:false
+``` elixir
 defmodule MyMacro do
   defmacro example do
     {:+, [], [1, 2]}
@@ -109,7 +111,7 @@ Run.run  # => Output: 3
 Because `quote` is just a detail, it also doesn't have to be the last thing you do in the function, and you can do it more than once. For example, with `Enum.map`:
 
 
-``` elixir linenos:false
+``` elixir
 defmodule MyMacro do
   defmacro make_methods(numbers) do
     Enum.map numbers, fn (num) ->

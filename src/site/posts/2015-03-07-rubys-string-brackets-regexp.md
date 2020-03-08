@@ -8,7 +8,7 @@ tags:
 
 One of my favorite Ruby methods is [`String#[]`](http://ruby-doc.org/core-2.2.0/String.html#method-i-5B-5D) when given a regular expression:
 
-``` ruby linenos:false
+``` ruby
 "fooobar"[/o+/]  # => "ooo"
 "fooobar"[/o+(.)/, 1]  # => "b"
 ```

@@ -7,7 +7,7 @@ tags:
 
 Say you have this file open in Vim:
 
-``` javascript example.js linenos:false
+``` javascript example.js
 one();
 
 console.log("about to do two");
@@ -25,7 +25,7 @@ The logging helped you figure out an issue and now you want to be rid of the `co
 
 There's (not surprisingly) a quick way to do that in Vim:
 
-``` linenos:false
+```
 :g/log/d
 ```
 

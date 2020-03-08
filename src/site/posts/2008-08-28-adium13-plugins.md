@@ -49,13 +49,13 @@ and
 
 referencing
 
-``` obj-c
+``` objectivec
 - (void)listObject:(AIListObject *)listObject didSetOrderIndex:(float)inOrderIndex;
 ```
 
 To fix that, I had to include another header in my plugin's main <code>.h</code> file:
 
-``` obj-c
+``` objectivec
 #import <AIUtilities/AITigerCompatibility.h>
 ```
 
@@ -69,7 +69,7 @@ from lines trying to use that constant.
 
 That required another header:
 
-``` obj-c
+``` objectivec
 #import <Adium/AISharedAdium.h>
 ```
 

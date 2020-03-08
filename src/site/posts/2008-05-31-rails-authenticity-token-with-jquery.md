@@ -17,7 +17,7 @@ I prefer <a href="http://jquery.com/">jQuery</a> to Prototype, the JavaScript li
 
 In my application layout, I stick an authenticity token in a JavaScript variable in the page header:
 
-``` rhtml
+``` erb
 <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
 ```
 

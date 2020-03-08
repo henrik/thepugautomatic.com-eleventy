@@ -26,7 +26,7 @@ Hopefully this is of use to someone else.
 
 The usage is simply
 
-``` obj-c
+``` objectivec
 NSError *error;
 [myManagedObjectContext updateEntity: @"Channel"
                       fromDictionary: channelsToImport
@@ -49,7 +49,7 @@ I did not add support for passing a predicate to limit the entities you want, si
 
 The code (<a href="http://henrik.nyh.se/uploads/NSManagedObjectContext_UpdateEntity.h">download</a>, don't forget to <code>#import</code> the file):
 
-``` obj-c
+``` objectivec
 @interface NSManagedObjectContext (UpdateEntity)
 - (void)updateEntity:(NSString *)entity fromDictionary:(NSDictionary *)importDict withIdentifier:(NSString *)identifier overwriting:(NSArray *)overwritables andError:(NSError **)error;
 @end

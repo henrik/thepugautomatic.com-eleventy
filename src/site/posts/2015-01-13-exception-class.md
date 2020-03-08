@@ -10,7 +10,7 @@ In Ruby, when should you define your own exception class and when shouldn't you 
 
 Defining your own exception class looks something like
 
-``` ruby linenos:false
+``` ruby
 class UnparsableValueError < StandardError; end
 
 def parse(value)
@@ -22,7 +22,7 @@ end
 
 Raising a generic `RuntimeError` from a string looks like
 
-``` ruby linenos:false
+``` ruby
 def parse(value)
   raise "Couldn't parse: #{value.inspect}" unless value.start_with?("number:")
 

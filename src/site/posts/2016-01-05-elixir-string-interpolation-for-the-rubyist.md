@@ -7,19 +7,19 @@ tags:
 
 On the surface, Elixir string interpolation looks identical to what we know from Ruby:
 
-``` ruby ruby.rb linenos:false
+``` ruby ruby.rb
 "Hello #{:world}"
 # => "Hello world"
 ```
 
-``` elixir elixir.exs linenos:false
+``` elixir elixir.exs
 "Hello #{:world}"
 # => "Hello world"
 ```
 
 But the similarities soon break down:
 
-``` ruby ruby.rb linenos:false
+``` ruby ruby.rb
 "Hello #{[:a, :b]}"
 # => "Hello [:a, :b]"
 
@@ -27,7 +27,7 @@ But the similarities soon break down:
 # => "Hello ArgumentError"
 ```
 
-``` elixir elixir.exs linenos:false
+``` elixir elixir.exs
 "Hello #{[:a, :b]}"
 ** (ArgumentError) cannot convert list to string. The list must contain only integers, strings or nested such lists; got: [:a, :b]
 
@@ -42,7 +42,7 @@ What's going on? It's a difference in philosophy.
 
 In Ruby, string interpolation implicitly calls the `#to_s` method (with no arguments) on the value. So these are equivalent:
 
-``` ruby ruby.rb linenos:false
+``` ruby ruby.rb
 "Hello #{:world}"
 "Hello " + :world.to_s
 ```
@@ -51,7 +51,7 @@ The `#to_s` convention in Ruby is *very* inclusive. Almost everything in Ruby im
 
 Only `BasicObject` and its descendants may be missing a `#to_s`:
 
-``` ruby ruby.rb linenos:false
+``` ruby ruby.rb
 "Hello #{BasicObject.new}"
 NoMethodError: undefined method `to_s' for #<BasicObject:0x007feee2049b00>
 ```
@@ -79,14 +79,14 @@ So how can I interpolate my tuple, map, struct, or some lists?
 
 The simplest thing is to use [`Kernel.inspect/2`](http://elixir-lang.org/docs/stable/elixir/Kernel.html#inspect/2):
 
-``` elixir elixir.exs linenos:false
+``` elixir elixir.exs
 "Hello #{inspect {:a, :b}}"
 # => "Hello {:a, :b}"
 ```
 
 It behaves quite like `#inspect` in Ruby – even to the extent that any representation that can't be evaluated as code starts with a `#` sign:
 
-``` ruby ruby.rb linenos:false
+``` ruby ruby.rb
 [:a, :b].inspect
 # => "[:a, :b]"
 
@@ -94,7 +94,7 @@ lambda {}.inspect
 # => "#<Proc:0x007fb94a8c94b0@(irb):1 (lambda)>"
 ```
 
-``` elixir elixir.exs linenos:false
+``` elixir elixir.exs
 inspect({:a, :b})
 # => "{:a, :b}"
 
@@ -110,7 +110,7 @@ If we want to get fancy, we could implement the `String.Chars` protocol for one 
 
 It's quite simple:
 
-``` elixir elixir.exs linenos:false
+``` elixir elixir.exs
 defmodule User do
   defstruct [:name]
 end
@@ -133,12 +133,12 @@ Run.run
 
 Oh, and I mentioned that `String.Chars` handles "some lists".
 
-``` ruby ruby.rb linenos:false
+``` ruby ruby.rb
 "Hello #{[119, 111, 114, 108, 100]}"
 # => "Hello [119, 111, 114, 108, 100]"
 ```
 
-``` elixir elixir.exs linenos:false
+``` elixir elixir.exs
 "Hello #{[119, 111, 114, 108, 100]}"
 # => "Hello world"
 ```

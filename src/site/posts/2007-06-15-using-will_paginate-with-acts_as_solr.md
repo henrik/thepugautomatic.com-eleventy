@@ -62,7 +62,7 @@ count = SomeModel.count_by_solr(params[:query])
 
 and a view like
 
-``` rhtml
+``` erb
 <dl>
 <% @results.each do |result| %>
   <dt><%= result.title %></dt>
