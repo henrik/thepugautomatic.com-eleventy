@@ -24,7 +24,7 @@ They [might or might not](http://9to5mac.com/2014/10/08/fitbit-says-it-has-no-cu
 
 It does not, perhaps, make business sense for them to ever add it. The iPhone tracking seems a good way to hook users that then want a wristband (we've had a few of those at work) – but someone who can track steps on their watch might not be interested in their wristbands. On the other hand, a big community is inviting in its own right, so keeping Apple Watch users in the fold may mean more wristband sales to their Apple Watch-less co-workers, friends and family.
 
-The [Sync Solver app]((http://syncsolver.com/) can sync data from Health to Fitbit, but these steps [do not count towards challenges](http://syncsolver.com/healthfitbit/support/#ad9a05f2) and [only sync hourly](http://syncsolver.com/healthfitbit/support/#c1486976) among [other limitations](http://syncsolver.com/healthfitbit/support/).
+The [Sync Solver app](http://syncsolver.com/) can sync data from Health to Fitbit, but these steps [do not count towards challenges](http://syncsolver.com/healthfitbit/support/#ad9a05f2) and [only sync hourly](http://syncsolver.com/healthfitbit/support/#c1486976) among [other limitations](http://syncsolver.com/healthfitbit/support/).
 
 Thus I can't see a way to use the watch for Fitbit in a meaningful way – you still need to carry the phone around for tracking, or buy a wristband.
 
