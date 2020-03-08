@@ -10,19 +10,19 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 
 ## TODO
 
-- [ ] Basic fixes of all posts (rename to .md, remove layout and time from front matter)
+- [ ] Support filenames in code examples (custom shorttag?)
+- [ ] Visual polish
+- [ ] Sticky years on start page
+- [ ] Atom feed
 - [ ] Go through all posts and fix remaining issues
 - [ ] Remove posts I don't want to keep
+- [ ] Maybe: Prev/next post
+- [ ] Maybe: Site search
 - [x] Tag support
 - [x] Disqus
-- [ ] Support filenames in code examples (custom shorttag?)
 - [x] Styling: Subheaders
-- [ ] Atom feed
-- [ ] Site search
-- [ ] Sticky years on start page
-- [ ] Maybe: Prev/next post
-- [ ] Visual polish
 - [x] Copy images from old blog
+- [x] Basic fixes of all posts (rename to .md, remove layout and time from front matter)
 
 ## Writing a post
 
