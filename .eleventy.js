@@ -1,6 +1,7 @@
 const { DateTime }    = require('luxon');
 const util            = require('util');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss        = require("@11ty/eleventy-plugin-rss");
 const slug            = require('@11ty/eleventy/src/Filters/Slug');
 
 module.exports = function(eleventyConfig) {
@@ -14,6 +15,9 @@ module.exports = function(eleventyConfig) {
 
   // https://www.11ty.dev/docs/plugins/syntaxhighlight/
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // https://www.11ty.dev/docs/plugins/rss/
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addShortcode("filename", filename => {
     // The newlines avoid breaking Markdown.
