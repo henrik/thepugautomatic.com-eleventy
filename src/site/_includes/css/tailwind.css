@@ -201,6 +201,13 @@ a.naked-link:visited {
   @apply text-xl;
 }
 
+.content h3 {
+  @apply mt-8;
+  @apply mb-4;
+  @apply font-semibold;
+  @apply text-base;
+}
+
 .content ul,
 .content ol {
   @apply my-6;
