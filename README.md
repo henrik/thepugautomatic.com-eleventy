@@ -11,10 +11,10 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 ## TODO
 
 - [ ] Support filenames in code examples (custom shorttag?)
-- [ ] Visual polish
 - [ ] Sticky years on start page
 - [ ] Atom feed
 - [ ] Go through all posts and fix remaining issues
+- [ ] Visual polish
 - [ ] Remove posts I don't want to keep
 - [ ] Maybe: Prev/next post
 - [ ] Maybe: Site search
