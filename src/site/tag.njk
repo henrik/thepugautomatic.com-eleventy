@@ -14,9 +14,9 @@ renderData:
 
 <h1 class="heading text-center">{{ tag }}</h1>
 
-<ol>
+<section>
 {% set taglist = collections[ tag ] %}
 {% for post in taglist | reverse %}
   {% include 'components/post-listing.njk' %}
 {% endfor %}
-</ol>
+</section>

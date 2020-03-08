@@ -3,9 +3,7 @@ layout: default
 ---
 
 <section>
-  <ul>
   {%- for post in collections.posts | reverse -%}
   {% include 'components/post-listing.njk' %}
   {%- endfor -%}
-  </ul>
 </section>
