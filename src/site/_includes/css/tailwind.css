@@ -7,8 +7,8 @@
 /* TODO: Set up postcss-import! */
 
 /**
- * atom-dark theme for `prism.js`
- * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * Based on atom-dark theme for `prism.js`
+ * Which was based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
  * @author Joe Gibson (@gibsjose)
  */
 
@@ -58,7 +58,7 @@ pre[class*="language-"] {
 .token.property,
 .token.keyword,
 .token.tag {
-	color: #96CBFE;
+  color: rgb(249, 215, 73);
 }
 
 .token.class-name {
@@ -67,26 +67,26 @@ pre[class*="language-"] {
 }
 
 .token.boolean,
+.token.builtin,
 .token.constant {
-	color: #99CC99;
+  color: rgb(143, 174, 174)
 }
 
-.token.symbol,
+.token.number,
+.token.symbol {
+  color: rgb(212, 236, 114);
+}
+
 .token.deleted {
 	color: #f92672;
-}
-
-.token.number {
-	color: #FF73FD;
 }
 
 .token.selector,
 .token.attr-name,
 .token.string,
 .token.char,
-.token.builtin,
 .token.inserted {
-	color: #A8FF60;
+  color: rgb(114, 187, 98);
 }
 
 .token.variable {
@@ -117,7 +117,7 @@ pre[class*="language-"] {
 }
 
 .token.function {
-	color: #DAD085;
+  color: rgb(217, 97, 40);
 }
 
 .token.regex {
@@ -206,6 +206,10 @@ a.naked-link:visited {
 .content ol li {
   @apply list-decimal;
   @apply pl-2;
+}
+
+.content img {
+  @apply mx-auto;
 }
 
 :not(pre) > code {
