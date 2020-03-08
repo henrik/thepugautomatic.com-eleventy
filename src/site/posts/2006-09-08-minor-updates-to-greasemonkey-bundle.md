@@ -19,21 +19,21 @@ Updated the Greasemonkey bundle, originally <a href="/2006/08/improved-greasemon
 
 Most of the changes are behind the scenes, moving code into the <code>Support</code> folder for easier development and reuse. Error handling when "Enable assistive devices" is off was improved.
 
-<h4>Snippets</h4>
+## Snippets
 
 The snippets <code>get</code>, <code>set</code>, <code>log</code>, <code>css</code> and <code>xhr</code> were added, tied to the obvious <code>GM_</code> functions.
 
-<h4>Commands</h4>
+## Commands
 
 Two commands were added.
 
-<h5>Manage GM_Values</h5>
+### Manage GM_Values
 
 Opens <code>about:config</code> in Firefox and filters by the script being edited, exposing any <code>GM_setValue()</code> values to view and edit.
 
 Caveats: "Enable access for assistive devices" must be toggled on in the Universal Access prefpane, otherwise filtering will not work.
 
-<h5>Open Installed Script (Chronological)&hellip;</h5>
+### Open Installed Script (Chronological)&hellip;
 
 Like the previous "Open Installed Script" command, but in descending order of time installed.
 

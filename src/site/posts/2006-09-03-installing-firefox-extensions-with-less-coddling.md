@@ -17,7 +17,7 @@ Personally, I think one prompt'd be enough. If that. Since you need to restart F
 
 I don't mean to say that this is how it should be for everyone, but I don't like these storms of prompts, and I think many experienced Firefox users feel the same.
 
-<h4>The solution</h4>
+## The solution
 
 The whole allowing domains bit can actually be avoided by dragging the .xpi link to the address bar, instead of clicking it. I can't recall where I read this, but it does work.
 

@@ -21,21 +21,21 @@ Because I'd rather spend some time coding than a lot of time re-sorting thousand
 
 This is rather a hackish way of doing it, but it was easily coded, and works fine for me. Also, it's not bundled into a single self-contained script, as I don't expect to do this ever again. Just posting it here in the hope of saving someone else the trouble.
 
-<h4>Export</h4>
+## Export
 
 First, export your photos into several folders, each for a folder or keyword you want to be able to restore. Folder contents may overlap, so one photo with three saveworthy keywords would go in at least three folders.
 
 Also export the entire library to a folder.
 
-<h4>Clear the library</h4>
+## Clear the library
 
 Remove everything in your library within iPhoto.
 
-<h4>Import</h4>
+## Import
 
 Import the entire library from that last folder.
 
-<h4>Scripting</h4>
+## Scripting
 
 Do this for each of your keyword or iPhoto folder folders.
 

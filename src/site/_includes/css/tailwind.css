@@ -182,7 +182,7 @@ a.naked-link:visited {
   @apply text-xl;
 }
 
-.content h3 {
+.content h3, h4, h5 {
   @apply mt-8;
   @apply mb-4;
   @apply font-semibold;
