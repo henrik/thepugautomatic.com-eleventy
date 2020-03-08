@@ -13,13 +13,13 @@ Since we already make styleguide decisions by consensus, I thought it would be s
 
 …into GitHub emoji:
 
-<img src="https://assets-cdn.github.com/images/icons/emoji/thumbsup.png" class="no-box" style="width:20px;height:20px" alt=":thumbsup:" title=":thumbsup:"> Yes please! I actively support this.
+👍 Yes please! I actively support this.
 
-<img src="https://assets-cdn.github.com/images/icons/emoji/point_right.png" class="no-box" style="width:20px;height:20px" alt=":point_right:" title=":point_right:"> Let's discuss further. We don't have all the facts yet.
+👉 Let's discuss further. We don't have all the facts yet.
 
-<img src="https://assets-cdn.github.com/images/icons/emoji/thumbsdown.png" class="no-box" style="width:20px;height:20px" alt=":thumbsdown:" title=":thumbsdown:"> Veto! I feel that I have all the facts needed to say no.
+👎 Veto! I feel that I have all the facts needed to say no.
 
-<img src="https://assets-cdn.github.com/images/icons/emoji/punch.png" class="no-box" style="width:20px;height:20px" alt=":punch:" title=":punch:"> I stand aside. I neither support nor oppose this.
+👊 I stand aside. I neither support nor oppose this.
 
 There's no thumb-to-the-side emoji, and the pointing hand isn't a great substitute. [Any ideas?](http://www.emoji-cheat-sheet.com/)
 
