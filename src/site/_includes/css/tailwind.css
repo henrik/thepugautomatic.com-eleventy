@@ -1,9 +1,7 @@
 /* purgecss start ignore */
 @tailwind  base;
-/* purgecss end ignore */
 
 /* PrismJS colour theme starts */
-/* purgecss start ignore */
 /* TODO: Set up postcss-import! */
 
 /**
@@ -132,7 +130,7 @@ pre[class*="language-"] {
 .token.italic {
 	font-style: italic;
 }
-/* purgecss end ignore */
+
 /* PrismJS colour theme ends */
 
 /*
@@ -231,7 +229,6 @@ pre {
   color: #fff;
 }
 
-/* purgecss start ignore */
 @tailwind  components;
 /* purgecss end ignore */
 
