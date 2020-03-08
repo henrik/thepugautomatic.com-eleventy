@@ -29,6 +29,7 @@ This means there are a couple of gotchas. It won't work if your phone is not in 
 
 On my computer, I made a tiny [Sinatra](http://www.sinatrarb.com/) app:
 
+{% filename "~/apps/flic/config.ru" %}
 ``` ruby ~/apps/flic/config.ru
 require "sinatra"
 

@@ -40,6 +40,7 @@ Thanks to [a suggestion by Mikkel Malmberg](https://twitter.com/mikker/status/68
 
 Create an `/etc/nginx/conf.d/static_sites.conf` file (incidentally, right next to Dokku's `dokku.conf`):
 
+{% filename "/etc/nginx/conf.d/static_sites.conf" %}
 ``` nginx /etc/nginx/conf.d/static_sites.conf
 server {
   server_name ~^(?<domain>.+)$;

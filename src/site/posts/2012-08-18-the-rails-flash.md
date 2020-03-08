@@ -7,6 +7,7 @@ tags:
 
 [The Rails flash](http://guides.rubyonrails.org/action_controller_overview.html#the-flash) is typically used for short messages:
 
+{% filename "app/controllers/sessions_controller.rb" %}
 ``` ruby app/controllers/sessions_controller.rb
 redirect_to root_url, notice: "You have been logged out."
 ```
@@ -24,6 +25,7 @@ Rather than send all that in the flash, you can send some identifier that your v
 
 This could be the name of a partial:
 
+{% filename "app/controllers/users_controller.rb" %}
 ``` ruby app/controllers/users_controller.rb
 class UsersController < ApplicationController
   def create
@@ -34,11 +36,13 @@ class UsersController < ApplicationController
 end
 ```
 
+{% filename "app/views/layouts/application.html.haml" %}
 ``` haml app/views/layouts/application.html.haml
 - if flash[:partial]
   = render partial: "shared/flashes/#{flash[:partial]}"
 ```
 
+{% filename "app/views/shared/flashes/_welcome.html.haml" %}
 ``` haml app/views/shared/flashes/_welcome.html.haml
 %p Welcome!
 %ul
@@ -48,11 +52,13 @@ end
 
 Or just a flag:
 
+{% filename "app/controllers/users_controller.rb" %}
 ``` ruby app/controllers/users_controller.rb
 flash[:signed_up] = true
 redirect_to root_path
 ```
 
+{% filename "app/views/welcomes/show.html.haml" %}
 ``` haml app/views/welcomes/show.html.haml
 - if flash[:signed_up]
   %p Welcome!
@@ -65,6 +71,7 @@ Say you have some filter redirecting incoming requests. Maybe you're detecting t
 
 You can use the flash to make sure the redirected-to controller gets the original referer.
 
+{% filename "app/controllers/application_controller.rb" %}
 ``` ruby app/controllers/application_controller.rb
 class ApplicationController < ActionController::Base
   before_filter :keep_original_referer
@@ -99,6 +106,7 @@ You could do something like this.
 
 Send event data from the controller:
 
+{% filename "app/controllers/users_controller.rb" %}
 ``` ruby app/controllers/users_controller.rb
 class UsersController < ApplicationController
   def create
@@ -111,6 +119,7 @@ end
 
 Then turn it into JavaScript in your view:
 
+{% filename "app/helpers/layout_helper.rb" %}
 ``` ruby app/helpers/layout_helper.rb
 def analytics_events
   Array(flash[:events]).map do |event|
@@ -119,6 +128,7 @@ def analytics_events
 end
 ```
 
+{% filename "app/views/layouts/application.html.haml" %}
 ``` haml app/views/layouts/application.html.haml
 :javascript
   = analytics_events
@@ -129,10 +139,12 @@ end
 
 You may have considered that any of the above could have be done with query parameters instead. Including common flash messages:
 
+{% filename "app/controllers/sessions_controller.rb" %}
 ``` ruby app/controllers/sessions_controller.rb
 redirect_to root_url(notice: "You have been logged out.")
 ```
 
+{% filename "app/views/layouts/application.html.haml" %}
 ``` haml app/views/layouts/application.html.haml
 - if params[:notice]
   %p= params[:notice]

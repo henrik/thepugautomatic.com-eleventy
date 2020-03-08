@@ -15,6 +15,7 @@ There are tools like [hitch](https://github.com/therubymug/hitch) to help you co
 
 I just added [some simple aliases](https://github.com/henrik/dotfiles/blob/master/bash/lib/gitpair.sh) to my Bash shell:
 
+{% filename "~/.bash_profile" %}
 ``` bash ~/.bash_profile
 alias pair='echo "Committing as: `git config user.name` <`git config user.email`>"'
 alias unpair="git config --remove-section user 2> /dev/null; echo Unpaired.; pair"
@@ -38,6 +39,7 @@ If you're quite promiscuous in your pairing, perhaps in a large team, the aliase
 
 A killer feature of my solution, that doesn't seem built into hitch or other tools, is that it's easy to show in [your prompt](https://github.com/henrik/dotfiles/blob/master/bash/prompt.sh):
 
+{% filename "~/.bash_profile" %}
 ``` bash ~/.bash_profile
 function __git_prompt {
   [ `git config user.pair` ] && echo " (pair: `git config user.pair`)"

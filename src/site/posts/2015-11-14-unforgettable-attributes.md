@@ -22,6 +22,7 @@ So what should we copy? The title and description should be included. The highes
 
 Alright, we'll write our code:
 
+{% filename "relister.rb" %}
 ``` ruby relister.rb linenos:false
 includes = %w[ title description ]
 new_lot = Lot.new
@@ -46,12 +47,14 @@ If the relisting is covered by integrated tests at all, they will trigger these 
 
 ### Example code
 
+{% filename "relister.rb" %}
 ``` ruby relister.rb linenos:false
 new_lot = Lot.new
 new_lot.attributes = Lot::IncludesAndExcludes.attributes_from_lot(old_lot)
 new_lot.save!
 ```
 
+{% filename "lot/includes_and_excludes.rb" %}
 ``` ruby lot/includes_and_excludes.rb linenos:false
 class Lot::IncludesAndExcludes
   LOT_INCLUDES = [
@@ -92,6 +95,7 @@ The `attributes_for_lot` class method passes in the constants to the instance, t
 
 This also makes it very easy to test – and you can test it lightning-fast without loading Rails, if you have that set up.
 
+{% filename "spec/lot/includes_and_excludes_spec.rb" %}
 ``` ruby spec/lot/includes_and_excludes_spec.rb linenos:false
 describe Lot::IncludesAndExcludes, "#attributes" do
   it "includes the attributes to include" do

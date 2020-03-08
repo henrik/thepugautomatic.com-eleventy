@@ -9,6 +9,7 @@ tags:
 
 You can usually test exceptions this way in Elixir:
 
+{% filename "test/my_test.exs" %}
 ``` elixir test/my_test.exs
 defmodule MyTest do
   use ExUnit.Case
@@ -23,6 +24,7 @@ end
 
 But if you're writing a macro, you can raise exceptions at compile time. This won't work:
 
+{% filename "test/my_test.exs" %}
 ``` elixir test/my_test.exs
 defmodule MyMacro do
   defmacro boom do
@@ -48,6 +50,7 @@ Having run into this limitation twice now, I thought I'd figure out a way around
 
 First, add these `CompileTimeAssertions` to your test helper:
 
+{% filename "test/test_helper.exs" %}
 ``` elixir test/test_helper.exs
 ExUnit.start()
 
@@ -73,6 +76,7 @@ end
 
 Then this will work:
 
+{% filename "test/my_test.exs" %}
 ``` elixir test/my_test.exs
 defmodule MyMacro do
   defmacro boom do

@@ -9,6 +9,7 @@ tags:
 
 Say you have this code:
 
+{% filename "example.ex" %}
 ``` elixir example.ex
 defmodule Example do
   def run(callback) do
@@ -22,6 +23,7 @@ You want to assert that it calls back with `:hello` and `:world`.
 
 It might not be immediately clear how to do that in ExUnit.
 
+{% filename "example_test.exs" %}
 ``` elixir example_test.exs
 test "callback runs" do
   callback = fn (greeting, celestial_body) ->
@@ -38,6 +40,7 @@ We could assert inside the callback… but if the callback never runs, the asser
 
 In a language like Ruby, you could do it by changing a variable outside the anonymous function:
 
+{% filename "example_test.rb" %}
 ``` ruby example_test.rb
 did_it_run = false
 fun = -> { did_it_run = true }
@@ -49,6 +52,7 @@ In Elixir, an anonymous function can read variables from outside but not change 
 
 There are other ways to communicate, though. Message passing to the rescue!
 
+{% filename "example_test.exs" %}
 ``` elixir example_test.exs
 test "callback runs" do
   callback = fn (greeting, celestial_body) ->
@@ -67,6 +71,7 @@ Then we [assert](http://elixir-lang.org/docs/v1.0/ex_unit/ExUnit.Assertions.html
 
 For multi-process use cases, you can name the test process:
 
+{% filename "example_test.exs" %}
 ``` elixir example_test.exs
 defmodule TestCallerBacker do
   def run(greeting, celestial_body) do

@@ -29,6 +29,7 @@ Install the free memcache addon (5 MB). In a terminal, in your app directory:
 
 Your `Gemfile` should include `dalli` (a memcache client) and `rack-cache`:
 
+{% filename "Gemfile" %}
 ``` ruby Gemfile
 source :rubygems
 
@@ -47,6 +48,7 @@ Update `Gemfile.lock` for Heroku (and install gems locally). In the terminal:
 
 In your Sinatra app, require the dependencies. I like to do it this way so I don't have to repeat myself:
 
+{% filename "app.rb" %}
 ``` ruby app.rb
 require "rubygems"
 require "bundler"
@@ -55,6 +57,7 @@ Bundler.require :default, (ENV["RACK_ENV"] || "development").to_sym
 
 But you could do this if you prefer:
 
+{% filename "app.rb" %}
 ``` ruby app.rb
 require "rubygems"
 require "bundler/setup"
@@ -66,6 +69,7 @@ require "rack-cache"
 
 Configure Rack::Cache to use memcache for storage:
 
+{% filename "config.ru" %}
 ``` ruby config.ru
 require "./app"
 
@@ -83,6 +87,7 @@ run Sinatra::Application
 
 Then have the app set whatever HTTP caching headers you like:
 
+{% filename "app.rb" %}
 ``` ruby app.rb
 get "/foo" do
   cache_control :public, max_age: 1800  # 30 mins.
@@ -92,6 +97,7 @@ end
 
 ## All together
 
+{% filename "config.ru" %}
 ``` ruby config.ru
 require "./app"
 
@@ -107,6 +113,7 @@ end
 run Sinatra::Application
 ```
 
+{% filename "app.rb" %}
 ``` ruby app.rb
 require "rubygems"
 require "bundler"

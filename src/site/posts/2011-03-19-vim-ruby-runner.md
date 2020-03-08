@@ -19,6 +19,7 @@ Get it from GitHub: <https://github.com/henrik/vim-ruby-runner>
 
 The default keybindings are only available in buffers with filetype `ruby`. I recommend defining a command in your `~/.vimrc` like
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 command! FR set filetype=ruby
 ```

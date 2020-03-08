@@ -14,11 +14,13 @@ A typical way of doing that in Rails may involve `User.has_many :watchlistings` 
 
 So instead, you could have a `Watchlist` class that is the only thing in the system that knows about `Watchlisting` records.
 
+{% filename "app/models/watchlisting.rb" %}
 ``` ruby app/models/watchlisting.rb
 class Watchlisting < ActiveRecord::Base
 end
 ```
 
+{% filename "app/models/watchlist.rb" %}
 ``` ruby app/models/watchlist.rb
 class Watchlist
   def self.users_watching(item)
@@ -42,6 +44,7 @@ class Watchlist
 end
 ```
 
+{% filename "example.rb" %}
 ``` ruby example.rb
 my_list = Watchlist.new(my_user)
 my_list.add(an_item)
@@ -51,6 +54,7 @@ Watchlist.users_watching(an_item)  # => [my_user]
 
 You could of course implement these with a single query and a `JOIN`, if you prefer:
 
+{% filename "app/models/watchlist.rb" %}
 ``` ruby app/models/watchlist.rb
 def items
   Item.joins("JOIN watchlistings ON items.id = watchlistings.item_id").where("watchlistings.user_id" => @user)

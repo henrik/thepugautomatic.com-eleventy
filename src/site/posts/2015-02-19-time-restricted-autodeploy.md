@@ -29,6 +29,7 @@ We realized that we could turn on autodeploy *and* reduce the risk of after-hour
 
 When tests pass, we trigger another CI job to deploy staging. That job runs this bash script:
 
+{% filename "script/ci/build/deploy_staging.sh" %}
 ``` bash script/ci/build/deploy_staging.sh
 # …deploy staging…
 

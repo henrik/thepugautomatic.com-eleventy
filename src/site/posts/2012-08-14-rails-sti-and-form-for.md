@@ -8,6 +8,7 @@ tags:
 
 Rails' `form_for` conveniently uses "record identification" to figure out the correct URL based on the model:
 
+{% filename "_form.html.haml" %}
 ``` haml _form.html.haml
 = form_for([:admin, @item]) do |f|
   = f.text_field :name
@@ -19,12 +20,14 @@ So this form would POST to `admin_items_path` for a new record, or PUT to `admin
 
 But it can break when you use STI (Single Table Inheritance).
 
+{% filename "items_controller.rb" %}
 ``` ruby items_controller.rb
 def edit
   @item = Item.find(123)  # A SpecialItem record.
 end
 ```
 
+{% filename "_form.html.haml" %}
 ``` haml _form.html.haml
 = form_for([:admin, @item]) do |f|
   = f.text_field :name
@@ -37,6 +40,7 @@ The [Rails form helper guide](http://guides.rubyonrails.org/form_helpers.html) s
 
 You can, though, with some fiddling. This is what I just did:
 
+{% filename "_form.html.haml" %}
 ``` haml _form.html.haml
 = form_for([:admin, @item.becomes(Item)]) |f|
   - f.object = @item.becomes(@item.class)

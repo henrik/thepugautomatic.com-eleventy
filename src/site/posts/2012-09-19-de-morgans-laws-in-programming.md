@@ -11,6 +11,7 @@ I learned about [De Morgan's laws](http://en.wikipedia.org/wiki/De_Morgan's_laws
 
 There's two of them, and they're very straightforward. All they say is that for any A and B, this is true:
 
+{% filename "de_morgans_laws.rb" %}
 ``` ruby de_morgans_laws.rb
 !(a && b) == (!a || !b)
 !(a || b) == (!a && !b)

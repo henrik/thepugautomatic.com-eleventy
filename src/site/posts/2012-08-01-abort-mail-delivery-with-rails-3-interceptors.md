@@ -18,12 +18,14 @@ Note that if you use something like [Resque::Mailer](https://github.com/zapnap/r
 
 Register the interceptor:
 
+{% filename "config/initializers/action_mailer.rb" %}
 ``` ruby config/initializers/action_mailer.rb
 ActionMailer::Base.register_interceptor(PreventMailInterceptor)
 ```
 
 Define the interceptor, making sure to modify the conditions to suit your needs:
 
+{% filename "lib/prevent_mail_interceptor.rb" %}
 ``` ruby lib/prevent_mail_interceptor.rb
 class PreventMailInterceptor
   RE = /dev\+.*@example\.com/
@@ -43,6 +45,7 @@ end
 
 And spec it:
 
+{% filename "spec/lib/prevent_mail_interceptor_spec.rb" %}
 ``` ruby spec/lib/prevent_mail_interceptor_spec.rb
 require 'spec_helper'
 

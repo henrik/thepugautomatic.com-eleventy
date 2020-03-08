@@ -19,6 +19,7 @@ This is not [a "write your first macro" tutorial](http://elixir-lang.org/getting
 
 Consider this example:
 
+{% filename "example.ex" %}
 ``` elixir example.ex
 defmodule MyMacro do
   defmacro example({value, _, _}) do

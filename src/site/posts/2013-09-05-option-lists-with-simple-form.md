@@ -11,6 +11,7 @@ This is the pattern I've used lately to enumerate values for [simple_form](https
 
 Values:
 
+{% filename "app/models/order/status.rb" %}
 ``` ruby app/models/order/status.rb
 class Order
   class Status
@@ -48,6 +49,7 @@ end
 
 View:
 
+{% filename "app/views/orders/_form.html.erb" %}
 ``` ruby app/views/orders/_form.html.erb
 …
 <%= f.input :status, collection: Order::Status.all %>
@@ -56,6 +58,7 @@ View:
 
 And you can validate like this:
 
+{% filename "app/models/order.rb" %}
 ``` ruby app/models/order.rb
 class Order < ActiveRecord::Base
   validates :status, inclusion: { in: Status.keys }

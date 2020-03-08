@@ -24,6 +24,7 @@ These are shell scripts that have been made executable (<code>chmod +x filename.
 
 <code>hyper</code> is my SSH alias for the Mac Mini. My <code>~/.ssh/config</code> file contains something like
 
+{% filename "~/.ssh/config" %}
 ``` text ~/.ssh/config
 Host hyper
   Hostname hyperion.local

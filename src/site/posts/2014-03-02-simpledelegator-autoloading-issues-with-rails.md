@@ -12,11 +12,13 @@ Be aware that if you use [SimpleDelegator](http://www.ruby-doc.org/stdlib-2.1.1/
 
 Specifically, if you have something like
 
+{% filename "app/models/my_thing.rb" %}
 ``` ruby app/models/my_thing.rb
 class MyThing < SimpleDelegator
 end
 ```
 
+{% filename "app/models/my_thing/subthing.rb" %}
 ``` ruby app/models/my_thing/subthing.rb
 class MyThing::Subthing
 end

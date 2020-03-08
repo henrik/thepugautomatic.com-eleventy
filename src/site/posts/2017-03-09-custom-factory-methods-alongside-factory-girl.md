@@ -14,6 +14,7 @@ That complexity doesn't really belong in the tests themselves, but it's also dif
 
 Then make a plain Ruby method alongside your factory definitions:
 
+{% filename "item_factory.rb" %}
 ``` ruby item_factory.rb
 FactoryGirl.define do
   factory :item do

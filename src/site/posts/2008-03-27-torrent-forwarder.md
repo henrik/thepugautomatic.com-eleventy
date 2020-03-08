@@ -32,6 +32,7 @@ I wrote a Folder Action script that is attached to my <code>Downloads</code> fol
 
 You will need to modify the script for your setup. The script will by default scp to <code>hyper:Public/Torrent drop</code>. I can use <code>hyper</code> because <code>~/.ssh/config</code> contains
 
+{% filename "~/.ssh/config" %}
 ``` text ~/.ssh/config
 Host hyper
   Hostname hyperion.local

@@ -7,6 +7,7 @@ tags:
 
 Say you have this file open in Vim:
 
+{% filename "example.js" %}
 ``` javascript example.js
 one();
 

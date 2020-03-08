@@ -16,6 +16,7 @@ So we've been using RSpec shared examples, with the [template method pattern](ht
 
 Here's a simplified example:
 
+{% filename "spec/request/online_bidding_spec.rb" %}
 ``` ruby spec/request/online_bidding_spec.rb
 require "spec_helper"
 require "support/shared_examples/bidding"
@@ -31,6 +32,7 @@ describe "Bidding online" do
 end
 ```
 
+{% filename "spec/request/hammer_bidding_spec.rb" %}
 ``` ruby spec/request/hammer_bidding_spec.rb
 require "spec_helper"
 require "support/shared_examples/bidding"
@@ -46,6 +48,7 @@ describe "Bidding at hammer auction" do
 end
 ```
 
+{% filename "spec/support/shared_examples/bidding.rb" %}
 ``` ruby spec/support/shared_examples/bidding.rb
 shared_examples :bidding do
   it "lets you bid when logged in" do

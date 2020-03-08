@@ -14,6 +14,7 @@ For example, you don't want one Active Record model to know a lot about the sche
 
 Instead of this:
 
+{% filename "app/models/user.rb" %}
 ``` ruby app/models/user.rb
 class User < ActiveRecord::Base
   has_one :subscription
@@ -21,6 +22,7 @@ class User < ActiveRecord::Base
 end
 ```
 
+{% filename "app/models/subscription.rb" %}
 ``` ruby app/models/subscription.rb
 class Subscription
 end
@@ -28,6 +30,7 @@ end
 
 You might use Active Record's [`merge`](http://apidock.com/rails/ActiveRecord/SpawnMethods/merge) and do something like:
 
+{% filename "app/models/user.rb" %}
 ``` ruby app/models/user.rb
 class User < ActiveRecord::Base
   has_one :subscription
@@ -35,6 +38,7 @@ class User < ActiveRecord::Base
 end
 ```
 
+{% filename "app/models/subscription.rb" %}
 ``` ruby app/models/subscription.rb
 class Subscription
   scope :active, where(active: true)
@@ -66,6 +70,7 @@ You could put the join SQL in `Invoice`, but then it would know a lot about the 
 
 Instead, you can simply have `Event` own that SQL:
 
+{% filename "app/models/event.rb" %}
 ``` ruby app/models/event.rb
 class Event < ActiveRecord::Base
   belongs_to :record, polymorphic: true
@@ -89,6 +94,7 @@ class Event < ActiveRecord::Base
 end
 ```
 
+{% filename "app/models/invoice.rb" %}
 ``` ruby app/models/invoice.rb
 class Invoice
   POSTED_EVENT = "posted"

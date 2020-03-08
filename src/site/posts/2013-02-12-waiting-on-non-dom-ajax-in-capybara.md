@@ -33,6 +33,7 @@ And that test will fail, because Capybara will not know to wait a while before c
 
 My workaround is to make *every* Ajax request update *something* in the UI, and wait for that:
 
+{% filename "app/assets/javascripts/capybara_wait_for_ajax_completion.js.coffee" %}
 ``` coffeescript app/assets/javascripts/capybara_wait_for_ajax_completion.js.coffee
 $ ->
 
@@ -45,6 +46,7 @@ $ ->
       $(this).addClass(KLASS)
 ```
 
+{% filename "spec/support/helpers.rb" %}
 ``` ruby spec/support/helpers.rb
 def wait_for_ajax_completion
   # page.document so it keeps working inside "within" blocks.
@@ -52,6 +54,7 @@ def wait_for_ajax_completion
 end
 ```
 
+{% filename "spec/requests/favoriting_spec.rb" %}
 ``` ruby spec/requests/favoriting_spec.rb
 Favorite.count.should == 0
 click_link("Add to favorites")

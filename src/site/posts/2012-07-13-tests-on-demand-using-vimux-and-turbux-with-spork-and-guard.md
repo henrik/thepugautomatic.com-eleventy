@@ -50,6 +50,7 @@ A simple example of what it lets you do is
 
 By default, Vimux opens a new pane (and then reuses it) to run the command. As I tend to manually set up my workspace with about 80% editor on the left, 20% test runner on the right, I've configured it to just use the nearest pane instead:
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 let g:VimuxUseNearestPane = 1
 ```
@@ -60,6 +61,7 @@ Then there's [Turbux](https://github.com/jgdavey/vim-turbux) ([author's blog pos
 
 As I already use `,t` and `,T` for [Command-T](https://github.com/wincent/Command-T), I remapped Turbux to `,m` and `,M`:
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 let g:no_turbux_mappings = 1
 map <leader>m <Plug>SendTestToTmux
@@ -102,6 +104,7 @@ This can be useful if you're running one integration test over and over, while m
 
 Or if you want a more permanent mapping, you could do something like:
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 map ,x :VimuxRunLastCommand<CR>
 ```
@@ -131,6 +134,7 @@ With Turbux, you're effectively running your tests in a regular terminal. Compar
 
 Luckily, Spork works fine divorced from Guard. And, indeed, married to Turbux. Just start Spork (I like to put it in a small pane in the bottom-right) and then make sure your tests connect to it. I do this in my `~/.vimrc`:
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 let g:turbux_command_rspec = 'rspec --drb'
 ```
@@ -152,6 +156,7 @@ After starting Guard, hit `p⏎` to pause the automatic "file modification liste
 
 Rather than trigger when it detects modified files, Guard will now only trigger *if you tell it a file has been modified*. Add a mapping like:
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 map ,x :call VimuxRunCommand("change ".expand("%"))<CR>
 ```

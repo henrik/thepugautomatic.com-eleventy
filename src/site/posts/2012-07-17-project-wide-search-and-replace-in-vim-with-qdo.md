@@ -63,6 +63,7 @@ Or cheat to save some typing (the regex `.` matches any character, including a s
 
 To save some typing, this line in my `~/.vimrc` brings up the search prompt when I hit `,a` (the "a" was for "ack", once):
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 " We want the trailing space.
 exe "nnoremap <leader>a :GitGrep "
@@ -103,6 +104,7 @@ For project-wide search-and-replace, then, you would simply do something like th
 
 You probably want to configure
 
+{% filename "~/.vimrc" %}
 ``` vim ~/.vimrc
 " Automatically save changes before switching buffer with some
 " commands, like :cnfile.

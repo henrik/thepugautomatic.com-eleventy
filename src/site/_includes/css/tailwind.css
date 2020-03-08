@@ -219,6 +219,20 @@ pre code {
   @apply text-sm;
 }
 
+.code-filename {
+  @apply bg-gray-300;
+  @apply py-1;
+  text-align: center;
+  margin-top: 1.5em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+}
+
+.code-filename + pre[class*="language-"] {
+  @apply mt-0;
+  @apply rounded-t-none;
+}
+
 pre {
   padding: 1em;
   margin: 1.5em 0;

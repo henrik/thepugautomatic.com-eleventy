@@ -27,6 +27,7 @@ Only `index`, `new` and `create` require the seller id, because the contract doe
 
 This all works really well in Rails. Just route them separately:
 
+{% filename "config/routes.rb" %}
 ``` ruby config/routes.rb
 resources :contracts, only: [ :show, :edit, :update, :destroy ]
 
@@ -39,6 +40,7 @@ Of course, you only list the actions you use. If you have many routes, [you want
 
 [You can even specify `shallow: true`](http://edgeguides.rubyonrails.org/routing.html#shallow-nesting) and Rails will do this for you:
 
+{% filename "config/routes.rb" %}
 ``` ruby config/routes.rb
 resources :sellers, only: [ :index, :show ] do
   resources :contracts, only: [ :index, :show, … ], shallow: true
@@ -48,6 +50,7 @@ end
 
 Rails is clever enough that all the contract routes will go to one and the same controller with no extra effort:
 
+{% filename "app/controllers/contracts_controller.rb" %}
 ``` ruby app/controllers/contracts_controller.rb
 class ContractsController < ApplicationController
   def index

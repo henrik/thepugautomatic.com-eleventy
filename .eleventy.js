@@ -15,6 +15,11 @@ module.exports = function(eleventyConfig) {
   // https://www.11ty.dev/docs/plugins/syntaxhighlight/
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  eleventyConfig.addShortcode("filename", filename => {
+    // The newlines avoid breaking Markdown.
+    return `<div class="code-filename">${filename}</div>\n\n`;
+  });
+
   // a debug utility
   eleventyConfig.addFilter('dump', obj => {
     return util.inspect(obj)

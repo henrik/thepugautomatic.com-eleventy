@@ -20,6 +20,7 @@ You probably don't want one translation key per sentence, though. It's helpful f
 
 So I use [YAML block literals](http://en.wikipedia.org/wiki/Yaml#Block_literals) when I can:
 
+{% filename "la.yml" %}
 ``` yml la.yml
 long_text: |
   Lorem ipsum dolor sit amet.
@@ -36,6 +37,7 @@ You still want markup, though – that's up next.
 
 I find Rails' [simple_format](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-simple_format) handy if you just want some paragraph breaks:
 
+{% filename "la.yml" %}
 ``` yml la.yml
 long_text: |
   Lorem ipsum dolor sit amet.
@@ -43,6 +45,7 @@ long_text: |
   Consectetur adipisicing elit.
 ```
 
+{% filename "index.erb" %}
 ``` erb index.erb
 <%= simple_format t(:'long_text') %>
 ```
@@ -57,6 +60,7 @@ This becomes:
 
 Another common case is lists, where I tend to do something simple like:
 
+{% filename "la.yml" %}
 ``` yml la.yml
 selling_points: |
   Lorem.
@@ -64,6 +68,7 @@ selling_points: |
   Dolor!
 ```
 
+{% filename "signup.erb" %}
 ``` erb signup.erb
 <ul>
 <% t(:'selling_points').each_line do |point| %>
@@ -91,6 +96,7 @@ You could do it right in the translation strings, but your translator then needs
 
 What I do is split up the translations, but keep them under the same key:
 
+{% filename "en.yml" %}
 ``` yml en.yml
   log_in_or_sign_up:
     text: "%{log_in} or %{sign_up} to do stuff."
@@ -98,6 +104,7 @@ What I do is split up the translations, but keep them under the same key:
     sign_up: "Sign up"
 ```
 
+{% filename "header.erb" %}
 ``` erb header.erb
 <%= t(
   :'log_in_or_sign_up.text',
@@ -139,10 +146,12 @@ As a grammar nerd, I actually love this stuff. But judging by my colleagues, *yo
 
 In languages like English and Swedish, you express something like "From New York" with a preposition (the word "from"). This is trivial to translate:
 
+{% filename "en.yml" %}
 ``` yml en.yml
 from_x: "From %{x}"
 ```
 
+{% filename "sv.yml" %}
 ``` yml sv.yml
 from_x: "Från %{x}"
 ```
@@ -153,14 +162,17 @@ You could list these variations in your translation files or other data source, 
 
 The easiest solution I [found](http://www.ruby-forum.com/topic/1897522) for this was simply to make small tweaks to avoid it altogether, e.g. "From: New York" instead of "From New York".
 
+{% filename "en.yml" %}
 ``` yml en.yml
 from_x: "From: %{x}"
 ```
 
+{% filename "sv.yml" %}
 ``` yml sv.yml
 from_x: "Från: %{x}"
 ```
 
+{% filename "fi.yml" %}
 ``` yml fi.yml
 from_x: "Lähettäjä: %{x}"
 ```
@@ -172,6 +184,7 @@ Apparently this is enough to avoid inflecting the place name. Consult a speaker 
 
 I wrote [a plugin for Vim](https://github.com/henrik/vim-yaml-flattener) that lets you easily toggle a YML file between nested format:
 
+{% filename "xx.yml" %}
 ``` yml xx.yml
 en:
   baz: "baize"
@@ -181,6 +194,7 @@ en:
 
 and a flat format:
 
+{% filename "xx.yml" %}
 ``` yml xx.yml
 en.baz: "baize"
 en.foo.bar: "baare"
@@ -203,12 +217,14 @@ It's caught me a number of times when I mistakenly add a translation to only one
 
 It even handles pluralization differences – these match up fine:
 
+{% filename "en.yml" %}
 ``` yml en.yml
 table:
   one: "%{count} table"
   other: "%{count} tables"
 ```
 
+{% filename "sv.yml" %}
 ``` yml sv.yml
 table: "%{count} bord"
 ```

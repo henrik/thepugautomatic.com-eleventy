@@ -76,6 +76,7 @@ headers "X-SMTPAPI" => {
 
 So how do we automatically store the mailer and action (and some additional goodies) in the SendGrid metadata?
 
+{% filename "app/mailers/application_mailer.rb" %}
 ``` ruby app/mailers/application_mailer.rb
 class ApplicationMailer < ActionMailer::Base
   # Call add_sendgrid_headers after generating each mail.
