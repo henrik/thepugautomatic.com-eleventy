@@ -8,9 +8,11 @@ pagination:
   - all
   - posts
 permalink: /tag/{{ tag | slug }}/
+renderData:
+  title: "{{ tag }}"
 ---
 
-<h1 class="heading">Tagged “{{ tag }}”</h1>
+<h1 class="heading text-center">{{ tag }}</h1>
 
 <ol>
 {% set taglist = collections[ tag ] %}
