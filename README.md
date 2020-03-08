@@ -18,6 +18,7 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [ ] Remove posts I don't want to keep
 - [ ] Maybe: Prev/next post
 - [ ] Maybe: Site search
+- [ ] Maybe: Own Tailwind size scale
 - [x] Tag support
 - [x] Disqus
 - [x] Styling: Subheaders
