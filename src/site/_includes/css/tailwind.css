@@ -243,6 +243,13 @@ pre {
   color: #fff;
 }
 
+blockquote {
+  @apply my-8;
+  @apply italic;
+  @apply pl-4;
+  @apply border-l-8 border-gray-200;
+}
+
 @tailwind  components;
 /* purgecss end ignore */
 
