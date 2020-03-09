@@ -17,6 +17,7 @@ My blog, powered by [Eleventy](https://11ty.dev) and deployed to [Netlify](https
 - [ ] Maybe: Prev/next post
 - [ ] Maybe: Site search
 - [ ] Maybe: Own Tailwind size scale
+- [x] Metadata for Twitter, Facebook etc cards
 - [x] Fix Twitter widget rendering on <http://localhost:3000/2015/06/socrates-uk-2015/>
 - [x] Atom feed
 - [x] Support filenames in code examples (custom shorttag?)
