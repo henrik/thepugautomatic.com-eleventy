@@ -198,10 +198,15 @@ a.naked-link:visited {
 .content li {
   @apply list-disc;
   @apply ml-6;
+  @apply my-1;
 }
 .content ol li {
   @apply list-decimal;
   @apply pl-2;
+}
+.content li ul,
+.content li ol {
+  @apply my-1;
 }
 
 .content img {
