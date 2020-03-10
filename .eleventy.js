@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
   }
 
-  // Static assets to pass through
+  // Static assets to pass through.
   eleventyConfig.addPassthroughCopy("./src/site/fonts");
   eleventyConfig.addPassthroughCopy("./src/site/images");
   eleventyConfig.addPassthroughCopy("./src/site/css");
@@ -60,12 +60,11 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src/site",
       includes: "_includes",
-      output: "dist"
+      output: "dist",
     },
     passthroughFileCopy: true,
-    templateFormats : ["njk", "md"],
-    htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk",
+    templateFormats: ["njk", "md"],
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
   };
-
 };
