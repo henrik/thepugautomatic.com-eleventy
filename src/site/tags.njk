@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1 class="heading text-center">Tags</h1>
+
+<section>
+  {% for tag, posts in collections | dictsort %}
+    {% if tag !== "all" and tag !== "posts" %}
+      <span class="mx-2 my-1 inline-block">
+        <a href="/tag/{{ tag | slug }}">{{ tag }}</a>
+        <span class="p-1 rounded-sm ml-1 text-xs
+        {% set c = posts.length %}
+        {% if c > 40 %}
+          bg-gray-600 text-white
+        {% elif c > 30 %}
+          bg-gray-500 text-white
+        {% elif c > 20 %}
+          bg-gray-400
+        {% elif c > 10 %}
+          bg-gray-200
+        {% else %}
+          bg-gray-100
+        {% endif %}
+        ">{{c}}</span>
+      </span>
+    {% endif %}
+  {% endfor %}
+</section>
