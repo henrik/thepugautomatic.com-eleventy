@@ -85,7 +85,7 @@ The facilitator sets a 5 minute timer. On their phone, not visible to everyone (
 
 Then there's a round of "Roman voting" – thumbs up to continue, thumbs down to change topics, or thumb to the side if you're not sure.
 
-If there's a majority of thumbs up, we continue for another 5 minutes before voting again. Otherwise, we summarise actions and move on to the next topic.
+If there's a majority of thumbs up, we continue for another 5 minutes before voting again. Otherwise, we summarise actions and move on to the next topic. (Though we still haven't quite settled on whether a thumb to the side is a neutral vote or a negative vote. Should continuing require a thumbs-up majority, or just the absence of a thumbs-down majority?)
 
 The beauty of Roman voting is that it's up to the team to decide whether they want to go deep on a small number of topics or to cover more ground. It also avoids people zoning out and discussions going in circles.
 
