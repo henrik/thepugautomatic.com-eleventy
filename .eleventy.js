@@ -3,7 +3,7 @@ const slug = require("@11ty/eleventy/src/Filters/Slug");
 
 module.exports = function(eleventyConfig) {
   // Layout aliases for convenience
-  eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
+  eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
 
   // Make it possible to set the "post" tag in the "post.njk" layout while still assigning further tags in the individual post.
   // https://www.11ty.dev/docs/data-deep-merge/
@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (array, count) => array.slice(0, count));
 
-  eleventyConfig.addFilter('tagList', list => {
+  eleventyConfig.addFilter("tagList", list => {
     // "posts" is a magic tag used to determine which pages are blog posts.
     const properTags = list.filter(x => x != "posts");
     if (!properTags) return;
@@ -42,10 +42,10 @@ module.exports = function(eleventyConfig) {
     return "Tagged " + properTags.map(tag => `<a href="/tag/${slug(tag)}">${tag}</a>`).join(", ") + ".";
   });
 
-  // compress and combine js files
+  // Compress and combine JS files.
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
 
-  // minify the html output when running in prod
+  // Minify the HTML output when running in prod.
   if (process.env.NODE_ENV == "production") {
     eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
   }
