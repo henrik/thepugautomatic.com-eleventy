@@ -1,8 +1,5 @@
-const { DateTime }    = require('luxon');
-const util            = require('util');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss        = require("@11ty/eleventy-plugin-rss");
-const slug            = require('@11ty/eleventy/src/Filters/Slug');
+const { DateTime } = require("luxon");
+const slug = require("@11ty/eleventy/src/Filters/Slug");
 
 module.exports = function(eleventyConfig) {
   // Layout aliases for convenience
@@ -14,10 +11,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   // https://www.11ty.dev/docs/plugins/syntaxhighlight/
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
 
   // https://www.11ty.dev/docs/plugins/rss/
-  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
 
   eleventyConfig.addShortcode("filename", filename => {
     // The newlines avoid breaking Markdown.
