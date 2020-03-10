@@ -26,20 +26,13 @@ module.exports = function(eleventyConfig) {
 
 
   // Date helpers
-  eleventyConfig.addFilter('readableDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: 'utc'
-    }).toFormat('LLLL d, y');
+  eleventyConfig.addFilter("humanDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).
+      toFormat("LLLL d, y");
   });
-  eleventyConfig.addFilter('htmlDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: 'utc'
-    }).toFormat('y-MM-dd');
-  });
-  eleventyConfig.addFilter('slugDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: 'utc'
-    }).toFormat('y/MM');
+  eleventyConfig.addFilter("slugDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).
+      toFormat("y/MM");
   });
 
   eleventyConfig.addFilter("limit", (array, count) => array.slice(0, count));

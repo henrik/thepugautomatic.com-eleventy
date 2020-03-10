@@ -9,7 +9,7 @@ tags: posts
     <h1 class="heading leading-tight mb-2">{{ title }}</h1>
     <p class="text-gray-600">
       <span class="mx-1">
-        Written {{ page.date | readableDate }}.
+        Written {{ page.date | humanDate }}.
       <span class="mx-1">
         {{ tags | tagList | safe }}
       </span>
