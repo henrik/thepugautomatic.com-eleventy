@@ -24,10 +24,6 @@ module.exports = function(eleventyConfig) {
     return `<div class="code-filename">${filename}</div>\n\n`;
   });
 
-  // a debug utility
-  eleventyConfig.addFilter('dump', obj => {
-    return util.inspect(obj)
-  });
 
   // Date helpers
   eleventyConfig.addFilter('readableDate', dateObj => {
