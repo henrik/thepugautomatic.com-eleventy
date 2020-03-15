@@ -42,6 +42,8 @@ module.exports = function(eleventyConfig) {
     return "Tagged " + properTags.map(tag => `<a href="/tag/${slug(tag)}">${tag}</a>`).join(", ") + ".";
   });
 
+  eleventyConfig.addFilter("stripInlineCss", string => string.replace(/<style.*?>.*?<\/style>/img, ""));
+
   // Compress and combine JS files.
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
 
