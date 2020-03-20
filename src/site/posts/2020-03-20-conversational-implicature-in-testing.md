@@ -64,7 +64,7 @@ end
 
 It doesn't have to be a method – it can be a factory object, like Ruby's [factory_bot](https://github.com/thoughtbot/factory_bot).
 
-This can be a good thing to do after you've made a test pass – just as you would refactor the code to make it nicer, go through the test and remove or hide any unnecessary detail.
+This can be a good thing to do after you've made a test pass – just as you would refactor the code to make it nicer, go through the test and remove or hide unnecessary detail.
 
 
 ## Stay close to the limit
