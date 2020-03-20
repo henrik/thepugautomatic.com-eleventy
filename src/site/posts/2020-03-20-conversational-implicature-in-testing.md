@@ -28,7 +28,7 @@ If I'm testing a price calculation, the product title probably isn't relevant.
 
 Instead of
 
-```
+``` ruby
 it "doubles the price" do
   item = Item.new(title: "My item", price: 100)
   expect(item.fancy_price).to eq(200)
@@ -37,7 +37,7 @@ end
 
 I should do
 
-```
+``` ruby
 it "doubles the price" do
   item = Item.new(price: 100)
   expect(item.fancy_price).to eq(200)
@@ -48,7 +48,7 @@ The first test implies to the reader that the title is somehow relevant, but it'
 
 Sometimes, you need an attribute for secondary reasons – the title isn't necessary for the price calculation, but initialising an item without a title would raise an exception. In those situations, you can still hide them with a bit of indirection:
 
-```
+``` ruby
 it "doubles the price" do
   item = build_item(price: 100)
   expect(item.fancy_price).to eq(200)
