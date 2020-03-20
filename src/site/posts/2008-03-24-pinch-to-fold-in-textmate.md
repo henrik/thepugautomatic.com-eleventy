@@ -15,7 +15,7 @@ You can't configure new gestures for now, but assign keyboard shortcuts to the o
 
 I set up a pretty sweet one:
 
-<p class="center"><img src="http://data.tumblr.com/hVsxu3hin6jvxih2dmrZSkn9_r1_400.png" alt="Zoom In: F1; Zoom Out: F1; Zoom Out, Zoom In: Command+Option+2" /></p>
+![Zoom In: F1; Zoom Out: F1; Zoom Out, Zoom In: Command+Option+2](/images/content/2008-03/gesture.png)
 
 With that configuration, you can pinch closed to fold the current block in TextMate, and pinch open to unfold it. Since the TextMate keyboard shortcut actually <em>toggles</em>, you can pinch open to fold and pinch closed to unfold, too, if you're into unnatural mappings.
 
