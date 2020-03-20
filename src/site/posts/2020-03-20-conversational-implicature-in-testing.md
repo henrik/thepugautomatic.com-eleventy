@@ -46,7 +46,7 @@ end
 
 The first test implies to the reader that the title is somehow relevant, but it's not.
 
-Sometimes, you need an attribute for secondary reasons – the title isn't necessary for the price calculation, but initialising an item without a title would raise an exception. Then you can still hide them with a bit of indirection:
+Sometimes, you need an attribute for secondary reasons – the title isn't necessary for the price calculation, but initialising an item without a title would raise an exception. Then you can still hide it with a bit of indirection:
 
 ``` ruby
 it "doubles the price" do
