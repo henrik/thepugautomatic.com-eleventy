@@ -16,7 +16,9 @@
     {% endif %}
     {%- for post in collections.posts -%}
       {%- if post.url == page.url -%}
-        <meta property="og:description" content="{{ post.templateContent | stripInlineCss | striptags | truncate(200) }}">
+        {%- set desc = post.templateContent | stripInlineCss | striptags | truncate(200) -%}
+        <meta property="og:description" content="{{ desc }}">
+        <meta name="description" content="{{ desc }}">
       {%- endif -%}
     {%- endfor -%}
     <meta property="og:site_name" content="The Pug Automatic">
