@@ -151,6 +151,7 @@ h1.heading {
   @apply text-3xl;
   @apply text-gray-900;
   @apply font-semibold;
+  @apply mb-4;
 }
 @screen md {
   h1.heading {
