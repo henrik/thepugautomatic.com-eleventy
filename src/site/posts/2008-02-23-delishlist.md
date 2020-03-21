@@ -1,6 +1,6 @@
 ---
 wordpress_id: 214
-title: "del.ishli.st \xE2\x80\x93 a del.icio.us wishlist"
+title: "del.ishli.st – a del.icio.us wishlist"
 tags:
 - Ruby
 - Merb
