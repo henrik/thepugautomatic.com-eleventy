@@ -14,7 +14,7 @@ As <a href="/2008/04/eyetv-onoff-keyboard-button">previously blogged</a>, I've g
 
 We still had the remote for the tv (display) though. But yesterday, I got the <a href="http://www.thezephir.com/ZephIR/Home.html">ZephIR IR blaster</a> I had ordered, and now we're down to just the keyboard.
 
-<p class="center"><a href="http://www.flickr.com/photos/malesca/2805705609/"><img src="http://farm4.static.flickr.com/3213/2805705609_5025026fbc.jpg?v=0" class="bordered" alt="[Photo]" /></a></p>
+<p class="center"><a href="https://www.flickr.com/photos/malesca/2805705609/"><img src="https://farm4.static.flickr.com/3213/2805705609_5025026fbc.jpg?v=0" class="bordered" alt="[Photo]" /></a></p>
 
 This is what I did.
 
@@ -24,9 +24,9 @@ This is what I did.
 
 I put the ZephIR on the back of the tv with the included suction cup.
 
-<p class="center"><a href="http://www.flickr.com/photos/malesca/2805704145/"><img src="http://farm4.static.flickr.com/3195/2805704145_0247289a90.jpg?v=0" class="bordered" alt="[Photo]" /></a></p>
+<p class="center"><a href="https://www.flickr.com/photos/malesca/2805704145/"><img src="https://farm4.static.flickr.com/3195/2805704145_0247289a90.jpg?v=0" class="bordered" alt="[Photo]" /></a></p>
 
-<p class="center"><a href="http://www.flickr.com/photos/malesca/2805704485/"><img src="http://farm4.static.flickr.com/3034/2805704485_1ef61de52f.jpg?v=0" class="bordered" alt="[Photo]" /></a></p>
+<p class="center"><a href="https://www.flickr.com/photos/malesca/2805704485/"><img src="https://farm4.static.flickr.com/3034/2805704485_1ef61de52f.jpg?v=0" class="bordered" alt="[Photo]" /></a></p>
 
 The IR seems strong enough that it will bounce its way to the IR eye even without line-of-sight. Having it behind the tv means you don't see it at all from the front, which was a goal.
 
