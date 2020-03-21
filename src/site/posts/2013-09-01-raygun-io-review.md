@@ -67,7 +67,7 @@ The difference isn't explained clearly in the UI, so I found it confusing at fir
 
 ### UI
 
-![Screenshot of Raygun dashboard](http://f.cl.ly/items/1W3j0X2r152I1G2A0e3r/Screen%20Shot%202013-09-01%20at%2011.17.14.png)
+![Screenshot of Raygun dashboard](/images/content/2013-09-raygun/raygun1.png)
 
 Raygun has a pretty and modern UI, but I feel it's a little wasteful of space and doesn't always order content optimally.
 
@@ -84,11 +84,11 @@ On Raygun, the "Latest Error Reports" list is just too far down the page. Honeyb
 
 The things that push down the content are pretty cool, though. There are graphs of error counts over time.
 
-![Screenshot of Raygun error count graph](http://f.cl.ly/items/03471e3g243m302i0039/Screen%20Shot%202013-09-01%20at%2011.43.01.png)
+![Screenshot of Raygun error count graph](/images/content/2013-09-raygun/raygun2.png)
 
 The activity log that mixes comments and occurrences is very clever; by comparison, the Honeybadger comments are tucked away at the bottom of the page where they see little use.
 
-![Screenshot of Raygun activity log](http://f.cl.ly/items/1b0l1o2Y192b2z3U3Q2R/Screen%20Shot%202013-09-01%20at%2011.38.19.png)
+![Screenshot of Raygun activity log](/images/content/2013-09-raygun/raygun3.png)
 
 
 ### Overall impression

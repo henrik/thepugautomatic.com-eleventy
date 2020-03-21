@@ -25,11 +25,11 @@ In the Gmail search box, type or paste
 
 and click the "Show search options" triangle on the right side of the search box.
 
-![Screenshot](http://f.cl.ly/items/2u1S2d1c3f2n3J0j1V2S/filter.png)
+![Screenshot](/images/content/2012-08/filter.png)
 
 Then click "Create filter with this search", and make it skip the inbox and forward. You will need to add the forwarding address if you haven't before.
 
-![Screenshot](http://f.cl.ly/items/0o1m383D2C3J1S1k1b0k/filter2.png)
+![Screenshot](/images/content/2012-08/filter2.png)
 
 And that's it. Just add a "jj" to your note and it goes to work instead of home.
 

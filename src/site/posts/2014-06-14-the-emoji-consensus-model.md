@@ -9,7 +9,7 @@ tags:
 
 Since we already make styleguide decisions by consensus, I thought it would be silly, fun and possibly useful to translate [the Crisp consensus model](http://blog.crisp.se/2014/03/27/peterantman/crisp-consensus-model-2-1)…
 
-![Crisp's consensus and meeting signs](http://f.cl.ly/items/02461j150J1h3S3j3j3G/crisp.jpg)
+![Crisp's consensus and meeting signs](/images/content/2014-06/crisp.jpg)
 
 …into GitHub emoji:
 

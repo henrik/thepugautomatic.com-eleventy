@@ -23,4 +23,4 @@ Nothing more to it!
 
 This status bar is *super* clean. Battery at 100%, full reception and wifi, [clock at 09:41](http://www.quora.com/Why-does-Apple-always-use-09-41-AM-as-a-standard-time-on-all-their-product-introductions-advertisements-Does-this-have-to-do-with-some-psychological-effects-marketing).
 
-![](http://f.cl.ly/items/350m3R1D15160K0k1b1S/pug.png)
+![Screenshot](/images/content/2015-02/pug.png)

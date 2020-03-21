@@ -111,10 +111,10 @@ The mailer arguments will be rather a lot of text if you pass in full Active Rec
 
 Instead of this:
 
-![Screenshot](http://f.cl.ly/items/0g1914381r1a0z1f0D15/sendgrid-before.png)
+![Screenshot](/images/content/2012-08/sendgrid-before.png)
 
 The log will show this:
 
-![Screenshot](http://f.cl.ly/items/191C17201J2p0J191F2t/sendgrid-after.png)
+![Screenshot](/images/content/2012-08/sendgrid-after.png)
 
 Having this data is really handy, and I was pretty happy with this implementation. Sure beats [looking at the call chain](https://gist.github.com/2775581) :)

@@ -5,7 +5,7 @@ tags:
   - CSS
 ---
 
-<img src="http://cl.ly/image/3z0s1C3N2b15/Image%202014-08-02%20at%2011.47.58%20am.png" alt="Screenshot" class="center">
+![Screenshot](/images/content/2014-08/screenshot.png)
 
 I wanted to add a [Font Awesome icon](http://fortawesome.github.io/Font-Awesome/) to an `<input type="file">` field.
 
