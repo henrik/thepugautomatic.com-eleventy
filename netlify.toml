@@ -13,6 +13,10 @@
   NODE_ENV = "development"
 
 [[redirects]]
+  from = "/testredirect"
+  to = "/2020/05/persistent-session-data-via-localstorage-in-phoenix-liveview"
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
