@@ -74,9 +74,11 @@ When the username changes in the form, the value is immediately put in localStor
 
 ## Discussion
 
+One downside of this solution is that the LiveView will first render without the stored data, so there will be a brief flash of an empty value (or whatever default value you set on `mount`) before the value is restored.
+
 Another solution I considered would be to store a unique identifier in the session, make sure this is passed to the LiveView when it's mounted, then store the data under this identifier in a relational database or somewhere like Redis. The LiveView can then get or set data as it pleases.
 
-That is conceptually very similar to having a database-backed session store, but LiveView would access this store outside the HTTP request/response cycle. I didn't go this route simply because it seemed more complex.
+That is conceptually very similar to having a database-backed session store, but LiveView would access this store outside the HTTP request/response cycle. I didn't go this route simply because it seemed more complex, though it would avoid that brief flash of the default value, and avoid one round of re-rendering.
 
 Chris McCord, creator of LiveView, has shared [example code for storing form data in URL params](https://gist.github.com/chrismccord/5d2f6e99112c9a67fedb2b8501a5bcab) – this means data will survive reloads, but will not (by design) survive revisiting the site without those params. He also [seems to suggest](https://news.ycombinator.com/item?id=21101081) there may be a "stash" feature to come in LiveView, though I don't know how persistent that is intended to be.
 
