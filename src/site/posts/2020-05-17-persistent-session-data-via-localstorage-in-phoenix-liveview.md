@@ -78,4 +78,4 @@ This is conceptually very similar to having a database-backed session store, but
 
 Chris McCord, creator of LiveView, has shared [example code for storing form data in URL params](https://gist.github.com/chrismccord/5d2f6e99112c9a67fedb2b8501a5bcab) – this means data will survive reloads, but will not survive revisiting the site without those params, of course. He also [seems to suggest](https://news.ycombinator.com/item?id=21101081) there may be a "stash" feature to come, though I don't know how persistent that is intended to be.
 
-I'm new to LiveView and would love feedback and alternative solutions. Please write a comment or tweet me [@henrik](https://twitter.com/henrik)!
+I'm new to LiveView and would love feedback and alternative solutions. Please write a comment here or [on Twitter](https://twitter.com/henrik/status/1262007554881839106)!
