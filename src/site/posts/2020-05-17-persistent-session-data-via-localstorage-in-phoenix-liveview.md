@@ -17,6 +17,8 @@ I solved this by putting data in client-side [`localStorage`](https://developer.
 
 ## Solution
 
+I'm using LiveView 0.12.1.
+
 First, I modified `app.js` to define a "StoreSettings" hook:
 
 {% filename "assets/js/app.js" %}
