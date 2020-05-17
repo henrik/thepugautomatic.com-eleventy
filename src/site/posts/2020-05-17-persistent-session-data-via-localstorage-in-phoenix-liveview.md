@@ -13,7 +13,7 @@ LiveView is stateful, but keeps its state in a process that quits when you leave
 
 And since it only makes a single HTTP request initially to load the page (after that, it's all via WebSocket), we can't just set cookies or modify the Plug/Phoenix session like we're used to.
 
-I solved this by putting data in client-side [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and using [LiveView hooks](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html#module-js-interop-and-client-controlled-dom).
+I solved this by putting data in client-side [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) using [LiveView hooks](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html#module-js-interop-and-client-controlled-dom).
 
 ## Solution
 
@@ -74,8 +74,8 @@ When the username changes in the form, the value is immediately put in localStor
 
 Another solution I considered would be to store a unique identifier in the session, make sure this is passed to the LiveView when it's mounted, then store the data under this identifier in a relational database or somewhere like Redis. The LiveView can then get or set data as it pleases.
 
-This is conceptually very similar to having a database-backed session store, but LiveView would access this store outside the HTTP request/response cycle. I didn't go this route simply because it seemed more complex.
+That is conceptually very similar to having a database-backed session store, but LiveView would access this store outside the HTTP request/response cycle. I didn't go this route simply because it seemed more complex.
 
-Chris McCord, creator of LiveView, has shared [example code for storing form data in URL params](https://gist.github.com/chrismccord/5d2f6e99112c9a67fedb2b8501a5bcab) – this means data will survive reloads, but will not survive revisiting the site without those params, of course. He also [seems to suggest](https://news.ycombinator.com/item?id=21101081) there may be a "stash" feature to come, though I don't know how persistent that is intended to be.
+Chris McCord, creator of LiveView, has shared [example code for storing form data in URL params](https://gist.github.com/chrismccord/5d2f6e99112c9a67fedb2b8501a5bcab) – this means data will survive reloads, but will not (by design) survive revisiting the site without those params. He also [seems to suggest](https://news.ycombinator.com/item?id=21101081) there may be a "stash" feature to come in LiveView, though I don't know how persistent that is intended to be.
 
-I'm new to LiveView and would love feedback and alternative solutions. Please write a comment here or [on Twitter](https://twitter.com/henrik/status/1262007554881839106)!
+I'm new to LiveView and would love feedback and alternative solutions. Please write a comment below or [on Twitter](https://twitter.com/henrik/status/1262007554881839106)!
