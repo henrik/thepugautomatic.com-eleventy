@@ -5,6 +5,7 @@ tags:
   - Phoenix LiveView
 ---
 
+
 There's no obvious way to save persistent session data in [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view).
 
 For example, I might implement a chat and want it to remember your username even if the page is reloaded, or you quit your browser and come back the next day.
@@ -76,7 +77,7 @@ When the username changes in the form, the value is immediately put in localStor
 
 One downside of this solution is that the LiveView will first render without the stored data, so there will be a brief flash of an empty value (or whatever default value you set on `mount`) before the value is restored.
 
-Another solution I considered would be to store a unique identifier in the session, make sure this is passed to the LiveView when it's mounted, then store the data under this identifier in a relational database or somewhere like Redis. The LiveView can then get or set data as it pleases.
+Another solution I considered (UPDATE 2020-05-19: [and later went with](/2020/05/persistent-session-data-via-a-database-in-phoenix-liveview)) would be to store a unique identifier in the session, make sure this is passed to the LiveView when it's mounted, then store the data under this identifier in a relational database or somewhere like Redis. The LiveView can then get or set data as it pleases.
 
 That is conceptually very similar to having a database-backed session store, but LiveView would access this store outside the HTTP request/response cycle. I didn't go this route simply because it seemed more complex, though it would avoid that brief flash of the default value, and avoid one round of re-rendering.
 
