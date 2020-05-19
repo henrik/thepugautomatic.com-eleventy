@@ -144,7 +144,7 @@ defmodule MyApp.Settings do
 end
 ```
 
-And here's an example of how a live view could read and write settings:
+Here's an example of how a live view might read and write settings:
 
 {% filename "lib/my_app/live/settings_live.ex" %}
 ``` elixir
