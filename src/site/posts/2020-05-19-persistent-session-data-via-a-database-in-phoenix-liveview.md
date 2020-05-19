@@ -76,7 +76,7 @@ I went with a PostgreSQL database, since that's what my app uses for other data.
 
 The migration for my table looks something like this:
 
-{% filename "priv/repo/migrations/20200517214350_create_settings.exs" %}
+{% filename "priv/repo/migrations/123_create_settings.exs" %}
 ``` elixir
 defmodule MyApp.Repo.Migrations.CreateSettings do
   use Ecto.Migration
@@ -193,4 +193,4 @@ Instead of rendering a page with empty session data and re-rendering it when we'
 
 Using a database like this is conceptually very similar to having a database-backed session store, but LiveView accesses this store outside the HTTP request/response cycle. I suspect changing Phoenix to a database-backed session store and then accessing that from LiveView would be more complex than this solution, but I'd love to see it.
 
-I'm still very new to LiveView and would love feedback and alternative solutions. Please write a comment below or [on Twitter](https://twitter.com/henrik)!
+I'm still very new to LiveView and would love feedback and alternative solutions. Please write a comment below or [on Twitter](https://twitter.com/henrik/status/1262819260956540928)!
