@@ -234,6 +234,7 @@ pre code {
   margin-top: 1.5em;
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
+  overflow-wrap: break-word;
 }
 
 .code-filename + pre[class*="language-"] {
