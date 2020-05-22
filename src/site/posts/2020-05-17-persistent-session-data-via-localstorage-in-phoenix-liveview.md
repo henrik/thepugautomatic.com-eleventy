@@ -5,6 +5,8 @@ tags:
   - Phoenix LiveView
 ---
 
+<i>Also see my posts about persisting session data [in the Plug/Phoenix session](/2020/05/persistent-session-data-in-phoenix-liveview) or [in a database](/2020/05/persistent-session-data-via-a-database-in-phoenix-liveview).</i>
+
 
 There's no obvious way to save persistent session data in [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view).
 

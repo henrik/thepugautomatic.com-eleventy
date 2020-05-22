@@ -5,6 +5,8 @@ tags:
   - Phoenix LiveView
 ---
 
+<i>Also see my post about persisting session data [in the Plug/Phoenix session](/2020/05/persistent-session-data-in-phoenix-liveview).</i>
+
 I [wrote previously](/2020/05/persistent-session-data-via-localstorage-in-phoenix-liveview) about how to save persistent session data in [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) via `localStorage`.
 
 I ultimately ended up storing session data in a PostgreSQL database instead, so I thought I'd write that up as well, with some discussion afterwards.
