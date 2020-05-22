@@ -86,7 +86,7 @@ end
 
 Next, I define a [LiveView hook](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html#module-js-interop-and-client-controlled-dom) to actually make this Ajax request.
 
-In my case, I trigger the requests as you type (with a bit of debouncing so it doesn't happen on every single keystroke), but your needs may differ. You could do this on blur instead, or on submit – with blur, you'd need to attach the hook to each form field and modify it accordingly.
+In my case, I trigger the requests as you type (with a bit of debouncing so it doesn't happen on every single keystroke), but your needs may differ. You could have a hook trigger on blur instead, or on submit – with blur, you'd need to attach a hook to each form field.
 
 {% filename "assets/js/app.js" %}
 ``` js
