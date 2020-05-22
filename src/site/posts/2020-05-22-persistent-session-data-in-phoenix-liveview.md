@@ -55,7 +55,7 @@ Then I added the corresponding controller. It accepts only known keys ("username
 defmodule MyAppWeb.SessionController do
   use MyAppWeb, :controller
 
-  def set(conn, %{"username" => name}), do: store_string(conn, :name, name)
+  def set(conn, %{"username" => username}), do: store_string(conn, :username, username)
   def set(conn, %{"some_other_value" => some_other_value}), do: store_string(conn, :some_other_value, some_other_value)
 
   defp store_string(conn, key, value) do
