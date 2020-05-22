@@ -179,4 +179,4 @@ defmodule MyAppWeb.OtherLive do
 end
 ```
 
-As always, I would love feedback and alternative solutions. Please write a comment below or [on Twitter](https://twitter.com/henrik)!
+As always, I would love feedback and alternative solutions. Please write a comment below or [on Twitter](https://twitter.com/henrik/status/1263799291694514177)!
