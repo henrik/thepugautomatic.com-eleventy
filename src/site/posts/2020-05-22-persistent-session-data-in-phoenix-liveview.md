@@ -104,7 +104,7 @@ Hooks.SetSession = {
         fetch(`/api/session?${e.target.name}=${encodeURIComponent(e.target.value)}`, { method: "post" })
 
         // Optionally, include this so other LiveViews can be notified of changes.
-        this.pushEventTo(".phx-hook-subscribe-to-session", "set_session", [e.target.name, e.target.value])
+        this.pushEventTo(".phx-hook-subscribe-to-session", "updated_session_data", [e.target.name, e.target.value])
       }, this.DEBOUNCE_MS)
     })
   },
@@ -147,10 +147,10 @@ If, [like me](https://elixirforum.com/t/tabbed-interface-with-multiple-liveviews
 The hook above does
 
 ``` js
-this.pushEventTo(".phx-hook-subscribe-to-session", "set_session", [e.target.name, e.target.value])
+this.pushEventTo(".phx-hook-subscribe-to-session", "updated_session_data", [e.target.name, e.target.value])
 ```
 
-This means that any LiveView can receive updates by putting the `phx-hook-subscribe-to-session` class anywhere in the rendered output, and listening to the `"set_session"` event:
+This means that any LiveView can receive updates by putting the `phx-hook-subscribe-to-session` class anywhere in the rendered output, and listening to the `"updated_session_data"` event:
 
 {% filename "lib/my_app/live/other_live.ex" %}
 ``` elixir
@@ -173,7 +173,7 @@ defmodule MyAppWeb.OtherLive do
 
   # Also updates session data when notified.
   @impl true
-  def handle_event("set_session", ["username", username], socket) do
+  def handle_event("updated_session_data", ["username", username], socket) do
     {:noreply, assign(socket, username: username)}
   end
 end
