@@ -23,7 +23,7 @@ window.addEventListener("phx:page-loading-stop", () => { clearTimeout(progressTi
 
 (There is [an open issue](https://github.com/rstacruz/nprogress/issues/169) about adding a `delay` option to NProgress itself.)
 
-From experimentation, 100 ms seemed about right for me, and [the science](https://stackoverflow.com/a/2547903/6962) seems to bear that out.
+From experimentation, 100 ms seemed about right to me, and [the science](https://stackoverflow.com/a/2547903/6962) seems to bear that out.
 
 If you want to experiment with it yourself, LiveView's latency simulator is handy. Run e.g.
 
