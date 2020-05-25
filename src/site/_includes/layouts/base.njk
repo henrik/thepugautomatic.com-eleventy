@@ -38,18 +38,16 @@
     <link rel="pingback" href="https://webmention.io/thepugautomatic.com/xmlrpc" />
     <link href="mailto:henrik@nyh.se" rel="me">
   </head>
-  <body class="container mx-auto py-10 lg:max-w-2xl text-gray-800 dark:text-gray-200">
+  <body class="container mx-auto py-10 lg:max-w-2xl text-gray-800">
     <header class="text-center">
       <a href="/" class="border-0">
         {% if page.url == "/" %}
-          <p class="light-mode-only"><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" style="width:200px; height: 221.5px" alt=""></p>
-          <p class="dark-mode-only"><img src="/images/pug_glow_1x.png" srcset="/images/pug_glow_2x.png 2x, /images/pug_glow_3x.png 3x" class="mx-auto" style="width:209px; height: 229px" alt=""></p>
-          <h1 class="font-bold text-yellow-600 dark:text-yellow-500 text-2xl">The Pug Automatic</h1>
-          <p class="mb-12 text-gray-700 dark:text-gray-400">A blog by <a href="https://twitter.com/henrik">@henrik</a> about <a href="/tag/ruby">Ruby</a>, <a href="/tag/elixir">Elixir</a>, <a href="/tag/vim">Vim</a> <a href="/tags">etc</a>.</p>
+          <p><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" style="width:200px; height: 221.5px" alt=""></p>
+          <h1 class="font-bold text-yellow-600 text-2xl">The Pug Automatic</h1>
+          <p class="mb-12 text-gray-700">A blog by <a href="https://twitter.com/henrik">@henrik</a> about <a href="/tag/ruby">Ruby</a>, <a href="/tag/elixir">Elixir</a>, <a href="/tag/vim">Vim</a> <a href="/tags">etc</a>.</p>
         {% else %}
-          <p class="light-mode-only"><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" style="width: 100px; height: 110.75px" alt=""></p>
-          <p class="dark-mode-only"><img src="/images/pug_glow_1x.png" srcset="/images/pug_glow_2x.png 2x, /images/pug_glow_3x.png 3x" class="mx-auto" style="width: 104.5px; height: 114.5px" alt=""></p>
-          <h1 class="font-bold text-yellow-600 dark:text-yellow-500 text-lg">The Pug Automatic</h1>
+          <p><img src="/images/pug_1x.png" srcset="/images/pug_2x.png 2x, /images/pug_3x.png 3x" class="mx-auto" style="width: 100px; height: 110.75px" alt=""></p>
+          <h1 class="font-bold text-yellow-600 text-lg">The Pug Automatic</h1>
         {% endif %}
       </a>
     </header>
@@ -57,7 +55,7 @@
     <div class="content leading-relaxed my-8">
       {{ content | safe }}
     </div>
-    <footer class="text-center text-gray-500 dark:text-gray-600 text-sm">
+    <footer class="text-center text-gray-500 text-sm">
       <p>
         Content and design &copy; <a href="https://henrik.nyh.se">Henrik Nyh</a> (<a href="https://twitter.com/henrik">@henrik</a>).
         Code is under a <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a> unless otherwise stated.

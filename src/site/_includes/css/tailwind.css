@@ -1,18 +1,6 @@
 /* purgecss start ignore */
 @tailwind  base;
 
-body {
-  background: #fff;
-  color: #000;
-}
-
-@screen dark {
-  body {
-    background: #000;
-    color: #fff;
-  }
-}
-
 /* PrismJS colour theme starts */
 /* TODO: Set up postcss-import! */
 
@@ -145,13 +133,6 @@ pre[class*="language-"] {
 
 /* PrismJS colour theme ends */
 
-.light-mode-only { display: block; }
-.dark-mode-only { display: none; }
-@screen dark {
-  .light-mode-only { display: none; }
-  .dark-mode-only { display: block; }
-}
-
 /*
   Content sections conventions
 */
@@ -172,9 +153,9 @@ h1.heading {
   @apply font-semibold;
   @apply mb-4;
 }
-@screen dark {
+@screen md {
   h1.heading {
-    @apply text-gray-300;
+    @apply text-3xl;
   }
 }
 
@@ -254,11 +235,6 @@ pre code {
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
   overflow-wrap: break-word;
-}
-@screen dark {
-  .code-filename {
-    @apply bg-gray-700;
-  }
 }
 
 .code-filename + pre[class*="language-"] {
