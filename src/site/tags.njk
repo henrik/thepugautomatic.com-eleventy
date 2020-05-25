@@ -12,15 +12,15 @@ layout: default
         <span class="p-1 rounded-sm ml-1 text-xs
         {% set c = posts.length %}
         {% if c > 40 %}
-          bg-gray-600 text-white
+          bg-gray-600 dark:bg-gray-500 text-white dark:text-black
         {% elif c > 30 %}
-          bg-gray-500 text-white
+          bg-gray-500 text-white dark:bg-gray-600 dark:text-black
         {% elif c > 20 %}
-          bg-gray-400
+          bg-gray-400 dark:bg-gray-700
         {% elif c > 10 %}
-          bg-gray-200
+          bg-gray-200 dark:bg-gray-800
         {% else %}
-          bg-gray-100
+          bg-gray-100 dark:bg-gray-900
         {% endif %}
         ">{{c}}</span>
       </span>
