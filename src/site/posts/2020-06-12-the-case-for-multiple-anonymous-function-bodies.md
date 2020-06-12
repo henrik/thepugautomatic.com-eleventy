@@ -13,7 +13,7 @@ def present_result(:ok), do: "Success!"
 def present_result(:error), do: "Failure!"
 ```
 
-It's perhaps less well know that the same applies to anonymous functions. You can use this to simplify situations where you'd otherwise use `case`.
+It's perhaps less well known that the same applies to anonymous functions. You can use this to simplify situations where you'd otherwise use `case`.
 
 For example, instead of:
 
