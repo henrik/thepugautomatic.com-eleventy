@@ -20,8 +20,8 @@ For example, instead of:
 ``` elixir
 Enum.each(results, fn (result) ->
   case result do
-  when :ok -> IO.puts "Success!"
-  when :error -> IO.puts "Failure!"
+    :ok -> IO.puts "Success!"
+    :error -> IO.puts "Failure!"
   end
 end)
 ```
