@@ -45,7 +45,7 @@ IO.inspect count: OldRepo.aggregate(OldItem, :count)
 IO.inspect count: OldRepo.aggregate("items", :count)
 ```
 
-In my case, I wanted to run the code from my local machine but against production databases. So I also added a `new_db_url` and a `NewRepo` to the script, but used the schemas I already had in the app, e.g. `MyApp.Item`.
+In my case, I wanted to run the code from my local machine but against production databases. So I added a `new_db_url` and a `NewRepo` to the script as well, but used the schemas I already had in the app with that repo – e.g. `MyApp.Item`.
 
 If I had been running the script in production, or wanted to copy to the development database, I could have used `MyApp.Repo` instead of creating a `NewRepo`.
 
