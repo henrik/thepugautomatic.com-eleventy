@@ -14,7 +14,7 @@ But I didn't want to add app-level configuration for this one-off script. I just
 After some experimentation, this works with Ecto 3.4:
 
 
-{% filename "priv/repo/migrate_data.ex" %}
+{% filename "priv/repo/migrate_data.exs" %}
 ``` elixir
 old_db_url = System.get_env("OLD_DB_URL") || raise("Missing OLD_DB_URL!")
 
@@ -43,6 +43,12 @@ IO.inspect count: OldRepo.aggregate(OldItem, :count)
 
 # Verify it works, if you're schemaless.
 IO.inspect count: OldRepo.aggregate("items", :count)
+```
+
+You run the script with
+
+```
+OLD_DB_URL="postgres://secretsauce…" mix run priv/repo/migrate_data.exs
 ```
 
 In my case, I wanted to run the code from my local machine but against production databases. So I added a `new_db_url` and a `NewRepo` to the script as well, but used the schemas I already had in the app with that repo – e.g. `MyApp.Item`.
