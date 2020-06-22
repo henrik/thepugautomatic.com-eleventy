@@ -51,6 +51,8 @@ You run the script with
 OLD_DB_URL="postgres://secretsauce…" mix run priv/repo/migrate_data.exs
 ```
 
+in a terminal.
+
 In my case, I wanted to run the code from my local machine but against production databases. So I added a `new_db_url` and a `NewRepo` to the script as well, but used the schemas I already had in the app with that repo – e.g. `MyApp.Item`.
 
 If I had been running the script in production, or wanted to copy to the development database, I could have used `MyApp.Repo` instead of creating a `NewRepo`.
