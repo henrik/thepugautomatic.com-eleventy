@@ -5,7 +5,7 @@ tags:
   - Ecto
 ---
 
-I wanted to use Ecto in a script to read data from a legacy database, transform the data, and stick it in the new database.
+I wanted to use Ecto in a script to read data from a legacy database, transform the data, and stick it in the current database.
 
 The documentation focuses mostly on how to use Ecto with app-level configuration, in `config/config.exs` and friends.
 
