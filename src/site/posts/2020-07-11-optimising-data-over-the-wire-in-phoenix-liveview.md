@@ -5,7 +5,7 @@ tags:
   - Phoenix LiveView
 ---
 
-[Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) distinguishes itself from other "server-side reactive" frameworks[<sup>1</sup>](#footnote) by automatically sending minimal diffs over the wire. (That is to say, over a WebSocket.)
+[Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) distinguishes itself from other "server-side reactive" frameworks[¹](#footnote) by automatically sending minimal diffs over the wire. (That is to say, over a WebSocket.)
 
 Well, mostly automatically. The size of those diffs is affected by how you write your app.
 
