@@ -259,6 +259,13 @@ blockquote {
   @apply border-l-8 border-gray-200;
 }
 
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.truncated { @apply text-gray-500; }
+
 @tailwind  components;
 /* purgecss end ignore */
 
