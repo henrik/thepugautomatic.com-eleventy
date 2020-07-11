@@ -264,6 +264,11 @@ hr {
   margin-bottom: 30px;
 }
 
+.footnote-link {
+  /* Bigger target. */
+  padding: 0 5px;
+}
+
 .truncated { @apply text-gray-500; }
 
 @tailwind  components;
