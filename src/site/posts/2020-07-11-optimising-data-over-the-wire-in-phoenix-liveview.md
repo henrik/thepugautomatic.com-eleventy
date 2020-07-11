@@ -295,7 +295,7 @@ Also note that the naive approach actually *re-renders* all the items on every u
 
 Temporary assigns make for the smallest payloads (and memory use), but also give you more things to worry about, since the items don't remain in state.
 
-The component approach comes with a bigger initial payload, which I think is usually acceptable. And it's worth noting that in a real app, there would likely be a lot more statics, and more data in each component, so the relative bulk of the `[1],…,[300]` list would be smaller.
+The component approach comes with a bigger initial payload, but since that only happens once, I think it's usually acceptable. And it's worth noting that in a real app, there would likely be a lot more statics, and more data in each component, so the relative bulk of the `[1],…,[300]` list would be smaller.
 
 The update payload is bigger than with temporary assigns, but again, in a real app with more data in each component, the difference to the naive approach would be greater, and the difference to temporary assigns would be smaller.
 
