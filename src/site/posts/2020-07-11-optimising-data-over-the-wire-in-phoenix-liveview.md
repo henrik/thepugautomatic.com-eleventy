@@ -291,7 +291,7 @@ So which is the best approach?
 
 I can't in good conscience recommend the naive approach. It *is* simplest, and perhaps good enough for some apps, but in most cases you want smaller update payloads. Otherwise every interaction will pay this tax, and the app may feel slow.
 
-Also note that the naive approach actually *re-renders* all the items on every update, where the other approaches only re-render the (part of the) template for a single item.
+Also note that the naive approach actually *re-renders* all the items on every update, where the other approaches only re-render the part of the template needed for a single item.
 
 Temporary assigns make for the smallest payloads (and memory use), but also give you more things to worry about, since the items don't remain in state.
 
