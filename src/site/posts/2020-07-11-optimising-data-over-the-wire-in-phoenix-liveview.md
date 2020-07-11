@@ -89,7 +89,7 @@ And of course this grows linearly – with 3000 items instead of 300, both paylo
 
 ## 2. Temporary assigns
 
-[Temporary assigns](https://hexdocs.pm/phoenix_live_view/dom-patching.html) is a way of optimising both the amount of data transfered and the memory used in each LiveView process. (Every user gets their own process – one per LiveView on the page.)
+[Temporary assigns](https://hexdocs.pm/phoenix_live_view/dom-patching.html) is a way of optimising both the amount of data transferred and the memory used in each LiveView process. (Every user gets their own process – one per LiveView on the page.)
 
 With this approach, we'll send all 300 items on the first render, and then the LiveView process stops storing them.
 
