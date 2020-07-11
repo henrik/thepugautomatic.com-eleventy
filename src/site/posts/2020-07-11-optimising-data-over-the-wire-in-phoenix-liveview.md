@@ -289,7 +289,7 @@ Most of the bulk is the `[1],…,[300]` list, which I again believe is there to 
 
 So which is the best approach?
 
-I can't in good conscience recommend the naive approach. It *is* simplest, and perhaps it enough for some apps, but in most cases you want smaller update payloads. Otherwise every interaction will pay this tax, and the app may feel slow.
+I can't in good conscience recommend the naive approach. It *is* simplest, and perhaps good enough for some apps, but in most cases you want smaller update payloads. Otherwise every interaction will pay this tax, and the app may feel slow.
 
 Also note that the naive approach actually *re-renders* all the items on every update, where the other approaches only re-render the (part of the) template for a single item.
 
