@@ -299,7 +299,7 @@ The component approach comes with a bigger initial payload, which I think is usu
 
 The update payload is bigger than with temporary assigns, but again, in a real app with more data in each component, the difference to the naive approach would be greater, and the difference to temporary assigns would be smaller.
 
-As you may suspect, I've gone with the component approach for [my app](https://github.com/barsoom/ex-remit), but your mileage may vary.
+As you may suspect, I've gone with the component approach in [my app](https://github.com/barsoom/ex-remit), but your mileage may vary.
 
 ---
 
