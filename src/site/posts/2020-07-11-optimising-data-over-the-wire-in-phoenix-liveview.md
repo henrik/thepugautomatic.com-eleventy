@@ -9,7 +9,7 @@ tags:
 
 Well, mostly automatically. The size of those diffs is affected by how you write your app.
 
-I tried three different ways and compared the amount of data sent over the wire.
+I tried three different ways and compared the amount of data sent over the wire: the naive approach, using `temporary_assigns`, and using components.
 
 In these examples, we have a toy app that lists items numbered 1 through 300, with a button on each to replace it with a random new number.
 
