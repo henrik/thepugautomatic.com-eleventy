@@ -54,14 +54,14 @@ defmodule MyAppWeb.NaiveLive do
       %Item{id: i, name: "Item #{i}"}
     end)
 
-    {:ok, assign(socket, list: list)}
+    {:ok, assign(socket, items: items)}
   end
 
   @impl true
   def handle_event("randomise", %{"id" => id}, socket) do
     id = String.to_integer(id)
 
-    list = Enum.map(socket.assigns.list, fn item ->
+    items = Enum.map(socket.assigns.items, fn item ->
       if item.id == id do
         %{item | name: "Item #{:rand.uniform(999)}"}
       else
@@ -69,7 +69,7 @@ defmodule MyAppWeb.NaiveLive do
       end
     end)
 
-    {:noreply, assign(socket, list: list)}
+    {:noreply, assign(socket, items: items)}
   end
 end
 ```
