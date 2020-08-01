@@ -59,6 +59,7 @@ Conveniently, the socket contains the `parent_pid`, so sending a message from a 
 
 {% filename "lib/my_app_web/live/child_live.ex" %}
 ``` elixir
+# Let's assume this is triggered by clicking some link.
 @impl true
 def handle_event("say_hello_to_parent", _params, socket) do
   send(socket.parent_pid, {:hello, "world"})
@@ -111,6 +112,7 @@ def handle_info({:child_pid, pid}, socket) do
 end
 
 # Send message to child.
+# Let's assume this is triggered by clicking some link.
 @impl true
 def handle_event("say_hello_to_child", _params, socket) do
   send(socket.assigns.child_pid, {:hello, "world"})
@@ -183,6 +185,7 @@ Then any other LiveView with the same `root_pid` can send messages:
 
 {% filename "lib/my_app_web/live/child_2_live.ex" %}
 ``` elixir
+# Let's assume this is triggered by clicking some link.
 @impl true
 def handle_event("say_hello_to_page", _params, socket) do
   Phoenix.PubSub.broadcast_from!(MyApp.PubSub, self(), "page_#{inspect(socket.root_pid)}", {:hello, "world"})
