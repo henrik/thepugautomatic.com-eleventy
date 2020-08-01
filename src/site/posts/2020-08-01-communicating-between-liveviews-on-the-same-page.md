@@ -240,4 +240,4 @@ And so on.
 
 I'll leave it to the reader to determine which of these techniques, if any, is most suitable for your use case.
 
-As always, I'm very happy to receive feedback either in the comments or [on Twitter](https://twitter.com/henrik)!
+As always, I'm very happy to receive feedback either in the comments or [on Twitter](https://twitter.com/henrik/status/1289690442095833089)!
