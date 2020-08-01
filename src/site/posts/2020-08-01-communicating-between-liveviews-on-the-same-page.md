@@ -159,15 +159,15 @@ def handle_info({:hello, message}, socket) do
 end
 ```
 
-## Anything with a shared ancestor via PubSub
+## Anything with a shared root LiveView via PubSub
 
-Alternatively, we can use [PubSub](https://hexdocs.pm/phoenix_pubsub/Phoenix.PubSub.html) to communicate between anything on the same page (whether siblings, ancestor/descendant, or cousins twice removed), as long as they have a shared ancestor LiveView.
+Alternatively, we can use [PubSub](https://hexdocs.pm/phoenix_pubsub/Phoenix.PubSub.html) to communicate between anything on the same page (whether siblings, ancestor/descendant, or cousins twice removed), as long as they have a shared root LiveView.
 
 See [the PubSub docs](https://hexdocs.pm/phoenix_pubsub/Phoenix.PubSub.html) for how to set it up. At the time of writing, you just need to add it to your supervision tree.
 
 For the purposes of this blog post, we will restrict PubSub to updates within the current page. If you want to send some update for every user (e.g. new messages in a chat room), or every tab/window opened by the current user, PubSub can do that too.
 
-We'll use the socket's `root_pid` in the PubSub topic as a way of uniquely identifying the current page. Again, this relies on LiveViews having a shared ancestor. Two sibling LiveViews without a shared ancestor will each have their own PID as their `root_pid`, so this wouldn't work.
+We'll use the socket's `root_pid` in the PubSub topic as a way of uniquely identifying the current page. Two sibling LiveViews without a shared ancestor will each have their own PID as their `root_pid`, so this wouldn't work.
 
 Anyone who wants to receive messages can subscribe on connected mount, and set up a handler:
 
@@ -205,7 +205,7 @@ You could probably use [the process registry](https://hexdocs.pm/elixir/Process.
 
 I assume that using PubSub will use more resources than just relying on `send`, especially on a high-traffic site, since it keeps track of subscribers, but I don't have the numbers. If you measure it, let me know.
 
-## Anything (without needing a shared ancestor) via PubSub
+## Anything (without needing a shared root) via PubSub
 
 If you have a user ID or session ID, you could use that with PubSub instead of the `root_pid`… but if the same user has multiple tabs or windows open in the same browser, all those windows would be affected – not just the current one.
 
