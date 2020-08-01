@@ -167,7 +167,7 @@ See [the PubSub docs](https://hexdocs.pm/phoenix_pubsub/Phoenix.PubSub.html) for
 
 For the purposes of this blog post, we will restrict PubSub to updates within the current page. If you want to send some update for every user (e.g. new messages in a chat room), or every tab/window opened by the current user, PubSub can do that too.
 
-We'll use the socket's `root_pid` in the PubSub topic as a way of uniquely identifying the current page. Again, this relies on them having a shared ancestor. Two sibling LiveViews without a shared ancestor will each have their own PID as their `root_pid`.
+We'll use the socket's `root_pid` in the PubSub topic as a way of uniquely identifying the current page. Again, this relies on LiveViews having a shared ancestor. Two sibling LiveViews without a shared ancestor will each have their own PID as their `root_pid`.
 
 Anyone who wants to receive messages can subscribe on connected mount, and set up a handler:
 
