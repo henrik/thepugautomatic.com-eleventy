@@ -238,6 +238,6 @@ And so on.
 
 ## That's it!
 
-I'll leave it to the reader to determine which of these techniques, if any, is most suitable to your use case.
+I'll leave it to the reader to determine which of these techniques, if any, is most suitable for your use case.
 
 As always, I'm very happy to receive feedback either in the comments or [on Twitter](https://twitter.com/henrik)!
