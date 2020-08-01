@@ -87,35 +87,41 @@ The socket doesn't include child PIDs out of the box, but we can have children s
 
 {% filename "lib/my_app_web/live/child_live.ex" %}
 ``` elixir
-# Send child PID to parent on child mount.
 @impl true
 def mount(_params, _session, socket) do
   if connected?(socket) do
     send(socket.parent_pid, {:child_pid, self()})
   end
 end
-
-# Receive message from parent.
-@impl true
-def handle_info({:hello, message}, socket) do
-  IO.inspect message
-  {:noreply, socket}
-end
 ```
+
+And the parent can store it:
 
 {% filename "lib/my_app_web/live/parent_live.ex" %}
 ``` elixir
-# Receive and store child PID.
 @impl true
 def handle_info({:child_pid, pid}, socket) do
   {:noreply, assign(socket, child_pid: pid)}
 end
+```
 
-# Send message to child.
+Now the parent can send messages to the child:
+
+{% filename "lib/my_app_web/live/parent_live.ex" %}
+``` elixir
 # Let's assume this is triggered by clicking some link.
 @impl true
 def handle_event("say_hello_to_child", _params, socket) do
   send(socket.assigns.child_pid, {:hello, "world"})
+  {:noreply, socket}
+end
+```
+
+{% filename "lib/my_app_web/live/child_live.ex" %}
+``` elixir
+@impl true
+def handle_info({:hello, message}, socket) do
+  IO.inspect message
   {:noreply, socket}
 end
 ```
