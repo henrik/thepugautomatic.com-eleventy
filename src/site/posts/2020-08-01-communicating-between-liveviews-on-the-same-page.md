@@ -217,11 +217,14 @@ def show(conn, _params) do
   # Assuming you use Ecto.
   page_id = Ecto.UUID.generate()
 
-  html(conn, """
-    <%= live_render @socket, MyAppWeb.OneLive, session: %{"page_id" => page_id} %>
-    <%= live_render @socket, MyAppWeb.TwoLive, session: %{"page_id" => page_id} %>
-  """)
+  render(conn, :show, page_id: page_id)
 end
+```
+
+{% filename "lib/my_app_web/templates/my/show.html.eex" %}
+``` eex
+<%= live_render @conn, MyAppWeb.OneLive, session: %{"page_id" => @page_id} %>
+<%= live_render @conn, MyAppWeb.TwoLive, session: %{"page_id" => @page_id} %>
 ```
 
 {% filename "lib/my_app_web/live/one_live.ex" %}
