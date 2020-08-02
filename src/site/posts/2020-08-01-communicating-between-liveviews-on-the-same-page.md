@@ -203,7 +203,7 @@ end
 
 You could probably use [the process registry](https://hexdocs.pm/elixir/Process.html#register/2) instead of PubSub, but process registry names must be atoms, which aren't garbage collected, so it isn't advisable – each page would use a bit more memory that is never reclaimed, and you might eventually hit [the atom limit](https://til.hashrocket.com/posts/b9giaqz4lc-current-number-of-atoms-in-the-atoms-table).
 
-I assume that using PubSub will use more resources than just relying on `send`, especially on a high-traffic site, since it keeps track of subscribers, but I don't have the numbers. If you measure it, let me know.
+I assume that PubSub will use more resources than just relying on `send`, especially on a high-traffic site, since it keeps track of subscribers, but I don't have the numbers. If you measure it, let me know.
 
 ## Anything (without needing a shared root) via PubSub
 
