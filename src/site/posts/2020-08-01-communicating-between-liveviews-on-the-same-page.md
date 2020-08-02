@@ -222,7 +222,7 @@ end
 ```
 
 {% filename "lib/my_app_web/templates/my/show.html.eex" %}
-``` eex
+``` elixir
 <%= live_render @conn, MyAppWeb.OneLive, session: %{"page_id" => @page_id} %>
 <%= live_render @conn, MyAppWeb.TwoLive, session: %{"page_id" => @page_id} %>
 ```
