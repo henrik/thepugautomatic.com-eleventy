@@ -40,7 +40,7 @@ You should now be able to trigger your shortcut by saying "Hey Siri, start clean
 
 ## Automate the shortcut
 
-Now open the "Shortcuts" app. You may need to [install it](https://apps.apple.com/app/shortcuts/id915249334) if you don't already have it.
+Now open the "Shortcuts" app. You may need to [install it](https://apps.apple.com/app/shortcuts/id915249334) first.
 
 Under the top-level "Automation" tab, click "+".
 
