@@ -34,8 +34,6 @@ Press "+", select "Complete manually", select your vacuum and the "Start cleanin
 
 Now tap "Add to Siri" until you get to the system's "Add to Siri" (!) screen.
 
-![Screenshot](/images/content/2020-09-28/add_shortcut.png)
-
 The shortcut name you specify here doesn't matter for the automation we will be adding, but if you plan on triggering it from Siri as well, pick something suitable. Then press the "Add to Siri" button.
 
 You should now be able to trigger your shortcut by saying "Hey Siri, start cleaning" or whatever phrase you picked.
