@@ -32,7 +32,7 @@ In the vacuum's "Xiaomi Home" app, go to the top-level "Automation" tab.
 
 Press "+", select "Complete manually", select your vacuum and the "Start cleaning" action. Save.
 
-Now tap "Add to Siri" until you get to the system's "Add to Siri" (!) screen.
+Now tap "Add to Siri" until you get to the system's "Add to Siri" screen.
 
 The shortcut name you specify here doesn't matter for the automation we will be adding, but if you plan on triggering it from Siri as well, pick something suitable. Then press the "Add to Siri" button.
 
