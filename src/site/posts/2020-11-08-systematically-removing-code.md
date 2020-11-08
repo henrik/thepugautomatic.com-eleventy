@@ -19,7 +19,7 @@ Say we wanted to remove the "item box" from this page:
 <%= render("item_box", item: item) %>
 ```
 
-{% filename "item_box.html.erb" %}
+{% filename "_item_box.html.erb" %}
 ``` erb
 <div class="box box--fancy">
   <h2><%= item.title %></h2>
