@@ -30,7 +30,7 @@ Say we wanted to remove the "item box" from this page:
 
 So our end goal is to remove the `<%= render("item_box", item: item) %>` line.
 
-First, we search the project to check that `item_box.html.erb` isn't used somewhere else, or referenced in docs that we'll need to update. It isn't, so we're OK to remove it – but before we do that, we must go through it line by line.
+First, we search the project to check that `_item_box.html.erb` isn't used somewhere else, or referenced in docs that we'll need to update. It isn't, so we're OK to remove it – but before we do that, we must go through it line by line.
 
 The first line is `<div class="box box--fancy">`. So we search the project for these two CSS classes, checking if they're in use somewhere else. If not, we remove them from the CSS files.
 
@@ -40,7 +40,7 @@ Once we've checked a line in the file, we delete that line. This helps us keep t
 
 So after we've checked and removed that line, we're left with
 
-{% filename "item_box.html.erb" %}
+{% filename "_item_box.html.erb" %}
 ``` erb
   <h2><%= item.title %></h2>
   <%= format_description(item.description) %>
@@ -52,9 +52,9 @@ And we continue this way, line by line. Is the `item.title` used elsewhere? If n
 
 Again, we go deeper if required, not removing the `format_description` method until we've gone through *it* line by line.
 
-When we've looked at every line in `item_box.html.erb` and deleted them as we went, the file will be empty, and we can start popping the stack.
+When we've looked at every line in `_item_box.html.erb` and deleted them as we went, the file will be empty, and we can start popping the stack.
 
-We remove the empty `item_box.html.erb` file.
+We remove the empty `_item_box.html.erb` file.
 
 And we can finally remove the `<%= render("item_box", item: item) %>` line, fairly confident that we didn't leave dead code behind.
 
