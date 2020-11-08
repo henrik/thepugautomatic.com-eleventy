@@ -58,4 +58,4 @@ We remove the empty `_item_box.html.erb` file.
 
 And we can finally remove the `<%= render("item_box", item: item) %>` line, fairly confident that we didn't leave dead code behind.
 
-This probably sounds more tedious than it is. It tends to be quick work, and you can take little shortcuts – removing a swathe of lines that don't reference anything else, or that only call methods that you know are used elsewhere.
+This probably sounds more tedious than it is. It tends to be quick work, and you can take shortcuts – removing a swathe of lines that don't reference anything else, or that only call methods that you know are used elsewhere.
