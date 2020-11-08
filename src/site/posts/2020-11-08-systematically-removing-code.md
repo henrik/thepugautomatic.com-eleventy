@@ -10,7 +10,7 @@ I avoid this by removing code systematically, line by line, depth-first.
 
 This is one of those things that seems obvious when you do it, but in my experience, many people do it haphazardly.
 
-Ssay we wanted to remove the "item box" from this page:
+Say we wanted to remove the "item box" from this page:
 
 {% filename "page.html.erb" %}
 ``` erb
