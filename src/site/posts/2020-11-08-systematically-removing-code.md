@@ -4,7 +4,7 @@ tags:
   - Methodology
 ---
 
-It's easy to miss something when removing code, leaving behind an unused method, template or CSS class. (Especially in a dynamic language like Ruby, without a compiler to help you spot dead code.)
+It's easy to miss something when removing code, leaving behind unused methods, templates, CSS classes or translation keys. (Especially in a dynamic language like Ruby, without a compiler to help you spot dead code.)
 
 I avoid this by removing code systematically, line by line, depth-first.
 
