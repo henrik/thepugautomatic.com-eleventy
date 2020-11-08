@@ -48,9 +48,9 @@ So after we've checked and removed that line, we're left with
 </div>
 ```
 
-And we continue this way, line by line. Is the `item.title` used elsewhere? If not, we should probably remove it, too. What about `format_description()`, `item.description`, the `my.translation.key` translation key?
+And we continue this way, line by line. Is the `item.title` used elsewhere? If not, we should probably remove it, too. What about `format_description`, `item.description`, the `my.translation.key` translation key?
 
-Again, we go deeper if required, not removing the `format_description()` method until we've gone through *it* line by line.
+Again, we go deeper if required, not removing the `format_description` method until we've gone through *it* line by line.
 
 When we've looked at every line in `_item_box.html.erb` and deleted them as we went, the file will be empty, and we can start popping the stack.
 
