@@ -74,4 +74,4 @@ A potential downside to doing it in the controller is that it still *looks* in t
 
 Anyway, that's it!
 
-UPDATE: After writing this, I found [an excellent post by Nate Berkopec](https://www.speedshop.co/2019/01/10/three-activerecord-mistakes.html) that covers a bunch of options (including this one!) in depth, with tables and everything.
+UPDATE: After writing this, I found [an excellent post by Nate Berkopec](https://www.speedshop.co/2019/01/10/three-activerecord-mistakes.html) that covers a bunch of options (including this one!) in depth, with tables and everything. Read it too!
