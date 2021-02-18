@@ -73,3 +73,5 @@ Alternatively, one could load the records in the controller, of course:
 A potential downside to doing it in the controller is that it still *looks* in the view like it will trigger an extra query, if you're used to this Rails gotcha…
 
 Anyway, that's it!
+
+UPDATE: After writing this, I found [an excellent post by Nate Berkopec](https://www.speedshop.co/2019/01/10/three-activerecord-mistakes.html) that covers a bunch of options (including this one!) in depth, with tables and everything.
