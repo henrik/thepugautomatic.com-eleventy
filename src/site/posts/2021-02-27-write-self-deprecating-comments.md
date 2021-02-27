@@ -4,7 +4,7 @@ tags:
   - Code style
 ---
 
-Comments easily get out of sync with their code, but there are tricks to lessen the impact.
+Comments and code easily get out of sync, but there are tricks to lessen the impact.
 
 Instead of
 
