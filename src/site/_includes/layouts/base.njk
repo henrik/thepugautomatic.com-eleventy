@@ -21,6 +21,11 @@
         <meta name="description" content="{{ desc }}">
       {%- endif -%}
     {%- endfor -%}
+    {% if page.url == "/" %}
+      {%- set desc = "A blog by @henrik about Ruby, Elixir, Vim etc." -%}
+      <meta property="og:description" content="{{ desc }}">
+      <meta name="description" content="{{ desc }}">
+    {%- endif -%}
     <meta property="og:site_name" content="The Pug Automatic">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ page.url | absoluteUrl("https://thepugautomatic.com/") }}">
