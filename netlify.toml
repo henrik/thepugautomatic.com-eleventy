@@ -6,9 +6,10 @@
   environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production" }
 
 [dev]
+  framework = "#custom"
   command = "npm run start"
   publish = "dist"
-  port = 3000
+  port = 3005
   targetPort = 8181
   NODE_ENV = "development"
 
