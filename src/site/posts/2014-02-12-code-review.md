@@ -89,6 +89,8 @@ We have some ideas. Maybe use pull requests anyway with immediately-merged featu
 
 But we don't know yet. Suggestions are welcome.
 
+(Update 2021-04-29: We developed our own tool later that year, and have used [it and its successors](https://github.com/barsoom/ex-remit#what-came-before) since.)
+
 
 ## Our context
 
