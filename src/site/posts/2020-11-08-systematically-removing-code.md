@@ -24,7 +24,7 @@ Say we wanted to remove the "item box" from this page:
 <div class="box box--fancy">
   <h2><%= item.title %></h2>
   <%= format_description(item.description) %>
-  <p><%= I18n.translate("my.translation.key") %>
+  <p><%= I18n.translate("my.translation.key") %></p>
 </div>
 ```
 
@@ -44,7 +44,7 @@ So after we've checked and removed that line, we're left with
 ``` erb
   <h2><%= item.title %></h2>
   <%= format_description(item.description) %>
-  <p><%= I18n.translate("my.translation.key") %>
+  <p><%= I18n.translate("my.translation.key") %></p>
 </div>
 ```
 
