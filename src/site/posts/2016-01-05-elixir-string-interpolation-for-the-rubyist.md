@@ -155,6 +155,6 @@ Oh, and I mentioned that `String.Chars` handles "some lists".
 # => "Hello world"
 ```
 
-These are [the delightful char data](/2015/12/char-data/) lists – representing a string as a lists of strings, integer codepoints or other such lists.
+These are [the delightful char data](/2015/12/char-data/) lists – representing a string as a list of strings, integer codepoints or other such lists.
 
 The `String.Chars` implementation for lists will call [`List.to_string/1`](http://elixir-lang.org/docs/stable/elixir/List.html#to_string/1), which mostly consists of calling through to `:unicode.characters_to_binary/1`. And [`IO.chardata_to_string/1`](http://elixir-lang.org/docs/stable/elixir/IO.html#chardata_to_string/1), when given a list, calls through to that very same Erlang function.
