@@ -154,7 +154,7 @@ If you want a more useful example, I implemented a [`regex_case` macro](https://
 
 It can be hard for a human brain to parse a complex AST accurately.
 
-I think much more clearly if I can visualize things, so I made [a small Phoenix app called QED](http://qed.elixir.pm/) to show Elixir ASTs.
+I think much more clearly if I can visualize things, so I made [a small Phoenix app called QED](http://qed.nyh.name/) to show Elixir ASTs.
 
 It looks something like this:
 
