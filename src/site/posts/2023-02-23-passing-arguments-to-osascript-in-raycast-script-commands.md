@@ -8,7 +8,7 @@ tags:
 
 I'm writing commands for the [Raycast](https://www.raycast.com/) launcher.
 
-It took me a while to figure out how to robustly pass arguments to AppleScript/osascript in Raycast [script commands](https://github.com/raycast/script-commands/tree/master). This is how:
+It took me a while to figure out how to robustly pass arguments to AppleScript/osascript in Raycast [script commands](https://github.com/raycast/script-commands). This is how:
 
 ``` bash
 #!/bin/bash
