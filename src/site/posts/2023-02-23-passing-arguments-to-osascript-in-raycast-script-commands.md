@@ -34,7 +34,7 @@ UPDATE:
 
 I've since realised you can write AppleScript directly:
 
-``` osascript
+``` applescript
 #!/usr/bin/env osascript
 
 # …
@@ -45,4 +45,4 @@ on run argv
 end
 ```
 
-I'll let the post stand – it can still be useful for doing bits of AppleScript inside a shell script.
+I'll let the post stand – it is still useful for doing bits of AppleScript inside a shell script.
