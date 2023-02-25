@@ -29,3 +29,20 @@ END
 We're passing the shell argument `$1` into `osascript`, where it in turn becomes the first `argv` argument.
 
 If we had just interpolated `$1` directly into the AppleScript like `say "$1"`, we would effectively run an injection attack on ourselves. It would work for simple input like "hello" but would break on input like 'hello "world"'.
+
+UPDATE:
+
+I've since realised you can write AppleScript directly:
+
+``` osascript
+#!/usr/bin/env osascript
+
+# …
+
+on run argv
+  set arg to (item 1 of argv)
+  say arg
+end
+```
+
+I'll let the post stand – it can still be useful for doing bits of AppleScript inside a shell script.
