@@ -244,6 +244,9 @@ Regular modules let you check if they're mixed in:
 MyClass.new.is_a?(Greeter)
 MyClass < Greeter
 Greeter === MyClass.new
+
+MyClass.ancestors
+# => [MyClass, Greeter, …]
 ```
 
 That's harder to do with these built modules.
