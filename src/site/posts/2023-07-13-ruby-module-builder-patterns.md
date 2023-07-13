@@ -134,6 +134,8 @@ And this doesn't:
 ``` ruby
 Greeter.new.greet
 Greeter2.new.greet
+$mod.greet
+$mod2.greet
 ```
 
 There's one more way.
