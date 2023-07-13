@@ -200,3 +200,27 @@ puts MyClass.new.greet
 Note that `extend ActiveSupport::Concern` goes inside the initializer.
 
 Don't be temped to replace `module_eval` with [`included`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html#method-i-included). Both let you use `def`, but `included` would define methods *on the including class*, not on the module. This means you can't [override them](/2013/07/dsom/) conveniently. `included` is still fine for *calling* class methods, of course.
+
+## Non-initializer builders
+
+[Max mentioned](https://ruby.social/@maxim/110708280090132743) a [variation](https://notes.max.engineer/camelize-json-keys-in-rails) on this technique, where you don't use the initializer.
+
+Arguably this is less confusing, since it doesn't lean as heavily on their dual nature.
+
+It also lets you define multiple builders on the same module.
+
+``` ruby
+module Greeter
+  def self.by_name(name)
+    Module.new do
+      define_method(:greet) { "Hello #{name}!" }
+    end
+  end
+end
+
+class MyClass
+  include Greeter.by_name("world")
+end
+
+puts MyClass.new.greet
+```
