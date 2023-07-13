@@ -151,7 +151,7 @@ But especially in a more complex module, it's nice to be able to use `def` for m
 ``` ruby
 class Greeter < Module
   def initialize(name)
-    define_method(:my_greeter_name) { name }
+    private define_method(:my_greeter_name) { name }
 
     module_eval do
       def greet = "Hello #{my_greeter_name}!"
