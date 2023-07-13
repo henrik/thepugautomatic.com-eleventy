@@ -168,7 +168,7 @@ Note that I'm using `my_greeter_name` rather than `name`, since this method will
 
 ## Using `ActiveSupport::Concern`
 
-Finally, here's an example of a Module Builder using [`ActiveSupport::Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html#method-i-included), since it took me a few attempts to get right.
+Here's an example of a Module Builder using [`ActiveSupport::Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html#method-i-included), since it took me a few attempts to get right.
 
 ``` ruby
 require "active_support/concern"
@@ -234,4 +234,55 @@ end
 
 puts MyClass.new.greet
 puts MyLoudClass.new.greet
+```
+
+## Module identity
+
+Regular modules let you check if they're mixed in:
+
+``` ruby
+MyClass.new.is_a?(Greeter)
+MyClass < Greeter
+Greeter === MyClass.new
+```
+
+That's harder to do with these built modules.
+
+The modules built from an initializer are *instances* of `Greeter`:
+
+``` ruby
+MyClass.ancestors
+# => [MyClass, #<Greeter:…>, …]
+```
+
+It's easy to see where they come from, but we can't check for them with `is_a?` and friends.
+
+The non-initializer ones are just anonymous modules with no knowledge of whence they came.
+
+If we want to go completely overboard (and we do), we could [polish the inheritance chain](/2013/07/dsom/#:~:text=Polishing%20the%20inheritance%20chain) with something like this:
+
+``` ruby
+require "digest"
+
+module Greeter
+  def self.by_name(name)
+    module_name = "ByName#{Digest::SHA1.hexdigest(name)}"
+
+    return const_get(module_name) if const_defined?(module_name, false)
+
+    const_set(module_name, Module.new do
+      define_method(:greet) { "Hello #{name}!" }
+    end)
+  end
+end
+
+class MyClass
+  include Greeter.by_name("world")
+end
+
+p MyClass.ancestors
+# => [MyClass, Greeter::ByName7c211433f02071597741e6ff5a8ea34789abbf43, …]
+
+MyClass < Greeter.by_name("world")  # => true
+MyClass < Greeter.by_name("moon")   # => nil
 ```
