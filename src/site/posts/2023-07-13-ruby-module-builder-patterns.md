@@ -262,7 +262,7 @@ It's easy to see where they come from, but we can't do `MyClass.new.is_a?(Greete
 
 And the non-initializer ones are just anonymous modules with no knowledge of whence they came.
 
-If we want to go completely overboard (and we do), we could [polish the inheritance chain](/2013/07/dsom/#:~:text=Polishing%20the%20inheritance%20chain) with something like this:
+If we wanted to go completely overboard (and we do), we could [polish the inheritance chain](/2013/07/dsom/#:~:text=Polishing%20the%20inheritance%20chain) with something like this:
 
 ``` ruby
 require "digest"
