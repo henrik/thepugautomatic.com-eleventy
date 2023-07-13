@@ -158,7 +158,7 @@ end
 
 We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible way around that. (A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be `included { @@my_greeter_name = name }` 🙈.)
 
-Especially in a more complex class with more and longer methods, it's nice to be able to use `def` for most of it, with `define_method` oneliners only to store passed-in data.
+Especially in a more complex class, it's nice to be able to use `def` for most of it, with `define_method` oneliners only to capture passed-in data.
 
 Note that I'm using `my_greeter_name` rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
 
