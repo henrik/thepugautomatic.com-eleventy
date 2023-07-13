@@ -205,7 +205,7 @@ Don't be temped to replace `module_eval` with [`included`](https://api.rubyonrai
 
 [Max mentioned](https://ruby.social/@maxim/110708280090132743) a [variation](https://notes.max.engineer/camelize-json-keys-in-rails) on this technique, where you don't use the initializer.
 
-Arguably this is less confusing, since it doesn't lean as heavily on their dual nature.
+Arguably this is a little less confusing; `Module.new { … }` is a common pattern.
 
 It also lets you define multiple builders on the same module.
 
@@ -216,11 +216,22 @@ module Greeter
       define_method(:greet) { "Hello #{name}!" }
     end
   end
+
+  def self.loudly_by_name(name)
+    Module.new do
+      define_method(:greet) { "HELLO #{name.upcase}!!1" }
+    end
+  end
 end
 
 class MyClass
   include Greeter.by_name("world")
 end
 
+class MyLoudClass
+  include Greeter.loudly_by_name("world")
+end
+
 puts MyClass.new.greet
+puts MyLoudClass.new.greet
 ```
