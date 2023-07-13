@@ -283,7 +283,7 @@ class MyClass
   include Greeter.by_name("world")
 end
 
-p MyClass.ancestors
+MyClass.ancestors
 # => [MyClass, Greeter::ByName7c211433f02071597741e6ff5a8ea34789abbf43, …]
 
 MyClass < Greeter.by_name("world")  # => true
