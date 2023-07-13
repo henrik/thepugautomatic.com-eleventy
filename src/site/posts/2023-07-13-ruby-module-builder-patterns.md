@@ -142,9 +142,9 @@ There's one more way.
 
 ## Using `module_eval`
 
-Sometimes `define_method` is exactly what we need, if we use the passed-in values to determine method names (like [`SecurePassword`](https://github.com/rails/rails/blob/a5fc471b3f4bbd02e6be38dae023526a49e7d049/activemodel/lib/active_model/secure_password.rb#L149-L152)), or whether to define a method at all.
+Sometimes `define_method` is exactly what we need, if we use the passed-in values to determine method names (like in [`SecurePassword`](https://github.com/rails/rails/blob/a5fc471b3f4bbd02e6be38dae023526a49e7d049/activemodel/lib/active_model/secure_password.rb#L149-L152)), or whether to define a method at all.
 
-But if we're only using the passed-in values inside our module's methods, `define_method` can feel unnecessary. `module_eval` to the rescue:
+But if we're only using the passed-in values inside our module's methods, `define_method` can feel unnecessary. [`module_eval`](https://ruby-doc.org/core-2.6.5/Module.html#method-i-module_eval) to the rescue:
 
 ``` ruby
 class Greeter < Module
