@@ -255,7 +255,7 @@ MyClass.ancestors
 # => [MyClass, #<Greeter:…>, …]
 ```
 
-It's easy to see where they come from, but we can't check for them with `is_a?` and friends.
+It's easy to see where they come from, but we can't do `MyClass.new.is_a?(Greeter)`. We'd need something like `MyClass.ancestors.any? { _1.is_a?(Greeter) }`.
 
 The non-initializer ones are just anonymous modules with no knowledge of whence they came.
 
