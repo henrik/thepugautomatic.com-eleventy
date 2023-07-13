@@ -50,7 +50,7 @@ I haven't fully understood what's going on here (nor have I delved into the Ruby
 
 Modules are instances (of the `Module` class) but can also (unlike non-module instances) be mixed into other modules or classes via `include`.
 
-When you define a method on a module, effectively you either define it on the module-as-instance or on the module-as-mixin.
+And methods on modules are defined either on the module-as-instance or on the module-as-mixin.
 
 ### Instance methods
 
