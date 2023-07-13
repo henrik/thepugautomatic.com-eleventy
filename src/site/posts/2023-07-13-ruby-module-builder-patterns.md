@@ -144,7 +144,9 @@ There's one more way.
 
 Sometimes `define_method` is exactly what we need, if we use the passed-in values to determine method names (like in [`SecurePassword`](https://github.com/rails/rails/blob/a5fc471b3f4bbd02e6be38dae023526a49e7d049/activemodel/lib/active_model/secure_password.rb#L149-L152)), or whether to define a method at all.
 
-But if we're only using the passed-in values inside our module's methods, `define_method` can feel unnecessary. [`module_eval`](https://ruby-doc.org/core-2.6.5/Module.html#method-i-module_eval) to the rescue:
+But especially in a more complex module, it's nice to be able to use `def` for most of it, with `define_method` oneliners only to capture passed-in data.
+
+[`module_eval`](https://ruby-doc.org/core-2.6.5/Module.html#method-i-module_eval) to the rescue:
 
 ``` ruby
 class Greeter < Module
@@ -160,7 +162,6 @@ end
 
 We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible way around that. (A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be `included { @@my_greeter_name = name }` 🙈.)
 
-Especially in a more complex class, it's nice to be able to use `def` for most of it, with `define_method` oneliners only to capture passed-in data.
 
 Note that I'm using `my_greeter_name` rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
 
