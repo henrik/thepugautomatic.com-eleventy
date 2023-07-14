@@ -68,7 +68,7 @@ end
 
 ### Instance methods
 
-These all define what we might call instance methods, callable on instances of the module, but not on including classes.
+These all define what we might call instance methods, callable on instances of the module, but not when mixed in.
 
 ``` ruby
 class Greeter < Module
@@ -107,7 +107,7 @@ MyClass.new.greet
 
 ### Mixin methods
 
-These all define what we might call mixin methods, callable on including classes, but not on instances of the module.
+These all define what we might call mixin methods, callable when mixed in, but not on instances of the module.
 
 ``` ruby
 module Greeter
