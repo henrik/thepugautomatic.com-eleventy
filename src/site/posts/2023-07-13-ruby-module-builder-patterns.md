@@ -192,13 +192,13 @@ class Greeter < Module
     extend ActiveSupport::Concern
 
     class_methods do
-      define_method(:my_name) { name }
+      define_method(:greeter_name) { name }
 
-      def classy_greet = "Classy hello #{my_name}!"
+      def classy_greet = "Classy hello #{greeter_name}!"
     end
 
     module_eval do
-      def greet = "Hello #{self.class.my_name}!"
+      def greet = "Hello #{self.class.greeter_name}!"
     end
   end
 end
