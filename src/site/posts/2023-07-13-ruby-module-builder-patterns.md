@@ -46,11 +46,11 @@ Greeter.new.greet
 MyClass.new.greet
 ```
 
-I haven't fully understood what's going on here (nor have I delved into the Ruby source), but I believe this is down to the dual nature of modules.
+I haven't fully understood what's going on here (nor have I delved into the Ruby source), but this is down to the dual nature of modules.
 
 Modules are instances (of the `Module` class) but can also (unlike non-module instances) be mixed into other modules or classes via `include`.
 
-And methods on modules are defined either on the module-as-instance or on the module-as-mixin.
+Methods on modules are defined either on the module-as-instance or on the module-as-mixin.
 
 After all, with regular modules, we don't define methods inside `class Module` – we use `module MyModule`.
 
@@ -64,6 +64,15 @@ end
 MyModule = Module.new do
   def greet = "Hello!"
 end
+```
+
+Note that we're assigning the module *instance* to the constant. Methods on the module-as-instance are like class methods:
+
+``` ruby
+MyModule = Module.new
+def MyModule.greet = "Hello!"
+
+MyModule.greet
 ```
 
 ### Instance methods
