@@ -164,11 +164,12 @@ But especially in a more complex module, it's nice to be able to use `def` for m
 
 ``` ruby
 class Greeter < Module
-  def initialize(name)
+  def initialize(name:, time:)
     private define_method(:greeter_name) { name }
+    private define_method(:greeter_time) { time }
 
     module_eval do
-      def greet = "Hello #{greeter_name}!"
+      def greet = "Good #{greeter_time}, #{greeter_name}!"
     end
   end
 end
@@ -177,7 +178,7 @@ end
 We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible way around that. (A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be `included { @@greeter_name = name }` 🙈.)
 
 
-Note that I'm using `greeter_name` rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
+Note that I'm defining `greeter_name` etc rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
 
 ## Using `ActiveSupport::Concern`
 
