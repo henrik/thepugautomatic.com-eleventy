@@ -151,19 +151,19 @@ But especially in a more complex module, it's nice to be able to use `def` for m
 ``` ruby
 class Greeter < Module
   def initialize(name)
-    private define_method(:my_greeter_name) { name }
+    private define_method(:greeter_name) { name }
 
     module_eval do
-      def greet = "Hello #{my_greeter_name}!"
+      def greet = "Hello #{greeter_name}!"
     end
   end
 end
 ```
 
-We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible way around that. (A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be `included { @@my_greeter_name = name }` 🙈.)
+We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible way around that. (A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be `included { @@greeter_name = name }` 🙈.)
 
 
-Note that I'm using `my_greeter_name` rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
+Note that I'm using `greeter_name` rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
 
 
 ## Using `ActiveSupport::Concern`
@@ -199,7 +199,7 @@ puts MyClass.new.greet
 
 Note that `extend ActiveSupport::Concern` goes inside the initializer.
 
-Don't be temped to replace `module_eval` with [`included`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html#method-i-included). Both let you use `def`, but `included` would define methods *on the including class*, not on the module. This means you can't [override them](/2013/07/dsom/) conveniently. `included` is still fine for *calling* class methods, of course.
+Don't be tempted to replace `module_eval` with [`included`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html#method-i-included). Both let you use `def`, but `included` would define methods *on the including class*, not on the module. This means you can't [override them](/2013/07/dsom/) conveniently. `included` is still fine for *calling* class methods, of course.
 
 ## Non-initializer builders
 
