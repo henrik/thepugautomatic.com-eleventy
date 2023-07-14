@@ -52,6 +52,20 @@ Modules are instances (of the `Module` class) but can also (unlike non-module in
 
 And methods on modules are defined either on the module-as-instance or on the module-as-mixin.
 
+After all, with regular modules, we don't define methods inside `class Module` – we use `module MyModule`.
+
+I think about `module` as syntactic sugar for creating a module *instance*, sticking it in a constant, and defining methods on the mixin:
+
+``` ruby
+module MyModule
+  def greet = "Hello!"
+end
+
+MyModule = Module.new do
+  def greet = "Hello!"
+end
+```
+
 ### Instance methods
 
 These all define what we might call instance methods, callable on instances of the module, but not on including classes.
@@ -165,7 +179,6 @@ We still need `define_method` to make the passed-in data available to `def`ed me
 
 Note that I'm using `greeter_name` rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
 
-
 ## Using `ActiveSupport::Concern`
 
 Here's an example of a Module Builder using [`ActiveSupport::Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html#method-i-included), since it took me a few attempts to get right.
@@ -178,13 +191,13 @@ class Greeter < Module
     extend ActiveSupport::Concern
 
     class_methods do
-      define_method(:my_greeter_name) { name }
+      define_method(:my_name) { name }
 
-      def classy_greet = "Classy hello #{my_greeter_name}!"
+      def classy_greet = "Classy hello #{my_name}!"
     end
 
     module_eval do
-      def greet = "Hello #{self.class.my_greeter_name}!"
+      def greet = "Hello #{self.class.my_name}!"
     end
   end
 end
@@ -260,9 +273,37 @@ MyClass.ancestors
 
 It's easy to see where they come from, but we can't do `MyClass.new.is_a?(Greeter)`. We'd need something like `MyClass.ancestors.any? { _1.is_a?(Greeter) }`.
 
-And the non-initializer ones are just anonymous modules with no knowledge of whence they came.
+And the non-initializer ones are just anonymous modules with no knowledge of whence they came:
 
-If we wanted to go completely overboard (and we do), we could [polish the inheritance chain](/2013/07/dsom/#:~:text=Polishing%20the%20inheritance%20chain) with something like this:
+``` ruby
+MyClass.ancestors
+# => [MyClass, #<Module:…>, …]
+```
+
+### Overriding `inspect`
+
+We can make things nicer by overriding `inspect`:
+
+``` ruby
+module Greeter
+  def self.by_name(name)
+    Module.new do
+      define_singleton_method(:inspect) { "#<Greeter:#{name}>" }
+    end
+  end
+end
+
+class MyClass
+  include Greeter.by_name("world")
+end
+
+MyClass.ancestors
+# => [MyClass, <#Greeter:world>, …]
+```
+
+### Assigning a constant
+
+If we wanted to go completely overboard (and we do), we could do something like [this](/2013/07/dsom/#:~:text=Polishing%20the%20inheritance%20chain):
 
 ``` ruby
 require "digest"
@@ -285,7 +326,11 @@ end
 
 MyClass.ancestors
 # => [MyClass, Greeter::ByName7c211433f02071597741e6ff5a8ea34789abbf43, …]
+```
 
+And now we can check for module identity in the usual ways:
+
+``` ruby
 MyClass < Greeter.by_name("world")  # => true
 MyClass < Greeter.by_name("moon")   # => nil
 ```
