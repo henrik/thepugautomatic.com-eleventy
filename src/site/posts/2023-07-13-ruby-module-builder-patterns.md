@@ -66,7 +66,7 @@ MyModule = Module.new do
 end
 ```
 
-Note that we're assigning the module *instance* to the constant. Methods on the module-as-instance are like class methods:
+Note that we're assigning the module *instance* to the constant. Methods on the module-as-instance are thus like class methods:
 
 ``` ruby
 MyModule = Module.new
