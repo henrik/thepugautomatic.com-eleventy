@@ -131,7 +131,7 @@ It makes sense. This is a class that creates modules. We need to create a module
 
 [`define_method`](https://ruby-doc.org/3.2/Module.html#method-i-define_method) defines instance methods on the receiver, which inside the initializer is the module we created.
 
-We can't use `def greet` inside the initializer. As with any class, `def` inside the initializer defines instance methods in the class. It would be just like `greet_on_module`.
+We can't use `def greet` inside the initializer. As with any class, `def` inside the initializer defines instance methods on the class. It would be just like `greet_on_module`.
 
 There is still a way to use `def`, though.
 
