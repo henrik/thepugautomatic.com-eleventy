@@ -32,7 +32,9 @@ Crucially (and mind-bendingly), you need to set up your module inside the `initi
 
 ``` ruby
 class Greeter < Module
-  def greet = "Hello!"
+  def initialize(name) = # …
+
+  def greet_on_module = "Hello!"
 end
 
 class MyClass
@@ -40,128 +42,105 @@ class MyClass
 end
 
 # This works:
-Greeter.new.greet
+Greeter.new("world").greet_on_module
 
 # But this raises NoMethodError:
-MyClass.new.greet
+MyClass.new.greet_on_module
 ```
 
-I haven't fully understood what's going on here (nor have I delved into the Ruby source), but this is down to the dual nature of modules.
+This broke my brain initially, but it makes sense when you think through it.
 
-Modules are instances (of the `Module` class) but can also (unlike non-module instances) be mixed into other modules or classes via `include`.
+Modules have a dual nature: they are class instances, and they can also be mixed into classes and other modules.
 
-Methods on modules are defined either on the module-as-instance or on the module-as-mixin.
+### Modules are class instances
 
-After all, with regular modules, we don't define methods inside `class Module` – we use `module MyModule`.
+`Module` is a class. So are its subclasses, like `Greeter` above.
 
-I think about `module` as syntactic sugar for creating a module *instance*, sticking it in a constant, and defining methods on the mixin:
+When you do `Greeter.new`, you get an instance of `Greeter`. This instance is a module that you can mix in.
 
 ``` ruby
-module MyModule
-  def greet = "Hello!"
-end
+instance = Greeter.new("world")
 
-MyModule = Module.new do
-  def greet = "Hello!"
+class MyClass
+  include instance
 end
 ```
 
-Note that we're assigning the module *instance* to the constant. Methods on the module-as-instance are thus like class methods:
+When you use `module`, you also get an instance, but *assigned to a global constant*:
 
 ``` ruby
-MyModule = Module.new
-def MyModule.greet = "Hello!"
+module OtherGreeter
+end
 
-MyModule.greet
+instance = OtherGreeter
+
+class MyClass
+  include instance
+end
 ```
 
-### Instance methods
+<a name="footnote-source"></a>
 
-These all define what we might call instance methods, callable on instances of the module, but not when mixed in.
+So `Greeter` is a *class* whose instances are modules you can mix in; `OtherGreeter` is not a class, but is *itself* a module you can mix in<a href="#footnote" class="footnote-link">¹</a>.
+
+After all, the whole point of `Greeter` is to create *multiple* modules – one for `"world"`, another for `"moon"` – so they can't all be assigned to a single `Greeter` constant.
+
+And this explains why `greet_on_module` can only be called on instances of `Greeter`. It's an instance method and the instances are modules. It's equivalent to
+
+``` ruby
+module OtherGreeter
+  def self.greet_on_module = "Hello!"
+end
+```
+
+or 
+
+``` ruby
+mod = Module.new
+def mod.greet_on_module = "Hello!"
+```
+
+You would not expect this method to be included when you mix in the module.
+
+### Modules can be mixed in
+
+Classes have instance methods that you call on instances but not on the class itself.
+
+Modules also have [instance methods](https://ruby-doc.org/3.2/syntax/modules_and_classes_rdoc.html#label-Methods) (we might think of them as "mixin methods") that are mixed in, but are not called on the module itself.
+
+With the `module` keyword, we just define those in the module body:
+
+``` ruby
+module OtherGreeter
+  def greet = "Hello!"
+end
+```
+
+With [`Module.new`](https://ruby-doc.org/3.2/Module.html#method-c-new), we define them in a block:
+
+``` ruby
+Module.new do
+  def greet = "Hello!"
+end
+```
+
+With `class … < Module`, we define them in the initializer:
 
 ``` ruby
 class Greeter < Module
-  def greet = "Hello!"
-end
-
-class Greeter2 < Module
-  def initialize
-    def greet = "Hello!"
+  def initialize(name)
+    define_method(:greet) { puts "Hello #{name}!" }
   end
 end
-
-$mod = Module.new
-def $mod.greet = "Hello!"
 ```
 
-Meaning this works:
+It makes sense. This is a class that creates modules. We need to create a module before we can define instance methods on it, and it's only in the initializer that we've created one.
 
-``` ruby
-Greeter.new.greet
-Greeter2.new.greet
-$mod.greet
-```
+[`define_method`](https://ruby-doc.org/3.2/Module.html#method-i-define_method) defines instance methods on the receiver, which inside the initializer is the module we created.
 
-And this doesn't:
+We can't use `def greet` inside the initializer. As with any class, `def` inside the initializer defines instance methods in the class. It would be just like `greet_on_module`.
 
-``` ruby
-class MyClass
-  include Greeter.new
-  include Greeter2.new
-  include $mod
-end
-
-MyClass.new.greet
-```
-
-### Mixin methods
-
-These all define what we might call mixin methods, callable when mixed in, but not on instances of the module.
-
-``` ruby
-module Greeter
-  def greet = "Hello!"
-end
-
-class Greeter2 < Module
-  def initialize
-    define_method(:greet) { "Hello!" }
-  end
-end
-
-$mod = Module.new do
-  def greet = "Hello!"
-end
-
-$mod2 = Module.new
-$mod2.define_method(:greet) { "Hello!" }
-```
-
-Meaning this works:
-
-``` ruby
-class MyClass
-  # Any one of these:
-  include Greeter
-  include Greeter2.new
-  include $mod
-  include $mod2
-end
-
-MyClass.new.greet
-```
-
-And this doesn't:
-
-
-``` ruby
-Greeter.new.greet
-Greeter2.new.greet
-$mod.greet
-$mod2.greet
-```
-
-There's one more way.
+There is still a way to use `def`, though.
 
 ## Using `module_eval`
 
@@ -169,7 +148,7 @@ Sometimes `define_method` is exactly what we need, if we use the passed-in value
 
 But especially in a more complex module, it's nice to be able to use `def` for most of it, with `define_method` oneliners only to capture passed-in data.
 
-[`module_eval`](https://ruby-doc.org/core-2.6.5/Module.html#method-i-module_eval) to the rescue:
+[`module_eval`](https://ruby-doc.org/3.2/Module.html#method-i-module_eval) to the rescue:
 
 ``` ruby
 class Greeter < Module
@@ -344,3 +323,14 @@ And now we can check for module identity in the usual ways:
 MyClass < Greeter.by_name("world")  # => true
 MyClass < Greeter.by_name("moon")   # => nil
 ```
+---
+
+<a name="footnote"></a>
+
+### Footnote <a href="#footnote-source">^</a>
+
+I say "a module you can mix in" because [`Class`](https://ruby-doc.org/3.2/Class.html) inherits from [`Module`](https://ruby-doc.org/3.2/Module.html). [All classes are modules](https://ruby-doc.org/3.2/syntax/modules_and_classes_rdoc.html#label-Classes), but not ones you can mix in.
+
+Classes are modules with extra stuff. Both hold methods and constants and can have modules mixed into them. Classes add instantiation and state.
+
+If you try to `include` or `extend` with a class as argument, you get a `TypeError`. They're still modules; Ruby just won't let you mix them in.
