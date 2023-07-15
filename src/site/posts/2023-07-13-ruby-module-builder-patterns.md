@@ -294,7 +294,6 @@ require "digest"
 module Greeter
   def self.by_name(name)
     module_name = "ByName#{Digest::SHA1.hexdigest(name)}"
-
     return const_get(module_name) if const_defined?(module_name, false)
 
     const_set(module_name, Module.new do
