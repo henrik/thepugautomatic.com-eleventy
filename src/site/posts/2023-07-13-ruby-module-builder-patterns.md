@@ -317,8 +317,8 @@ If we instead build in the initializer, we need to override `.new`:
 class Greeter < Module
   def self.new(name)
     module_name = "ByName#{Digest::SHA1.hexdigest(name)}"
-
     return const_get(module_name) if const_defined?(module_name, false)
+
     const_set(module_name, super)
   end
 
