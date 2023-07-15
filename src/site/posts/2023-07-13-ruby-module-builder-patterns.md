@@ -93,13 +93,6 @@ module OtherGreeter
 end
 ```
 
-or 
-
-``` ruby
-mod = Module.new
-def mod.greet_on_module = "Hello!"
-```
-
 You would not expect this method to be included when you mix in the module.
 
 ### Modules can be mixed in
