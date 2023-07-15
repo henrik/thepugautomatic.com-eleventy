@@ -256,6 +256,8 @@ MyClass.ancestors
 
 It's easy to see where they come from, but we can't do `MyClass.new.is_a?(Greeter)`. We'd need something like `MyClass.ancestors.any? { _1.is_a?(Greeter) }`.
 
+If we `extend ActiveSupport::Concern`, this modifies `Greeter`'s [singleton class](https://stackoverflow.com/a/61378747/6962) and `inspect` will no longer be a helpful `<#Greeter:…>` – it will say `#<#<Class:…>:…>`.
+
 And the non-initializer ones are just anonymous modules with no knowledge of whence they came:
 
 ``` ruby
@@ -268,16 +270,14 @@ MyClass.ancestors
 We can make things nicer by overriding `inspect`:
 
 ``` ruby
-module Greeter
-  def self.by_name(name)
-    Module.new do
-      define_singleton_method(:inspect) { "#<Greeter:#{name}>" }
-    end
+class Greeter < Module
+  def initialize(name)
+    define_singleton_method(:inspect) { "#<Greeter:#{name}>" }
   end
 end
 
 class MyClass
-  include Greeter.by_name("world")
+  include Greeter.new("world")
 end
 
 MyClass.ancestors
