@@ -256,7 +256,7 @@ MyClass.ancestors
 
 It's easy to see where they come from, but we can't do `MyClass.new.is_a?(Greeter)`. We'd need something like `MyClass.ancestors.any? { _1.is_a?(Greeter) }`.
 
-If we `extend ActiveSupport::Concern`, this modifies `Greeter`'s [singleton class](https://stackoverflow.com/a/61378747/6962) and `inspect` will no longer be a helpful `<#Greeter:…>`:
+If we `extend ActiveSupport::Concern`, this modifies `Greeter`'s [singleton class](https://stackoverflow.com/a/61378747/6962) and we no longer see a helpful `<#Greeter:…>`:
 
 ``` ruby
 MyClass.ancestors
