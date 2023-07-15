@@ -160,7 +160,7 @@ end
 
 We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible<a href="#footnote-2" class="footnote-link">²</a> way around that.
 
-Note that I'm defining `greeter_name` etc rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
+Note that I'm defining `greeter_name` etc rather than `name`, since this method will be mixed into `MyClass`, where names could otherwise conflict.
 
 ## Using `ActiveSupport::Concern`
 
