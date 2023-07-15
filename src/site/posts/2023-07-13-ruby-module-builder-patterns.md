@@ -79,9 +79,9 @@ class MyClass
 end
 ```
 
-<a name="footnote-source"></a>
+<a name="footnote-1-source"></a>
 
-So `Greeter` is a *class* whose instances are modules you can mix in; `OtherGreeter` is not a class, but is *itself* a module you can mix in<a href="#footnote" class="footnote-link">¹</a>.
+So `Greeter` is a *class* whose instances are modules you can mix in; `OtherGreeter` is not a class, but is *itself* a module you can mix in<a href="#footnote-1" class="footnote-link">¹</a>.
 
 After all, the whole point of `Greeter` is to create *multiple* modules – one for `"world"`, another for `"moon"` – so they can't all be assigned to a single `Greeter` constant.
 
@@ -156,8 +156,9 @@ class Greeter < Module
 end
 ```
 
-We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible way around that. (A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be `included { @@greeter_name = name }` 🙈.)
+<a name="footnote-2-source"></a>
 
+We still need `define_method` to make the passed-in data available to `def`ed methods – I can't think of a sensible<a href="#footnote-2" class="footnote-link">²</a> way around that.
 
 Note that I'm defining `greeter_name` etc rather than `name`, since this method will be mixed into `MyClass`, where it could otherwise conflict.
 
@@ -318,12 +319,24 @@ MyClass < Greeter.by_name("moon")   # => nil
 ```
 ---
 
-<a name="footnote"></a>
+<a name="footnote-1"></a>
 
-### Footnote <a href="#footnote-source">^</a>
+### Footnote 1 <a href="#footnote-1-source">^</a>
 
 I say "a module you can mix in" because [`Class`](https://ruby-doc.org/3.2/Class.html) inherits from [`Module`](https://ruby-doc.org/3.2/Module.html). [All classes are modules](https://ruby-doc.org/3.2/syntax/modules_and_classes_rdoc.html#label-Classes), but not ones you can mix in.
 
 Classes are modules with extra stuff. Both hold methods and constants and can have modules mixed into them. Classes add instantiation and state.
 
 If you try to `include` or `extend` with a class as argument, you get a `TypeError`. They're still modules; Ruby just won't let you mix them in.
+
+---
+
+<a name="footnote-2"></a>
+
+### Footnote 2 <a href="#footnote-2-source">^</a>
+
+A [non-sensible](https://stackoverflow.com/questions/33762366/are-ruby-class-variables-bad) way with [`Concern`](https://api.rubyonrails.org/v7.0.6/classes/ActiveSupport/Concern.html`) could be this 🙈:
+
+``` ruby
+included { @@greeter_name = name }
+```
