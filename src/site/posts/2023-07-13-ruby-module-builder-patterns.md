@@ -311,12 +311,30 @@ MyClass.ancestors
 # => [MyClass, Greeter::ByName7c211433f02071597741e6ff5a8ea34789abbf43, …]
 ```
 
+If we instead build in the initializer, we need to override `.new`:
+
+``` ruby
+class Greeter < Module
+  def self.new(name)
+    module_name = "ByName#{Digest::SHA1.hexdigest(name)}"
+
+    return const_get(module_name) if const_defined?(module_name, false)
+    const_set(module_name, super)
+  end
+
+  def initialize(name)
+    define_method(:greet) { "Hello #{name}!" }
+  end
+end
+```
+
 And now we can check for module identity in the usual ways:
 
 ``` ruby
-MyClass < Greeter.by_name("world")  # => true
-MyClass < Greeter.by_name("moon")   # => nil
+MyClass < Greeter.new("world")  # => true
+MyClass < Greeter.new("moon")   # => nil
 ```
+
 ---
 
 <a name="footnote-1"></a>
