@@ -232,6 +232,33 @@ puts MyClass.new.greet
 puts MyLoudClass.new.greet
 ```
 
+## Template methods
+
+You could also use [the Template Method pattern](https://en.wikipedia.org/wiki/Template_method_pattern) – pick a conventional method name and define that on the class:
+
+``` ruby
+module Greeter
+  def greet = "Hello #{greeter_name}!"
+
+  def greeter_name = raise NoMethodError, "Define #{__method__}!"
+end
+
+class MyClass
+  include Greeter
+  def greeter_name = "world"
+end
+```
+
+That's what we had before moving to module builders.
+
+It's simpler to reason about, but also has some downsides:
+
+- If you define the method next to the `include`, that groups them nicely, but linters may complain about the class layout if you define a method in between two `include`s. If you define the method further away, they are not grouped as nicely.
+- We expose the longer, qualified names (`greeter_name`) in the including class rather than shorter, unqualified names (`name` or a positional argument). Arguably less elegant.
+- We define an extra method instead of just passing in an argument. Arguably less elegant.
+- We can't dynamically decide method names or whether to define a method.
+- We don't get multiple modules with different identity.
+
 ## Module identity
 
 Regular modules let you check if they're mixed in:
@@ -338,33 +365,6 @@ And now we can check for module identity in the usual ways:
 MyClass < Greeter.new("world")  # => true
 MyClass < Greeter.new("moon")   # => nil
 ```
-
-## Template methods
-
-You could also use [the Template Method pattern](https://en.wikipedia.org/wiki/Template_method_pattern) – pick a conventional method name and define that on the class:
-
-``` ruby
-module Greeter
-  def greet = "Hello #{greeter_name}!"
-
-  def greeter_name = raise NoMethodError, "Define #{__method__}!"
-end
-
-class MyClass
-  include Greeter
-  def greeter_name = "world"
-end
-```
-
-That's what we had before moving to module builders.
-
-It's simpler to reason about, but also has some downsides:
-
-- If you define the method next to the `include`, that groups them nicely, but linters may complain about the class layout if you define a method in between two `include`s. If you define the method further away, they are not grouped as nicely.
-- We expose the longer, qualified names (`greeter_name`) in the including class rather than shorter, unqualified names (`name` or a positional argument). Arguably less elegant.
-- We define an extra method instead of just passing in an argument. Arguably less elegant.
-- We can't dynamically decide method names or whether to define a method.
-- We don't get multiple modules with different identity.
 
 ---
 
