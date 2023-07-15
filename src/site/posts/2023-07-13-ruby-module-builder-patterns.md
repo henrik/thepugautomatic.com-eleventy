@@ -127,7 +127,7 @@ class Greeter < Module
 end
 ```
 
-It makes sense. This is a class that creates modules. We need to create a module before we can define instance methods on it, and it's only in the initializer that we've created one.
+It makes sense. This is a class that creates modules. We need to create a module before we can define instance methods on it, and it's only in the initializer that we've created it.
 
 [`define_method`](https://ruby-doc.org/3.2/Module.html#method-i-define_method) defines instance methods on the receiver, which inside the initializer is the module we created.
 
