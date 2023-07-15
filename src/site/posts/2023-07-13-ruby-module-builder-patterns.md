@@ -358,7 +358,7 @@ end
 
 That's what we had before moving to module builders.
 
-It's simpler to reason about, but it also has some downsides:
+It's simpler to reason about, but also has some downsides:
 
 - If you define the method next to the `include`, that groups them nicely, but linters may complain about the class layout if you define a method in between two `include`s. If you define the method further away, they are not grouped as nicely.
 - We expose the longer, qualified names (`greeter_name`) in the including class rather than shorter, unqualified names (`name` or a positional argument).
