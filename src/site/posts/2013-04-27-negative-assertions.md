@@ -7,7 +7,7 @@ tags:
 
 Negative assertions in tests are problematic.
 
-Positive assertions like `page.should have_content("Welcome")` simply pass as long as that content is present, and fail if is is removed.
+Positive assertions like `page.should have_content("Welcome")` simply pass as long as that content is present, and fail if it is removed.
 
 But negative assertions like `page.should_not have_selector(".widget")` or `Notifier.should_not_receive(:invoice_overdue)` may pass because your code works as intended – or because you renamed `widget` to `thingy` and forgot to update the test.
 
