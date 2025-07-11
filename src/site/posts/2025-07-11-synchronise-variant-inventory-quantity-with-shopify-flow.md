@@ -12,7 +12,8 @@ In Shopify, each variant has its own separate inventory count. But you might wan
 
 The following is a way to do it using Shopify Flow, on the Shopify Basic plan with no paid add-ons. It assumes you have a single inventory location.
 
-![Screen recording: Updating inventory of one variant, reloading after a while, seeing a new inventory on another](/images/content/2025-07-12/pendant.gif)
+![Screen recording](/images/content/2025-07-12/pendant.gif)
+*Updating inventory on one variant, reloading after several seconds, seeing a new inventory on another.*
 
 (If there's a better/simpler way of doing it without pricy plans or add-ons, let me know! It's a big ecosystem and I'm a new arrival.)
 
@@ -22,13 +23,13 @@ First, install [Shopify Flow](https://apps.shopify.com/flow). (It's free.) It le
 
 This blog post won't hold your hand with exactly how to install or use Shopify Flow – please find a tutorial for that. I will describe what goes into this specific flow, and hopefully you can piece it together.
 
-Please be aware that workflows can take a few seconds to run, so if two variants of the same product are sold at the same time in a high-traffic store, each may update the other based only on its own inventory count, leaving the inventory count too high. (A "race condition".) Perhaps this could be mitigated by further checks in the workflow; I have not bothered.
+Please be aware that workflows can take several seconds to run, so if two variants of the same product are sold at the same time in a high-traffic store, each may update the other based only on its own inventory count, leaving the inventory count too high. (A "race condition".) Perhaps this could be mitigated by further checks in the workflow; I have not bothered.
 
 ## Create the workflow
 
 Now, create your workflow.
 
-This is what it will look like when you're done:
+It will look something like this when you're done:
 
 ![Screenshot of workflow](/images/content/2025-07-12/workflow.png)
 
