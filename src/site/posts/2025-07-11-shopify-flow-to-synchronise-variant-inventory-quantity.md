@@ -68,6 +68,7 @@ In the "Select mutation" list, select "inventorySetQuantities".
 
 In the "Mutation inputs" field, put:
 
+{% raw %}
 ``` liquid
 {
   "input": {
@@ -84,6 +85,7 @@ In the "Mutation inputs" field, put:
   }
 }
 ```
+{% endraw %}
 
 This means that for each of the product's variants (except the one that triggered the flow), we set the inventory quantity to that of the triggering variant.
 
