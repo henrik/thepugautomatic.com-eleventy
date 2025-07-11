@@ -10,7 +10,7 @@ Say you're selling pendants, with variants for "with chain" or "no chain".
 
 In Shopify, each variant has its own separate inventory count. But you might want them to share the same count – if you run out of pendants, you run out of pendants.
 
-The following is a way to do it using Shopify Flow, on the Shopify Basic plan with no paid apps. It assumes you have a single inventory location.
+The following is a way to do it using [Shopify Flow](https://help.shopify.com/en/manual/shopify-flow), on the Shopify Basic plan with no paid apps. It assumes you have a single inventory location.
 
 ![Screen recording](/images/content/2025-07-12/pendant.gif)
 *Updating inventory on one variant, reloading after several seconds, seeing a new inventory on another.*
