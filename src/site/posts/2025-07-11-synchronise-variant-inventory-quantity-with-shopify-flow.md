@@ -13,7 +13,8 @@ In Shopify, each variant has its own separate inventory count. But you might wan
 The following is a way to do it using [Shopify Flow](https://help.shopify.com/en/manual/shopify-flow), on the Shopify Basic plan with no paid apps. It assumes you have a single inventory location.
 
 ![Screen recording](/images/content/2025-07-12/pendant.gif)
-*Updating inventory on one variant, reloading after several seconds, seeing a new inventory on another.*
+
+<p class="caption">Updating inventory on one variant, reloading after several seconds, seeing a new inventory on another.</p>
 
 (If there's a better/simpler way of doing it without pricy plans or apps, let me know! It's a big ecosystem and I'm a new arrival.)
 

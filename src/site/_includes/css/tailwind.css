@@ -259,6 +259,12 @@ blockquote {
   @apply border-l-8 border-gray-200;
 }
 
+.caption {
+  @apply italic;
+  @apply text-center;
+  @apply text-sm;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
