@@ -1,5 +1,5 @@
 ---
-title: Shopify Flow to synchronise variant inventory quantity
+title: Synchronise variant inventory quantity with Shopify Flow
 tags:
   - Shopify
 ---
