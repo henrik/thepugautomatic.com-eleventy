@@ -6,13 +6,13 @@ tags:
 
 I've been learning the Shopify ecosystem lately, and a friend asked if there's a way to synchronise variant inventory quantity.
 
-Say you're selling pendants, with variants for "with chain" (at some added cost) or "no chain".
+Say you're selling pendants, with variants for "with chain" or "no chain".
 
 In Shopify, each variant has its own separate inventory count. But you might want them to share the same count – if you run out of pendants, you run out of pendants.
 
 This is a way to do it using Shopify Flow, on the Shopify Basic plan with no paid add-ons. It assumes a single inventory location.
 
-(If there's a better/simpler way of doing it, please let me know! It's a big ecosystem and I'm a new arrival.)
+(If there's a better/simpler way of doing it without pricy plans or add-ons, let me know! It's a big ecosystem and I'm a new arrival.)
 
 ## Shopify Flow
 
