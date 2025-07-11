@@ -10,12 +10,12 @@ Say you're selling pendants, with variants for "with chain" or "no chain".
 
 In Shopify, each variant has its own separate inventory count. But you might want them to share the same count – if you run out of pendants, you run out of pendants.
 
-The following is a way to do it using Shopify Flow, on the Shopify Basic plan with no paid add-ons. It assumes you have a single inventory location.
+The following is a way to do it using Shopify Flow, on the Shopify Basic plan with no paid apps. It assumes you have a single inventory location.
 
 ![Screen recording](/images/content/2025-07-12/pendant.gif)
 *Updating inventory on one variant, reloading after several seconds, seeing a new inventory on another.*
 
-(If there's a better/simpler way of doing it without pricy plans or add-ons, let me know! It's a big ecosystem and I'm a new arrival.)
+(If there's a better/simpler way of doing it without pricy plans or apps, let me know! It's a big ecosystem and I'm a new arrival.)
 
 ## Shopify Flow
 
@@ -43,7 +43,7 @@ This means that when an inventory quantity changes (whether we edit it manually 
 
 If you want to limit this only to certain items (certain collections, certain metafields etc), click "Then", select "Condition", and add that condition.
 
-If you want this to apply to every item in your store with variants, don't add a condition.
+If you want this to apply to *every* item with variants in your store, don't add a condition.
 
 ### Action: For each loop
 
