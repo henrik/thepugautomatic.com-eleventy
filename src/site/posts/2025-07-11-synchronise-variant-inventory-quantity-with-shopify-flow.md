@@ -28,6 +28,10 @@ Please be aware that workflows can take a few seconds to run, so if two variants
 
 Now, create your workflow.
 
+This is what it will look like when you're done:
+
+![Screenshot of workflow](/images/content/2025-07-12/workflow.png)
+
 ### Trigger
 
 As the trigger, select "Shopify &gt; Product variant inventory quantity changed".
