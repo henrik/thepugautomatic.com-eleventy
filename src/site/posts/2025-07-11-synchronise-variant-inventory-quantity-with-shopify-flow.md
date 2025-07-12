@@ -44,7 +44,7 @@ It will look something like this when you're done:
 
 ![Screenshot of workflow](/images/content/2025-07-12/workflow.png)
 
-You can import [this workflow file](/uploads/2025-07-12/Synchronise variant inventory quantity.flow), and then reference the instructions below to understand what you can tweak and how it fits together.
+You can import [this workflow file](/uploads/2025-07-12/Synchronise%20variant%20inventory%20quantity.flow), and then reference the instructions below to understand what you can tweak and how it fits together.
 
 Or create a new workflow and follow the instructions to set it up from scratch.
 
