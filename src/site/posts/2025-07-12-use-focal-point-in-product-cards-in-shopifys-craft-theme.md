@@ -4,7 +4,7 @@ tags:
   - Shopify
 ---
 
-I'm setting up a Shopify store for my partner using Shopify's own [Craft](https://themes.shopify.com/themes/craft) theme.
+I'm setting up a Shopify store for [my partner](https://johannaost.com) using Shopify's own [Craft](https://themes.shopify.com/themes/craft) theme.
 
 When configured to show product card images with a consistent size (square or portrait), Craft would crop images poorly, cutting off heads.
 
