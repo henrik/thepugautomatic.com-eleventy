@@ -26,7 +26,7 @@ Workflows can take several seconds to run, so if two variants of the same produc
 
 Also, if someone places an order mixing variants, they would be able to over-purchase, and the inventory count would be left too high. Say you have 10 pendants left, shown as 10 in stock of each inventory item. If someone then orders 6 pendants with chain and 6 without in a single order, it would go through, marking 4 as left in stock of each. But you'd have an order for 12 pendants.
 
-A more robust solution could be to have a single product with no variants, and represent the chain as its own add-on product. There are apps to facilitate this (but only paid ones to my knowledge), or you could keep it cheap and cheerful by linking to the add-on product from the main product's description. Or use a [metafield](https://help.shopify.com/en/manual/custom-data/metafields) to point a product to its add-ons, and then have a "Custom Liquid" [block](https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks) generate product links.
+A more robust solution could be to have a single product with no variants, and represent the chain as its own add-on product. There are apps to facilitate this (only paid ones to my knowledge – though [Selleasy](https://apps.shopify.com/upsell-cross-sell-kit-1) is freemium), or you could keep it cheap and cheerful by linking to the add-on product from the main product's description. Or use a [metafield](https://help.shopify.com/en/manual/custom-data/metafields) to point a product to its add-ons, and then have a "Custom Liquid" [block](https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks) generate product links.
 
 If I haven't discouraged you, read on.
 
