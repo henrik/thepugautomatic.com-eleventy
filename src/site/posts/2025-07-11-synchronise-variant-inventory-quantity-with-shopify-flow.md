@@ -111,4 +111,4 @@ Godspeed!
 
 If the workflow updates inventory count, won't that cause the workflow to trigger itself?
 
-In a word, no. This does not happen. I have not looked into the whys and wherefores.
+In a word, no. This does not happen. I have not looked into why. Count your blessings.
