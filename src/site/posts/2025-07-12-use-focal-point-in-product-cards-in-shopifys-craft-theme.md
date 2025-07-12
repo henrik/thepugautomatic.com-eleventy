@@ -1,5 +1,5 @@
 ---
-title: Use focal point in product cards in Shopify' "Craft" theme
+title: Use focal point in product cards in Shopify's "Craft" theme
 tags:
   - Shopify
 ---
