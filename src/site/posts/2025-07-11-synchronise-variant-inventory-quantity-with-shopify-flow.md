@@ -18,13 +18,23 @@ The following is a way to do it using [Shopify Flow](https://help.shopify.com/en
 
 (If there's a better/simpler way of doing it without pricy plans or apps, let me know! It's a big ecosystem and I'm a new arrival.)
 
+## Gotchas and alternatives
+
+There are a few gotchas and alternatives. I'm offering this as one alternative, and also to show what's possible with Shopify Flow.
+
+Workflows can take several seconds to run, so if two variants of the same product are sold at the same time in a high-traffic store, each may update the other based only on its own inventory count, leaving the inventory count too high. (A "race condition".) Perhaps this could be mitigated by further checks in the workflow; I have not bothered.
+
+Also, if someone places an order mixing variants, they would be able to over-purchase, and the inventory count would be left too high. Say you have 10 pendants left, shown as 10 in stock of each inventory item. If someone then orders 6 pendants with chain and 6 without in a single order, it would go through, marking 4 as left in stock of each. But you'd have an order for 12 pendants.
+
+A more robust solution could be to have a single product with no variants, and represent the chain as its own add-on product. There are apps to facilitate this (but only paid ones to my knowledge), or you could keep it cheap and cheerful by linking to the add-on product from the main product's description. Or use a [metafield](https://help.shopify.com/en/manual/custom-data/metafields) to point a product to its add-ons, and then have a "Custom Liquid" [block](https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks) generate product links.
+
+If I haven't discouraged you, read on.
+
 ## Shopify Flow
 
 First, install [Shopify Flow](https://apps.shopify.com/flow). (It's free.) It lets you automate things.
 
 This blog post won't hold your hand with exactly how to install or use Shopify Flow – please find a tutorial for that. I will describe what goes into this specific flow, and hopefully you can piece it together.
-
-Please be aware that workflows can take several seconds to run, so if two variants of the same product are sold at the same time in a high-traffic store, each may update the other based only on its own inventory count, leaving the inventory count too high. (A "race condition".) Perhaps this could be mitigated by further checks in the workflow; I have not bothered.
 
 ## Create the workflow
 
