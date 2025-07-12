@@ -14,7 +14,7 @@ The following is a way to do it using [Shopify Flow](https://help.shopify.com/en
 
 ![Screen recording](/images/content/2025-07-12/pendant.gif)
 
-<p class="caption">Updating inventory on one variant, reloading after several seconds, seeing a new inventory on another.</p>
+<p class="caption">Updating inventory on one variant, reloading after several seconds, seeing a new inventory on the other.</p>
 
 (If there's a better/simpler way of doing it without pricy plans or apps, let me know! It's a big ecosystem and I'm a new arrival.)
 
