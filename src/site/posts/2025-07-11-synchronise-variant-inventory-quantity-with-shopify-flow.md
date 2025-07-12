@@ -36,13 +36,17 @@ First, install [Shopify Flow](https://apps.shopify.com/flow). (It's free.) It le
 
 This blog post won't hold your hand with exactly how to install or use Shopify Flow – please find a tutorial for that. I will describe what goes into this specific flow, and hopefully you can piece it together.
 
-## Create the workflow
+## Create or import the workflow
 
 Now, create your workflow.
 
 It will look something like this when you're done:
 
 ![Screenshot of workflow](/images/content/2025-07-12/workflow.png)
+
+You can import [this workflow file](/uploads/2025-07-12/Synchronise variant inventory quantity.flow), and then reference the instructions below to understand what you can tweak and how it fits together.
+
+Or create a new workflow and follow the instructions to set it up from scratch.
 
 ### Trigger
 
@@ -55,6 +59,8 @@ This means that when an inventory quantity changes (whether we edit it manually 
 If you want to limit this only to certain items (certain collections, certain metafields etc), click "Then", select "Condition", and add that condition.
 
 If you want this to apply to *every* item with variants in your store, don't add a condition.
+
+In the importable workflow file above, I included a condition that will always be true ("the product ID is the same as the product ID") to have a placeholder condition that you can tweak.
 
 ### Action: For each loop
 
