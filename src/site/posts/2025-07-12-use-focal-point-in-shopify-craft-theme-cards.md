@@ -14,7 +14,7 @@ Shopify [has support for focal points](https://help.shopify.com/en/manual/online
 
 I fixed this by editing the theme files, and this is how they look now:
 
-![Screenshot](/images/content/2025-07-12/before.jpg)
+![Screenshot](/images/content/2025-07-12/after.jpg)
 
 Much better!
 
