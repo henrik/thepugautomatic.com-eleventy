@@ -12,7 +12,7 @@ In Shopify, each variant has its own separate inventory count. But you might wan
 
 The following is a way to do it using [Shopify Flow](https://help.shopify.com/en/manual/shopify-flow), on the Shopify Basic plan with no paid apps. It assumes you have a single inventory location.
 
-![Screen recording](/images/content/2025-07-12/pendant.gif)
+![Screen recording](/images/content/2025-07-11/pendant.gif)
 
 <p class="caption">Updating inventory on one variant, reloading after several seconds, seeing a new inventory on the other.</p>
 
@@ -42,9 +42,9 @@ Now, create your workflow.
 
 It will look something like this when you're done:
 
-![Screenshot of workflow](/images/content/2025-07-12/workflow.png)
+![Screenshot of workflow](/images/content/2025-07-11/workflow.png)
 
-You can import [this workflow file](/uploads/2025-07-12/Synchronise%20variant%20inventory%20quantity.flow), and then reference the instructions below to understand what you can tweak and how it fits together.
+You can import [this workflow file](/uploads/2025-07-11/Synchronise%20variant%20inventory%20quantity.flow), and then reference the instructions below to understand what you can tweak and how it fits together.
 
 Or create a new workflow and follow the instructions to set it up from scratch.
 
