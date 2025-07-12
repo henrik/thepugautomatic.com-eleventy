@@ -10,7 +10,7 @@ When configured to show product card images with a consistent size (square or po
 
 ![Screenshot](/images/content/2025-07-12/before.jpg)
 
-Shopify [has support for focal points](https://help.shopify.com/en/manual/online-store/images/theme-images#setting-a-focal-point-on-an-image), and we have set focal points on problematic images, but product cards don't make use of them.
+Shopify [has support for focal points](https://help.shopify.com/en/manual/online-store/images/theme-images#setting-a-focal-point-on-an-image), and we have set focal points on problematic images, but product cards in Craft don't make use of them.
 
 I fixed this by editing the theme files, and this is how they look now:
 
