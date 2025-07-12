@@ -20,6 +20,7 @@ Much better!
 
 I keep a local copy of theme changes. This is the diff:
 
+{% raw %}
 ``` diff
 diff --git craft-theme/snippets/card-product.liquid craft-theme/snippets/card-product.liquid
 index 0a1a5e2..a931c0d 100644
@@ -50,5 +51,6 @@ index 0a1a5e2..a931c0d 100644
                                  height="{{ card_product.featured_media.height }}"
                                >
 ```
+{% endraw %}
 
 I've asked Shopify Support to pass this on to the theme developers, to get it fixed upstream.
