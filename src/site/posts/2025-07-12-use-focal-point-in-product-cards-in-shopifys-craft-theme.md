@@ -71,11 +71,10 @@ index 3b3eaef..213043b 100644
        {%- if card_collection.featured_image -%}
 +        {%- assign featured_image_filename = card_collection.featured_image.src | split: '/' | last -%}
 +        {%- assign featured_image_object = images[featured_image_filename] -%}
-+
          <div class="card__media">
            <div class="media media--transparent media--hover-effect">
              <img
-@@ -70,6 +73,7 @@
+@@ -70,6 +72,7 @@
                alt="{{ card_collection.featured_image.alt | escape }}"
                height="{{ card_collection.featured_image.height }}"
                width="{{ card_collection.featured_image.width }}"
