@@ -54,3 +54,34 @@ index 0a1a5e2..a931c0d 100644
 {% endraw %}
 
 I've asked Shopify Support to pass this on to the theme developers, to get it fixed upstream.
+
+## Update 2025-07-16: Collection cards
+
+I wanted the same for collection cards. This one was trickier! You have (?) to use the global `image` object to get at the `presentation`:
+
+{% raw %}
+``` diff
+diff --git craft-theme/snippets/card-collection.liquid craft-theme/snippets/card-collection.liquid
+index 3b3eaef..213043b 100644
+--- craft-theme/snippets/card-collection.liquid
++++ craft-theme/snippets/card-collection.liquid
+@@ -48,6 +48,9 @@
+       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+     >
+       {%- if card_collection.featured_image -%}
++        {%- assign featured_image_filename = card_collection.featured_image.src | split: '/' | last -%}
++        {%- assign featured_image_object = images[featured_image_filename] -%}
++
+         <div class="card__media">
+           <div class="media media--transparent media--hover-effect">
+             <img
+@@ -70,6 +73,7 @@
+               alt="{{ card_collection.featured_image.alt | escape }}"
+               height="{{ card_collection.featured_image.height }}"
+               width="{{ card_collection.featured_image.width }}"
++              style="object-position: {{ featured_image_object.presentation.focal_point }}"
+               loading="lazy"
+               class="motion-reduce"
+             >
+```
+{% endraw %}
