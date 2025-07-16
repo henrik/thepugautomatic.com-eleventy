@@ -57,7 +57,7 @@ I've asked Shopify Support to pass this on to the theme developers, to get it fi
 
 ## Update 2025-07-16: Collection cards
 
-I wanted the same for collection cards. This one was trickier! You have (?) to use the global `image` object to get at the `presentation`:
+I wanted the same for collection cards. This one was trickier! You have (?) to use the global `images` object to get at the `presentation`:
 
 {% raw %}
 ``` diff
