@@ -15,16 +15,6 @@ So I fixed it. Now:
 - On small (typically mobile) screens, they still show for you to pan around in, but at the smallest of either their intrinsic size or 1100 pixels wide.
 - On larger screens, they may stretch to fill the width of the viewport, but with a narrower margin, and only to the smallest of either their intrinsic size or 4096 pixels wide.
 
-If you just want the diff, skip past the next section.
-
-## The nerdy details
-
-The `srcset` remains unchanged, meaning the browser will still request an appropriate image size based on viewport size and pixel density (retina displays). The max image it offers up is 4096 pixels wide, which explains that magic number above. (Also [see the rationale for similar srcset values in the "Dawn" theme](https://github.com/Shopify/dawn/pull/668#issuecomment-975832897).)
-
-I picked a `1rem` padding because it Looked Good™ – the default `11rem` is inexplicably large, leaving too little room for the image itself.
-
-The `max-width: fit-content` defeats a `width: 100%` that would otherwise stretch the image beyond its intrinsic size.
-
 ## The diff
 
 I keep a local copy of theme changes. This is the diff:
@@ -91,4 +81,12 @@ index 0d6cb41..dbb7367 100644
 ```
 {% endraw %}
 
-All better!
+Much better!
+
+## The nerdy details
+
+The `srcset` remains unchanged, meaning the browser will still request an appropriate image size based on viewport size and pixel density (retina displays). The max image it offers up is 4096 pixels wide, which explains that magic number above. (Also [see the rationale for similar srcset values in the "Dawn" theme](https://github.com/Shopify/dawn/pull/668#issuecomment-975832897).)
+
+I picked a `1rem` padding because it Looked Good™ – the default `11rem` is inexplicably large, leaving too little room for the image itself.
+
+The `max-width: fit-content` defeats a `width: 100%` that would otherwise stretch the image beyond its intrinsic size.
