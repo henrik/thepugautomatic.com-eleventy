@@ -100,4 +100,4 @@ I picked a `1rem` padding because it Looked Good™ – the default `11rem` is i
 
 The `max-width: fit-content` defeats a `width: 100%` that would otherwise stretch the image beyond its intrinsic size.
 
-I have not considered videos or other media types, for now. They should remain unchanged.
+I have not considered videos or other media types, for now. They remain unchanged, other than the smaller container padding.
