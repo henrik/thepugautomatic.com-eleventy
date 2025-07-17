@@ -44,15 +44,13 @@ index c9dfc58..38de13f 100644
 
    .product-media-modal__content > * + * {
 diff --git craft-theme/snippets/product-media.liquid craft-theme/snippets/product-media.liquid
-index 0d6cb41..dbb7367 100644
+index 0d6cb41..9f24ff8 100644
 --- craft-theme/snippets/product-media.liquid
 +++ craft-theme/snippets/product-media.liquid
-@@ -14,7 +14,11 @@
-   %}
+@@ -15,6 +15,10 @@
  {% endcomment %}
 
--{%- if media.media_type == 'image' -%}
-+{% if media.media_type == 'image' -%}
+ {%- if media.media_type == 'image' -%}
 +  {%- assign outer_max_width_on_small_displays = 1100 -%}
 +  {%- assign outer_max_width_on_large_displays = 4096 -%}
 +  {%- assign max_width_on_small_displays = media.preview_image.width | at_most: outer_max_width_on_small_displays -%}
