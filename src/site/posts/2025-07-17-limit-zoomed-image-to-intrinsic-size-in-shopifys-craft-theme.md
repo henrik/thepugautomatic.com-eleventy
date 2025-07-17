@@ -6,7 +6,7 @@ tags:
 
 I've just set up [a Shopify store](https://johannaost.com) for my partner using Shopify's own [Craft](https://themes.shopify.com/themes/craft) theme.
 
-When clicking an image to zoom/enlarge it, Craft can show it larger than its actual ("intrinsic") size, making it blurry:
+When clicking a product image to zoom/enlarge it, Craft can show it larger than its actual ("intrinsic") size, making it blurry:
 - On small (typically mobile) screens, they show at 1100 pixels wide for you to pan around in, even if that's more (or less) than their intrinsic size.
 - On larger screens, they would stretch to fill the width of the viewport (minus a strangely generous margin), even if that's more (or less) than their intrinsic size.
 
