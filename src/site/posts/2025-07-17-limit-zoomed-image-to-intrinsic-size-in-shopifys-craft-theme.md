@@ -22,10 +22,10 @@ I keep a local copy of theme changes. This is the diff:
 {% raw %}
 ``` diff
 diff --git craft-theme/assets/section-main-product.css craft-theme/assets/section-main-product.css
-index c9dfc58..38de13f 100644
+index c9dfc58..176379e 100644
 --- craft-theme/assets/section-main-product.css
 +++ craft-theme/assets/section-main-product.css
-@@ -706,7 +706,7 @@ a.product__text {
+@@ -706,13 +706,17 @@ a.product__text {
 
  @media screen and (min-width: 750px) {
    .product-media-modal__content {
@@ -34,17 +34,29 @@ index c9dfc58..38de13f 100644
    }
 
    .product-media-modal__content > * {
-@@ -725,7 +725,7 @@ a.product__text {
-
- @media screen and (min-width: 990px) {
-   .product-media-modal__content {
--    padding: 2rem 11rem;
-+    padding: 1rem;
+     width: 100%;
    }
 
++  .product-media-modal__content > img {
++    max-width: fit-content;
++  }
++
    .product-media-modal__content > * + * {
+     margin-top: 2rem;
+   }
+@@ -724,10 +728,6 @@ a.product__text {
+ }
+
+ @media screen and (min-width: 990px) {
+-  .product-media-modal__content {
+-    padding: 2rem 11rem;
+-  }
+-
+   .product-media-modal__content > * + * {
+     margin-top: 1.5rem;
+   }
 diff --git craft-theme/snippets/product-media.liquid craft-theme/snippets/product-media.liquid
-index 0d6cb41..9f24ff8 100644
+index 0d6cb41..bc1becb 100644
 --- craft-theme/snippets/product-media.liquid
 +++ craft-theme/snippets/product-media.liquid
 @@ -15,6 +15,10 @@
@@ -58,14 +70,13 @@ index 0d6cb41..9f24ff8 100644
    <img
      class="global-media-settings global-media-settings--no-shadow{% if variant_image %} product__media-item--variant{% endif %}"
      srcset="
-@@ -28,12 +32,13 @@
+@@ -28,12 +32,12 @@
        {%- if media.preview_image.width >= 4096 -%}{{ media.preview_image | image_url: width: 4096 }} 4096w,{%- endif -%}
        {{ media.preview_image | image_url }} {{ media.preview_image.width }}w
      "
 -    sizes="(min-width: 750px) calc(100vw - 22rem), 1100px"
 -    src="{{ media.preview_image | image_url: width: 1445 }}"
 +    sizes="(min-width: 750px) min(calc(100vw - 2rem), {{ max_width_on_large_displays }}px), {{ max_width_on_small_displays }}px"
-+    style="max-width: fit-content"
 +    src="{{ media.preview_image | image_url: width: max_width_on_large_displays }}"
      alt="{{ media.alt | escape }}"
      loading="lazy"
@@ -88,3 +99,5 @@ The `srcset` remains unchanged, meaning the browser will still request an approp
 I picked a `1rem` padding because it Looked Good™ – the default `11rem` is inexplicably large, leaving too little room for the image itself.
 
 The `max-width: fit-content` defeats a `width: 100%` that would otherwise stretch the image beyond its intrinsic size.
+
+I have not considered videos or other media types, for now. They should remain unchanged.
