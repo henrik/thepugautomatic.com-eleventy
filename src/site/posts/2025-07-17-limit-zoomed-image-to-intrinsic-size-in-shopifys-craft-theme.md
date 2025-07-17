@@ -13,7 +13,7 @@ When clicking an image to zoom/enlarge it, Craft can show it larger than its act
 So I fixed it. Now:
 
 - On small (typically mobile) screens, they still show for you to pan around in, but at the smallest of either their intrinsic size or 1100 pixels wide.
-- On larger screens, they still stretch to fill the width of the viewport, but with a narrower margin, and at the smallest of either their intrinsic size or 4096 pixels wide.
+- On larger screens, they may stretch to fill the width of the viewport, but with a narrower margin, and only to the smallest of either their intrinsic size or 4096 pixels wide.
 
 If you just want the diff, skip past the next section.
 
